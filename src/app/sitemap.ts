@@ -9,7 +9,25 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zirahr.com";
  * pages excluded"). Append to this list as each phase ships real pages;
  * don't pre-list routes that 404.
  */
-const IMPLEMENTED_ROUTES = [""] as const;
+const IMPLEMENTED_ROUTES = [
+  "",
+  "/core-hr",
+  "/payroll",
+  "/leave-management",
+  "/attendance-management",
+  "/performance-management",
+  "/recruitment",
+  "/learning-development",
+  "/teams-collaboration",
+  "/employee-self-service",
+  "/analytics",
+  "/ask-tija",
+  "/hr-software-kenya",
+  "/payroll-software-kenya",
+  "/hrmis-kenya",
+  "/hr-software-africa",
+  "/pricing",
+] as const;
 
 function localizedPath(route: string, locale: string) {
   const isDefault = locale === routing.defaultLocale;

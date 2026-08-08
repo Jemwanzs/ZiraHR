@@ -394,5 +394,316 @@
   },
   "finalCta": {
     "headline": "[FR] Ready to run HR differently?"
+  },
+  "breadcrumbs": {
+    "coreHr": "[FR] Core HR",
+    "payroll": "[FR] Payroll",
+    "leaveManagement": "[FR] Leave Management",
+    "attendanceManagement": "[FR] Attendance",
+    "performanceManagement": "[FR] Performance",
+    "recruitment": "[FR] Recruitment",
+    "learningDevelopment": "[FR] Learning & Development",
+    "employeeSelfService": "[FR] Employee Self-Service",
+    "teamsCollaboration": "[FR] Teams & Collaboration",
+    "analytics": "[FR] Analytics",
+    "askTija": "[FR] Ask TiJa",
+    "hrSoftwareKenya": "[FR] HR Software Kenya",
+    "payrollSoftwareKenya": "[FR] Payroll Software Kenya",
+    "hrmisKenya": "[FR] HRMIS Kenya",
+    "hrSoftwareAfrica": "[FR] HR Software Africa",
+    "pricing": "[FR] Pricing"
+  },
+  "pages": {
+    "coreHr": {
+      "eyebrow": "[FR] CORE HR",
+      "headline": "[FR] One reliable record for every employee.",
+      "supporting": "[FR] Employee directory, 360 profiles, organization structure, lifecycle and documents — all reading from the same record.",
+      "capabilities": [
+        "[FR] Employee Directory",
+        "[FR] Employee 360 Profile",
+        "[FR] Organization Structure",
+        "[FR] Branches & Regions",
+        "[FR] Departments",
+        "[FR] Job Grades",
+        "[FR] Job Positions",
+        "[FR] Employee Lifecycle",
+        "[FR] Promotions",
+        "[FR] Transfers",
+        "[FR] Temporary Assignments",
+        "[FR] Onboarding",
+        "[FR] Offboarding",
+        "[FR] Documents"
+      ],
+      "connectsToHeadline": "[FR] Every other module reads from this record.",
+      "ctaHeadline": "[FR] Give every employee one reliable record."
+    },
+    "payroll": {
+      "eyebrow": "[FR] PAYROLL",
+      "headline": "[FR] Payroll without spreadsheet gymnastics.",
+      "supporting": "[FR] Gross to net, statutory-correct, without a spreadsheet in sight.",
+      "flowSteps": [
+        "[FR] Draft",
+        "[FR] Review",
+        "[FR] Approve",
+        "[FR] Process",
+        "[FR] Disburse"
+      ],
+      "capabilities": [
+        "[FR] Payroll Cycles",
+        "[FR] Basic Pay",
+        "[FR] Allowances",
+        "[FR] Benefits",
+        "[FR] Deductions",
+        "[FR] PAYE",
+        "[FR] NSSF",
+        "[FR] SHIF",
+        "[FR] Housing Levy",
+        "[FR] Reliefs",
+        "[FR] Salary Advances",
+        "[FR] Payslips",
+        "[FR] Payroll Approvals",
+        "[FR] Bank Files",
+        "[FR] Disbursements",
+        "[FR] Payroll Analytics"
+      ],
+      "connectsToHeadline": "[FR] Payroll runs from the same record as everything else.",
+      "ctaHeadline": "[FR] Run payroll from one connected record."
+    },
+    "leaveManagement": {
+      "eyebrow": "[FR] LEAVE MANAGEMENT",
+      "headline": "[FR] Leave management that keeps everyone in sync.",
+      "supporting": "[FR] Request, route, approve and update a balance — automatically, every time.",
+      "flowSteps": [
+        "[FR] Employee Requests",
+        "[FR] Manager Approval",
+        "[FR] Workflow Routes",
+        "[FR] HR Sees Calendar",
+        "[FR] Balance Updates"
+      ],
+      "capabilities": [
+        "[FR] Leave Policies",
+        "[FR] Accruals",
+        "[FR] Carry Forwards",
+        "[FR] Multi-level Approvals",
+        "[FR] Leave Calendar",
+        "[FR] Balances",
+        "[FR] Reports",
+        "[FR] ESS"
+      ],
+      "connectsToHeadline": "[FR] Leave balances feed straight into payroll and attendance.",
+      "ctaHeadline": "[FR] Let leave manage itself."
+    },
+    "attendanceManagement": {
+      "eyebrow": "[FR] ATTENDANCE",
+      "headline": "[FR] Know who's working. Without chasing attendance sheets.",
+      "supporting": "[FR] Clock-in to dashboard, geo-aware, shift-aware.",
+      "capabilities": [
+        "[FR] Clock In / Out",
+        "[FR] Geo-fencing",
+        "[FR] Attendance Rules",
+        "[FR] Branch Locations",
+        "[FR] Late Arrivals",
+        "[FR] Overtime",
+        "[FR] Shifts",
+        "[FR] Rosters",
+        "[FR] Timesheets",
+        "[FR] Attendance Analytics"
+      ],
+      "connectsToHeadline": "[FR] Attendance data flows straight into payroll and leave.",
+      "ctaHeadline": "[FR] See attendance in real time, everywhere you operate."
+    },
+    "performanceManagement": {
+      "eyebrow": "[FR] PERFORMANCE",
+      "headline": "[FR] Turn goals into conversations. Conversations into growth.",
+      "supporting": "[FR] Goals, feedback and reviews — all tied to the same employee history.",
+      "capabilities": [
+        "[FR] Goals",
+        "[FR] KPIs",
+        "[FR] Review Cycles",
+        "[FR] Appraisals",
+        "[FR] Continuous Feedback",
+        "[FR] 360 Feedback",
+        "[FR] PIP",
+        "[FR] Analytics"
+      ],
+      "connectsToHeadline": "[FR] Performance history builds on the same record as learning and payroll.",
+      "ctaHeadline": "[FR] Make performance a conversation, not a form."
+    },
+    "recruitment": {
+      "eyebrow": "[FR] RECRUITMENT",
+      "headline": "[FR] From requisition to hire, on one record.",
+      "supporting": "[FR] The final step doesn't re-enter your new hire — it becomes their employee profile.",
+      "flowSteps": [
+        "[FR] Requisition",
+        "[FR] Job Board",
+        "[FR] Applications",
+        "[FR] Shortlist",
+        "[FR] Interview",
+        "[FR] Offer",
+        "[FR] Hire"
+      ],
+      "connectsToHeadline": "[FR] A hire becomes an employee record — nothing re-entered.",
+      "ctaHeadline": "[FR] Hire into the same record they'll work from."
+    },
+    "learningDevelopment": {
+      "eyebrow": "[FR] LEARNING & DEVELOPMENT",
+      "headline": "[FR] Skills, tied to growth.",
+      "supporting": "[FR] Training that connects to the role, the goals, and the record behind them.",
+      "flowSteps": [
+        "[FR] Skills",
+        "[FR] Learning",
+        "[FR] Assessment",
+        "[FR] Certification",
+        "[FR] Growth"
+      ],
+      "capabilities": [
+        "[FR] Training Programs",
+        "[FR] Courses",
+        "[FR] Enrollments",
+        "[FR] Assessments",
+        "[FR] Certificates",
+        "[FR] Skills",
+        "[FR] Competencies",
+        "[FR] Development Plans"
+      ],
+      "connectsToHeadline": "[FR] Learning ties directly into performance and career growth.",
+      "ctaHeadline": "[FR] Turn training into a growth plan, not a checkbox."
+    },
+    "teamsCollaboration": {
+      "eyebrow": "[FR] TEAMS & COLLABORATION",
+      "headline": "[FR] HR that people actually want to open.",
+      "supporting": "[FR] Workspaces, teams, announcements and notifications — ZiraHR as more than an administrative system.",
+      "capabilities": [
+        "[FR] Workspaces",
+        "[FR] Teams",
+        "[FR] Channels",
+        "[FR] Messaging",
+        "[FR] Announcements",
+        "[FR] Notifications",
+        "[FR] Employee Collaboration"
+      ],
+      "connectsToHeadline": "[FR] Collaboration stays connected to the same organization structure.",
+      "ctaHeadline": "[FR] Make HR somewhere people want to be."
+    },
+    "employeeSelfService": {
+      "eyebrow": "[FR] EMPLOYEE SELF-SERVICE",
+      "headline": "[FR] HR isn't only for HR.",
+      "supporting": "[FR] Give every employee a simpler way to manage their work life.",
+      "capabilities": [
+        "[FR] View Profile",
+        "[FR] Update Details",
+        "[FR] Download Payslips",
+        "[FR] Request Leave",
+        "[FR] Check Leave Balance",
+        "[FR] View Attendance",
+        "[FR] View Goals",
+        "[FR] Complete Learning",
+        "[FR] Receive Notifications",
+        "[FR] Access Documents",
+        "[FR] Follow Approvals"
+      ],
+      "connectsToHeadline": "[FR] Every ESS action updates the same record HR sees.",
+      "ctaHeadline": "[FR] Give your whole team self-service, not spreadsheets."
+    },
+    "analytics": {
+      "eyebrow": "[FR] INTELLIGENCE",
+      "headline": "[FR] Different roles. Different questions. The right answers.",
+      "supporting": "[FR] Executive, HR, Finance and personal dashboards, all built on the same data model.",
+      "capabilities": [
+        "[FR] Executive Dashboard",
+        "[FR] HR Dashboard",
+        "[FR] Finance Dashboard",
+        "[FR] My Dashboard",
+        "[FR] Analytics",
+        "[FR] Reports"
+      ],
+      "connectsToHeadline": "[FR] Every dashboard reads from the same connected record.",
+      "ctaHeadline": "[FR] See your organization clearly, from any role."
+    },
+    "askTija": {
+      "eyebrow": "[FR] ASK TiJa",
+      "headline": "[FR] Meet TiJa. Ask your workforce.",
+      "supporting": "[FR] Workforce intelligence inside ZiraHR — not a bolted-on chatbot.",
+      "capabilities": [
+        "[FR] Contract expiry alerts",
+        "[FR] Pending approvals, on request",
+        "[FR] Payroll variance explanations",
+        "[FR] Missing data flags"
+      ],
+      "connectsToHeadline": "[FR] TiJa answers from the same record every module shares.",
+      "ctaHeadline": "[FR] Ask your workforce a question. Get a real answer."
+    },
+    "hrSoftwareKenya": {
+      "eyebrow": "[FR] HR SOFTWARE, BUILT FOR KENYA",
+      "headline": "[FR] HR software built for Kenyan teams.",
+      "supporting": "[FR] ZiraHR brings recruitment, onboarding, payroll, leave, attendance, performance and learning into one platform — built around how Kenyan organizations actually run HR, not a generic global template.",
+      "capabilities": [
+        "[FR] Kenyan statutory payroll (PAYE, NSSF, SHIF, Housing Levy)",
+        "[FR] Multi-branch and multi-region structures",
+        "[FR] Employee self-service for distributed teams",
+        "[FR] One employee record across every HR function"
+      ],
+      "connectsToHeadline": "[FR] Start with the module your team needs most.",
+      "ctaHeadline": "[FR] See ZiraHR built around your organization."
+    },
+    "payrollSoftwareKenya": {
+      "eyebrow": "[FR] PAYROLL SOFTWARE FOR KENYA",
+      "headline": "[FR] Payroll software for Kenya — PAYE, NSSF, SHIF and Housing Levy, handled.",
+      "supporting": "[FR] Run payroll against Kenya's actual statutory schemes, from basic pay through disbursement, without spreadsheets stitched together every month-end.",
+      "flowSteps": [
+        "[FR] Draft",
+        "[FR] Review",
+        "[FR] Approve",
+        "[FR] Process",
+        "[FR] Disburse"
+      ],
+      "capabilities": [
+        "[FR] PAYE",
+        "[FR] NSSF",
+        "[FR] SHIF",
+        "[FR] Housing Levy",
+        "[FR] Reliefs",
+        "[FR] Salary Advances",
+        "[FR] Payslips",
+        "[FR] Bank Disbursement Files",
+        "[FR] Payroll Analytics"
+      ],
+      "connectsToHeadline": "[FR] Payroll connects straight to attendance, leave and core HR.",
+      "ctaHeadline": "[FR] Run Kenya-compliant payroll from one platform."
+    },
+    "hrmisKenya": {
+      "eyebrow": "[FR] HRMIS KENYA",
+      "headline": "[FR] The HRMIS Kenyan organizations are moving to.",
+      "supporting": "[FR] A complete Human Resource Management Information System — core HR, payroll, workforce management, talent and analytics — built as one connected platform rather than separate systems stitched together.",
+      "capabilities": [
+        "[FR] Core HR & Employee Records",
+        "[FR] Payroll & Statutory Compliance",
+        "[FR] Leave & Attendance",
+        "[FR] Recruitment & Performance",
+        "[FR] Dashboards & Analytics"
+      ],
+      "connectsToHeadline": "[FR] Explore what an HRMIS looks like when it's actually connected.",
+      "ctaHeadline": "[FR] Replace disconnected systems with one HRMIS."
+    },
+    "hrSoftwareAfrica": {
+      "eyebrow": "[FR] HR SOFTWARE FOR AFRICA",
+      "headline": "[FR] HR software built for Africa, starting with Kenya.",
+      "supporting": "[FR] ZiraHR launched in Kenya first, built from day one to support the multi-branch, multi-region reality of growing African organizations — with expansion to further African markets planned as statutory support is added.",
+      "capabilities": [
+        "[FR] Multi-region and multi-branch organization structures",
+        "[FR] Role-based visibility (regional, branch, executive)",
+        "[FR] Employee self-service built for distributed teams",
+        "[FR] One connected record across the employee lifecycle"
+      ],
+      "connectsToHeadline": "[FR] See the platform this is built on.",
+      "ctaHeadline": "[FR] Grow across regions on one connected platform."
+    },
+    "pricing": {
+      "eyebrow": "[FR] PRICING",
+      "headline": "[FR] Pricing that fits your organization.",
+      "supporting": "[FR] ZiraHR is priced around your organization's size and the modules you need — not a one-size-fits-all tier. Talk to us for a plan built around your team.",
+      "ctaHeadline": "[FR] Get pricing built around your organization.",
+      "connectsToHeadline": "[FR] See what's included before you talk pricing."
+    }
   }
 }
