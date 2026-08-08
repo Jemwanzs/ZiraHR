@@ -15,6 +15,12 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  // Skip API routes, static assets, and files with an extension (e.g. favicon.ico).
-  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
+  // Skip API routes, static assets, and metadata routes. A generic
+  // dot-extension exclusion pattern (e.g. ".*\\..*") does not reliably
+  // exclude sitemap.xml/robots.txt at runtime under Next 16 — confirmed by
+  // testing (they 404'd because the proxy still rewrote them into locale
+  // space). Naming them explicitly matches Next's own documented example.
+  matcher: [
+    "/((?!api|_next|_vercel|favicon.ico|sitemap.xml|robots.txt|.*\\.[\\w]+$).*)",
+  ],
 };

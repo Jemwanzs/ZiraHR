@@ -27,6 +27,12 @@ Six columns, matching `product-modules.md` exactly:
 
 By buyer segment (footer + nav "Solutions"): HR Teams, Finance Teams, Executives, Managers, Employees. Each links to a short segment framing, not a full duplicate page tree (avoid thin-page proliferation).
 
+**Routing decision (implemented in Phase 3):** since no dedicated `/solutions/*` pages exist, each segment routes to the single module page most relevant to it, rather than 404ing or linking nowhere: HR Teams → `/core-hr`, Finance Teams → `/payroll`, Executives → `/analytics`, Managers → `/performance-management`, Employees → `/employee-self-service`. Implemented once in `src/components/navigation/navData.ts` and shared by the desktop dropdown, footer, and mobile drawer — not duplicated per component.
+
+**Mega menu leaf routing:** for the same reason, every Platform mega-menu leaf item routes to the one dedicated page that covers it (e.g. every Core HR item → `/core-hr`, every Payroll item → `/payroll`), matching how `02-ux/product-pages.md` groups sub-capabilities onto a single page per module rather than one URL per bullet. "Approvals & Workflows" and "Notifications" (Workplace group) have no dedicated page in the route table, so both route to `/teams-collaboration` as the closest existing page.
+
+**Footer link gaps:** `Blog`/`Guides`/`Templates`/`Help Centre`/`Product Updates` all point at `/resources` until Phase 7 gives them real sub-pages; `Careers`/`Partners` point at `/company` since no dedicated route exists yet — see `04-content/footer-copy.md`. These are intentional interim routes, not dead links, and get more specific once the pages they need actually exist.
+
 ## Payroll
 
 Gets a standalone top-level nav item (not just a mega-menu entry) because it is a dedicated high-conversion SEO landing page — reflects its outsized role in HR-software search intent in Kenya.
