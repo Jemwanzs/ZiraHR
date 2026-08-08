@@ -135,5 +135,264 @@
       }
     },
     "tagline": "[FR] ZiraHR — People operations, connected."
+  },
+  "employeeJourney": {
+    "eyebrow": "[FR] ONE EMPLOYEE. ONE JOURNEY.",
+    "intro": "[FR] Meet Amina.",
+    "supporting": "[FR] Every stage of her journey lives in the same employee record.",
+    "stages": {
+      "applicant": "[FR] Applicant",
+      "candidate": "[FR] Candidate",
+      "offer": "[FR] Offer",
+      "employee": "[FR] Employee",
+      "onboarding": "[FR] Onboarding",
+      "attendanceLeave": "[FR] Attendance + Leave",
+      "payroll": "[FR] Payroll",
+      "learning": "[FR] Learning",
+      "performance": "[FR] Performance",
+      "promotion": "[FR] Promotion",
+      "offboarding": "[FR] Offboarding"
+    },
+    "stageCaptions": {
+      "applicant": "[FR] Amina applies for a role through the careers page.",
+      "candidate": "[FR] Her application moves through shortlisting and interviews.",
+      "offer": "[FR] An offer is extended and accepted.",
+      "employee": "[FR] Amina becomes an employee record — no re-entry, same profile.",
+      "onboarding": "[FR] Her onboarding checklist and documents are assigned automatically.",
+      "attendanceLeave": "[FR] She clocks in, requests leave, and checks her balance.",
+      "payroll": "[FR] Her payroll runs from the same record, every cycle.",
+      "learning": "[FR] She enrolls in training tied to her role and goals.",
+      "performance": "[FR] Her goals and reviews build on the same history.",
+      "promotion": "[FR] A promotion updates her record — nothing re-entered.",
+      "offboarding": "[FR] When she eventually leaves, offboarding closes the record cleanly."
+    }
+  },
+  "connectedRecord": {
+    "eyebrow": "[FR] ONE EMPLOYEE RECORD",
+    "headline": "[FR] One employee record. Everything connected.",
+    "supporting": "[FR] Payroll, leave, attendance, performance, learning, documents, assets and recruitment all read from the same record — not nine disconnected modules.",
+    "nodes": {
+      "payroll": "[FR] Payroll",
+      "leave": "[FR] Leave",
+      "attendance": "[FR] Attendance",
+      "performance": "[FR] Performance",
+      "learning": "[FR] Learning",
+      "documents": "[FR] Documents",
+      "assets": "[FR] Assets",
+      "recruitment": "[FR] Recruitment",
+      "lifecycle": "[FR] Lifecycle",
+      "disciplinary": "[FR] Disciplinary"
+    }
+  },
+  "moduleShowcase": {
+    "eyebrow": "[FR] EXPLORE THE PLATFORM",
+    "heading": "[FR] One platform. Every stage of your people journey.",
+    "coreHr": {
+      "label": "[FR] Core HR",
+      "headline": "[FR] Your people records. Finally organized.",
+      "items": [
+        "[FR] Employee profile",
+        "[FR] Job details",
+        "[FR] Employee directory",
+        "[FR] Lifecycle",
+        "[FR] Organization structure",
+        "[FR] Documents"
+      ]
+    },
+    "payroll": {
+      "label": "[FR] Payroll",
+      "headline": "[FR] From gross to net. Without the chaos.",
+      "items": [
+        "[FR] Payroll run",
+        "[FR] Statutory calculations",
+        "[FR] Payslip",
+        "[FR] Reports",
+        "[FR] Bank file / disbursement"
+      ]
+    },
+    "leave": {
+      "label": "[FR] Leave",
+      "headline": "[FR] Leave that practically manages itself.",
+      "items": [
+        "[FR] Request",
+        "[FR] Workflow",
+        "[FR] Approval",
+        "[FR] Balance updated"
+      ]
+    },
+    "attendance": {
+      "label": "[FR] Attendance",
+      "headline": "[FR] Know who's working, without chasing sheets.",
+      "items": [
+        "[FR] Clock in / out",
+        "[FR] Geo-fencing",
+        "[FR] Shifts & rosters",
+        "[FR] Timesheets"
+      ]
+    },
+    "performance": {
+      "label": "[FR] Performance",
+      "headline": "[FR] Turn goals into conversations.",
+      "items": [
+        "[FR] Goals",
+        "[FR] KPIs",
+        "[FR] Review cycles",
+        "[FR] Continuous feedback"
+      ]
+    },
+    "recruitment": {
+      "label": "[FR] Recruitment",
+      "headline": "[FR] From requisition to hire, on one record.",
+      "items": [
+        "[FR] Requisition",
+        "[FR] Job board",
+        "[FR] Applications",
+        "[FR] Shortlist",
+        "[FR] Interview",
+        "[FR] Offer"
+      ]
+    },
+    "learningDevelopment": {
+      "label": "[FR] L&D",
+      "headline": "[FR] Skills, tied to growth.",
+      "items": [
+        "[FR] Training programs",
+        "[FR] Courses",
+        "[FR] Assessments",
+        "[FR] Certificates"
+      ]
+    },
+    "collaboration": {
+      "label": "[FR] Collaboration",
+      "headline": "[FR] HR that people actually want to open.",
+      "items": [
+        "[FR] Workspaces",
+        "[FR] Teams",
+        "[FR] Announcements",
+        "[FR] Notifications"
+      ]
+    }
+  },
+  "ess": {
+    "eyebrow": "[FR] EMPLOYEE SELF-SERVICE",
+    "headline": "[FR] HR isn't only for HR.",
+    "supporting": "[FR] Give every employee a simpler way to manage their work life.",
+    "capabilities": [
+      "[FR] View Profile",
+      "[FR] Update Details",
+      "[FR] Download Payslips",
+      "[FR] Request Leave",
+      "[FR] Check Leave Balance",
+      "[FR] View Attendance",
+      "[FR] View Goals",
+      "[FR] Complete Learning",
+      "[FR] Receive Notifications",
+      "[FR] Access Documents",
+      "[FR] Follow Approvals"
+    ]
+  },
+  "flexibility": {
+    "eyebrow": "[FR] CONFIGURED AROUND YOU",
+    "headline": "[FR] Your organization isn't generic. Your HR software shouldn't be either.",
+    "closingLine": "[FR] Configurable without becoming complicated.",
+    "steps": [
+      "[FR] Regions",
+      "[FR] Branches",
+      "[FR] Departments",
+      "[FR] Roles",
+      "[FR] Workflows",
+      "[FR] Leave Policies",
+      "[FR] Payroll Rules",
+      "[FR] Security"
+    ]
+  },
+  "approvals": {
+    "eyebrow": "[FR] ONE APPROVAL ENGINE",
+    "headline": "[FR] Route it once. Approve it your way.",
+    "closingLine": "[FR] One approval engine. Your rules.",
+    "chainSteps": [
+      "[FR] Employee",
+      "[FR] Supervisor",
+      "[FR] Department Head",
+      "[FR] HR",
+      "[FR] Finance",
+      "[FR] Approved"
+    ],
+    "types": {
+      "leave": "[FR] Leave",
+      "payroll": "[FR] Payroll",
+      "salaryAdvance": "[FR] Salary Advance",
+      "promotion": "[FR] Promotion",
+      "disciplinary": "[FR] Disciplinary",
+      "dataImports": "[FR] Data Imports"
+    }
+  },
+  "askTija": {
+    "eyebrow": "[FR] WORKFORCE INTELLIGENCE",
+    "headline": "[FR] Meet TiJa. Ask your workforce.",
+    "positioning": "[FR] Workforce intelligence inside ZiraHR.",
+    "prompts": {
+      "contractsExpiring": "[FR] Who has contracts expiring this month?",
+      "pendingLeave": "[FR] Show pending leave approvals.",
+      "payrollVariance": "[FR] Explain this month's payroll variance.",
+      "missingBankDetails": "[FR] Which employees have missing bank details?"
+    }
+  },
+  "dashboards": {
+    "eyebrow": "[FR] SEE YOUR ORGANIZATION",
+    "headline": "[FR] Different roles. Different questions. The right answers.",
+    "types": {
+      "executive": "[FR] Executive",
+      "hr": "[FR] HR",
+      "finance": "[FR] Finance",
+      "my": "[FR] My Dashboard"
+    }
+  },
+  "multiRegion": {
+    "eyebrow": "[FR] MULTI-REGION, MULTI-BRANCH",
+    "headline": "[FR] One organization. However complex.",
+    "levels": [
+      "[FR] Organization",
+      "[FR] Region",
+      "[FR] Branch",
+      "[FR] Department",
+      "[FR] Employee"
+    ],
+    "roleViews": {
+      "regionalManager": "[FR] Regional Manager sees My Region",
+      "branchManager": "[FR] Branch Manager sees My Branch",
+      "executive": "[FR] Executive sees the Whole Organization"
+    }
+  },
+  "security": {
+    "eyebrow": "[FR] TRUST & GOVERNANCE",
+    "headline": "[FR] Control who sees what. And know what happened.",
+    "capabilities": [
+      "[FR] Roles & Permissions",
+      "[FR] Data Visibility",
+      "[FR] MFA",
+      "[FR] Audit Logs",
+      "[FR] Approval Workflows",
+      "[FR] Export Controls",
+      "[FR] Working-Hour Controls",
+      "[FR] Geo-fencing",
+      "[FR] Activity Logs"
+    ]
+  },
+  "productTour": {
+    "eyebrow": "[FR] EXPLORE ZiraHR",
+    "headline": "[FR] See it in action, before you sign up.",
+    "supporting": "[FR] A lightweight, simulated look at the interface — no account needed.",
+    "buttons": {
+      "runPayroll": "[FR] Run Payroll",
+      "requestLeave": "[FR] Request Leave",
+      "approveRequest": "[FR] Approve Request",
+      "openEmployeeProfile": "[FR] Open Employee Profile",
+      "askTija": "[FR] Ask TiJa",
+      "viewDashboard": "[FR] View Dashboard"
+    }
+  },
+  "finalCta": {
+    "headline": "[FR] Ready to run HR differently?"
   }
 }

@@ -135,5 +135,264 @@
       }
     },
     "tagline": "[SW] ZiraHR — People operations, connected."
+  },
+  "employeeJourney": {
+    "eyebrow": "[SW] ONE EMPLOYEE. ONE JOURNEY.",
+    "intro": "[SW] Meet Amina.",
+    "supporting": "[SW] Every stage of her journey lives in the same employee record.",
+    "stages": {
+      "applicant": "[SW] Applicant",
+      "candidate": "[SW] Candidate",
+      "offer": "[SW] Offer",
+      "employee": "[SW] Employee",
+      "onboarding": "[SW] Onboarding",
+      "attendanceLeave": "[SW] Attendance + Leave",
+      "payroll": "[SW] Payroll",
+      "learning": "[SW] Learning",
+      "performance": "[SW] Performance",
+      "promotion": "[SW] Promotion",
+      "offboarding": "[SW] Offboarding"
+    },
+    "stageCaptions": {
+      "applicant": "[SW] Amina applies for a role through the careers page.",
+      "candidate": "[SW] Her application moves through shortlisting and interviews.",
+      "offer": "[SW] An offer is extended and accepted.",
+      "employee": "[SW] Amina becomes an employee record — no re-entry, same profile.",
+      "onboarding": "[SW] Her onboarding checklist and documents are assigned automatically.",
+      "attendanceLeave": "[SW] She clocks in, requests leave, and checks her balance.",
+      "payroll": "[SW] Her payroll runs from the same record, every cycle.",
+      "learning": "[SW] She enrolls in training tied to her role and goals.",
+      "performance": "[SW] Her goals and reviews build on the same history.",
+      "promotion": "[SW] A promotion updates her record — nothing re-entered.",
+      "offboarding": "[SW] When she eventually leaves, offboarding closes the record cleanly."
+    }
+  },
+  "connectedRecord": {
+    "eyebrow": "[SW] ONE EMPLOYEE RECORD",
+    "headline": "[SW] One employee record. Everything connected.",
+    "supporting": "[SW] Payroll, leave, attendance, performance, learning, documents, assets and recruitment all read from the same record — not nine disconnected modules.",
+    "nodes": {
+      "payroll": "[SW] Payroll",
+      "leave": "[SW] Leave",
+      "attendance": "[SW] Attendance",
+      "performance": "[SW] Performance",
+      "learning": "[SW] Learning",
+      "documents": "[SW] Documents",
+      "assets": "[SW] Assets",
+      "recruitment": "[SW] Recruitment",
+      "lifecycle": "[SW] Lifecycle",
+      "disciplinary": "[SW] Disciplinary"
+    }
+  },
+  "moduleShowcase": {
+    "eyebrow": "[SW] EXPLORE THE PLATFORM",
+    "heading": "[SW] One platform. Every stage of your people journey.",
+    "coreHr": {
+      "label": "[SW] Core HR",
+      "headline": "[SW] Your people records. Finally organized.",
+      "items": [
+        "[SW] Employee profile",
+        "[SW] Job details",
+        "[SW] Employee directory",
+        "[SW] Lifecycle",
+        "[SW] Organization structure",
+        "[SW] Documents"
+      ]
+    },
+    "payroll": {
+      "label": "[SW] Payroll",
+      "headline": "[SW] From gross to net. Without the chaos.",
+      "items": [
+        "[SW] Payroll run",
+        "[SW] Statutory calculations",
+        "[SW] Payslip",
+        "[SW] Reports",
+        "[SW] Bank file / disbursement"
+      ]
+    },
+    "leave": {
+      "label": "[SW] Leave",
+      "headline": "[SW] Leave that practically manages itself.",
+      "items": [
+        "[SW] Request",
+        "[SW] Workflow",
+        "[SW] Approval",
+        "[SW] Balance updated"
+      ]
+    },
+    "attendance": {
+      "label": "[SW] Attendance",
+      "headline": "[SW] Know who's working, without chasing sheets.",
+      "items": [
+        "[SW] Clock in / out",
+        "[SW] Geo-fencing",
+        "[SW] Shifts & rosters",
+        "[SW] Timesheets"
+      ]
+    },
+    "performance": {
+      "label": "[SW] Performance",
+      "headline": "[SW] Turn goals into conversations.",
+      "items": [
+        "[SW] Goals",
+        "[SW] KPIs",
+        "[SW] Review cycles",
+        "[SW] Continuous feedback"
+      ]
+    },
+    "recruitment": {
+      "label": "[SW] Recruitment",
+      "headline": "[SW] From requisition to hire, on one record.",
+      "items": [
+        "[SW] Requisition",
+        "[SW] Job board",
+        "[SW] Applications",
+        "[SW] Shortlist",
+        "[SW] Interview",
+        "[SW] Offer"
+      ]
+    },
+    "learningDevelopment": {
+      "label": "[SW] L&D",
+      "headline": "[SW] Skills, tied to growth.",
+      "items": [
+        "[SW] Training programs",
+        "[SW] Courses",
+        "[SW] Assessments",
+        "[SW] Certificates"
+      ]
+    },
+    "collaboration": {
+      "label": "[SW] Collaboration",
+      "headline": "[SW] HR that people actually want to open.",
+      "items": [
+        "[SW] Workspaces",
+        "[SW] Teams",
+        "[SW] Announcements",
+        "[SW] Notifications"
+      ]
+    }
+  },
+  "ess": {
+    "eyebrow": "[SW] EMPLOYEE SELF-SERVICE",
+    "headline": "[SW] HR isn't only for HR.",
+    "supporting": "[SW] Give every employee a simpler way to manage their work life.",
+    "capabilities": [
+      "[SW] View Profile",
+      "[SW] Update Details",
+      "[SW] Download Payslips",
+      "[SW] Request Leave",
+      "[SW] Check Leave Balance",
+      "[SW] View Attendance",
+      "[SW] View Goals",
+      "[SW] Complete Learning",
+      "[SW] Receive Notifications",
+      "[SW] Access Documents",
+      "[SW] Follow Approvals"
+    ]
+  },
+  "flexibility": {
+    "eyebrow": "[SW] CONFIGURED AROUND YOU",
+    "headline": "[SW] Your organization isn't generic. Your HR software shouldn't be either.",
+    "closingLine": "[SW] Configurable without becoming complicated.",
+    "steps": [
+      "[SW] Regions",
+      "[SW] Branches",
+      "[SW] Departments",
+      "[SW] Roles",
+      "[SW] Workflows",
+      "[SW] Leave Policies",
+      "[SW] Payroll Rules",
+      "[SW] Security"
+    ]
+  },
+  "approvals": {
+    "eyebrow": "[SW] ONE APPROVAL ENGINE",
+    "headline": "[SW] Route it once. Approve it your way.",
+    "closingLine": "[SW] One approval engine. Your rules.",
+    "chainSteps": [
+      "[SW] Employee",
+      "[SW] Supervisor",
+      "[SW] Department Head",
+      "[SW] HR",
+      "[SW] Finance",
+      "[SW] Approved"
+    ],
+    "types": {
+      "leave": "[SW] Leave",
+      "payroll": "[SW] Payroll",
+      "salaryAdvance": "[SW] Salary Advance",
+      "promotion": "[SW] Promotion",
+      "disciplinary": "[SW] Disciplinary",
+      "dataImports": "[SW] Data Imports"
+    }
+  },
+  "askTija": {
+    "eyebrow": "[SW] WORKFORCE INTELLIGENCE",
+    "headline": "[SW] Meet TiJa. Ask your workforce.",
+    "positioning": "[SW] Workforce intelligence inside ZiraHR.",
+    "prompts": {
+      "contractsExpiring": "[SW] Who has contracts expiring this month?",
+      "pendingLeave": "[SW] Show pending leave approvals.",
+      "payrollVariance": "[SW] Explain this month's payroll variance.",
+      "missingBankDetails": "[SW] Which employees have missing bank details?"
+    }
+  },
+  "dashboards": {
+    "eyebrow": "[SW] SEE YOUR ORGANIZATION",
+    "headline": "[SW] Different roles. Different questions. The right answers.",
+    "types": {
+      "executive": "[SW] Executive",
+      "hr": "[SW] HR",
+      "finance": "[SW] Finance",
+      "my": "[SW] My Dashboard"
+    }
+  },
+  "multiRegion": {
+    "eyebrow": "[SW] MULTI-REGION, MULTI-BRANCH",
+    "headline": "[SW] One organization. However complex.",
+    "levels": [
+      "[SW] Organization",
+      "[SW] Region",
+      "[SW] Branch",
+      "[SW] Department",
+      "[SW] Employee"
+    ],
+    "roleViews": {
+      "regionalManager": "[SW] Regional Manager sees My Region",
+      "branchManager": "[SW] Branch Manager sees My Branch",
+      "executive": "[SW] Executive sees the Whole Organization"
+    }
+  },
+  "security": {
+    "eyebrow": "[SW] TRUST & GOVERNANCE",
+    "headline": "[SW] Control who sees what. And know what happened.",
+    "capabilities": [
+      "[SW] Roles & Permissions",
+      "[SW] Data Visibility",
+      "[SW] MFA",
+      "[SW] Audit Logs",
+      "[SW] Approval Workflows",
+      "[SW] Export Controls",
+      "[SW] Working-Hour Controls",
+      "[SW] Geo-fencing",
+      "[SW] Activity Logs"
+    ]
+  },
+  "productTour": {
+    "eyebrow": "[SW] EXPLORE ZiraHR",
+    "headline": "[SW] See it in action, before you sign up.",
+    "supporting": "[SW] A lightweight, simulated look at the interface — no account needed.",
+    "buttons": {
+      "runPayroll": "[SW] Run Payroll",
+      "requestLeave": "[SW] Request Leave",
+      "approveRequest": "[SW] Approve Request",
+      "openEmployeeProfile": "[SW] Open Employee Profile",
+      "askTija": "[SW] Ask TiJa",
+      "viewDashboard": "[SW] View Dashboard"
+    }
+  },
+  "finalCta": {
+    "headline": "[SW] Ready to run HR differently?"
   }
 }

@@ -135,5 +135,197 @@
       }
     },
     "tagline": "ZiraHR — People operations, connected."
+  },
+  "employeeJourney": {
+    "eyebrow": "ONE EMPLOYEE. ONE JOURNEY.",
+    "intro": "Meet Amina.",
+    "supporting": "Every stage of her journey lives in the same employee record.",
+    "stages": {
+      "applicant": "Applicant",
+      "candidate": "Candidate",
+      "offer": "Offer",
+      "employee": "Employee",
+      "onboarding": "Onboarding",
+      "attendanceLeave": "Attendance + Leave",
+      "payroll": "Payroll",
+      "learning": "Learning",
+      "performance": "Performance",
+      "promotion": "Promotion",
+      "offboarding": "Offboarding"
+    },
+    "stageCaptions": {
+      "applicant": "Amina applies for a role through the careers page.",
+      "candidate": "Her application moves through shortlisting and interviews.",
+      "offer": "An offer is extended and accepted.",
+      "employee": "Amina becomes an employee record — no re-entry, same profile.",
+      "onboarding": "Her onboarding checklist and documents are assigned automatically.",
+      "attendanceLeave": "She clocks in, requests leave, and checks her balance.",
+      "payroll": "Her payroll runs from the same record, every cycle.",
+      "learning": "She enrolls in training tied to her role and goals.",
+      "performance": "Her goals and reviews build on the same history.",
+      "promotion": "A promotion updates her record — nothing re-entered.",
+      "offboarding": "When she eventually leaves, offboarding closes the record cleanly."
+    }
+  },
+  "connectedRecord": {
+    "eyebrow": "ONE EMPLOYEE RECORD",
+    "headline": "One employee record. Everything connected.",
+    "supporting": "Payroll, leave, attendance, performance, learning, documents, assets and recruitment all read from the same record — not nine disconnected modules.",
+    "nodes": {
+      "payroll": "Payroll",
+      "leave": "Leave",
+      "attendance": "Attendance",
+      "performance": "Performance",
+      "learning": "Learning",
+      "documents": "Documents",
+      "assets": "Assets",
+      "recruitment": "Recruitment",
+      "lifecycle": "Lifecycle",
+      "disciplinary": "Disciplinary"
+    }
+  },
+  "moduleShowcase": {
+    "eyebrow": "EXPLORE THE PLATFORM",
+    "heading": "One platform. Every stage of your people journey.",
+    "coreHr": {
+      "label": "Core HR",
+      "headline": "Your people records. Finally organized.",
+      "items": ["Employee profile", "Job details", "Employee directory", "Lifecycle", "Organization structure", "Documents"]
+    },
+    "payroll": {
+      "label": "Payroll",
+      "headline": "From gross to net. Without the chaos.",
+      "items": ["Payroll run", "Statutory calculations", "Payslip", "Reports", "Bank file / disbursement"]
+    },
+    "leave": {
+      "label": "Leave",
+      "headline": "Leave that practically manages itself.",
+      "items": ["Request", "Workflow", "Approval", "Balance updated"]
+    },
+    "attendance": {
+      "label": "Attendance",
+      "headline": "Know who's working, without chasing sheets.",
+      "items": ["Clock in / out", "Geo-fencing", "Shifts & rosters", "Timesheets"]
+    },
+    "performance": {
+      "label": "Performance",
+      "headline": "Turn goals into conversations.",
+      "items": ["Goals", "KPIs", "Review cycles", "Continuous feedback"]
+    },
+    "recruitment": {
+      "label": "Recruitment",
+      "headline": "From requisition to hire, on one record.",
+      "items": ["Requisition", "Job board", "Applications", "Shortlist", "Interview", "Offer"]
+    },
+    "learningDevelopment": {
+      "label": "L&D",
+      "headline": "Skills, tied to growth.",
+      "items": ["Training programs", "Courses", "Assessments", "Certificates"]
+    },
+    "collaboration": {
+      "label": "Collaboration",
+      "headline": "HR that people actually want to open.",
+      "items": ["Workspaces", "Teams", "Announcements", "Notifications"]
+    }
+  },
+  "ess": {
+    "eyebrow": "EMPLOYEE SELF-SERVICE",
+    "headline": "HR isn't only for HR.",
+    "supporting": "Give every employee a simpler way to manage their work life.",
+    "capabilities": [
+      "View Profile",
+      "Update Details",
+      "Download Payslips",
+      "Request Leave",
+      "Check Leave Balance",
+      "View Attendance",
+      "View Goals",
+      "Complete Learning",
+      "Receive Notifications",
+      "Access Documents",
+      "Follow Approvals"
+    ]
+  },
+  "flexibility": {
+    "eyebrow": "CONFIGURED AROUND YOU",
+    "headline": "Your organization isn't generic. Your HR software shouldn't be either.",
+    "closingLine": "Configurable without becoming complicated.",
+    "steps": ["Regions", "Branches", "Departments", "Roles", "Workflows", "Leave Policies", "Payroll Rules", "Security"]
+  },
+  "approvals": {
+    "eyebrow": "ONE APPROVAL ENGINE",
+    "headline": "Route it once. Approve it your way.",
+    "closingLine": "One approval engine. Your rules.",
+    "chainSteps": ["Employee", "Supervisor", "Department Head", "HR", "Finance", "Approved"],
+    "types": {
+      "leave": "Leave",
+      "payroll": "Payroll",
+      "salaryAdvance": "Salary Advance",
+      "promotion": "Promotion",
+      "disciplinary": "Disciplinary",
+      "dataImports": "Data Imports"
+    }
+  },
+  "askTija": {
+    "eyebrow": "WORKFORCE INTELLIGENCE",
+    "headline": "Meet TiJa. Ask your workforce.",
+    "positioning": "Workforce intelligence inside ZiraHR.",
+    "prompts": {
+      "contractsExpiring": "Who has contracts expiring this month?",
+      "pendingLeave": "Show pending leave approvals.",
+      "payrollVariance": "Explain this month's payroll variance.",
+      "missingBankDetails": "Which employees have missing bank details?"
+    }
+  },
+  "dashboards": {
+    "eyebrow": "SEE YOUR ORGANIZATION",
+    "headline": "Different roles. Different questions. The right answers.",
+    "types": {
+      "executive": "Executive",
+      "hr": "HR",
+      "finance": "Finance",
+      "my": "My Dashboard"
+    }
+  },
+  "multiRegion": {
+    "eyebrow": "MULTI-REGION, MULTI-BRANCH",
+    "headline": "One organization. However complex.",
+    "levels": ["Organization", "Region", "Branch", "Department", "Employee"],
+    "roleViews": {
+      "regionalManager": "Regional Manager sees My Region",
+      "branchManager": "Branch Manager sees My Branch",
+      "executive": "Executive sees the Whole Organization"
+    }
+  },
+  "security": {
+    "eyebrow": "TRUST & GOVERNANCE",
+    "headline": "Control who sees what. And know what happened.",
+    "capabilities": [
+      "Roles & Permissions",
+      "Data Visibility",
+      "MFA",
+      "Audit Logs",
+      "Approval Workflows",
+      "Export Controls",
+      "Working-Hour Controls",
+      "Geo-fencing",
+      "Activity Logs"
+    ]
+  },
+  "productTour": {
+    "eyebrow": "EXPLORE ZiraHR",
+    "headline": "See it in action, before you sign up.",
+    "supporting": "A lightweight, simulated look at the interface — no account needed.",
+    "buttons": {
+      "runPayroll": "Run Payroll",
+      "requestLeave": "Request Leave",
+      "approveRequest": "Approve Request",
+      "openEmployeeProfile": "Open Employee Profile",
+      "askTija": "Ask TiJa",
+      "viewDashboard": "View Dashboard"
+    }
+  },
+  "finalCta": {
+    "headline": "Ready to run HR differently?"
   }
 }
