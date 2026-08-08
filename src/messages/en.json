@@ -1,0 +1,139 @@
+{
+  "common": {
+    "brandName": "ZiraHR",
+    "skipToContent": "Skip to content"
+  },
+  "languageSelector": {
+    "label": "Language",
+    "switchTo": {
+      "en": "Switch to English",
+      "fr": "Passer au français",
+      "sw": "Badilisha kwenda Kiswahili"
+    }
+  },
+  "cta": {
+    "startWithZiraHR": "Start with ZiraHR",
+    "requestDemo": "Request a Demo",
+    "login": "Login",
+    "alreadyUsing": "Already using ZiraHR? Log in"
+  },
+  "nav": {
+    "platform": "Platform",
+    "solutions": "Solutions",
+    "payroll": "Payroll",
+    "resources": "Resources",
+    "pricing": "Pricing",
+    "company": "Company",
+    "megaMenu": {
+      "coreHr": {
+        "groupLabel": "Core HR",
+        "employeeDirectory": "Employee Directory",
+        "employeeRecords": "Employee Records",
+        "organizationStructure": "Organization Structure",
+        "onboarding": "Onboarding",
+        "employeeLifecycle": "Employee Lifecycle",
+        "documents": "Documents",
+        "ess": "ESS"
+      },
+      "workforce": {
+        "groupLabel": "Workforce",
+        "leaveManagement": "Leave Management",
+        "attendance": "Attendance",
+        "shiftsRosters": "Shifts & Rosters",
+        "timesheets": "Timesheets",
+        "overtime": "Overtime"
+      },
+      "payroll": {
+        "groupLabel": "Payroll",
+        "payrollProcessing": "Payroll Processing",
+        "earningsBenefits": "Earnings & Benefits",
+        "deductions": "Deductions",
+        "salaryAdvance": "Salary Advance",
+        "payslips": "Payslips",
+        "statutoryCompliance": "Statutory Compliance",
+        "payrollReports": "Payroll Reports",
+        "disbursements": "Disbursements"
+      },
+      "talent": {
+        "groupLabel": "Talent",
+        "recruitmentAts": "Recruitment & ATS",
+        "performanceManagement": "Performance Management",
+        "learningDevelopment": "Learning & Development"
+      },
+      "workplace": {
+        "groupLabel": "Workplace",
+        "teamsCollaboration": "Teams & Collaboration",
+        "approvalsWorkflows": "Approvals & Workflows",
+        "notifications": "Notifications"
+      },
+      "intelligence": {
+        "groupLabel": "Intelligence",
+        "dashboards": "Dashboards",
+        "analytics": "Analytics",
+        "reports": "Reports",
+        "askTija": "Ask TiJa AI"
+      }
+    },
+    "solutionsMenu": {
+      "hrTeams": "HR Teams",
+      "financeTeams": "Finance Teams",
+      "executives": "Executives",
+      "managers": "Managers",
+      "employees": "Employees"
+    }
+  },
+  "hero": {
+    "eyebrow": "THE HR PLATFORM BUILT AROUND YOUR PEOPLE",
+    "headline": "One place to run your entire people operation.",
+    "supporting": "Recruit. Onboard. Manage. Pay. Develop. Perform. ZiraHR connects your entire employee journey."
+  },
+  "footer": {
+    "columns": {
+      "product": {
+        "title": "Product",
+        "coreHr": "Core HR",
+        "payroll": "Payroll",
+        "leave": "Leave",
+        "attendance": "Attendance",
+        "performance": "Performance",
+        "recruitment": "Recruitment",
+        "learningDevelopment": "Learning & Development",
+        "teams": "Teams",
+        "ess": "ESS",
+        "analytics": "Analytics",
+        "askTija": "Ask TiJa"
+      },
+      "solutions": {
+        "title": "Solutions",
+        "hrTeams": "HR Teams",
+        "financeTeams": "Finance Teams",
+        "executives": "Executives",
+        "managers": "Managers",
+        "employees": "Employees"
+      },
+      "resources": {
+        "title": "Resources",
+        "blog": "Blog",
+        "guides": "Guides",
+        "templates": "Templates",
+        "helpCentre": "Help Centre",
+        "productUpdates": "Product Updates"
+      },
+      "company": {
+        "title": "Company",
+        "about": "About",
+        "contact": "Contact",
+        "careers": "Careers",
+        "partners": "Partners"
+      },
+      "legal": {
+        "title": "Legal",
+        "privacy": "Privacy",
+        "terms": "Terms",
+        "security": "Security",
+        "cookies": "Cookies"
+      }
+    },
+    "tagline": "ZiraHR — People operations, connected."
+  }
+}

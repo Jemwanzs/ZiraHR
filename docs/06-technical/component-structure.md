@@ -39,7 +39,7 @@
       /forms/newsletter/route.ts
     sitemap.ts
     robots.ts
-    middleware.ts (next-intl locale routing — technically at /src/middleware.ts)
+    proxy.ts (next-intl locale routing via Next.js 16's proxy convention — technically at /src/proxy.ts)
   /components
     /layout        — PageShell, Container, Section (shared wrappers)
     /navigation     — NavBar, MegaMenu, MobileDrawer, LanguageSelector, StickyCta
