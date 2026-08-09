@@ -344,7 +344,11 @@
     "payrollSoftwareKenya": "Payroll Software Kenya",
     "hrmisKenya": "HRMIS Kenya",
     "hrSoftwareAfrica": "HR Software Africa",
-    "pricing": "Pricing"
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "requestDemo": "Request a Demo",
+    "signup": "Sign Up",
+    "login": "Login"
   },
   "pages": {
     "coreHr": {
@@ -477,6 +481,118 @@
       "supporting": "ZiraHR is priced around your organization's size and the modules you need — not a one-size-fits-all tier. Talk to us for a plan built around your team.",
       "connectsToHeadline": "See what's included before you talk pricing.",
       "ctaHeadline": "Get pricing built around your organization."
+    },
+    "contact": {
+      "eyebrow": "GET IN TOUCH",
+      "headline": "We're here to help.",
+      "supporting": "Questions about ZiraHR, partnerships, or anything else — send us a message and we'll get back to you."
+    },
+    "login": {
+      "eyebrow": "LOGIN",
+      "headline": "Log in to ZiraHR.",
+      "supporting": "Access your organization's ZiraHR workspace.",
+      "continue": "Continue to Login"
+    }
+  },
+  "forms": {
+    "common": {
+      "loading": "Sending…",
+      "genericError": "Something went wrong. Please try again.",
+      "requiredField": "This field is required"
+    },
+    "demoRequest": {
+      "title": "Request a Demo",
+      "subtitle": "Tell us a little about your organization and we'll be in touch to show you ZiraHR.",
+      "fields": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "workEmail": "Work Email",
+        "phone": "Phone",
+        "companyName": "Company",
+        "country": "Country",
+        "employeeCount": "Employee Count",
+        "interestedModules": "Modules Interested In",
+        "message": "Anything else we should know?",
+        "preferredContactMethod": "Preferred Contact Method"
+      },
+      "contactMethods": {
+        "email": "Email",
+        "phone": "Phone",
+        "either": "Either"
+      },
+      "moduleOptions": {
+        "coreHr": "Core HR",
+        "payroll": "Payroll",
+        "leave": "Leave",
+        "attendance": "Attendance",
+        "recruitment": "Recruitment",
+        "performance": "Performance",
+        "learningDevelopment": "Learning & Development",
+        "ess": "Employee Self-Service",
+        "analytics": "Analytics"
+      },
+      "submit": "Book My ZiraHR Demo",
+      "success": {
+        "title": "Thank you.",
+        "body": "We've received your request and will be in touch shortly to schedule your demo."
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "Questions about ZiraHR? Send us a message.",
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "company": "Company",
+        "subject": "Subject",
+        "message": "Message"
+      },
+      "submit": "Send Message",
+      "success": {
+        "title": "Message sent.",
+        "body": "Thanks for reaching out — we'll get back to you soon."
+      }
+    },
+    "newsletter": {
+      "placeholder": "Enter your email",
+      "submit": "Subscribe",
+      "success": "You're subscribed."
+    },
+    "signup": {
+      "metaDescription": "Start with ZiraHR — set up your organization in a few short steps.",
+      "step1": {
+        "title": "Let's meet you.",
+        "fields": {
+          "firstName": "First Name",
+          "lastName": "Last Name",
+          "workEmail": "Work Email",
+          "phone": "Phone"
+        }
+      },
+      "step2": {
+        "title": "Tell us about your organization.",
+        "fields": {
+          "companyName": "Company",
+          "country": "Country",
+          "industry": "Industry",
+          "employeeCount": "Employee Count"
+        }
+      },
+      "step3": {
+        "title": "How is your team structured?",
+        "fields": {
+          "branchCount": "Number of Branches",
+          "departmentCount": "Number of Departments"
+        }
+      },
+      "step4": {
+        "title": "Welcome to ZiraHR.",
+        "body": "Your details are saved. Continue to finish setting up your organization.",
+        "continue": "Continue to ZiraHR"
+      },
+      "back": "Back",
+      "continue": "Continue"
     }
   }
 }

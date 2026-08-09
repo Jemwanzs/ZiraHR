@@ -27,6 +27,10 @@ const IMPLEMENTED_ROUTES = [
   "/hrmis-kenya",
   "/hr-software-africa",
   "/pricing",
+  "/request-demo",
+  "/signup",
+  "/contact",
+  "/login",
 ] as const;
 
 function localizedPath(route: string, locale: string) {

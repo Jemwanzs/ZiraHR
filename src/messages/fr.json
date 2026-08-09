@@ -411,7 +411,11 @@
     "payrollSoftwareKenya": "[FR] Payroll Software Kenya",
     "hrmisKenya": "[FR] HRMIS Kenya",
     "hrSoftwareAfrica": "[FR] HR Software Africa",
-    "pricing": "[FR] Pricing"
+    "pricing": "[FR] Pricing",
+    "contact": "[FR] Contact",
+    "requestDemo": "[FR] Request a Demo",
+    "signup": "[FR] Sign Up",
+    "login": "[FR] Login"
   },
   "pages": {
     "coreHr": {
@@ -704,6 +708,118 @@
       "supporting": "[FR] ZiraHR is priced around your organization's size and the modules you need — not a one-size-fits-all tier. Talk to us for a plan built around your team.",
       "ctaHeadline": "[FR] Get pricing built around your organization.",
       "connectsToHeadline": "[FR] See what's included before you talk pricing."
+    },
+    "contact": {
+      "eyebrow": "[FR] GET IN TOUCH",
+      "headline": "[FR] We're here to help.",
+      "supporting": "[FR] Questions about ZiraHR, partnerships, or anything else — send us a message and we'll get back to you."
+    },
+    "login": {
+      "eyebrow": "[FR] LOGIN",
+      "headline": "[FR] Log in to ZiraHR.",
+      "supporting": "[FR] Access your organization's ZiraHR workspace.",
+      "continue": "[FR] Continue to Login"
+    }
+  },
+  "forms": {
+    "common": {
+      "loading": "[FR] Sending…",
+      "genericError": "[FR] Something went wrong. Please try again.",
+      "requiredField": "[FR] This field is required"
+    },
+    "demoRequest": {
+      "title": "[FR] Request a Demo",
+      "subtitle": "[FR] Tell us a little about your organization and we'll be in touch to show you ZiraHR.",
+      "fields": {
+        "firstName": "[FR] First Name",
+        "lastName": "[FR] Last Name",
+        "workEmail": "[FR] Work Email",
+        "phone": "[FR] Phone",
+        "companyName": "[FR] Company",
+        "country": "[FR] Country",
+        "employeeCount": "[FR] Employee Count",
+        "interestedModules": "[FR] Modules Interested In",
+        "message": "[FR] Anything else we should know?",
+        "preferredContactMethod": "[FR] Preferred Contact Method"
+      },
+      "contactMethods": {
+        "email": "[FR] Email",
+        "phone": "[FR] Phone",
+        "either": "[FR] Either"
+      },
+      "moduleOptions": {
+        "coreHr": "[FR] Core HR",
+        "payroll": "[FR] Payroll",
+        "leave": "[FR] Leave",
+        "attendance": "[FR] Attendance",
+        "recruitment": "[FR] Recruitment",
+        "performance": "[FR] Performance",
+        "learningDevelopment": "[FR] Learning & Development",
+        "ess": "[FR] Employee Self-Service",
+        "analytics": "[FR] Analytics"
+      },
+      "submit": "[FR] Book My ZiraHR Demo",
+      "success": {
+        "title": "[FR] Thank you.",
+        "body": "[FR] We've received your request and will be in touch shortly to schedule your demo."
+      }
+    },
+    "contact": {
+      "title": "[FR] Contact Us",
+      "subtitle": "[FR] Questions about ZiraHR? Send us a message.",
+      "fields": {
+        "name": "[FR] Name",
+        "email": "[FR] Email",
+        "phone": "[FR] Phone",
+        "company": "[FR] Company",
+        "subject": "[FR] Subject",
+        "message": "[FR] Message"
+      },
+      "submit": "[FR] Send Message",
+      "success": {
+        "title": "[FR] Message sent.",
+        "body": "[FR] Thanks for reaching out — we'll get back to you soon."
+      }
+    },
+    "newsletter": {
+      "placeholder": "[FR] Enter your email",
+      "submit": "[FR] Subscribe",
+      "success": "[FR] You're subscribed."
+    },
+    "signup": {
+      "step1": {
+        "title": "[FR] Let's meet you.",
+        "fields": {
+          "firstName": "[FR] First Name",
+          "lastName": "[FR] Last Name",
+          "workEmail": "[FR] Work Email",
+          "phone": "[FR] Phone"
+        }
+      },
+      "step2": {
+        "title": "[FR] Tell us about your organization.",
+        "fields": {
+          "companyName": "[FR] Company",
+          "country": "[FR] Country",
+          "industry": "[FR] Industry",
+          "employeeCount": "[FR] Employee Count"
+        }
+      },
+      "step3": {
+        "title": "[FR] How is your team structured?",
+        "fields": {
+          "branchCount": "[FR] Number of Branches",
+          "departmentCount": "[FR] Number of Departments"
+        }
+      },
+      "step4": {
+        "title": "[FR] Welcome to ZiraHR.",
+        "body": "[FR] Your details are saved. Continue to finish setting up your organization.",
+        "continue": "[FR] Continue to ZiraHR"
+      },
+      "back": "[FR] Back",
+      "continue": "[FR] Continue",
+      "metaDescription": "[FR] Start with ZiraHR — set up your organization in a few short steps."
     }
   }
 }

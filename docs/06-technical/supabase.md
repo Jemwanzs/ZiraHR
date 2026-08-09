@@ -15,6 +15,11 @@ Lead-generation only, per the brief: demo requests, contact/enquiries, newslette
 ### `newsletter_subscribers`
 `id`, `email text unique`, `locale text`, `status text default 'subscribed'`, `created_at timestamptz default now()`
 
+### `signup_requests`
+**Added beyond the brief's original three tables** — the kickoff conversation explicitly asked for a Slack notification on "signup requests" (see `00-source/build-brief.md`, Integrations Confirmed), which implies the progressive `/signup` wizard (scope §31) needs somewhere to persist what it collects before redirecting into the real HRMIS app's setup journey — there's no account-creation system on this marketing site itself.
+
+`id`, `first_name text`, `last_name text`, `work_email text`, `phone text`, `company_name text`, `country text`, `industry text`, `employee_count text`, `branch_count text`, `department_count text`, `status text default 'new'`, `created_at timestamptz default now()`
+
 ## Security model
 
 **Row Level Security is enabled on all three tables with zero policies granted to `anon`/`authenticated` roles** — nothing is readable or writable directly from the browser. All inserts happen server-side, inside Next.js Route Handlers, using the Supabase **service role key** (server-only environment variable, never `NEXT_PUBLIC_*`). This is simpler and safer than writing an "insert-only" RLS policy for anonymous users, which would still be directly abusable (spam, scraping) without a CAPTCHA layer we've deliberately deferred.
