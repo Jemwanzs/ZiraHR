@@ -36,3 +36,7 @@ next-env.d.ts
 # supabase
 /supabase/.branches
 /supabase/.temp
+
+# local design-iteration scratchpad (screenshots, one-off render scripts) —
+# never part of the shipped app
+/scratch

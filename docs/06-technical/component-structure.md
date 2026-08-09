@@ -25,7 +25,7 @@
       /pricing/page.tsx
       /request-demo/page.tsx
       /signup/page.tsx
-      /login/page.tsx        — thin redirect to the HRMIS app login
+      /login/page.tsx        — thin redirect to the existing HR app login (PayeKenya)
       /resources/page.tsx
       /company/page.tsx
       /contact/page.tsx

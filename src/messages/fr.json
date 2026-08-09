@@ -890,5 +890,31 @@
       "continue": "[FR] Continue",
       "metaDescription": "[FR] Start with ZiraHR — set up your organization in a few short steps."
     }
+  },
+  "cookieConsent": {
+    "title": "[FR] This website uses cookies",
+    "intro": "[FR] We use cookies to run ZiraHR reliably and, only with your permission, to understand how the site is used and improve it. Necessary cookies can't be switched off — everything else is your choice.",
+    "categories": {
+      "necessary": {
+        "label": "[FR] Necessary",
+        "description": "[FR] Required for core site functionality — navigation, security, and form submissions. The site cannot work properly without these."
+      },
+      "statistics": {
+        "label": "[FR] Statistics",
+        "description": "[FR] Help us understand how visitors use zirahr.com so we can improve it. Off until you allow it."
+      },
+      "marketing": {
+        "label": "[FR] Marketing",
+        "description": "[FR] Used to measure and tailor marketing content. Off until you allow it."
+      },
+      "preferences": {
+        "label": "[FR] Preferences",
+        "description": "[FR] Remembers choices like your selected language across visits."
+      }
+    },
+    "alwaysOn": "[FR] Always on",
+    "allowSelection": "[FR] Allow selection",
+    "allowAll": "[FR] Allow all",
+    "manageLink": "[FR] Cookie Preferences"
   }
 }

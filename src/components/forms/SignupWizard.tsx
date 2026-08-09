@@ -36,7 +36,7 @@ const initialState: FormState = {
   departmentCount: "",
 };
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://app.zirahr.com";
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://www.payekenya.xyz/";
 
 function fieldErrorsFrom(error: { issues: { path: PropertyKey[]; message: string }[] }) {
   const fieldErrors: Record<string, string> = {};

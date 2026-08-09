@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";
+import { Logo } from "@/components/ui/Logo";
 import { LanguageSelector } from "@/components/navigation/LanguageSelector";
 import { NavDropdown } from "@/components/navigation/NavDropdown";
 import { PlatformMegaMenuPanel } from "@/components/navigation/PlatformMegaMenuPanel";
@@ -41,11 +42,8 @@ export function NavBar() {
       }`}
     >
       <Container className="flex h-16 items-center justify-between gap-4">
-        <Link
-          href="/"
-          className="text-lg font-semibold tracking-tight text-gray-900"
-        >
-          {tCommon("brandName")}
+        <Link href="/" aria-label={tCommon("brandName")}>
+          <Logo />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">

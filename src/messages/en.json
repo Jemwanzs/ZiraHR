@@ -634,5 +634,31 @@
       "back": "Back",
       "continue": "Continue"
     }
+  },
+  "cookieConsent": {
+    "title": "This website uses cookies",
+    "intro": "We use cookies to run ZiraHR reliably and, only with your permission, to understand how the site is used and improve it. Necessary cookies can't be switched off — everything else is your choice.",
+    "categories": {
+      "necessary": {
+        "label": "Necessary",
+        "description": "Required for core site functionality — navigation, security, and form submissions. The site cannot work properly without these."
+      },
+      "statistics": {
+        "label": "Statistics",
+        "description": "Help us understand how visitors use zirahr.com so we can improve it. Off until you allow it."
+      },
+      "marketing": {
+        "label": "Marketing",
+        "description": "Used to measure and tailor marketing content. Off until you allow it."
+      },
+      "preferences": {
+        "label": "Preferences",
+        "description": "Remembers choices like your selected language across visits."
+      }
+    },
+    "alwaysOn": "Always on",
+    "allowSelection": "Allow selection",
+    "allowAll": "Allow all",
+    "manageLink": "Cookie Preferences"
   }
 }

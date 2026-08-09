@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
+import { Logo } from "@/components/ui/Logo";
 import { LanguageSelector } from "@/components/navigation/LanguageSelector";
 import {
   PLATFORM_GROUPS,
@@ -77,6 +78,7 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
       className="fixed inset-0 z-50 flex flex-col bg-white lg:hidden"
     >
       <div className="flex items-center justify-between border-b border-gray-200 p-4">
+        <Logo variant="mark" />
         <LanguageSelector />
         <button
           ref={closeButtonRef}

@@ -27,7 +27,7 @@
 | `/pricing` | en, fr, sw | Server page |
 | `/request-demo` | en, fr, sw | Server page + client form |
 | `/signup` | en, fr, sw | Server page + client wizard |
-| `/login` | en, fr, sw | Thin redirect to HRMIS app |
+| `/login` | en, fr, sw | Thin redirect to the existing HR app (PayeKenya, `NEXT_PUBLIC_APP_URL`) |
 | `/resources` | en, fr, sw | Server page (index only at launch; `/resources/[category]/[slug]` added when content exists) |
 | `/company` | en, fr, sw | Server page |
 | `/contact` | en, fr, sw | Server page + client form |

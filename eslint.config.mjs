@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local design-iteration scratchpad — plain Node scripts, not app code.
+    "scratch/**",
   ]),
 ]);
 

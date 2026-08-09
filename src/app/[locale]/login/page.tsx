@@ -4,7 +4,7 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { Button } from "@/components/ui/Button";
 import { buildPageMetadata } from "@/lib/seo";
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://app.zirahr.com";
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://www.payekenya.xyz/";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -20,8 +20,10 @@ export async function generateMetadata({ params }: Props) {
 }
 
 /**
- * Thin page linking out to the real HRMIS app login — auth lives in the
- * main product, not this marketing site (docs/06-technical/component-structure.md).
+ * Thin page linking out to the existing HR app used for login (currently
+ * PayeKenya, https://www.payekenya.xyz/ — see NEXT_PUBLIC_APP_URL) — auth
+ * lives there, not on this marketing site
+ * (docs/06-technical/component-structure.md).
  */
 export default async function LoginPage({ params }: Props) {
   const { locale } = await params;

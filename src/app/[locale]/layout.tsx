@@ -9,6 +9,7 @@ import { Footer } from "@/components/layout/Footer";
 import { StickyMobileCta } from "@/components/navigation/StickyMobileCta";
 import { OrganizationStructuredData } from "@/components/seo/StructuredData";
 import { MotionProvider } from "@/components/motion/MotionProvider";
+import { CookieConsentBanner } from "@/components/cookie-consent/CookieConsentBanner";
 import "../globals.css";
 
 const outfit = Outfit({
@@ -102,6 +103,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             </div>
             <Footer />
             <StickyMobileCta />
+            <CookieConsentBanner />
           </MotionProvider>
         </NextIntlClientProvider>
       </body>

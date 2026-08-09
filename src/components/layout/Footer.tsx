@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/layout/Container";
+import { CookiePreferencesLink } from "@/components/cookie-consent/CookiePreferencesLink";
 
 const PRODUCT_LINKS = [
   { key: "coreHr", href: "/core-hr" },
@@ -113,8 +114,9 @@ export function Footer() {
         />
       </Container>
       <div className="border-t border-gray-200 py-6">
-        <Container>
+        <Container className="flex flex-wrap items-center justify-between gap-3">
           <p className="text-sm text-gray-500">{t("tagline")}</p>
+          <CookiePreferencesLink />
         </Container>
       </div>
     </footer>
