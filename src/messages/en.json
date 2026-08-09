@@ -301,15 +301,42 @@
     "eyebrow": "TRUST & GOVERNANCE",
     "headline": "Control who sees what. And know what happened.",
     "capabilities": [
-      "Roles & Permissions",
-      "Data Visibility",
-      "MFA",
-      "Audit Logs",
-      "Approval Workflows",
-      "Export Controls",
-      "Working-Hour Controls",
-      "Geo-fencing",
-      "Activity Logs"
+      {
+        "label": "Roles & Permissions",
+        "description": "Access rights trickle down by role, department, and branch — segregated, not shared."
+      },
+      {
+        "label": "Geo-Restricted Login",
+        "description": "Sign-ins can be limited to approved locations for sensitive roles."
+      },
+      {
+        "label": "Working-Hour Login Validation",
+        "description": "Sign-ins can be restricted to each organization's configured working hours."
+      },
+      {
+        "label": "Multi-Factor Authentication",
+        "description": "A second verification step for accounts that need it."
+      },
+      {
+        "label": "Approval-Gated Special Access",
+        "description": "Exceptional access is requested, reviewed, and granted only to the specific user who asked."
+      },
+      {
+        "label": "Encrypted, Passcode-Protected Reports",
+        "description": "Sensitive report exports are encrypted and passcode-protected."
+      },
+      {
+        "label": "Direct-to-Email Report Delivery",
+        "description": "Reports can be delivered straight to a verified email instead of an open download link."
+      },
+      {
+        "label": "Approval Workflows & Export Controls",
+        "description": "Every sensitive action — and every export — routes through the same configurable approval engine."
+      },
+      {
+        "label": "Audit & Activity Logs",
+        "description": "Every change to employee, leave, payroll, and access data is logged and traceable."
+      }
     ]
   },
   "productTour": {

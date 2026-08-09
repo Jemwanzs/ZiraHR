@@ -368,15 +368,42 @@
     "eyebrow": "[FR] TRUST & GOVERNANCE",
     "headline": "[FR] Control who sees what. And know what happened.",
     "capabilities": [
-      "[FR] Roles & Permissions",
-      "[FR] Data Visibility",
-      "[FR] MFA",
-      "[FR] Audit Logs",
-      "[FR] Approval Workflows",
-      "[FR] Export Controls",
-      "[FR] Working-Hour Controls",
-      "[FR] Geo-fencing",
-      "[FR] Activity Logs"
+      {
+        "label": "[FR] Roles & Permissions",
+        "description": "[FR] Access rights trickle down by role, department, and branch — segregated, not shared."
+      },
+      {
+        "label": "[FR] Geo-Restricted Login",
+        "description": "[FR] Sign-ins can be limited to approved locations for sensitive roles."
+      },
+      {
+        "label": "[FR] Working-Hour Login Validation",
+        "description": "[FR] Sign-ins can be restricted to each organization's configured working hours."
+      },
+      {
+        "label": "[FR] Multi-Factor Authentication",
+        "description": "[FR] A second verification step for accounts that need it."
+      },
+      {
+        "label": "[FR] Approval-Gated Special Access",
+        "description": "[FR] Exceptional access is requested, reviewed, and granted only to the specific user who asked."
+      },
+      {
+        "label": "[FR] Encrypted, Passcode-Protected Reports",
+        "description": "[FR] Sensitive report exports are encrypted and passcode-protected."
+      },
+      {
+        "label": "[FR] Direct-to-Email Report Delivery",
+        "description": "[FR] Reports can be delivered straight to a verified email instead of an open download link."
+      },
+      {
+        "label": "[FR] Approval Workflows & Export Controls",
+        "description": "[FR] Every sensitive action — and every export — routes through the same configurable approval engine."
+      },
+      {
+        "label": "[FR] Audit & Activity Logs",
+        "description": "[FR] Every change to employee, leave, payroll, and access data is logged and traceable."
+      }
     ]
   },
   "productTour": {

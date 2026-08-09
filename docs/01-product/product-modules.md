@@ -32,6 +32,12 @@ Dashboards (Executive, HR, Finance, My Dashboard) · Analytics · Reports · Ask
 
 Routes: `/analytics`, `/ask-tija`
 
+## Security & Governance
+
+Original scope (§22): Roles & Permissions, Data Visibility, MFA, Audit Logs, Approval Workflows, Export Controls, Working-Hour Controls, Geo-fencing, Activity Logs.
+
+**Extended per explicit client direction** (post-launch feedback round, confirmed as real/current capabilities rather than roadmap items — see the "Security claims" decision recorded in this session): Geo-Restricted Login (sign-ins limited to approved locations, not just attendance geo-fencing), Working-Hour Login Validation (sign-ins restricted to configured hours, not just attendance), Approval-Gated Special Access (exceptional access requests reviewed and granted only to the specific requesting user), Encrypted/Passcode-Protected Report Downloads, Direct-to-Email Report Delivery, and Roles & Permissions explicitly described as trickling down per user/department/branch with segregation. Rendered in `SecuritySection` (`src/components/sections/SecuritySection.tsx`) as 9 consolidated label+description cards — some of the original 9 items were merged (e.g. Audit Logs + Activity Logs) to keep the grid from growing past what's readable in one pass, per the "no long lists" direction from the same feedback round.
+
 ## Employee Self-Service (ESS)
 
 Cross-cutting — not a standalone nav group, but a major homepage section and its own page (`/employee-self-service`). Employee-facing capabilities: View Profile, Update Details, Download Payslips, Request Leave, Check Leave Balance, View Attendance, View Goals, Complete Learning, Receive Notifications, Access Documents, Follow Approvals.
