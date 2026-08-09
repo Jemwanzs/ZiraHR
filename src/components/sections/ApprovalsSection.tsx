@@ -60,10 +60,14 @@ export function ApprovalsSection() {
       >
         {chainSteps.map((step, index) => (
           <span key={step} className="flex items-center gap-3">
+            {/* Orange text itself fails WCAG contrast on this light
+                background (~2.3:1, see docs/03-brand/colors.md) — the
+                orange tint stays as a background accent only, text stays
+                dark for readability. */}
             <span
               className={`rounded-full px-4 py-2 text-sm font-medium ${
                 index === chainSteps.length - 1
-                  ? "bg-orange/15 text-orange"
+                  ? "bg-orange/15 text-gray-900"
                   : "border border-gray-200 text-gray-700"
               }`}
             >

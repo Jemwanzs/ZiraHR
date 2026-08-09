@@ -22,7 +22,10 @@ export function AskTijaSection() {
     <Section tone="teal">
       <div className="grid items-center gap-12 lg:grid-cols-2">
         <Reveal>
-          <p className="text-sm font-semibold tracking-wide text-orange">
+          {/* Brand orange is ~3.9:1 against the teal background here — just
+              under WCAG AA's 4.5:1 for text this size. A lighter tint keeps
+              the "energy accent" intent while passing contrast (~5:1). */}
+          <p className="text-sm font-semibold tracking-wide text-[#FBB768]">
             {t("eyebrow")}
           </p>
           <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">

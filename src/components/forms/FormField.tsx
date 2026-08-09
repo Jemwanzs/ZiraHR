@@ -31,9 +31,15 @@ export function FormField({
       >
         {label}
         {required && (
-          <span aria-hidden="true" className="ml-0.5 text-orange">
-            *
-          </span>
+          <>
+            {/* text-red-600 rather than text-orange — orange (#F2994A) is
+                ~2.3:1 against the cream/white canvas, well under WCAG AA's
+                4.5:1 for text (see docs/03-brand/colors.md). */}
+            <span aria-hidden="true" className="ml-0.5 text-red-600">
+              *
+            </span>
+            <span className="sr-only"> (required)</span>
+          </>
         )}
       </label>
       {children}

@@ -24,3 +24,7 @@ Both source documents specify the same palette directionally with slightly diffe
 ## Accessibility
 
 Every text/background pairing must meet WCAG AA contrast (4.5:1 body text, 3:1 large text/UI components). Sky blue on cream and orange on cream are the two combinations most likely to fail at small sizes — verify contrast before using them for text rather than accents, and prefer teal or gray-900 for actual copy.
+
+**Confirmed failures found and fixed during the Phase 8 accessibility pass** (see `06-technical/architecture.md` phase log):
+- `text-orange` on cream/white is ~2.3:1 — fails even for large text. Fixed in the Approvals chain (`bg-orange/15 text-orange` → `text-gray-900`, keeping the orange only as a background tint) and the required-field asterisk (switched to `text-red-600`, a stronger and more conventional "required" signal anyway).
+- `text-orange` on the dark teal Ask TiJa section is ~3.9:1 — passes for large text but fails the 4.5:1 threshold this small semibold eyebrow text needs. Fixed with a one-off lighter tint (`text-[#FBB768]`, ~5:1) rather than a new token, since it's the only dark-background use of orange text on the site.
