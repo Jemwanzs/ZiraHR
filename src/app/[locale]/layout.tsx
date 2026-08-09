@@ -45,12 +45,15 @@ export async function generateMetadata({
     description: t("supporting"),
     alternates: {
       canonical: path,
-      languages: Object.fromEntries(
-        routing.locales.map((l) => [
-          l,
-          l === routing.defaultLocale ? "/" : `/${l}`,
-        ]),
-      ),
+      languages: {
+        ...Object.fromEntries(
+          routing.locales.map((l) => [
+            l,
+            l === routing.defaultLocale ? "/" : `/${l}`,
+          ]),
+        ),
+        "x-default": "/",
+      },
     },
     openGraph: {
       title: "ZiraHR — One place to run your entire people operation.",

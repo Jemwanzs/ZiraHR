@@ -31,9 +31,15 @@ export function buildPageMetadata({
     description,
     alternates: {
       canonical: path,
-      languages: Object.fromEntries(
-        routing.locales.map((l) => [l, pathForLocale(route, l)]),
-      ),
+      languages: {
+        ...Object.fromEntries(
+          routing.locales.map((l) => [l, pathForLocale(route, l)]),
+        ),
+        // x-default points search engines at the English version for
+        // visitors whose language doesn't match any of our locales — see
+        // docs/05-seo/metadata-plan.md.
+        "x-default": pathForLocale(route, routing.defaultLocale),
+      },
     },
     openGraph: {
       title,

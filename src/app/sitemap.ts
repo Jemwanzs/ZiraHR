@@ -46,9 +46,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: localizedPath(route, routing.defaultLocale),
     lastModified: new Date(),
     alternates: {
-      languages: Object.fromEntries(
-        routing.locales.map((locale) => [locale, localizedPath(route, locale)]),
-      ),
+      languages: {
+        ...Object.fromEntries(
+          routing.locales.map((locale) => [locale, localizedPath(route, locale)]),
+        ),
+        "x-default": localizedPath(route, routing.defaultLocale),
+      },
     },
   }));
 }

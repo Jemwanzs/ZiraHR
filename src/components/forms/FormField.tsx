@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { cloneElement, isValidElement, type ReactElement, type ReactNode } from "react";
 
 type FormFieldProps = {
   label: string;
@@ -13,6 +13,11 @@ type FormFieldProps = {
  * docs/06-technical/component-structure.md. Keeps label association and
  * error announcement (aria-describedby / aria-invalid) consistent across
  * every form on the site rather than re-implemented per field.
+ *
+ * Injects aria-required/aria-invalid/aria-describedby onto the child
+ * input via cloneElement rather than requiring every call site (13+
+ * fields across 3 forms) to wire those up individually — every usage
+ * passes exactly one input/textarea as children, so this is safe.
  */
 export function FormField({
   label,
@@ -22,6 +27,14 @@ export function FormField({
   children,
 }: FormFieldProps) {
   const errorId = `${htmlFor}-error`;
+
+  const field = isValidElement(children)
+    ? cloneElement(children as ReactElement<Record<string, unknown>>, {
+        "aria-required": required || undefined,
+        "aria-invalid": Boolean(error) || undefined,
+        "aria-describedby": error ? errorId : undefined,
+      })
+    : children;
 
   return (
     <div>
@@ -42,7 +55,7 @@ export function FormField({
           </>
         )}
       </label>
-      {children}
+      {field}
       {error && (
         <p id={errorId} className="mt-1.5 text-sm text-red-600" role="alert">
           {error}
