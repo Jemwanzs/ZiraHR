@@ -8,8 +8,12 @@ import { z } from "zod";
  */
 export const spamCheckFields = {
   // Hidden field real users never see or fill; bots that auto-fill every
-  // input trip this.
-  website: z.string().max(0, "Leave this field empty").optional().default(""),
+  // input trip this. Deliberately NOT constrained to an empty string at
+  // the schema level (e.g. max(0)) — that would reject a filled honeypot
+  // with a 400 before looksLikeSpam() below ever runs, which leaks to a
+  // bot exactly which field is monitored. Any string is valid input here;
+  // looksLikeSpam() is the only place that acts on its value.
+  website: z.string().optional().default(""),
   // Client-set timestamp (ms since epoch) from when the form first
   // rendered. Anything submitted in well under a second is almost
   // certainly scripted.
