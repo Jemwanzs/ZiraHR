@@ -738,9 +738,66 @@
     "pricing": {
       "eyebrow": "[FR] PRICING",
       "headline": "[FR] Pricing that fits your organization.",
-      "supporting": "[FR] ZiraHR is priced around your organization's size and the modules you need — not a one-size-fits-all tier. Talk to us for a plan built around your team.",
+      "supporting": "[FR] ZiraHR is priced module by module, per employee, and billed automatically — turn on what you need, nothing you don't.",
+      "connectsToHeadline": "[FR] See what's included before you talk pricing.",
       "ctaHeadline": "[FR] Get pricing built around your organization.",
-      "connectsToHeadline": "[FR] See what's included before you talk pricing."
+      "calculator": {
+        "illustrativeBadge": "[FR] Illustrative pricing",
+        "illustrativeNote": "[FR] These rates are examples to show how module-based pricing works — talk to us for your organization's actual rate card.",
+        "employeeCountLabel": "[FR] Number of employees",
+        "baseIncluded": "[FR] Included in every plan",
+        "perEmployeePerMonth": "[FR] / employee / month",
+        "totalLabel": "[FR] Estimated monthly total",
+        "totalNote": "[FR] {count} employees × selected modules, billed monthly",
+        "currency": "[FR] KES",
+        "cta": "[FR] Get your real rate card",
+        "modules": {
+          "coreHr": {
+            "label": "[FR] Core HR",
+            "rate": 0
+          },
+          "payroll": {
+            "label": "[FR] Payroll",
+            "rate": 150
+          },
+          "leaveManagement": {
+            "label": "[FR] Leave Management",
+            "rate": 40
+          },
+          "attendance": {
+            "label": "[FR] Attendance",
+            "rate": 50
+          },
+          "recruitment": {
+            "label": "[FR] Recruitment",
+            "rate": 60
+          },
+          "performanceManagement": {
+            "label": "[FR] Performance Management",
+            "rate": 50
+          },
+          "learningDevelopment": {
+            "label": "[FR] Learning & Development",
+            "rate": 40
+          },
+          "teamsCollaboration": {
+            "label": "[FR] Teams & Collaboration",
+            "rate": 30
+          },
+          "employeeSelfService": {
+            "label": "[FR] Employee Self-Service",
+            "rate": 30
+          },
+          "analytics": {
+            "label": "[FR] Analytics",
+            "rate": 40
+          },
+          "askTija": {
+            "label": "[FR] Ask TiJa",
+            "rate": 50
+          }
+        }
+      }
     },
     "contact": {
       "eyebrow": "[FR] GET IN TOUCH",

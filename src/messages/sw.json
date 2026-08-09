@@ -738,9 +738,66 @@
     "pricing": {
       "eyebrow": "[SW] PRICING",
       "headline": "[SW] Pricing that fits your organization.",
-      "supporting": "[SW] ZiraHR is priced around your organization's size and the modules you need — not a one-size-fits-all tier. Talk to us for a plan built around your team.",
+      "supporting": "[SW] ZiraHR is priced module by module, per employee, and billed automatically — turn on what you need, nothing you don't.",
+      "connectsToHeadline": "[SW] See what's included before you talk pricing.",
       "ctaHeadline": "[SW] Get pricing built around your organization.",
-      "connectsToHeadline": "[SW] See what's included before you talk pricing."
+      "calculator": {
+        "illustrativeBadge": "[SW] Illustrative pricing",
+        "illustrativeNote": "[SW] These rates are examples to show how module-based pricing works — talk to us for your organization's actual rate card.",
+        "employeeCountLabel": "[SW] Number of employees",
+        "baseIncluded": "[SW] Included in every plan",
+        "perEmployeePerMonth": "[SW] / employee / month",
+        "totalLabel": "[SW] Estimated monthly total",
+        "totalNote": "[SW] {count} employees × selected modules, billed monthly",
+        "currency": "[SW] KES",
+        "cta": "[SW] Get your real rate card",
+        "modules": {
+          "coreHr": {
+            "label": "[SW] Core HR",
+            "rate": 0
+          },
+          "payroll": {
+            "label": "[SW] Payroll",
+            "rate": 150
+          },
+          "leaveManagement": {
+            "label": "[SW] Leave Management",
+            "rate": 40
+          },
+          "attendance": {
+            "label": "[SW] Attendance",
+            "rate": 50
+          },
+          "recruitment": {
+            "label": "[SW] Recruitment",
+            "rate": 60
+          },
+          "performanceManagement": {
+            "label": "[SW] Performance Management",
+            "rate": 50
+          },
+          "learningDevelopment": {
+            "label": "[SW] Learning & Development",
+            "rate": 40
+          },
+          "teamsCollaboration": {
+            "label": "[SW] Teams & Collaboration",
+            "rate": 30
+          },
+          "employeeSelfService": {
+            "label": "[SW] Employee Self-Service",
+            "rate": 30
+          },
+          "analytics": {
+            "label": "[SW] Analytics",
+            "rate": 40
+          },
+          "askTija": {
+            "label": "[SW] Ask TiJa",
+            "rate": 50
+          }
+        }
+      }
     },
     "contact": {
       "eyebrow": "[SW] GET IN TOUCH",

@@ -1,5 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ProductPageLayout } from "@/components/product/ProductPageLayout";
+import { PricingCalculator } from "@/components/product/PricingCalculator";
+import { Section } from "@/components/layout/Section";
 import { buildPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -16,9 +18,11 @@ export async function generateMetadata({ params }: Props) {
 }
 
 /**
- * No pricing tiers exist yet — the page is deliberately honest about
- * pricing being custom rather than inventing plan names/numbers (scope
- * "never fabricate", docs/00-source/build-brief.md Explicit Do-Nots).
+ * No real rate card exists yet — the module-by-module, per-employee
+ * pricing *mechanism* shown here is real (per explicit client direction),
+ * but every number in PricingCalculator is clearly labeled illustrative
+ * rather than presented as an actual quote. See
+ * docs/06-technical/pricing-calculator.md.
  */
 export default async function PricingPage({ params }: Props) {
   const { locale } = await params;
@@ -41,6 +45,10 @@ export default async function PricingPage({ params }: Props) {
         { label: b("employeeSelfService"), href: "/employee-self-service" },
       ]}
       ctaHeadline={t("ctaHeadline")}
-    />
+    >
+      <Section tone="cream">
+        <PricingCalculator />
+      </Section>
+    </ProductPageLayout>
   );
 }
