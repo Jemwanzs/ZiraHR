@@ -309,6 +309,7 @@
   "approvals": {
     "eyebrow": "[FR] ONE APPROVAL ENGINE",
     "headline": "[FR] Route it once. Approve it your way.",
+    "everyAction": "[FR] Every create, edit, and update can require approval — leave, payroll, a new hire, a record change, or anything else your organization decides matters. These six are examples; your workflows aren't limited to them.",
     "closingLine": "[FR] One approval engine. Your rules.",
     "chainSteps": [
       "[FR] Employee",
@@ -324,7 +325,45 @@
       "salaryAdvance": "[FR] Salary Advance",
       "promotion": "[FR] Promotion",
       "disciplinary": "[FR] Disciplinary",
-      "dataImports": "[FR] Data Imports"
+      "dataImports": "[FR] Data Imports",
+      "custom": "[FR] + Build your own"
+    },
+    "customChainSteps": [
+      "[FR] Requester",
+      "[FR] Add a step",
+      "[FR] Add a step",
+      "[FR] Approved"
+    ],
+    "customNote": "[FR] Add, remove, or reorder steps — the chain is configured by your organization, not fixed by ZiraHR.",
+    "queue": {
+      "title": "[FR] Approval queue",
+      "subtitle": "[FR] Every pending action, in one place — whoever's turn it is to approve sees it here.",
+      "items": {
+        "leaveRequest": {
+          "action": "[FR] Leave request",
+          "requester": "[FR] Employee, Sales"
+        },
+        "newEmployee": {
+          "action": "[FR] New employee record",
+          "requester": "[FR] HR Officer, Operations"
+        },
+        "payrollRun": {
+          "action": "[FR] Payroll run — July",
+          "requester": "[FR] Payroll Admin"
+        },
+        "salaryAdvance": {
+          "action": "[FR] Salary advance",
+          "requester": "[FR] Employee, Support"
+        },
+        "profileUpdate": {
+          "action": "[FR] Profile update",
+          "requester": "[FR] Employee, Finance"
+        }
+      },
+      "statusLabels": {
+        "pending": "[FR] Pending",
+        "approved": "[FR] Approved"
+      }
     }
   },
   "askTija": {

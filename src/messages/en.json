@@ -255,6 +255,7 @@
   "approvals": {
     "eyebrow": "ONE APPROVAL ENGINE",
     "headline": "Route it once. Approve it your way.",
+    "everyAction": "Every create, edit, and update can require approval — leave, payroll, a new hire, a record change, or anything else your organization decides matters. These six are examples; your workflows aren't limited to them.",
     "closingLine": "One approval engine. Your rules.",
     "chainSteps": ["Employee", "Supervisor", "Department Head", "HR", "Finance", "Approved"],
     "types": {
@@ -263,7 +264,25 @@
       "salaryAdvance": "Salary Advance",
       "promotion": "Promotion",
       "disciplinary": "Disciplinary",
-      "dataImports": "Data Imports"
+      "dataImports": "Data Imports",
+      "custom": "+ Build your own"
+    },
+    "customChainSteps": ["Requester", "Add a step", "Add a step", "Approved"],
+    "customNote": "Add, remove, or reorder steps — the chain is configured by your organization, not fixed by ZiraHR.",
+    "queue": {
+      "title": "Approval queue",
+      "subtitle": "Every pending action, in one place — whoever's turn it is to approve sees it here.",
+      "items": {
+        "leaveRequest": { "action": "Leave request", "requester": "Employee, Sales" },
+        "newEmployee": { "action": "New employee record", "requester": "HR Officer, Operations" },
+        "payrollRun": { "action": "Payroll run — July", "requester": "Payroll Admin" },
+        "salaryAdvance": { "action": "Salary advance", "requester": "Employee, Support" },
+        "profileUpdate": { "action": "Profile update", "requester": "Employee, Finance" }
+      },
+      "statusLabels": {
+        "pending": "Pending",
+        "approved": "Approved"
+      }
     }
   },
   "askTija": {
