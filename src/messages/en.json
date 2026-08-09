@@ -348,7 +348,13 @@
     "contact": "Contact",
     "requestDemo": "Request a Demo",
     "signup": "Sign Up",
-    "login": "Login"
+    "login": "Login",
+    "resources": "Resources",
+    "company": "Company",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "security": "Security",
+    "cookies": "Cookies"
   },
   "pages": {
     "coreHr": {
@@ -492,6 +498,40 @@
       "headline": "Log in to ZiraHR.",
       "supporting": "Access your organization's ZiraHR workspace.",
       "continue": "Continue to Login"
+    },
+    "resources": {
+      "eyebrow": "RESOURCES",
+      "headline": "Resources",
+      "supporting": "HR guides, templates, and product updates — published as we build them, not stocked with filler.",
+      "newsletterHeadline": "Get notified when new resources go up.",
+      "categories": {
+        "blog": { "label": "Blog", "description": "Product thinking and HR perspectives from the ZiraHR team." },
+        "guides": { "label": "HR Guides", "description": "Practical guides for running HR in Kenya and beyond." },
+        "templates": { "label": "Templates", "description": "Ready-to-use HR templates and checklists." },
+        "helpCentre": { "label": "Help Centre", "description": "Documentation for using ZiraHR day to day." },
+        "productUpdates": { "label": "Product Updates", "description": "What's new in ZiraHR, as it ships." },
+        "hrGlossary": { "label": "HR Glossary", "description": "Plain-language definitions of HR and payroll terms." },
+        "compliance": { "label": "Compliance", "description": "Kenyan statutory and compliance reference material." }
+      },
+      "comingSoon": "Coming soon"
+    },
+    "company": {
+      "eyebrow": "COMPANY",
+      "headline": "Built for how African organizations actually run HR.",
+      "mission": "ZiraHR brings recruitment, onboarding, payroll, leave, attendance, performance and learning into one connected platform — starting in Kenya, built to grow across Africa.",
+      "careersTitle": "Careers",
+      "careersBody": "We're not publicly hiring yet — check back soon, or reach out if you'd like to introduce yourself.",
+      "partnersTitle": "Partners",
+      "partnersBody": "Interested in partnering with ZiraHR? We'd like to hear from you.",
+      "contactCta": "Get in Touch"
+    },
+    "legal": {
+      "comingSoonBody": "We're finalizing this document. If you have questions in the meantime, get in touch.",
+      "contactCta": "Contact Us",
+      "privacy": { "title": "Privacy Policy" },
+      "terms": { "title": "Terms of Service" },
+      "security": { "title": "Security" },
+      "cookies": { "title": "Cookie Policy" }
     }
   },
   "forms": {

@@ -31,6 +31,8 @@ const IMPLEMENTED_ROUTES = [
   "/signup",
   "/contact",
   "/login",
+  "/resources",
+  "/company",
 ] as const;
 
 function localizedPath(route: string, locale: string) {

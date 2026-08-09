@@ -415,7 +415,13 @@
     "contact": "[SW] Contact",
     "requestDemo": "[SW] Request a Demo",
     "signup": "[SW] Sign Up",
-    "login": "[SW] Login"
+    "login": "[SW] Login",
+    "resources": "[SW] Resources",
+    "company": "[SW] Company",
+    "privacy": "[SW] Privacy",
+    "terms": "[SW] Terms",
+    "security": "[SW] Security",
+    "cookies": "[SW] Cookies"
   },
   "pages": {
     "coreHr": {
@@ -719,6 +725,69 @@
       "headline": "[SW] Log in to ZiraHR.",
       "supporting": "[SW] Access your organization's ZiraHR workspace.",
       "continue": "[SW] Continue to Login"
+    },
+    "resources": {
+      "eyebrow": "[SW] RESOURCES",
+      "headline": "[SW] Resources",
+      "supporting": "[SW] HR guides, templates, and product updates — published as we build them, not stocked with filler.",
+      "newsletterHeadline": "[SW] Get notified when new resources go up.",
+      "categories": {
+        "blog": {
+          "label": "[SW] Blog",
+          "description": "[SW] Product thinking and HR perspectives from the ZiraHR team."
+        },
+        "guides": {
+          "label": "[SW] HR Guides",
+          "description": "[SW] Practical guides for running HR in Kenya and beyond."
+        },
+        "templates": {
+          "label": "[SW] Templates",
+          "description": "[SW] Ready-to-use HR templates and checklists."
+        },
+        "helpCentre": {
+          "label": "[SW] Help Centre",
+          "description": "[SW] Documentation for using ZiraHR day to day."
+        },
+        "productUpdates": {
+          "label": "[SW] Product Updates",
+          "description": "[SW] What's new in ZiraHR, as it ships."
+        },
+        "hrGlossary": {
+          "label": "[SW] HR Glossary",
+          "description": "[SW] Plain-language definitions of HR and payroll terms."
+        },
+        "compliance": {
+          "label": "[SW] Compliance",
+          "description": "[SW] Kenyan statutory and compliance reference material."
+        }
+      },
+      "comingSoon": "[SW] Coming soon"
+    },
+    "company": {
+      "eyebrow": "[SW] COMPANY",
+      "headline": "[SW] Built for how African organizations actually run HR.",
+      "mission": "[SW] ZiraHR brings recruitment, onboarding, payroll, leave, attendance, performance and learning into one connected platform — starting in Kenya, built to grow across Africa.",
+      "careersTitle": "[SW] Careers",
+      "careersBody": "[SW] We're not publicly hiring yet — check back soon, or reach out if you'd like to introduce yourself.",
+      "partnersTitle": "[SW] Partners",
+      "partnersBody": "[SW] Interested in partnering with ZiraHR? We'd like to hear from you.",
+      "contactCta": "[SW] Get in Touch"
+    },
+    "legal": {
+      "comingSoonBody": "[SW] We're finalizing this document. If you have questions in the meantime, get in touch.",
+      "contactCta": "[SW] Contact Us",
+      "privacy": {
+        "title": "[SW] Privacy Policy"
+      },
+      "terms": {
+        "title": "[SW] Terms of Service"
+      },
+      "security": {
+        "title": "[SW] Security"
+      },
+      "cookies": {
+        "title": "[SW] Cookie Policy"
+      }
     }
   },
   "forms": {
