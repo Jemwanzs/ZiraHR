@@ -3,7 +3,6 @@ import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/layout/Section";
 import { Button } from "@/components/ui/Button";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
-import { Reveal } from "@/components/motion/Reveal";
 
 const SATELLITES = [
   { slot: "hero.satellite.profile", label: "Employee Profile" },
@@ -18,6 +17,14 @@ const SATELLITES = [
 /**
  * scope §4 / docs/02-ux/homepage-scope.md beat 01–02: not a static dashboard
  * screenshot — a central dashboard with module cards assembling around it.
+ *
+ * Deliberately NOT wrapped in Reveal/motion — this content is already in
+ * the initial viewport, and the hero headline is the page's LCP element.
+ * A client-side opacity:0 -> 1 IntersectionObserver animation on it was
+ * measured adding ~2.5s to LCP (3.8s vs 1.3s) in the Phase 9 Lighthouse
+ * audit, since the text stayed invisible until JS hydrated. Scroll-reveal
+ * is for content revealed as you scroll past it, not initial-viewport
+ * content — see docs/06-technical/performance.md.
  */
 export function HeroSection() {
   const t = useTranslations("hero");
@@ -26,37 +33,29 @@ export function HeroSection() {
   return (
     <Section tone="cream" className="pt-12 pb-8 sm:pt-20">
       <div className="flex flex-col items-center gap-6 text-center">
-        <Reveal>
-          <p className="text-sm font-semibold tracking-wide text-teal">
-            {t("eyebrow")}
-          </p>
-        </Reveal>
-        <Reveal delay={0.05}>
-          <h1 className="max-w-3xl text-4xl font-semibold text-gray-900 sm:text-5xl lg:text-6xl">
-            {t("headline")}
-          </h1>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <p className="max-w-xl text-lg text-gray-600">{t("supporting")}</p>
-        </Reveal>
-        <Reveal delay={0.15}>
-          <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
-            <Button href="/signup" showArrow>
-              {tCta("startWithZiraHR")}
-            </Button>
-            <Button href="/request-demo" variant="secondary">
-              {tCta("requestDemo")}
-            </Button>
-          </div>
-          <p className="mt-3 text-sm text-gray-500">
-            <Link href="/login" className="hover:text-teal">
-              {tCta("alreadyUsing")}
-            </Link>
-          </p>
-        </Reveal>
+        <p className="text-sm font-semibold tracking-wide text-teal">
+          {t("eyebrow")}
+        </p>
+        <h1 className="max-w-3xl text-4xl font-semibold text-gray-900 sm:text-5xl lg:text-6xl">
+          {t("headline")}
+        </h1>
+        <p className="max-w-xl text-lg text-gray-600">{t("supporting")}</p>
+        <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
+          <Button href="/signup" showArrow>
+            {tCta("startWithZiraHR")}
+          </Button>
+          <Button href="/request-demo" variant="secondary">
+            {tCta("requestDemo")}
+          </Button>
+        </div>
+        <p className="mt-3 text-sm text-gray-500">
+          <Link href="/login" className="hover:text-teal">
+            {tCta("alreadyUsing")}
+          </Link>
+        </p>
       </div>
 
-      <Reveal delay={0.2} className="mt-16">
+      <div className="mt-16">
         <div className="relative mx-auto max-w-4xl">
           <ScreenshotSlot
             slot="hero.dashboard"
@@ -78,7 +77,7 @@ export function HeroSection() {
             ))}
           </div>
         </div>
-      </Reveal>
+      </div>
     </Section>
   );
 }
