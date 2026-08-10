@@ -38,10 +38,14 @@ export function EmployeeJourneySection() {
         <p className="mt-3 text-gray-600">{t("supporting")}</p>
       </Reveal>
 
-      <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {STAGES.map((stage, index) => (
           <Reveal key={stage} delay={(index % 4) * 0.06}>
-            <div className="flex flex-col gap-3">
+            {/* Bordered card, not just a gap, so each stage reads as one
+                unambiguous unit — a bare flex gap made it easy to misread
+                which caption belonged to which image once stacked in a
+                single column on mobile. */}
+            <div className="flex h-full flex-col gap-3 rounded-2xl border border-gray-100 bg-cream/40 p-3 transition-all duration-200 hover:-translate-y-0.5 hover:border-gray-200 hover:shadow-sm">
               <ScreenshotSlot
                 slot={`employeeJourney.stage.${stage}`}
                 alt={t(`stages.${stage}`)}

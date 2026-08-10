@@ -113,7 +113,10 @@ export function ApprovalsSection() {
         </div>
         <ul className="divide-y divide-gray-100">
           {QUEUE_ITEMS.map((item) => (
-            <li key={item.key} className="flex items-center justify-between gap-4 px-6 py-3.5">
+            <li
+              key={item.key}
+              className="flex items-center justify-between gap-4 px-6 py-3.5 transition-colors hover:bg-cream/60"
+            >
               <div>
                 <p className="text-sm font-medium text-gray-900">
                   {t(`queue.items.${item.key}.action`)}

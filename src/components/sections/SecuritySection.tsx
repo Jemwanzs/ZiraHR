@@ -29,7 +29,7 @@ export function SecuritySection() {
       <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {capabilities.map((capability, index) => (
           <Reveal key={capability.label} delay={(index % 3) * 0.05}>
-            <div className="h-full rounded-xl border border-gray-200 bg-cream px-5 py-5">
+            <div className="h-full rounded-xl border border-gray-200 bg-cream px-5 py-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-gray-300 hover:shadow-md">
               <p className="text-sm font-semibold text-gray-900">
                 {capability.label}
               </p>

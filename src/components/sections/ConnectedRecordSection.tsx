@@ -88,10 +88,11 @@ export function ConnectedRecordSection() {
           return (
             <motion.div
               key={node}
-              className="absolute flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium whitespace-nowrap text-gray-700 shadow-sm"
+              className="absolute flex -translate-x-1/2 -translate-y-1/2 cursor-default items-center justify-center rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium whitespace-nowrap text-gray-700 shadow-sm"
               style={{ left: `${x}%`, top: `${y}%` }}
               initial={shouldReduceMotion ? undefined : { opacity: 0, scale: 0.8 }}
               whileInView={shouldReduceMotion ? undefined : { opacity: 1, scale: 1 }}
+              whileHover={shouldReduceMotion ? undefined : { scale: 1.1, borderColor: "#0B4F6C" }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.3 + index * 0.05 }}
             >
@@ -106,7 +107,7 @@ export function ConnectedRecordSection() {
         {NODES.map((node) => (
           <div
             key={node}
-            className="rounded-full border border-gray-200 bg-white px-3 py-2 text-center text-sm font-medium text-gray-700"
+            className="rounded-full border border-gray-200 bg-white px-3 py-2 text-center text-sm font-medium text-gray-700 transition-colors hover:border-teal hover:text-teal"
           >
             {t(`nodes.${node}`)}
           </div>

@@ -93,7 +93,10 @@ export function PricingCalculator() {
         </div>
 
         {ADDON_MODULES.map((key) => (
-          <div key={key} className="flex items-center justify-between gap-4 px-4 py-3">
+          <div
+            key={key}
+            className="flex items-center justify-between gap-4 px-4 py-3 transition-colors hover:bg-cream/60"
+          >
             <div>
               <p className="text-sm font-semibold text-gray-900">{t(`modules.${key}.label`)}</p>
               <p className="text-xs text-gray-500">
