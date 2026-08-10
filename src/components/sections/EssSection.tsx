@@ -2,10 +2,11 @@ import { useTranslations } from "next-intl";
 import { Section } from "@/components/layout/Section";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
 import { Reveal } from "@/components/motion/Reveal";
+import { CapabilityCloud } from "@/components/ui/CapabilityCloud";
 
 /**
  * scope §16 — major homepage section. Desktop + mobile shown together;
- * capability checklist rather than paragraphs.
+ * capability cloud rather than paragraphs or a long checklist.
  */
 export function EssSection() {
   const t = useTranslations("ess");
@@ -22,19 +23,7 @@ export function EssSection() {
             {t("headline")}
           </h2>
           <p className="mt-3 text-lg text-gray-600">{t("supporting")}</p>
-          <ul className="mt-8 grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2">
-            {capabilities.map((item) => (
-              <li
-                key={item}
-                className="flex items-center gap-2 text-sm text-gray-700"
-              >
-                <span aria-hidden="true" className="text-teal">
-                  ✓
-                </span>
-                {item}
-              </li>
-            ))}
-          </ul>
+          <CapabilityCloud items={capabilities} className="mt-8 flex flex-wrap gap-2.5" />
         </Reveal>
 
         <Reveal delay={0.1} className="grid grid-cols-2 gap-4">

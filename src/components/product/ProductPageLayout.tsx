@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
 import { Reveal } from "@/components/motion/Reveal";
 import { Breadcrumbs, type Crumb } from "@/components/seo/Breadcrumbs";
+import { CapabilityCloud } from "@/components/ui/CapabilityCloud";
 
 type ConnectsTo = { label: string; href: string };
 
@@ -100,19 +101,10 @@ export function ProductPageLayout({
 
       {capabilities && (
         <Section tone="white">
-          <Reveal className="mx-auto grid max-w-3xl grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
-            {capabilities.map((item) => (
-              <div
-                key={item}
-                className="flex items-center gap-2 text-sm text-gray-700"
-              >
-                <span aria-hidden="true" className="text-teal">
-                  ✓
-                </span>
-                {item}
-              </div>
-            ))}
-          </Reveal>
+          <CapabilityCloud
+            items={capabilities}
+            className="mx-auto flex max-w-3xl flex-wrap justify-center gap-2.5"
+          />
         </Section>
       )}
 
