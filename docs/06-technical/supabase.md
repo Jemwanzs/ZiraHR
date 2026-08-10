@@ -30,6 +30,10 @@ Practical effect: even if someone finds the Supabase project URL and anon key, t
 
 `src/lib/supabase/server.ts` exports a single factory that builds a Supabase client from `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY` (both server-only env vars). Imported only from Route Handlers — never from a Client Component, never from a Server Component that could leak into a client bundle.
 
+## Error handling
+
+Every form Route Handler (`src/app/api/forms/*/route.ts`) wraps its Supabase call in `try/catch`. Without it, a missing/misconfigured env var (`getSupabaseServerClient()` throws synchronously if `SUPABASE_URL`/`SUPABASE_SERVICE_ROLE_KEY` aren't set) or any other unexpected throw crashed the serverless function with an empty response body — the client's `fetch` couldn't parse it as JSON, so the form just showed a generic error with nothing logged server-side to explain why. This was caught live: both `/api/forms/demo-request` and `/api/forms/signup` were failing in production with a `Content-Length: 0` 500 response, while the exact same request against the exact same Supabase project succeeded locally — confirming the code and schema were correct and pointing at a Vercel Production environment-variable gap rather than a bug. The `try/catch` doesn't fix a missing env var, but it guarantees a real JSON error response and a `console.error` line in the Vercel function logs instead of a silent crash, regardless of the cause.
+
 ## Migrations
 
 SQL migration files live in `/supabase/migrations/`, one file per table plus RLS setup, timestamp-prefixed. Written and version-controlled now; actually applied to a real Supabase project once you provide project credentials (Phase 6 dependency, see the approved plan's Risks section).

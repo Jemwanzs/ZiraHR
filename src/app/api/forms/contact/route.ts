@@ -24,34 +24,42 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const supabase = getSupabaseServerClient();
-  const { error } = await supabase.from("contact_requests").insert({
-    name: data.name,
-    email: data.email,
-    phone: data.phone || null,
-    company: data.company || null,
-    subject: data.subject || null,
-    message: data.message,
-  });
+  try {
+    const supabase = getSupabaseServerClient();
+    const { error } = await supabase.from("contact_requests").insert({
+      name: data.name,
+      email: data.email,
+      phone: data.phone || null,
+      company: data.company || null,
+      subject: data.subject || null,
+      message: data.message,
+    });
 
-  if (error) {
-    console.error("Failed to insert contact request:", error);
+    if (error) {
+      console.error("Failed to insert contact request:", error);
+      return NextResponse.json(
+        { error: "Something went wrong. Please try again." },
+        { status: 500 },
+      );
+    }
+
+    await notifySlack(process.env.SLACK_WEBHOOK_CONTACT, [
+      slackHeader("New contact form submission"),
+      slackSection([
+        slackField("Name", data.name),
+        slackField("Email", data.email),
+        slackField("Company", data.company),
+        slackField("Subject", data.subject),
+      ]),
+      { type: "section", text: { type: "mrkdwn", text: data.message } },
+    ]);
+
+    return NextResponse.json({ ok: true });
+  } catch (err) {
+    console.error("Unhandled error in /api/forms/contact:", err);
     return NextResponse.json(
       { error: "Something went wrong. Please try again." },
       { status: 500 },
     );
   }
-
-  await notifySlack(process.env.SLACK_WEBHOOK_CONTACT, [
-    slackHeader("New contact form submission"),
-    slackSection([
-      slackField("Name", data.name),
-      slackField("Email", data.email),
-      slackField("Company", data.company),
-      slackField("Subject", data.subject),
-    ]),
-    { type: "section", text: { type: "mrkdwn", text: data.message } },
-  ]);
-
-  return NextResponse.json({ ok: true });
 }

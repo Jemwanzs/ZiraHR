@@ -2,6 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Section } from "@/components/layout/Section";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { NewsletterForm } from "@/components/forms/NewsletterForm";
+import { Reveal } from "@/components/motion/Reveal";
 import { buildPageMetadata } from "@/lib/seo";
 
 const CATEGORIES = [
@@ -57,23 +58,22 @@ export default async function ResourcesPage({ params }: Props) {
 
       <Section tone="white">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {CATEGORIES.map((category) => (
-            <div
-              key={category}
-              className="rounded-2xl border border-gray-200 bg-cream p-6"
-            >
-              <div className="flex items-start justify-between gap-2">
-                <h2 className="text-base font-semibold text-gray-900">
-                  {t(`categories.${category}.label`)}
-                </h2>
-                <span className="shrink-0 rounded-full bg-gray-100 px-2.5 py-1 text-[10px] font-semibold tracking-wide text-gray-500 uppercase">
-                  {t("comingSoon")}
-                </span>
+          {CATEGORIES.map((category, index) => (
+            <Reveal key={category} delay={(index % 3) * 0.06}>
+              <div className="h-full rounded-2xl border border-gray-200 bg-cream p-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-gray-300 hover:shadow-sm">
+                <div className="flex items-start justify-between gap-2">
+                  <h2 className="text-base font-semibold text-gray-900">
+                    {t(`categories.${category}.label`)}
+                  </h2>
+                  <span className="shrink-0 rounded-full bg-gray-100 px-2.5 py-1 text-[10px] font-semibold tracking-wide text-gray-500 uppercase">
+                    {t("comingSoon")}
+                  </span>
+                </div>
+                <p className="mt-2 text-sm text-gray-600">
+                  {t(`categories.${category}.description`)}
+                </p>
               </div>
-              <p className="mt-2 text-sm text-gray-600">
-                {t(`categories.${category}.description`)}
-              </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </Section>

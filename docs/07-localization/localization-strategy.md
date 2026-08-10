@@ -10,14 +10,11 @@ English (default), French, Swahili.
 
 ## Language selector
 
-- **No visible language names** — flag-only UI: 🇬🇧 (English), 🇫🇷 (French), 🇰🇪 (Swahili — Kenya flag, not a generic "Swahili" flag, since there isn't a standard one and Kenya is the primary market).
-- Desktop: active flag shown in the nav bar; click opens a small popover with the other flags.
-- Mobile: same flag-only control, placed in the drawer header.
-- Fully keyboard-navigable (arrow keys between options, `Enter`/`Space` to select, `Esc` to close), with `aria-label`s carrying the real text even though it's never visually shown:
-  - "Switch to English"
-  - "Passer au français"
-  - "Badilisha kwenda Kiswahili"
-- Popover uses proper `role="menu"`/`role="menuitemradio"` (or a native `<Select>`-equivalent pattern) so screen readers announce it correctly despite the flag-only visual treatment.
+- Compact flag + code trigger: flag (🇬🇧/🇫🇷/🇰🇪 equivalents, see below) plus the two-letter code (EN/FR/SW) — Kenya's flag stands in for Swahili since there isn't a standard "Swahili" flag and Kenya is the primary market.
+- **Real inline SVG flags, not Unicode flag emoji** (`src/components/ui/FlagIcon.tsx`). The original flag-only build used emoji, which look correct on macOS/iOS/Android but render as bare two-letter fallback text ("GB", "FR", "KE") on Windows — Windows fonts have no glyphs for regional-indicator emoji pairs. This was caught from a real screenshot during a feedback pass and fixed by drawing the three flags as SVG, which is font-independent and renders identically everywhere.
+- Desktop: trigger shown in the nav bar; click opens an animated dropdown (Motion fade/scale) listing all three locales as flag + full autonym (English/Français/Kiswahili) + code, with a check mark on the active one.
+- Mobile: same control, placed in the drawer header.
+- Fully keyboard-navigable (arrow keys between options, `Enter`/`Space` to select, `Esc` to close), `role="menu"`/`role="menuitemradio"`, with the full language name as visible text now doing the job the old flag-only build needed `aria-label`s for.
 
 ## Persistence
 

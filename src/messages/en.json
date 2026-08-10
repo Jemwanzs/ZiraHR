@@ -9,6 +9,11 @@
       "en": "Switch to English",
       "fr": "Passer au français",
       "sw": "Badilisha kwenda Kiswahili"
+    },
+    "names": {
+      "en": "English",
+      "fr": "Français",
+      "sw": "Kiswahili"
     }
   },
   "cta": {

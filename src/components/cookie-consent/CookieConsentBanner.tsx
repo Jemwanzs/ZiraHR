@@ -11,9 +11,11 @@ import { CookieConsentModal } from "@/components/cookie-consent/CookieConsentMod
 
 /**
  * Decides *whether* the modal should render — see
- * docs/06-technical/cookie-consent.md. Split from the modal itself so the
- * modal (which needs localStorage-derived initial state) only ever mounts
- * client-side, after hydration, avoiding any SSR/client mismatch.
+ * docs/06-technical/cookie-consent.md. getServerConsentSnapshot always
+ * reports "no consent yet" during SSR, so the modal *is* part of the
+ * initial server-rendered HTML for every visitor (not client-only) — its
+ * own internal toggle state has to stay hydration-safe accordingly (see
+ * the comment in CookieConsentModal).
  *
  * hasStoredConsent() is read via useSyncExternalStore rather than in a
  * mount effect + setState — checking localStorage on mount is exactly the

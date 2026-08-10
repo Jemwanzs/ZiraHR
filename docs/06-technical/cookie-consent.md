@@ -19,6 +19,12 @@ Client-only — `localStorage` (`src/lib/cookieConsent.ts`), no server round-tri
 
 Shares the `useFocusTrap` hook (`src/lib/useFocusTrap.ts`) with `MobileDrawer` — Tab loops within the modal, `Esc` closes only when the modal is dismissible (never on the mandatory first-visit gate, by design). `role="dialog"`, `aria-modal`, and `aria-labelledby` are set; each toggle is a real `role="switch"` with `aria-checked` and an accessible label from `cookieConsent.categories.*.label`.
 
+## Hydration safety (fixed after a live bug report)
+
+`CookieConsentBanner`'s visibility gate uses `getServerConsentSnapshot()`, which always reports "no consent yet" during SSR (the server can't read `localStorage`) — so the modal *is* part of the initial server-rendered HTML for every visitor, not a client-only mount as an earlier version of this doc assumed. A returning visitor who'd already granted consent triggered a real hydration mismatch: the server rendered the Statistics/Marketing/Preferences toggles unchecked (its only option), while `CookieConsentModal`'s `useState` lazy initializer read the visitor's *real* stored consent on the client's first render, producing different `aria-checked`/class attributes on the same DOM nodes.
+
+Fixed in `CookieConsentModal` by keying the initializer off `dismissible` instead of unconditionally reading storage: `dismissible` is only ever `true` once `hasConsent` has already resolved `true` post-hydration (see `CookieConsentBanner`), so a `dismissible=true` mount is always a fresh, purely client-triggered "review my preferences" reopen — never part of SSR — and can safely read `localStorage`. A `dismissible=false` mount (the mandatory first-visit gate) always defaults to `DEFAULT_CONSENT`, which is exactly what the server produces, so the two can never disagree.
+
 ## What this deliberately doesn't do
 
 No IAB/TCF consent-string format, no geo-detection to only show in GDPR-relevant regions, no cookie-scanning to auto-populate the category list — all out of scope for what was asked. If compliance requirements (e.g. actual EU traffic) make any of that necessary later, that's a deliberate scope addition, not an assumption baked in now.

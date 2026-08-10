@@ -26,41 +26,52 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const supabase = getSupabaseServerClient();
-  const { error } = await supabase.from("demo_requests").insert({
-    first_name: data.firstName,
-    last_name: data.lastName,
-    work_email: data.workEmail,
-    phone: data.phone || null,
-    company_name: data.companyName,
-    country: data.country,
-    employee_count: data.employeeCount || null,
-    interested_modules: data.interestedModules,
-    message: data.message || null,
-    preferred_contact_method: data.preferredContactMethod,
-    source: data.source || null,
-  });
+  try {
+    const supabase = getSupabaseServerClient();
+    const { error } = await supabase.from("demo_requests").insert({
+      first_name: data.firstName,
+      last_name: data.lastName,
+      work_email: data.workEmail,
+      phone: data.phone || null,
+      company_name: data.companyName,
+      country: data.country,
+      employee_count: data.employeeCount || null,
+      interested_modules: data.interestedModules,
+      message: data.message || null,
+      preferred_contact_method: data.preferredContactMethod,
+      source: data.source || null,
+    });
 
-  if (error) {
-    console.error("Failed to insert demo request:", error);
+    if (error) {
+      console.error("Failed to insert demo request:", error);
+      return NextResponse.json(
+        { error: "Something went wrong. Please try again." },
+        { status: 500 },
+      );
+    }
+
+    await notifySlack(process.env.SLACK_WEBHOOK_DEMO_REQUESTS, [
+      slackHeader("New demo request"),
+      slackSection([
+        slackField("Name", `${data.firstName} ${data.lastName}`),
+        slackField("Company", data.companyName),
+        slackField("Work email", data.workEmail),
+        slackField("Country", data.country),
+        slackField("Employee count", data.employeeCount),
+        slackField("Modules", data.interestedModules.join(", ")),
+        slackField("Preferred contact", data.preferredContactMethod),
+      ]),
+    ]);
+
+    return NextResponse.json({ ok: true });
+  } catch (err) {
+    // Covers a misconfigured/missing Supabase env var and any other
+    // unexpected throw — without this, the function crashes with an empty
+    // response body and the client can't tell what happened.
+    console.error("Unhandled error in /api/forms/demo-request:", err);
     return NextResponse.json(
       { error: "Something went wrong. Please try again." },
       { status: 500 },
     );
   }
-
-  await notifySlack(process.env.SLACK_WEBHOOK_DEMO_REQUESTS, [
-    slackHeader("New demo request"),
-    slackSection([
-      slackField("Name", `${data.firstName} ${data.lastName}`),
-      slackField("Company", data.companyName),
-      slackField("Work email", data.workEmail),
-      slackField("Country", data.country),
-      slackField("Employee count", data.employeeCount),
-      slackField("Modules", data.interestedModules.join(", ")),
-      slackField("Preferred contact", data.preferredContactMethod),
-    ]),
-  ]);
-
-  return NextResponse.json({ ok: true });
 }

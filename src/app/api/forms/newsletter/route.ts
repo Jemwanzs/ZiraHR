@@ -23,24 +23,32 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const supabase = getSupabaseServerClient();
-  // Newsletter is high-volume/low-urgency — no Slack notification
-  // (docs/06-technical/notifications.md). Re-subscribing an existing email
-  // is a normal, successful outcome, not an error.
-  const { error } = await supabase
-    .from("newsletter_subscribers")
-    .upsert(
-      { email: data.email, locale: data.locale, status: "subscribed" },
-      { onConflict: "email" },
-    );
+  try {
+    const supabase = getSupabaseServerClient();
+    // Newsletter is high-volume/low-urgency — no Slack notification
+    // (docs/06-technical/notifications.md). Re-subscribing an existing email
+    // is a normal, successful outcome, not an error.
+    const { error } = await supabase
+      .from("newsletter_subscribers")
+      .upsert(
+        { email: data.email, locale: data.locale, status: "subscribed" },
+        { onConflict: "email" },
+      );
 
-  if (error) {
-    console.error("Failed to insert newsletter subscriber:", error);
+    if (error) {
+      console.error("Failed to insert newsletter subscriber:", error);
+      return NextResponse.json(
+        { error: "Something went wrong. Please try again." },
+        { status: 500 },
+      );
+    }
+
+    return NextResponse.json({ ok: true });
+  } catch (err) {
+    console.error("Unhandled error in /api/forms/newsletter:", err);
     return NextResponse.json(
       { error: "Something went wrong. Please try again." },
       { status: 500 },
     );
   }
-
-  return NextResponse.json({ ok: true });
 }

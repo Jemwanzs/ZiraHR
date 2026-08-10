@@ -33,6 +33,12 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Next.js 16 auto-generates these on `dev`/`build` as framework-version
+# guidance for AI coding agents — regenerated locally every time, not
+# something this project authors or needs to track.
+/AGENTS.md
+/CLAUDE.md
+
 # supabase
 /supabase/.branches
 /supabase/.temp

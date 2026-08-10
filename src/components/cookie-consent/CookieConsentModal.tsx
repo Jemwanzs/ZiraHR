@@ -24,15 +24,22 @@ type CookieConsentModalProps = {
 };
 
 /**
- * The actual dialog UI — see docs/06-technical/cookie-consent.md. Only
- * ever mounted client-side (by CookieConsentBanner, post-hydration), so
- * reading localStorage directly in useState's lazy initializer here is
- * safe — there's no server-rendered version of this component to mismatch.
+ * The actual dialog UI — see docs/06-technical/cookie-consent.md.
+ * CookieConsentBanner's `visible` gate is `true` on the server for every
+ * visitor (getServerConsentSnapshot always reports "no consent yet"), so
+ * this component *is* part of the initial SSR HTML whenever dismissible is
+ * false (the mandatory first-visit gate) — reading localStorage in that
+ * case would mismatch the server render for a returning visitor who
+ * already has stored consent. dismissible only ever becomes true after
+ * hasConsent has resolved to true post-hydration (see CookieConsentBanner),
+ * so a dismissible=true mount is always a fresh, purely client-triggered
+ * "review my preferences" reopen — never part of SSR — and can safely read
+ * the real stored value.
  */
 export function CookieConsentModal({ dismissible, onClose }: CookieConsentModalProps) {
   const t = useTranslations("cookieConsent");
   const [selection, setSelection] = useState<CookieConsentState>(
-    () => readConsent() ?? DEFAULT_CONSENT,
+    () => (dismissible ? (readConsent() ?? DEFAULT_CONSENT) : DEFAULT_CONSENT),
   );
   const containerRef = useRef<HTMLDivElement>(null);
 

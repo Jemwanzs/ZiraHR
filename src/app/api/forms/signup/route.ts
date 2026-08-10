@@ -24,40 +24,48 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const supabase = getSupabaseServerClient();
-  const { error } = await supabase.from("signup_requests").insert({
-    first_name: data.firstName,
-    last_name: data.lastName,
-    work_email: data.workEmail,
-    phone: data.phone || null,
-    company_name: data.companyName,
-    country: data.country,
-    industry: data.industry || null,
-    employee_count: data.employeeCount || null,
-    branch_count: data.branchCount || null,
-    department_count: data.departmentCount || null,
-  });
+  try {
+    const supabase = getSupabaseServerClient();
+    const { error } = await supabase.from("signup_requests").insert({
+      first_name: data.firstName,
+      last_name: data.lastName,
+      work_email: data.workEmail,
+      phone: data.phone || null,
+      company_name: data.companyName,
+      country: data.country,
+      industry: data.industry || null,
+      employee_count: data.employeeCount || null,
+      branch_count: data.branchCount || null,
+      department_count: data.departmentCount || null,
+    });
 
-  if (error) {
-    console.error("Failed to insert signup request:", error);
+    if (error) {
+      console.error("Failed to insert signup request:", error);
+      return NextResponse.json(
+        { error: "Something went wrong. Please try again." },
+        { status: 500 },
+      );
+    }
+
+    await notifySlack(process.env.SLACK_WEBHOOK_SIGNUP, [
+      slackHeader("New ZiraHR signup"),
+      slackSection([
+        slackField("Name", `${data.firstName} ${data.lastName}`),
+        slackField("Company", data.companyName),
+        slackField("Work email", data.workEmail),
+        slackField("Country", data.country),
+        slackField("Employee count", data.employeeCount),
+        slackField("Branches", data.branchCount),
+        slackField("Departments", data.departmentCount),
+      ]),
+    ]);
+
+    return NextResponse.json({ ok: true });
+  } catch (err) {
+    console.error("Unhandled error in /api/forms/signup:", err);
     return NextResponse.json(
       { error: "Something went wrong. Please try again." },
       { status: 500 },
     );
   }
-
-  await notifySlack(process.env.SLACK_WEBHOOK_SIGNUP, [
-    slackHeader("New ZiraHR signup"),
-    slackSection([
-      slackField("Name", `${data.firstName} ${data.lastName}`),
-      slackField("Company", data.companyName),
-      slackField("Work email", data.workEmail),
-      slackField("Country", data.country),
-      slackField("Employee count", data.employeeCount),
-      slackField("Branches", data.branchCount),
-      slackField("Departments", data.departmentCount),
-    ]),
-  ]);
-
-  return NextResponse.json({ ok: true });
 }

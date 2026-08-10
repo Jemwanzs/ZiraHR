@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { Section } from "@/components/layout/Section";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
 import { Reveal } from "@/components/motion/Reveal";
+import { TypingIndicator } from "@/components/ui/TypingIndicator";
 
 const PROMPT_KEYS = [
   "contractsExpiring",
@@ -34,14 +35,18 @@ export function AskTijaSection() {
           <p className="mt-3 text-white/70">{t("positioning")}</p>
 
           <ul className="mt-8 flex flex-col gap-3">
-            {PROMPT_KEYS.map((key) => (
-              <li
-                key={key}
-                className="rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white/90"
-              >
-                &ldquo;{t(`prompts.${key}`)}&rdquo;
-              </li>
+            {PROMPT_KEYS.map((key, index) => (
+              <Reveal key={key} delay={0.15 + index * 0.08}>
+                <li className="rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white/90 transition-colors hover:border-white/25 hover:bg-white/10">
+                  &ldquo;{t(`prompts.${key}`)}&rdquo;
+                </li>
+              </Reveal>
             ))}
+            <Reveal delay={0.15 + PROMPT_KEYS.length * 0.08}>
+              <li className="flex items-center gap-2 px-4 py-1 text-white/50">
+                <TypingIndicator />
+              </li>
+            </Reveal>
           </ul>
         </Reveal>
 

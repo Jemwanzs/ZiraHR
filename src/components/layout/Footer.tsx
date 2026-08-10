@@ -113,7 +113,10 @@ export function Footer() {
           translateLabel={(key) => tColumns(`legal.${key}`)}
         />
       </Container>
-      <div className="border-t border-gray-200 py-6">
+      {/* pb-24 on mobile reserves space for StickyMobileCta (fixed, ~80px
+          tall) so this row can never end up permanently trapped beneath it
+          with no further scroll room to reveal it. */}
+      <div className="border-t border-gray-200 py-6 pb-24 lg:pb-6">
         <Container className="flex flex-wrap items-center justify-between gap-3">
           <p className="text-sm text-gray-500">{t("tagline")}</p>
           <CookiePreferencesLink />
