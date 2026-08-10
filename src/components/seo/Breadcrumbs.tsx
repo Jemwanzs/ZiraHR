@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { safeJsonLd } from "@/lib/seo";
 
 export type Crumb = { label: string; href: string };
 
@@ -46,7 +47,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
       </ol>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(structuredData) }}
       />
     </nav>
   );

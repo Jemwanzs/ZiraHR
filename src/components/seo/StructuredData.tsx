@@ -1,3 +1,5 @@
+import { safeJsonLd } from "@/lib/seo";
+
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zirahr.com";
 
 /**
@@ -20,7 +22,7 @@ export function OrganizationStructuredData() {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(data) }}
     />
   );
 }

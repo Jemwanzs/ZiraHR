@@ -27,7 +27,7 @@ export const demoRequestSchema = z.object({
   companyName: z.string().trim().min(1, "Company is required").max(200),
   country: z.string().trim().min(1, "Country is required").max(100),
   employeeCount: z.string().trim().max(50).optional().default(""),
-  interestedModules: z.array(z.enum(MODULE_OPTIONS)).default([]),
+  interestedModules: z.array(z.enum(MODULE_OPTIONS)).max(MODULE_OPTIONS.length).default([]),
   message: z.string().trim().max(2000).optional().default(""),
   preferredContactMethod: z.enum(CONTACT_METHOD_OPTIONS).default("email"),
   source: z.string().trim().max(200).optional().default(""),

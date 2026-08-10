@@ -58,3 +58,17 @@ export function buildPageMetadata({
 }
 
 export { SITE_URL };
+
+/**
+ * Serializes a structured-data object for a JSON-LD <script> tag via
+ * dangerouslySetInnerHTML. Escaping "<" (as "<") prevents a literal
+ * "</script>" appearing inside a string value from breaking out of the
+ * script tag — everything we embed today is developer-controlled
+ * (translated copy, route paths), not user input, but this is cheap
+ * defense-in-depth against exactly that class of injection, and protects
+ * against it by construction if content ever becomes editable. See the
+ * Phase-11 security-audit notes in docs/06-technical/architecture.md.
+ */
+export function safeJsonLd(data: unknown): string {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
