@@ -4,9 +4,17 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Section } from "@/components/layout/Section";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
+import type { PlaceholderIconName } from "@/components/media/PlaceholderIcon";
 import { Reveal } from "@/components/motion/Reveal";
 
 const DASHBOARDS = ["executive", "hr", "finance", "my"] as const;
+
+const DASHBOARD_ICONS: Record<(typeof DASHBOARDS)[number], PlaceholderIconName> = {
+  executive: "analytics",
+  hr: "directory",
+  finance: "payslip",
+  my: "dashboard",
+};
 
 /**
  * scope §20 — animated horizontal gallery, hover/tap brings a dashboard
@@ -51,6 +59,7 @@ export function DashboardsSection() {
                 alt={`${t(`types.${dashboard}`)} dashboard`}
                 label={`${t(`types.${dashboard}`)} Dashboard`}
                 aspect="portrait"
+                icon={DASHBOARD_ICONS[dashboard]}
               />
               <p className="mt-3 text-center text-sm font-medium text-gray-900">
                 {t(`types.${dashboard}`)}

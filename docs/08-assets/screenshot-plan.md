@@ -27,6 +27,8 @@ This means: swapping a placeholder for the real screenshot later is a **one-line
 
 Distinct from real UI at a glance: dashed 1px border, small top-right "Preview" badge, module icon centered, no fabricated data/numbers inside (never invented employee names, salary figures, or dates that could be mistaken for real product output — abstract shapes/bars instead).
 
+The "module icon" is a real, content-relevant glyph, not one generic grid icon repeated everywhere — `ScreenshotSlot`'s `icon` prop selects from a small shared set (`src/components/media/PlaceholderIcon.tsx`: directory, payslip, leave, attendance, performance, recruitment, learning, collaboration, analytics, askTija, application, review, offer, onboarding, promotion, offboarding, dashboard). Each call site maps its own keys to the relevant icon (see `MODULE_ICONS`/`STAGE_ICONS`/`DASHBOARD_ICONS` in `ModuleShowcaseSection.tsx`/`EmployeeJourneySection.tsx`/`DashboardsSection.tsx`) so a "coming soon" slot reads as designed rather than interchangeable with every other slot on the page — still clearly iconographic, never a fake screenshot.
+
 ## Promotion path
 
 When you supply real assets: drop files into the matching `/public/screenshots/...` folder, add the path to `media-manifest.ts` against the matching slot id, placeholder disappears automatically for that slot. No other code changes required.

@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "motion/react";
 import { Section } from "@/components/layout/Section";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
+import type { PlaceholderIconName } from "@/components/media/PlaceholderIcon";
 import { Reveal } from "@/components/motion/Reveal";
 
 const MODULES = [
@@ -17,6 +18,17 @@ const MODULES = [
   "learningDevelopment",
   "collaboration",
 ] as const;
+
+const MODULE_ICONS: Record<(typeof MODULES)[number], PlaceholderIconName> = {
+  coreHr: "directory",
+  payroll: "payslip",
+  leave: "leave",
+  attendance: "attendance",
+  performance: "performance",
+  recruitment: "recruitment",
+  learningDevelopment: "learning",
+  collaboration: "collaboration",
+};
 
 /**
  * scope §7 — not twelve identical feature cards. Left-nav module switcher,
@@ -90,6 +102,7 @@ export function ModuleShowcaseSection() {
                 alt={t(`${active}.headline`)}
                 label={t(`${active}.label`)}
                 aspect="video"
+                icon={MODULE_ICONS[active]}
               />
             </motion.div>
           </AnimatePresence>

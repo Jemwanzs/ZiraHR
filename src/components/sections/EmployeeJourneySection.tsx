@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Section } from "@/components/layout/Section";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
+import type { PlaceholderIconName } from "@/components/media/PlaceholderIcon";
 import { Reveal } from "@/components/motion/Reveal";
 
 const STAGES = [
@@ -16,6 +17,20 @@ const STAGES = [
   "promotion",
   "offboarding",
 ] as const;
+
+const STAGE_ICONS: Record<(typeof STAGES)[number], PlaceholderIconName> = {
+  applicant: "application",
+  candidate: "review",
+  offer: "offer",
+  employee: "directory",
+  onboarding: "onboarding",
+  attendanceLeave: "attendance",
+  payroll: "payslip",
+  learning: "learning",
+  performance: "performance",
+  promotion: "promotion",
+  offboarding: "offboarding",
+};
 
 /**
  * "Meet Amina" — scope §5. A scroll-driven story: each stage reveals as the
@@ -51,6 +66,7 @@ export function EmployeeJourneySection() {
                 alt={t(`stages.${stage}`)}
                 label={t(`stages.${stage}`)}
                 aspect="square"
+                icon={STAGE_ICONS[stage]}
               />
               <div>
                 <p className="text-sm font-semibold text-gray-900">

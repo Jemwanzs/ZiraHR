@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { resolveMediaSlot } from "@/lib/media-manifest";
+import { PlaceholderIcon, type PlaceholderIconName } from "@/components/media/PlaceholderIcon";
 
 type ScreenshotSlotProps = {
   slot: string;
@@ -11,6 +12,11 @@ type ScreenshotSlotProps = {
   priority?: boolean;
   /** "dark" for placement on a dark section background (e.g. Ask TiJa). */
   tone?: "light" | "dark";
+  /** Which placeholder glyph to show — defaults to a generic grid so
+   * existing call sites don't need updating. Pick a content-relevant one
+   * (see PlaceholderIcon) so a "coming soon" slot reads as designed rather
+   * than interchangeable with every other slot on the page. */
+  icon?: PlaceholderIconName;
 };
 
 const aspectClasses: Record<NonNullable<ScreenshotSlotProps["aspect"]>, string> = {
@@ -34,6 +40,7 @@ export function ScreenshotSlot({
   className = "",
   priority = false,
   tone = "light",
+  icon = "dashboard",
 }: ScreenshotSlotProps) {
   const src = resolveMediaSlot(slot);
 
@@ -77,7 +84,7 @@ export function ScreenshotSlot({
           isDark ? "bg-white/10 text-orange" : "bg-cream text-teal"
         }`}
       >
-        <span aria-hidden="true" className="text-xl">▦</span>
+        <PlaceholderIcon name={icon} className="h-6 w-6" />
       </div>
       <p
         className={`px-6 text-center text-sm font-medium ${
