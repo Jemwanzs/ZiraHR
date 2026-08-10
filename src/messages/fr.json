@@ -85,7 +85,52 @@
   "hero": {
     "eyebrow": "[FR] THE HR PLATFORM BUILT AROUND YOUR PEOPLE",
     "headline": "[FR] One place to run your entire people operation.",
-    "supporting": "[FR] Recruit. Onboard. Manage. Pay. Develop. Perform. ZiraHR connects your entire employee journey."
+    "supporting": "[FR] Recruit. Onboard. Manage. Pay. Develop. Perform. ZiraHR connects your entire employee journey.",
+    "reel": {
+      "payroll": {
+        "label": "[FR] Payroll",
+        "steps": [
+          "[FR] Draft",
+          "[FR] Review",
+          "[FR] Approve",
+          "[FR] Process",
+          "[FR] Disburse"
+        ],
+        "result": "[FR] Payroll disbursed"
+      },
+      "leave": {
+        "label": "[FR] Leave",
+        "requestTitle": "[FR] Leave request",
+        "requester": "[FR] Employee, Sales",
+        "pending": "[FR] Pending",
+        "approved": "[FR] Approved"
+      },
+      "dashboard": {
+        "label": "[FR] Live dashboard",
+        "stats": {
+          "employees": {
+            "label": "[FR] Employees",
+            "value": 128,
+            "suffix": ""
+          },
+          "leaveApprovals": {
+            "label": "[FR] Leave approvals",
+            "value": 14,
+            "suffix": ""
+          },
+          "payrollReady": {
+            "label": "[FR] Payroll ready",
+            "value": 98,
+            "suffix": "%"
+          }
+        }
+      },
+      "askTija": {
+        "label": "[FR] Ask TiJa",
+        "question": "[FR] Who has contracts expiring this month?",
+        "answer": "[FR] 3 employees — Sales, Ops."
+      }
+    }
   },
   "footer": {
     "columns": {

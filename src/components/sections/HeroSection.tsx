@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/layout/Section";
 import { Button } from "@/components/ui/Button";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
+import { HeroProductReel } from "@/components/sections/HeroProductReel";
 
 const SATELLITES = [
   { slot: "hero.satellite.profile", label: "Employee Profile" },
@@ -57,14 +58,11 @@ export function HeroSection() {
 
       <div className="mt-16">
         <div className="relative mx-auto max-w-4xl">
-          <ScreenshotSlot
-            slot="hero.dashboard"
-            alt="ZiraHR executive dashboard"
-            label="Executive Dashboard"
-            aspect="wide"
-            priority
-            className="shadow-xl"
-          />
+          {/* Animated product reel, not a static screenshot — see
+              HeroProductReel's own doc comment. Client-rendered, mounted
+              below the (instant, server-rendered) hero text so it never
+              gates LCP the way the old Reveal-wrapped version did. */}
+          <HeroProductReel />
           <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-7">
             {SATELLITES.map((item) => (
               <ScreenshotSlot

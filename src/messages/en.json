@@ -85,7 +85,34 @@
   "hero": {
     "eyebrow": "THE HR PLATFORM BUILT AROUND YOUR PEOPLE",
     "headline": "One place to run your entire people operation.",
-    "supporting": "Recruit. Onboard. Manage. Pay. Develop. Perform. ZiraHR connects your entire employee journey."
+    "supporting": "Recruit. Onboard. Manage. Pay. Develop. Perform. ZiraHR connects your entire employee journey.",
+    "reel": {
+      "payroll": {
+        "label": "Payroll",
+        "steps": ["Draft", "Review", "Approve", "Process", "Disburse"],
+        "result": "Payroll disbursed"
+      },
+      "leave": {
+        "label": "Leave",
+        "requestTitle": "Leave request",
+        "requester": "Employee, Sales",
+        "pending": "Pending",
+        "approved": "Approved"
+      },
+      "dashboard": {
+        "label": "Live dashboard",
+        "stats": {
+          "employees": { "label": "Employees", "value": 128, "suffix": "" },
+          "leaveApprovals": { "label": "Leave approvals", "value": 14, "suffix": "" },
+          "payrollReady": { "label": "Payroll ready", "value": 98, "suffix": "%" }
+        }
+      },
+      "askTija": {
+        "label": "Ask TiJa",
+        "question": "Who has contracts expiring this month?",
+        "answer": "3 employees — Sales, Ops."
+      }
+    }
   },
   "footer": {
     "columns": {
