@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { safeJsonLd } from "@/lib/seo";
 
@@ -11,8 +12,9 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zirahr.com";
  * two must always match exactly, so they're generated from one list here
  * rather than maintained separately.
  */
-export function Breadcrumbs({ items }: { items: Crumb[] }) {
-  const trail: Crumb[] = [{ label: "Home", href: "/" }, ...items];
+export async function Breadcrumbs({ items }: { items: Crumb[] }) {
+  const t = await getTranslations("breadcrumbs");
+  const trail: Crumb[] = [{ label: t("home"), href: "/" }, ...items];
 
   const structuredData = {
     "@context": "https://schema.org",

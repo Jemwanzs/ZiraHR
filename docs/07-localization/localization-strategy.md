@@ -26,7 +26,11 @@ No hardcoded strings in components. All copy lives in `src/messages/{en,fr,sw}.j
 
 ## Translation completeness policy
 
-English is written and approved first (source of truth — see `04-content/`). French and Swahili start as **structurally complete placeholders** (every key present, values clearly marked as pending, e.g. prefixed `[FR] ...` / `[SW] ...` during development) so the i18n architecture is fully exercised and testable before real translations exist. Machine translation is never used as the shipped production experience — placeholder markers stay in a locale until a human-approved translation replaces them, and that locale is not promoted to "complete" until it does.
+English is written and approved first (source of truth — see `04-content/`). French and Swahili started as **structurally complete placeholders** (every key present, values prefixed `[FR] ...` / `[SW] ...`) so the i18n architecture could be fully exercised and testable before real translations existed.
+
+**Status update**: once the site went live, visitors switching to French/Swahili saw the raw `[FR]`/`[SW]`-prefixed English text, which reads as broken rather than "translation pending." Client decision: replace the placeholders with real (AI-translated) French and Swahili immediately rather than leave visibly-broken text live, instead of waiting for human-approved copy. Both `fr.json` and `sw.json` are now fully translated (formal business register, Kenya-appropriate Swahili) with zero remaining `[FR]`/`[SW]` markers — Kenyan statutory acronyms (PAYE, NSSF, SHIF, Housing Levy) and the ZiraHR/TiJa product names are intentionally left untranslated in both locales, matching what would appear on an actual Kenyan payslip regardless of interface language.
+
+This is AI-translated content, not yet reviewed by a human fluent speaker — treat it as a strong stopgap, not a final state. Swap in human-reviewed copy whenever it becomes available, section by section; there's no internal "pending review" flag surfaced to visitors, so any correction is a direct edit to `fr.json`/`sw.json`.
 
 ## Locale-aware formatting
 

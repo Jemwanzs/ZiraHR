@@ -1,7 +1,7 @@
 {
   "common": {
-    "brandName": "[SW] ZiraHR",
-    "skipToContent": "[SW] Skip to content"
+    "brandName": "ZiraHR",
+    "skipToContent": "Nenda kwenye maudhui"
   },
   "languageSelector": {
     "label": "Language",
@@ -17,1077 +17,751 @@
     }
   },
   "cta": {
-    "startWithZiraHR": "[SW] Start with ZiraHR",
-    "requestDemo": "[SW] Request a Demo",
-    "login": "[SW] Login",
-    "alreadyUsing": "[SW] Already using ZiraHR? Log in"
+    "startWithZiraHR": "Anza na ZiraHR",
+    "requestDemo": "Omba Onyesho",
+    "login": "Ingia",
+    "alreadyUsing": "Tayari unatumia ZiraHR? Ingia"
   },
   "nav": {
-    "platform": "[SW] Platform",
-    "solutions": "[SW] Solutions",
-    "payroll": "[SW] Payroll",
-    "resources": "[SW] Resources",
-    "pricing": "[SW] Pricing",
-    "company": "[SW] Company",
+    "platform": "Jukwaa",
+    "solutions": "Suluhu",
+    "payroll": "Malipo",
+    "resources": "Rasilimali",
+    "pricing": "Bei",
+    "company": "Kampuni",
     "megaMenu": {
       "coreHr": {
-        "groupLabel": "[SW] Core HR",
-        "employeeDirectory": "[SW] Employee Directory",
-        "employeeRecords": "[SW] Employee Records",
-        "organizationStructure": "[SW] Organization Structure",
-        "onboarding": "[SW] Onboarding",
-        "employeeLifecycle": "[SW] Employee Lifecycle",
-        "documents": "[SW] Documents",
-        "ess": "[SW] ESS"
+        "groupLabel": "Msingi wa Rasilimali Watu",
+        "employeeDirectory": "Orodha ya Wafanyakazi",
+        "employeeRecords": "Kumbukumbu za Wafanyakazi",
+        "organizationStructure": "Muundo wa Shirika",
+        "onboarding": "Uanzishaji",
+        "employeeLifecycle": "Mzunguko wa Maisha ya Mfanyakazi",
+        "documents": "Hati",
+        "ess": "ESS"
       },
       "workforce": {
-        "groupLabel": "[SW] Workforce",
-        "leaveManagement": "[SW] Leave Management",
-        "attendance": "[SW] Attendance",
-        "shiftsRosters": "[SW] Shifts & Rosters",
-        "timesheets": "[SW] Timesheets",
-        "overtime": "[SW] Overtime"
+        "groupLabel": "Nguvu Kazi",
+        "leaveManagement": "Usimamizi wa Likizo",
+        "attendance": "Mahudhurio",
+        "shiftsRosters": "Zamu na Ratiba",
+        "timesheets": "Karatasi za Muda",
+        "overtime": "Muda wa Ziada"
       },
       "payroll": {
-        "groupLabel": "[SW] Payroll",
-        "payrollProcessing": "[SW] Payroll Processing",
-        "earningsBenefits": "[SW] Earnings & Benefits",
-        "deductions": "[SW] Deductions",
-        "salaryAdvance": "[SW] Salary Advance",
-        "payslips": "[SW] Payslips",
-        "statutoryCompliance": "[SW] Statutory Compliance",
-        "payrollReports": "[SW] Payroll Reports",
-        "disbursements": "[SW] Disbursements"
+        "groupLabel": "Malipo",
+        "payrollProcessing": "Uchakataji wa Malipo",
+        "earningsBenefits": "Mapato na Manufaa",
+        "deductions": "Makato",
+        "salaryAdvance": "Mkopo wa Mshahara",
+        "payslips": "Risiti za Mshahara",
+        "statutoryCompliance": "Uzingatiaji wa Kisheria",
+        "payrollReports": "Ripoti za Malipo",
+        "disbursements": "Ulipaji"
       },
       "talent": {
-        "groupLabel": "[SW] Talent",
-        "recruitmentAts": "[SW] Recruitment & ATS",
-        "performanceManagement": "[SW] Performance Management",
-        "learningDevelopment": "[SW] Learning & Development"
+        "groupLabel": "Vipaji",
+        "recruitmentAts": "Uajiri na ATS",
+        "performanceManagement": "Usimamizi wa Utendaji",
+        "learningDevelopment": "Mafunzo na Maendeleo"
       },
       "workplace": {
-        "groupLabel": "[SW] Workplace",
-        "teamsCollaboration": "[SW] Teams & Collaboration",
-        "approvalsWorkflows": "[SW] Approvals & Workflows",
-        "notifications": "[SW] Notifications"
+        "groupLabel": "Mahali pa Kazi",
+        "teamsCollaboration": "Timu na Ushirikiano",
+        "approvalsWorkflows": "Idhini na Mtiririko wa Kazi",
+        "notifications": "Arifa"
       },
       "intelligence": {
-        "groupLabel": "[SW] Intelligence",
-        "dashboards": "[SW] Dashboards",
-        "analytics": "[SW] Analytics",
-        "reports": "[SW] Reports",
-        "askTija": "[SW] Ask TiJa AI"
+        "groupLabel": "Uchambuzi",
+        "dashboards": "Dashibodi",
+        "analytics": "Uchambuzi wa Takwimu",
+        "reports": "Ripoti",
+        "askTija": "Uliza TiJa AI"
       }
     },
     "solutionsMenu": {
-      "hrTeams": "[SW] HR Teams",
-      "financeTeams": "[SW] Finance Teams",
-      "executives": "[SW] Executives",
-      "managers": "[SW] Managers",
-      "employees": "[SW] Employees"
+      "hrTeams": "Timu za Rasilimali Watu",
+      "financeTeams": "Timu za Fedha",
+      "executives": "Wakurugenzi",
+      "managers": "Wasimamizi",
+      "employees": "Wafanyakazi"
     }
   },
   "hero": {
-    "eyebrow": "[SW] THE HR PLATFORM BUILT AROUND YOUR PEOPLE",
-    "headline": "[SW] One place to run your entire people operation.",
-    "supporting": "[SW] Recruit. Onboard. Manage. Pay. Develop. Perform. ZiraHR connects your entire employee journey.",
+    "eyebrow": "JUKWAA LA RASILIMALI WATU LILILOUNDWA KWA AJILI YA WATU WAKO",
+    "headline": "Mahali pamoja pa kuendesha shughuli zako zote za rasilimali watu.",
+    "supporting": "Ajiri. Anzisha. Simamia. Lipa. Endeleza. Tathmini. ZiraHR inaunganisha safari nzima ya mfanyakazi wako.",
     "reel": {
       "payroll": {
-        "label": "[SW] Payroll",
-        "steps": [
-          "[SW] Draft",
-          "[SW] Review",
-          "[SW] Approve",
-          "[SW] Process",
-          "[SW] Disburse"
-        ],
-        "result": "[SW] Payroll disbursed"
+        "label": "Malipo",
+        "steps": ["Rasimu", "Ukaguzi", "Idhini", "Uchakataji", "Ulipaji"],
+        "result": "Malipo yamelipwa"
       },
       "leave": {
-        "label": "[SW] Leave",
-        "requestTitle": "[SW] Leave request",
-        "requester": "[SW] Employee, Sales",
-        "pending": "[SW] Pending",
-        "approved": "[SW] Approved"
+        "label": "Likizo",
+        "requestTitle": "Ombi la likizo",
+        "requester": "Mfanyakazi, Mauzo",
+        "pending": "Inasubiri",
+        "approved": "Imeidhinishwa"
       },
       "dashboard": {
-        "label": "[SW] Live dashboard",
+        "label": "Dashibodi ya Moja kwa Moja",
         "stats": {
-          "employees": {
-            "label": "[SW] Employees",
-            "value": 128,
-            "suffix": ""
-          },
-          "leaveApprovals": {
-            "label": "[SW] Leave approvals",
-            "value": 14,
-            "suffix": ""
-          },
-          "payrollReady": {
-            "label": "[SW] Payroll ready",
-            "value": 98,
-            "suffix": "%"
-          }
+          "employees": { "label": "Wafanyakazi", "value": 128, "suffix": "" },
+          "leaveApprovals": { "label": "Idhini za likizo", "value": 14, "suffix": "" },
+          "payrollReady": { "label": "Malipo tayari", "value": 98, "suffix": "%" }
         }
       },
       "askTija": {
-        "label": "[SW] Ask TiJa",
-        "question": "[SW] Who has contracts expiring this month?",
-        "answer": "[SW] 3 employees — Sales, Ops."
+        "label": "Uliza TiJa",
+        "question": "Ni wafanyakazi gani wenye mikataba inayomalizika mwezi huu?",
+        "answer": "Wafanyakazi 3 — Mauzo, Uendeshaji."
       }
     }
   },
   "footer": {
     "columns": {
       "product": {
-        "title": "[SW] Product",
-        "coreHr": "[SW] Core HR",
-        "payroll": "[SW] Payroll",
-        "leave": "[SW] Leave",
-        "attendance": "[SW] Attendance",
-        "performance": "[SW] Performance",
-        "recruitment": "[SW] Recruitment",
-        "learningDevelopment": "[SW] Learning & Development",
-        "teams": "[SW] Teams",
-        "ess": "[SW] ESS",
-        "analytics": "[SW] Analytics",
-        "askTija": "[SW] Ask TiJa"
+        "title": "Bidhaa",
+        "coreHr": "Msingi wa Rasilimali Watu",
+        "payroll": "Malipo",
+        "leave": "Likizo",
+        "attendance": "Mahudhurio",
+        "performance": "Utendaji",
+        "recruitment": "Uajiri",
+        "learningDevelopment": "Mafunzo na Maendeleo",
+        "teams": "Timu",
+        "ess": "ESS",
+        "analytics": "Uchambuzi",
+        "askTija": "Uliza TiJa"
       },
       "solutions": {
-        "title": "[SW] Solutions",
-        "hrTeams": "[SW] HR Teams",
-        "financeTeams": "[SW] Finance Teams",
-        "executives": "[SW] Executives",
-        "managers": "[SW] Managers",
-        "employees": "[SW] Employees"
+        "title": "Suluhu",
+        "hrTeams": "Timu za Rasilimali Watu",
+        "financeTeams": "Timu za Fedha",
+        "executives": "Wakurugenzi",
+        "managers": "Wasimamizi",
+        "employees": "Wafanyakazi"
       },
       "resources": {
-        "title": "[SW] Resources",
-        "blog": "[SW] Blog",
-        "guides": "[SW] Guides",
-        "templates": "[SW] Templates",
-        "helpCentre": "[SW] Help Centre",
-        "productUpdates": "[SW] Product Updates"
+        "title": "Rasilimali",
+        "blog": "Blogu",
+        "guides": "Miongozo",
+        "templates": "Violezo",
+        "helpCentre": "Kituo cha Usaidizi",
+        "productUpdates": "Masasisho ya Bidhaa"
       },
       "company": {
-        "title": "[SW] Company",
-        "about": "[SW] About",
-        "contact": "[SW] Contact",
-        "careers": "[SW] Careers",
-        "partners": "[SW] Partners"
+        "title": "Kampuni",
+        "about": "Kuhusu",
+        "contact": "Wasiliana",
+        "careers": "Nafasi za Kazi",
+        "partners": "Washirika"
       },
       "legal": {
-        "title": "[SW] Legal",
-        "privacy": "[SW] Privacy",
-        "terms": "[SW] Terms",
-        "security": "[SW] Security",
-        "cookies": "[SW] Cookies"
+        "title": "Kisheria",
+        "privacy": "Faragha",
+        "terms": "Masharti",
+        "security": "Usalama",
+        "cookies": "Vidakuzi"
       }
     },
-    "tagline": "[SW] ZiraHR — People operations, connected."
+    "tagline": "ZiraHR — Usimamizi wa rasilimali watu, umeunganishwa."
   },
   "employeeJourney": {
-    "eyebrow": "[SW] ONE EMPLOYEE. ONE JOURNEY.",
-    "intro": "[SW] Meet Amina.",
-    "supporting": "[SW] Every stage of her journey lives in the same employee record.",
+    "eyebrow": "MFANYAKAZI MMOJA. SAFARI MOJA.",
+    "intro": "Mtambue Amina.",
+    "supporting": "Kila hatua ya safari yake inaishi katika kumbukumbu ile ile ya mfanyakazi.",
     "stages": {
-      "applicant": "[SW] Applicant",
-      "candidate": "[SW] Candidate",
-      "offer": "[SW] Offer",
-      "employee": "[SW] Employee",
-      "onboarding": "[SW] Onboarding",
-      "attendanceLeave": "[SW] Attendance + Leave",
-      "payroll": "[SW] Payroll",
-      "learning": "[SW] Learning",
-      "performance": "[SW] Performance",
-      "promotion": "[SW] Promotion",
-      "offboarding": "[SW] Offboarding"
+      "applicant": "Mwombaji",
+      "candidate": "Mgombea",
+      "offer": "Toleo",
+      "employee": "Mfanyakazi",
+      "onboarding": "Uanzishaji",
+      "attendanceLeave": "Mahudhurio + Likizo",
+      "payroll": "Malipo",
+      "learning": "Mafunzo",
+      "performance": "Utendaji",
+      "promotion": "Kupandishwa Cheo",
+      "offboarding": "Kuondoka"
     },
     "stageCaptions": {
-      "applicant": "[SW] Amina applies for a role through the careers page.",
-      "candidate": "[SW] Her application moves through shortlisting and interviews.",
-      "offer": "[SW] An offer is extended and accepted.",
-      "employee": "[SW] Amina becomes an employee record — no re-entry, same profile.",
-      "onboarding": "[SW] Her onboarding checklist and documents are assigned automatically.",
-      "attendanceLeave": "[SW] She clocks in, requests leave, and checks her balance.",
-      "payroll": "[SW] Her payroll runs from the same record, every cycle.",
-      "learning": "[SW] She enrolls in training tied to her role and goals.",
-      "performance": "[SW] Her goals and reviews build on the same history.",
-      "promotion": "[SW] A promotion updates her record — nothing re-entered.",
-      "offboarding": "[SW] When she eventually leaves, offboarding closes the record cleanly."
+      "applicant": "Amina anaomba nafasi ya kazi kupitia ukurasa wa kazi.",
+      "candidate": "Ombi lake linapitia uchujaji na mahojiano.",
+      "offer": "Toleo la kazi linatolewa na kukubaliwa.",
+      "employee": "Amina anakuwa kumbukumbu ya mfanyakazi — hakuna kuingiza upya, wasifu ule ule.",
+      "onboarding": "Orodha yake ya uanzishaji na hati zinapangiwa moja kwa moja.",
+      "attendanceLeave": "Anaingia kazini, anaomba likizo, na kuangalia salio lake.",
+      "payroll": "Malipo yake yanatoka kwenye kumbukumbu ile ile, kila mzunguko.",
+      "learning": "Anajiandikisha kwa mafunzo yanayohusiana na nafasi yake na malengo yake.",
+      "performance": "Malengo na tathmini zake zinajengwa juu ya historia ile ile.",
+      "promotion": "Kupandishwa cheo kunasasisha kumbukumbu yake — hakuna kinachoingizwa upya.",
+      "offboarding": "Atakapoondoka hatimaye, mchakato wa kuondoka unafunga kumbukumbu ipasavyo."
     }
   },
   "connectedRecord": {
-    "eyebrow": "[SW] ONE EMPLOYEE RECORD",
-    "headline": "[SW] One employee record. Everything connected.",
-    "supporting": "[SW] Payroll, leave, attendance, performance, learning, documents, assets and recruitment all read from the same record — not nine disconnected modules.",
+    "eyebrow": "KUMBUKUMBU MOJA YA MFANYAKAZI",
+    "headline": "Kumbukumbu moja ya mfanyakazi. Kila kitu kimeunganishwa.",
+    "supporting": "Malipo, likizo, mahudhurio, utendaji, mafunzo, hati, mali na uajiri — vyote vinasoma kutoka kumbukumbu ile ile, si moduli tisa zisizounganishwa.",
     "nodes": {
-      "payroll": "[SW] Payroll",
-      "leave": "[SW] Leave",
-      "attendance": "[SW] Attendance",
-      "performance": "[SW] Performance",
-      "learning": "[SW] Learning",
-      "documents": "[SW] Documents",
-      "assets": "[SW] Assets",
-      "recruitment": "[SW] Recruitment",
-      "lifecycle": "[SW] Lifecycle",
-      "disciplinary": "[SW] Disciplinary"
+      "payroll": "Malipo",
+      "leave": "Likizo",
+      "attendance": "Mahudhurio",
+      "performance": "Utendaji",
+      "learning": "Mafunzo",
+      "documents": "Hati",
+      "assets": "Mali",
+      "recruitment": "Uajiri",
+      "lifecycle": "Mzunguko wa Maisha",
+      "disciplinary": "Nidhamu"
     }
   },
   "moduleShowcase": {
-    "eyebrow": "[SW] EXPLORE THE PLATFORM",
-    "heading": "[SW] One platform. Every stage of your people journey.",
+    "eyebrow": "CHUNGUZA JUKWAA",
+    "heading": "Jukwaa moja. Kila hatua ya safari ya watu wako.",
     "coreHr": {
-      "label": "[SW] Core HR",
-      "headline": "[SW] Your people records. Finally organized.",
-      "items": [
-        "[SW] Employee profile",
-        "[SW] Job details",
-        "[SW] Employee directory",
-        "[SW] Lifecycle",
-        "[SW] Organization structure",
-        "[SW] Documents"
-      ]
+      "label": "Msingi wa Rasilimali Watu",
+      "headline": "Kumbukumbu za watu wako. Hatimaye zimepangwa.",
+      "items": ["Wasifu wa mfanyakazi", "Maelezo ya kazi", "Orodha ya wafanyakazi", "Mzunguko wa maisha", "Muundo wa shirika", "Hati"]
     },
     "payroll": {
-      "label": "[SW] Payroll",
-      "headline": "[SW] From gross to net. Without the chaos.",
-      "items": [
-        "[SW] Payroll run",
-        "[SW] Statutory calculations",
-        "[SW] Payslip",
-        "[SW] Reports",
-        "[SW] Bank file / disbursement"
-      ]
+      "label": "Malipo",
+      "headline": "Kutoka jumla hadi halisi. Bila fujo.",
+      "items": ["Mzunguko wa malipo", "Mahesabu ya kisheria", "Risiti ya mshahara", "Ripoti", "Faili la benki / ulipaji"]
     },
     "leave": {
-      "label": "[SW] Leave",
-      "headline": "[SW] Leave that practically manages itself.",
-      "items": [
-        "[SW] Request",
-        "[SW] Workflow",
-        "[SW] Approval",
-        "[SW] Balance updated"
-      ]
+      "label": "Likizo",
+      "headline": "Likizo inayojisimamia yenyewe.",
+      "items": ["Ombi", "Mtiririko wa kazi", "Idhini", "Salio limesasishwa"]
     },
     "attendance": {
-      "label": "[SW] Attendance",
-      "headline": "[SW] Know who's working, without chasing sheets.",
-      "items": [
-        "[SW] Clock in / out",
-        "[SW] Geo-fencing",
-        "[SW] Shifts & rosters",
-        "[SW] Timesheets"
-      ]
+      "label": "Mahudhurio",
+      "headline": "Jua nani anafanya kazi, bila kufuatilia karatasi.",
+      "items": ["Kuingia / kutoka", "Uzio wa kijiografia", "Zamu na ratiba", "Karatasi za muda"]
     },
     "performance": {
-      "label": "[SW] Performance",
-      "headline": "[SW] Turn goals into conversations.",
-      "items": [
-        "[SW] Goals",
-        "[SW] KPIs",
-        "[SW] Review cycles",
-        "[SW] Continuous feedback"
-      ]
+      "label": "Utendaji",
+      "headline": "Geuza malengo kuwa mazungumzo.",
+      "items": ["Malengo", "Viashiria vikuu", "Mizunguko ya tathmini", "Maoni endelevu"]
     },
     "recruitment": {
-      "label": "[SW] Recruitment",
-      "headline": "[SW] From requisition to hire, on one record.",
-      "items": [
-        "[SW] Requisition",
-        "[SW] Job board",
-        "[SW] Applications",
-        "[SW] Shortlist",
-        "[SW] Interview",
-        "[SW] Offer"
-      ]
+      "label": "Uajiri",
+      "headline": "Kutoka ombi la nafasi hadi kuajiri, kwenye kumbukumbu moja.",
+      "items": ["Ombi la nafasi", "Bango la kazi", "Maombi", "Uchujaji", "Mahojiano", "Toleo"]
     },
     "learningDevelopment": {
-      "label": "[SW] L&D",
-      "headline": "[SW] Skills, tied to growth.",
-      "items": [
-        "[SW] Training programs",
-        "[SW] Courses",
-        "[SW] Assessments",
-        "[SW] Certificates"
-      ]
+      "label": "Mafunzo",
+      "headline": "Ujuzi, uliounganishwa na ukuaji.",
+      "items": ["Programu za mafunzo", "Kozi", "Tathmini", "Vyeti"]
     },
     "collaboration": {
-      "label": "[SW] Collaboration",
-      "headline": "[SW] HR that people actually want to open.",
-      "items": [
-        "[SW] Workspaces",
-        "[SW] Teams",
-        "[SW] Announcements",
-        "[SW] Notifications"
-      ]
+      "label": "Ushirikiano",
+      "headline": "Rasilimali watu ambayo watu wanataka kuifungua.",
+      "items": ["Nafasi za kazi", "Timu", "Matangazo", "Arifa"]
     }
   },
   "ess": {
-    "eyebrow": "[SW] EMPLOYEE SELF-SERVICE",
-    "headline": "[SW] HR isn't only for HR.",
-    "supporting": "[SW] Give every employee a simpler way to manage their work life.",
+    "eyebrow": "HUDUMA BINAFSI YA MFANYAKAZI",
+    "headline": "Rasilimali watu si kwa idara ya rasilimali watu pekee.",
+    "supporting": "Mpe kila mfanyakazi njia rahisi zaidi ya kusimamia maisha yake ya kazini.",
     "capabilities": [
-      "[SW] View Profile",
-      "[SW] Update Details",
-      "[SW] Download Payslips",
-      "[SW] Request Leave",
-      "[SW] Check Leave Balance",
-      "[SW] View Attendance",
-      "[SW] View Goals",
-      "[SW] Complete Learning",
-      "[SW] Receive Notifications",
-      "[SW] Access Documents",
-      "[SW] Follow Approvals"
+      "Angalia Wasifu",
+      "Sasisha Maelezo",
+      "Pakua Risiti za Mshahara",
+      "Omba Likizo",
+      "Angalia Salio la Likizo",
+      "Angalia Mahudhurio",
+      "Angalia Malengo",
+      "Kamilisha Mafunzo",
+      "Pokea Arifa",
+      "Fikia Hati",
+      "Fuatilia Idhini"
     ]
   },
   "flexibility": {
-    "eyebrow": "[SW] CONFIGURED AROUND YOU",
-    "headline": "[SW] Your organization isn't generic. Your HR software shouldn't be either.",
-    "closingLine": "[SW] Configurable without becoming complicated.",
-    "steps": [
-      "[SW] Regions",
-      "[SW] Branches",
-      "[SW] Departments",
-      "[SW] Roles",
-      "[SW] Workflows",
-      "[SW] Leave Policies",
-      "[SW] Payroll Rules",
-      "[SW] Security"
-    ]
+    "eyebrow": "IMEUNDWA KULINGANA NAWE",
+    "headline": "Shirika lako si la kawaida. Programu yako ya rasilimali watu haipaswi kuwa hivyo pia.",
+    "closingLine": "Inayoweza kubadilishwa bila kuwa ngumu.",
+    "steps": ["Mikoa", "Matawi", "Idara", "Majukumu", "Mitiririko ya Kazi", "Sera za Likizo", "Kanuni za Malipo", "Usalama"]
   },
   "approvals": {
-    "eyebrow": "[SW] ONE APPROVAL ENGINE",
-    "headline": "[SW] Route it once. Approve it your way.",
-    "everyAction": "[SW] Every create, edit, and update can require approval — leave, payroll, a new hire, a record change, or anything else your organization decides matters. These six are examples; your workflows aren't limited to them.",
-    "closingLine": "[SW] One approval engine. Your rules.",
-    "chainSteps": [
-      "[SW] Employee",
-      "[SW] Supervisor",
-      "[SW] Department Head",
-      "[SW] HR",
-      "[SW] Finance",
-      "[SW] Approved"
-    ],
+    "eyebrow": "INJINI MOJA YA IDHINI",
+    "headline": "Ipeleke mara moja. Iidhinishe kwa njia yako.",
+    "everyAction": "Kila uundaji, uhariri, na usasishaji unaweza kuhitaji idhini — likizo, malipo, mwajiriwa mpya, mabadiliko ya kumbukumbu, au chochote kingine ambacho shirika lako linaona ni muhimu. Hivi sita ni mifano tu; mitiririko yako ya kazi haiishii kwao.",
+    "closingLine": "Injini moja ya idhini. Kanuni zako.",
+    "chainSteps": ["Mfanyakazi", "Msimamizi", "Mkuu wa Idara", "Rasilimali Watu", "Fedha", "Imeidhinishwa"],
     "types": {
-      "leave": "[SW] Leave",
-      "payroll": "[SW] Payroll",
-      "salaryAdvance": "[SW] Salary Advance",
-      "promotion": "[SW] Promotion",
-      "disciplinary": "[SW] Disciplinary",
-      "dataImports": "[SW] Data Imports",
-      "custom": "[SW] + Build your own"
+      "leave": "Likizo",
+      "payroll": "Malipo",
+      "salaryAdvance": "Mkopo wa Mshahara",
+      "promotion": "Kupandishwa Cheo",
+      "disciplinary": "Nidhamu",
+      "dataImports": "Uingizaji wa Data",
+      "custom": "+ Unda yako mwenyewe"
     },
-    "customChainSteps": [
-      "[SW] Requester",
-      "[SW] Add a step",
-      "[SW] Add a step",
-      "[SW] Approved"
-    ],
-    "customNote": "[SW] Add, remove, or reorder steps — the chain is configured by your organization, not fixed by ZiraHR.",
+    "customChainSteps": ["Muombaji", "Ongeza hatua", "Ongeza hatua", "Imeidhinishwa"],
+    "customNote": "Ongeza, ondoa, au panga upya hatua — mtiririko unapangwa na shirika lako, si kupangwa moja kwa moja na ZiraHR.",
     "queue": {
-      "title": "[SW] Approval queue",
-      "subtitle": "[SW] Every pending action, in one place — whoever's turn it is to approve sees it here.",
+      "title": "Foleni ya Idhini",
+      "subtitle": "Kila hatua inayosubiri, mahali pamoja — yeyote ambaye ni zamu yake kuidhinisha anaiona hapa.",
       "items": {
-        "leaveRequest": {
-          "action": "[SW] Leave request",
-          "requester": "[SW] Employee, Sales"
-        },
-        "newEmployee": {
-          "action": "[SW] New employee record",
-          "requester": "[SW] HR Officer, Operations"
-        },
-        "payrollRun": {
-          "action": "[SW] Payroll run — July",
-          "requester": "[SW] Payroll Admin"
-        },
-        "salaryAdvance": {
-          "action": "[SW] Salary advance",
-          "requester": "[SW] Employee, Support"
-        },
-        "profileUpdate": {
-          "action": "[SW] Profile update",
-          "requester": "[SW] Employee, Finance"
-        }
+        "leaveRequest": { "action": "Ombi la likizo", "requester": "Mfanyakazi, Mauzo" },
+        "newEmployee": { "action": "Kumbukumbu mpya ya mfanyakazi", "requester": "Afisa wa Rasilimali Watu, Uendeshaji" },
+        "payrollRun": { "action": "Mzunguko wa malipo — Julai", "requester": "Msimamizi wa Malipo" },
+        "salaryAdvance": { "action": "Mkopo wa mshahara", "requester": "Mfanyakazi, Usaidizi" },
+        "profileUpdate": { "action": "Usasishaji wa wasifu", "requester": "Mfanyakazi, Fedha" }
       },
       "statusLabels": {
-        "pending": "[SW] Pending",
-        "approved": "[SW] Approved"
+        "pending": "Inasubiri",
+        "approved": "Imeidhinishwa"
       }
     }
   },
   "askTija": {
-    "eyebrow": "[SW] WORKFORCE INTELLIGENCE",
-    "headline": "[SW] Meet TiJa. Ask your workforce.",
-    "positioning": "[SW] Workforce intelligence inside ZiraHR.",
+    "eyebrow": "UCHAMBUZI WA NGUVU KAZI",
+    "headline": "Mtambue TiJa. Uliza kuhusu nguvu kazi yako.",
+    "positioning": "Uchambuzi wa nguvu kazi ndani ya ZiraHR.",
     "prompts": {
-      "contractsExpiring": "[SW] Who has contracts expiring this month?",
-      "pendingLeave": "[SW] Show pending leave approvals.",
-      "payrollVariance": "[SW] Explain this month's payroll variance.",
-      "missingBankDetails": "[SW] Which employees have missing bank details?"
+      "contractsExpiring": "Ni wafanyakazi gani wenye mikataba inayomalizika mwezi huu?",
+      "pendingLeave": "Onyesha idhini za likizo zinazosubiri.",
+      "payrollVariance": "Eleza tofauti ya malipo ya mwezi huu.",
+      "missingBankDetails": "Ni wafanyakazi gani wasio na taarifa za benki?"
     }
   },
   "dashboards": {
-    "eyebrow": "[SW] SEE YOUR ORGANIZATION",
-    "headline": "[SW] Different roles. Different questions. The right answers.",
+    "eyebrow": "ONA SHIRIKA LAKO",
+    "headline": "Majukumu tofauti. Maswali tofauti. Majibu sahihi.",
     "types": {
-      "executive": "[SW] Executive",
-      "hr": "[SW] HR",
-      "finance": "[SW] Finance",
-      "my": "[SW] My Dashboard"
+      "executive": "Mkurugenzi",
+      "hr": "Rasilimali Watu",
+      "finance": "Fedha",
+      "my": "Dashibodi Yangu"
     }
   },
   "multiRegion": {
-    "eyebrow": "[SW] MULTI-REGION, MULTI-BRANCH",
-    "headline": "[SW] One organization. However complex.",
-    "levels": [
-      "[SW] Organization",
-      "[SW] Region",
-      "[SW] Branch",
-      "[SW] Department",
-      "[SW] Employee"
-    ],
+    "eyebrow": "MIKOA MINGI, MATAWI MENGI",
+    "headline": "Shirika moja. Hata liwe changamano kiasi gani.",
+    "levels": ["Shirika", "Mkoa", "Tawi", "Idara", "Mfanyakazi"],
     "roleViews": {
-      "regionalManager": "[SW] Regional Manager sees My Region",
-      "branchManager": "[SW] Branch Manager sees My Branch",
-      "executive": "[SW] Executive sees the Whole Organization"
+      "regionalManager": "Meneja wa Mkoa anaona Mkoa Wangu",
+      "branchManager": "Meneja wa Tawi anaona Tawi Langu",
+      "executive": "Mkurugenzi anaona Shirika Zima"
     }
   },
   "security": {
-    "eyebrow": "[SW] TRUST & GOVERNANCE",
-    "headline": "[SW] Control who sees what. And know what happened.",
+    "eyebrow": "UAMINIFU NA UTAWALA",
+    "headline": "Dhibiti ni nani anayeona nini. Na jua kilichotokea.",
     "capabilities": [
       {
-        "label": "[SW] Roles & Permissions",
-        "description": "[SW] Access rights trickle down by role, department, and branch — segregated, not shared."
+        "label": "Majukumu na Ruhusa",
+        "description": "Haki za ufikiaji zinapitishwa kulingana na jukumu, idara, na tawi — zimetenganishwa, si za pamoja."
       },
       {
-        "label": "[SW] Geo-Restricted Login",
-        "description": "[SW] Sign-ins can be limited to approved locations for sensitive roles."
+        "label": "Kuingia kwa Eneo Maalum",
+        "description": "Kuingia kunaweza kuzuiliwa kwa maeneo yaliyoidhinishwa kwa majukumu nyeti."
       },
       {
-        "label": "[SW] Working-Hour Login Validation",
-        "description": "[SW] Sign-ins can be restricted to each organization's configured working hours."
+        "label": "Uthibitishaji wa Saa za Kazi",
+        "description": "Kuingia kunaweza kuzuiliwa kwa saa za kazi zilizowekwa na kila shirika."
       },
       {
-        "label": "[SW] Multi-Factor Authentication",
-        "description": "[SW] A second verification step for accounts that need it."
+        "label": "Uthibitishaji wa Hatua Mbili",
+        "description": "Hatua ya pili ya uthibitishaji kwa akaunti zinazohitaji."
       },
       {
-        "label": "[SW] Approval-Gated Special Access",
-        "description": "[SW] Exceptional access is requested, reviewed, and granted only to the specific user who asked."
+        "label": "Ufikiaji Maalum Unaohitaji Idhini",
+        "description": "Ufikiaji wa kipekee unaombwa, kukaguliwa, na kutolewa tu kwa mtumiaji aliyeomba."
       },
       {
-        "label": "[SW] Encrypted, Passcode-Protected Reports",
-        "description": "[SW] Sensitive report exports are encrypted and passcode-protected."
+        "label": "Ripoti Zilizosimbwa na Kulindwa kwa Nenosiri",
+        "description": "Ripoti nyeti zinazopakuliwa zimesimbwa na kulindwa kwa nenosiri."
       },
       {
-        "label": "[SW] Direct-to-Email Report Delivery",
-        "description": "[SW] Reports can be delivered straight to a verified email instead of an open download link."
+        "label": "Utoaji wa Ripoti Moja kwa Moja kwa Barua Pepe",
+        "description": "Ripoti zinaweza kutumwa moja kwa moja kwa barua pepe iliyothibitishwa badala ya kiungo cha kupakua kilicho wazi."
       },
       {
-        "label": "[SW] Approval Workflows & Export Controls",
-        "description": "[SW] Every sensitive action — and every export — routes through the same configurable approval engine."
+        "label": "Mitiririko ya Idhini na Udhibiti wa Utoaji",
+        "description": "Kila hatua nyeti — na kila upakuaji — inapitia injini ile ile ya idhini inayoweza kubadilishwa."
       },
       {
-        "label": "[SW] Audit & Activity Logs",
-        "description": "[SW] Every change to employee, leave, payroll, and access data is logged and traceable."
+        "label": "Kumbukumbu za Ukaguzi na Shughuli",
+        "description": "Kila mabadiliko ya data ya mfanyakazi, likizo, malipo, na ufikiaji yanarekodiwa na yanaweza kufuatiliwa."
       }
     ]
   },
   "productTour": {
-    "eyebrow": "[SW] EXPLORE ZiraHR",
-    "headline": "[SW] See it in action, before you sign up.",
-    "supporting": "[SW] A lightweight, simulated look at the interface — no account needed.",
+    "eyebrow": "CHUNGUZA ZiraHR",
+    "headline": "Iangalie ikifanya kazi, kabla hujajisajili.",
+    "supporting": "Mwonekano mwepesi, wa kuigwa wa kiolesura — hauitaji akaunti.",
     "buttons": {
-      "runPayroll": "[SW] Run Payroll",
-      "requestLeave": "[SW] Request Leave",
-      "approveRequest": "[SW] Approve Request",
-      "openEmployeeProfile": "[SW] Open Employee Profile",
-      "askTija": "[SW] Ask TiJa",
-      "viewDashboard": "[SW] View Dashboard"
+      "runPayroll": "Endesha Malipo",
+      "requestLeave": "Omba Likizo",
+      "approveRequest": "Idhinisha Ombi",
+      "openEmployeeProfile": "Fungua Wasifu wa Mfanyakazi",
+      "askTija": "Uliza TiJa",
+      "viewDashboard": "Angalia Dashibodi"
     }
   },
   "finalCta": {
-    "headline": "[SW] Ready to run HR differently?"
+    "headline": "Uko tayari kuendesha rasilimali watu kwa njia tofauti?"
   },
   "breadcrumbs": {
-    "coreHr": "[SW] Core HR",
-    "payroll": "[SW] Payroll",
-    "leaveManagement": "[SW] Leave Management",
-    "attendanceManagement": "[SW] Attendance",
-    "performanceManagement": "[SW] Performance",
-    "recruitment": "[SW] Recruitment",
-    "learningDevelopment": "[SW] Learning & Development",
-    "employeeSelfService": "[SW] Employee Self-Service",
-    "teamsCollaboration": "[SW] Teams & Collaboration",
-    "analytics": "[SW] Analytics",
-    "askTija": "[SW] Ask TiJa",
-    "hrSoftwareKenya": "[SW] HR Software Kenya",
-    "payrollSoftwareKenya": "[SW] Payroll Software Kenya",
-    "hrmisKenya": "[SW] HRMIS Kenya",
-    "hrSoftwareAfrica": "[SW] HR Software Africa",
-    "pricing": "[SW] Pricing",
-    "contact": "[SW] Contact",
-    "requestDemo": "[SW] Request a Demo",
-    "signup": "[SW] Sign Up",
-    "login": "[SW] Login",
-    "resources": "[SW] Resources",
-    "company": "[SW] Company",
-    "privacy": "[SW] Privacy",
-    "terms": "[SW] Terms",
-    "security": "[SW] Security",
-    "cookies": "[SW] Cookies"
+    "home": "Nyumbani",
+    "coreHr": "Msingi wa Rasilimali Watu",
+    "payroll": "Malipo",
+    "leaveManagement": "Usimamizi wa Likizo",
+    "attendanceManagement": "Mahudhurio",
+    "performanceManagement": "Utendaji",
+    "recruitment": "Uajiri",
+    "learningDevelopment": "Mafunzo na Maendeleo",
+    "employeeSelfService": "Huduma Binafsi ya Mfanyakazi",
+    "teamsCollaboration": "Timu na Ushirikiano",
+    "analytics": "Uchambuzi",
+    "askTija": "Uliza TiJa",
+    "hrSoftwareKenya": "Programu ya Rasilimali Watu Kenya",
+    "payrollSoftwareKenya": "Programu ya Malipo Kenya",
+    "hrmisKenya": "HRMIS Kenya",
+    "hrSoftwareAfrica": "Programu ya Rasilimali Watu Afrika",
+    "pricing": "Bei",
+    "contact": "Wasiliana",
+    "requestDemo": "Omba Onyesho",
+    "signup": "Jisajili",
+    "login": "Ingia",
+    "resources": "Rasilimali",
+    "company": "Kampuni",
+    "privacy": "Faragha",
+    "terms": "Masharti",
+    "security": "Usalama",
+    "cookies": "Vidakuzi"
   },
   "pages": {
     "coreHr": {
-      "eyebrow": "[SW] CORE HR",
-      "headline": "[SW] One reliable record for every employee.",
-      "supporting": "[SW] Employee directory, 360 profiles, organization structure, lifecycle and documents — all reading from the same record.",
-      "capabilities": [
-        "[SW] Employee Directory",
-        "[SW] Employee 360 Profile",
-        "[SW] Organization Structure",
-        "[SW] Branches & Regions",
-        "[SW] Departments",
-        "[SW] Job Grades",
-        "[SW] Job Positions",
-        "[SW] Employee Lifecycle",
-        "[SW] Promotions",
-        "[SW] Transfers",
-        "[SW] Temporary Assignments",
-        "[SW] Onboarding",
-        "[SW] Offboarding",
-        "[SW] Documents"
-      ],
-      "connectsToHeadline": "[SW] Every other module reads from this record.",
-      "ctaHeadline": "[SW] Give every employee one reliable record."
+      "eyebrow": "MSINGI WA RASILIMALI WATU",
+      "headline": "Kumbukumbu moja ya kuaminika kwa kila mfanyakazi.",
+      "supporting": "Orodha ya wafanyakazi, wasifu wa 360, muundo wa shirika, mzunguko wa maisha na hati — vyote vikisoma kutoka kumbukumbu ile ile.",
+      "capabilities": ["Orodha ya Wafanyakazi", "Wasifu wa Mfanyakazi wa 360", "Muundo wa Shirika", "Matawi na Mikoa", "Idara", "Ngazi za Kazi", "Nafasi za Kazi", "Mzunguko wa Maisha ya Mfanyakazi", "Kupandishwa Cheo", "Uhamisho", "Kazi za Muda", "Uanzishaji", "Kuondoka", "Hati"],
+      "connectsToHeadline": "Kila moduli nyingine inasoma kutoka kumbukumbu hii.",
+      "ctaHeadline": "Mpe kila mfanyakazi kumbukumbu moja ya kuaminika."
     },
     "payroll": {
-      "eyebrow": "[SW] PAYROLL",
-      "headline": "[SW] Payroll without spreadsheet gymnastics.",
-      "supporting": "[SW] Gross to net, statutory-correct, without a spreadsheet in sight.",
-      "flowSteps": [
-        "[SW] Draft",
-        "[SW] Review",
-        "[SW] Approve",
-        "[SW] Process",
-        "[SW] Disburse"
-      ],
-      "capabilities": [
-        "[SW] Payroll Cycles",
-        "[SW] Basic Pay",
-        "[SW] Allowances",
-        "[SW] Benefits",
-        "[SW] Deductions",
-        "[SW] PAYE",
-        "[SW] NSSF",
-        "[SW] SHIF",
-        "[SW] Housing Levy",
-        "[SW] Reliefs",
-        "[SW] Salary Advances",
-        "[SW] Payslips",
-        "[SW] Payroll Approvals",
-        "[SW] Bank Files",
-        "[SW] Disbursements",
-        "[SW] Payroll Analytics"
-      ],
-      "connectsToHeadline": "[SW] Payroll runs from the same record as everything else.",
-      "ctaHeadline": "[SW] Run payroll from one connected record."
+      "eyebrow": "MALIPO",
+      "headline": "Malipo bila mizunguko ya lahajedwali.",
+      "supporting": "Kutoka jumla hadi halisi, sahihi kisheria, bila lahajedwali hata moja.",
+      "flowSteps": ["Rasimu", "Ukaguzi", "Idhini", "Uchakataji", "Ulipaji"],
+      "capabilities": ["Mizunguko ya Malipo", "Mshahara wa Msingi", "Posho", "Manufaa", "Makato", "PAYE", "NSSF", "SHIF", "Housing Levy", "Ahueni", "Mikopo ya Mshahara", "Risiti za Mshahara", "Idhini za Malipo", "Faili za Benki", "Ulipaji", "Uchambuzi wa Malipo"],
+      "connectsToHeadline": "Malipo yanafanyika kutoka kumbukumbu ile ile kama kila kitu kingine.",
+      "ctaHeadline": "Endesha malipo kutoka kumbukumbu moja iliyounganishwa."
     },
     "leaveManagement": {
-      "eyebrow": "[SW] LEAVE MANAGEMENT",
-      "headline": "[SW] Leave management that keeps everyone in sync.",
-      "supporting": "[SW] Request, route, approve and update a balance — automatically, every time.",
-      "flowSteps": [
-        "[SW] Employee Requests",
-        "[SW] Manager Approval",
-        "[SW] Workflow Routes",
-        "[SW] HR Sees Calendar",
-        "[SW] Balance Updates"
-      ],
-      "capabilities": [
-        "[SW] Leave Policies",
-        "[SW] Accruals",
-        "[SW] Carry Forwards",
-        "[SW] Multi-level Approvals",
-        "[SW] Leave Calendar",
-        "[SW] Balances",
-        "[SW] Reports",
-        "[SW] ESS"
-      ],
-      "connectsToHeadline": "[SW] Leave balances feed straight into payroll and attendance.",
-      "ctaHeadline": "[SW] Let leave manage itself."
+      "eyebrow": "USIMAMIZI WA LIKIZO",
+      "headline": "Usimamizi wa likizo unaowaweka wote sawa.",
+      "supporting": "Omba, elekeza, idhinisha na sasisha salio — moja kwa moja, kila wakati.",
+      "flowSteps": ["Ombi la Mfanyakazi", "Idhini ya Meneja", "Mtiririko wa Kazi", "Kalenda ya Rasilimali Watu", "Salio Linasasishwa"],
+      "capabilities": ["Sera za Likizo", "Mkusanyiko", "Uhamishaji", "Idhini za Ngazi Nyingi", "Kalenda ya Likizo", "Salio", "Ripoti", "ESS"],
+      "connectsToHeadline": "Salio la likizo linaingia moja kwa moja kwenye malipo na mahudhurio.",
+      "ctaHeadline": "Acha likizo ijisimamie yenyewe."
     },
     "attendanceManagement": {
-      "eyebrow": "[SW] ATTENDANCE",
-      "headline": "[SW] Know who's working. Without chasing attendance sheets.",
-      "supporting": "[SW] Clock-in to dashboard, geo-aware, shift-aware.",
-      "capabilities": [
-        "[SW] Clock In / Out",
-        "[SW] Geo-fencing",
-        "[SW] Attendance Rules",
-        "[SW] Branch Locations",
-        "[SW] Late Arrivals",
-        "[SW] Overtime",
-        "[SW] Shifts",
-        "[SW] Rosters",
-        "[SW] Timesheets",
-        "[SW] Attendance Analytics"
-      ],
-      "connectsToHeadline": "[SW] Attendance data flows straight into payroll and leave.",
-      "ctaHeadline": "[SW] See attendance in real time, everywhere you operate."
+      "eyebrow": "MAHUDHURIO",
+      "headline": "Jua nani anafanya kazi. Bila kufuatilia karatasi za mahudhurio.",
+      "supporting": "Kutoka kuingia hadi dashibodi, ikitambua eneo na zamu.",
+      "capabilities": ["Kuingia / Kutoka", "Uzio wa Kijiografia", "Kanuni za Mahudhurio", "Maeneo ya Matawi", "Kuchelewa", "Muda wa Ziada", "Zamu", "Ratiba", "Karatasi za Muda", "Uchambuzi wa Mahudhurio"],
+      "connectsToHeadline": "Data ya mahudhurio inaingia moja kwa moja kwenye malipo na likizo.",
+      "ctaHeadline": "Ona mahudhurio kwa wakati halisi, popote unapofanya kazi."
     },
     "performanceManagement": {
-      "eyebrow": "[SW] PERFORMANCE",
-      "headline": "[SW] Turn goals into conversations. Conversations into growth.",
-      "supporting": "[SW] Goals, feedback and reviews — all tied to the same employee history.",
-      "capabilities": [
-        "[SW] Goals",
-        "[SW] KPIs",
-        "[SW] Review Cycles",
-        "[SW] Appraisals",
-        "[SW] Continuous Feedback",
-        "[SW] 360 Feedback",
-        "[SW] PIP",
-        "[SW] Analytics"
-      ],
-      "connectsToHeadline": "[SW] Performance history builds on the same record as learning and payroll.",
-      "ctaHeadline": "[SW] Make performance a conversation, not a form."
+      "eyebrow": "UTENDAJI",
+      "headline": "Geuza malengo kuwa mazungumzo. Mazungumzo kuwa ukuaji.",
+      "supporting": "Malengo, maoni na tathmini — vyote vikihusiana na historia ile ile ya mfanyakazi.",
+      "capabilities": ["Malengo", "Viashiria Vikuu", "Mizunguko ya Tathmini", "Tathmini za Kila Mwaka", "Maoni Endelevu", "Maoni ya 360", "Mpango wa Kuboresha Utendaji", "Uchambuzi"],
+      "connectsToHeadline": "Historia ya utendaji inajengwa juu ya kumbukumbu ile ile ya mafunzo na malipo.",
+      "ctaHeadline": "Fanya utendaji kuwa mazungumzo, si fomu."
     },
     "recruitment": {
-      "eyebrow": "[SW] RECRUITMENT",
-      "headline": "[SW] From requisition to hire, on one record.",
-      "supporting": "[SW] The final step doesn't re-enter your new hire — it becomes their employee profile.",
-      "flowSteps": [
-        "[SW] Requisition",
-        "[SW] Job Board",
-        "[SW] Applications",
-        "[SW] Shortlist",
-        "[SW] Interview",
-        "[SW] Offer",
-        "[SW] Hire"
-      ],
-      "connectsToHeadline": "[SW] A hire becomes an employee record — nothing re-entered.",
-      "ctaHeadline": "[SW] Hire into the same record they'll work from."
+      "eyebrow": "UAJIRI",
+      "headline": "Kutoka ombi la nafasi hadi kuajiri, kwenye kumbukumbu moja.",
+      "supporting": "Hatua ya mwisho haiingizi upya mwajiriwa wako mpya — inakuwa wasifu wake wa mfanyakazi.",
+      "flowSteps": ["Ombi la Nafasi", "Bango la Kazi", "Maombi", "Uchujaji", "Mahojiano", "Toleo", "Kuajiriwa"],
+      "connectsToHeadline": "Kuajiriwa kunakuwa kumbukumbu ya mfanyakazi — hakuna kinachoingizwa upya.",
+      "ctaHeadline": "Waajiri moja kwa moja kwenye kumbukumbu watakayotumia."
     },
     "learningDevelopment": {
-      "eyebrow": "[SW] LEARNING & DEVELOPMENT",
-      "headline": "[SW] Skills, tied to growth.",
-      "supporting": "[SW] Training that connects to the role, the goals, and the record behind them.",
-      "flowSteps": [
-        "[SW] Skills",
-        "[SW] Learning",
-        "[SW] Assessment",
-        "[SW] Certification",
-        "[SW] Growth"
-      ],
-      "capabilities": [
-        "[SW] Training Programs",
-        "[SW] Courses",
-        "[SW] Enrollments",
-        "[SW] Assessments",
-        "[SW] Certificates",
-        "[SW] Skills",
-        "[SW] Competencies",
-        "[SW] Development Plans"
-      ],
-      "connectsToHeadline": "[SW] Learning ties directly into performance and career growth.",
-      "ctaHeadline": "[SW] Turn training into a growth plan, not a checkbox."
+      "eyebrow": "MAFUNZO NA MAENDELEO",
+      "headline": "Ujuzi, uliounganishwa na ukuaji.",
+      "supporting": "Mafunzo yanayounganishwa na nafasi ya kazi, malengo, na kumbukumbu iliyo nyuma yao.",
+      "flowSteps": ["Ujuzi", "Mafunzo", "Tathmini", "Uthibitisho", "Ukuaji"],
+      "capabilities": ["Programu za Mafunzo", "Kozi", "Usajili", "Tathmini", "Vyeti", "Ujuzi", "Umahiri", "Mipango ya Maendeleo"],
+      "connectsToHeadline": "Mafunzo yanaunganishwa moja kwa moja na utendaji na ukuaji wa kazi.",
+      "ctaHeadline": "Geuza mafunzo kuwa mpango wa ukuaji, si sanduku la kuweka alama."
     },
     "teamsCollaboration": {
-      "eyebrow": "[SW] TEAMS & COLLABORATION",
-      "headline": "[SW] HR that people actually want to open.",
-      "supporting": "[SW] Workspaces, teams, announcements and notifications — ZiraHR as more than an administrative system.",
-      "capabilities": [
-        "[SW] Workspaces",
-        "[SW] Teams",
-        "[SW] Channels",
-        "[SW] Messaging",
-        "[SW] Announcements",
-        "[SW] Notifications",
-        "[SW] Employee Collaboration"
-      ],
-      "connectsToHeadline": "[SW] Collaboration stays connected to the same organization structure.",
-      "ctaHeadline": "[SW] Make HR somewhere people want to be."
+      "eyebrow": "TIMU NA USHIRIKIANO",
+      "headline": "Rasilimali watu ambayo watu wanataka kuifungua.",
+      "supporting": "Nafasi za kazi, timu, matangazo na arifa — ZiraHR ni zaidi ya mfumo wa kiutawala.",
+      "capabilities": ["Nafasi za Kazi", "Timu", "Njia", "Ujumbe", "Matangazo", "Arifa", "Ushirikiano wa Wafanyakazi"],
+      "connectsToHeadline": "Ushirikiano unabaki umeunganishwa na muundo ule ule wa shirika.",
+      "ctaHeadline": "Fanya rasilimali watu kuwa mahali watu wanapotaka kuwa."
     },
     "employeeSelfService": {
-      "eyebrow": "[SW] EMPLOYEE SELF-SERVICE",
-      "headline": "[SW] HR isn't only for HR.",
-      "supporting": "[SW] Give every employee a simpler way to manage their work life.",
-      "capabilities": [
-        "[SW] View Profile",
-        "[SW] Update Details",
-        "[SW] Download Payslips",
-        "[SW] Request Leave",
-        "[SW] Check Leave Balance",
-        "[SW] View Attendance",
-        "[SW] View Goals",
-        "[SW] Complete Learning",
-        "[SW] Receive Notifications",
-        "[SW] Access Documents",
-        "[SW] Follow Approvals"
-      ],
-      "connectsToHeadline": "[SW] Every ESS action updates the same record HR sees.",
-      "ctaHeadline": "[SW] Give your whole team self-service, not spreadsheets."
+      "eyebrow": "HUDUMA BINAFSI YA MFANYAKAZI",
+      "headline": "Rasilimali watu si kwa idara ya rasilimali watu pekee.",
+      "supporting": "Mpe kila mfanyakazi njia rahisi zaidi ya kusimamia maisha yake ya kazini.",
+      "capabilities": ["Angalia Wasifu", "Sasisha Maelezo", "Pakua Risiti za Mshahara", "Omba Likizo", "Angalia Salio la Likizo", "Angalia Mahudhurio", "Angalia Malengo", "Kamilisha Mafunzo", "Pokea Arifa", "Fikia Hati", "Fuatilia Idhini"],
+      "connectsToHeadline": "Kila hatua ya ESS inasasisha kumbukumbu ile ile inayoonwa na Rasilimali Watu.",
+      "ctaHeadline": "Ipe timu yako yote huduma binafsi, si lahajedwali."
     },
     "analytics": {
-      "eyebrow": "[SW] INTELLIGENCE",
-      "headline": "[SW] Different roles. Different questions. The right answers.",
-      "supporting": "[SW] Executive, HR, Finance and personal dashboards, all built on the same data model.",
-      "capabilities": [
-        "[SW] Executive Dashboard",
-        "[SW] HR Dashboard",
-        "[SW] Finance Dashboard",
-        "[SW] My Dashboard",
-        "[SW] Analytics",
-        "[SW] Reports"
-      ],
-      "connectsToHeadline": "[SW] Every dashboard reads from the same connected record.",
-      "ctaHeadline": "[SW] See your organization clearly, from any role."
+      "eyebrow": "UCHAMBUZI",
+      "headline": "Majukumu tofauti. Maswali tofauti. Majibu sahihi.",
+      "supporting": "Dashibodi za mkurugenzi, rasilimali watu, fedha na binafsi, zote zimejengwa juu ya muundo ule ule wa data.",
+      "capabilities": ["Dashibodi ya Mkurugenzi", "Dashibodi ya Rasilimali Watu", "Dashibodi ya Fedha", "Dashibodi Yangu", "Uchambuzi", "Ripoti"],
+      "connectsToHeadline": "Kila dashibodi inasoma kutoka kumbukumbu ile ile iliyounganishwa.",
+      "ctaHeadline": "Ona shirika lako kwa uwazi, kutoka jukumu lolote."
     },
     "askTija": {
-      "eyebrow": "[SW] ASK TiJa",
-      "headline": "[SW] Meet TiJa. Ask your workforce.",
-      "supporting": "[SW] Workforce intelligence inside ZiraHR — not a bolted-on chatbot.",
-      "capabilities": [
-        "[SW] Contract expiry alerts",
-        "[SW] Pending approvals, on request",
-        "[SW] Payroll variance explanations",
-        "[SW] Missing data flags"
-      ],
-      "connectsToHeadline": "[SW] TiJa answers from the same record every module shares.",
-      "ctaHeadline": "[SW] Ask your workforce a question. Get a real answer."
+      "eyebrow": "ULIZA TiJa",
+      "headline": "Mtambue TiJa. Uliza kuhusu nguvu kazi yako.",
+      "supporting": "Uchambuzi wa nguvu kazi ndani ya ZiraHR — si roboti ya mazungumzo iliyoongezwa baadaye.",
+      "capabilities": ["Arifa za kumalizika kwa mikataba", "Idhini zinazosubiri, kwa ombi", "Maelezo ya tofauti za malipo", "Alama za data zinazokosekana"],
+      "connectsToHeadline": "TiJa anajibu kutoka kumbukumbu ile ile inayoshirikiwa na kila moduli.",
+      "ctaHeadline": "Uliza swali kuhusu nguvu kazi yako. Pata jibu la kweli."
     },
     "hrSoftwareKenya": {
-      "eyebrow": "[SW] HR SOFTWARE, BUILT FOR KENYA",
-      "headline": "[SW] HR software built for Kenyan teams.",
-      "supporting": "[SW] ZiraHR brings recruitment, onboarding, payroll, leave, attendance, performance and learning into one platform — built around how Kenyan organizations actually run HR, not a generic global template.",
-      "capabilities": [
-        "[SW] Kenyan statutory payroll (PAYE, NSSF, SHIF, Housing Levy)",
-        "[SW] Multi-branch and multi-region structures",
-        "[SW] Employee self-service for distributed teams",
-        "[SW] One employee record across every HR function"
-      ],
-      "connectsToHeadline": "[SW] Start with the module your team needs most.",
-      "ctaHeadline": "[SW] See ZiraHR built around your organization."
+      "eyebrow": "PROGRAMU YA RASILIMALI WATU, ILIYOUNDWA KWA KENYA",
+      "headline": "Programu ya rasilimali watu iliyoundwa kwa timu za Kenya.",
+      "supporting": "ZiraHR inaleta uajiri, uanzishaji, malipo, likizo, mahudhurio, utendaji na mafunzo katika jukwaa moja — lililoundwa kulingana na jinsi mashirika ya Kenya yanavyoendesha rasilimali watu, si kiolezo cha kawaida cha kimataifa.",
+      "capabilities": ["Malipo ya kisheria ya Kenya (PAYE, NSSF, SHIF, Housing Levy)", "Miundo ya matawi na mikoa mingi", "Huduma binafsi ya mfanyakazi kwa timu zilizosambaa", "Kumbukumbu moja ya mfanyakazi katika kazi zote za rasilimali watu"],
+      "connectsToHeadline": "Anza na moduli ambayo timu yako inahitaji zaidi.",
+      "ctaHeadline": "Ona ZiraHR iliyoundwa kulingana na shirika lako."
     },
     "payrollSoftwareKenya": {
-      "eyebrow": "[SW] PAYROLL SOFTWARE FOR KENYA",
-      "headline": "[SW] Payroll software for Kenya — PAYE, NSSF, SHIF and Housing Levy, handled.",
-      "supporting": "[SW] Run payroll against Kenya's actual statutory schemes, from basic pay through disbursement, without spreadsheets stitched together every month-end.",
-      "flowSteps": [
-        "[SW] Draft",
-        "[SW] Review",
-        "[SW] Approve",
-        "[SW] Process",
-        "[SW] Disburse"
-      ],
-      "capabilities": [
-        "[SW] PAYE",
-        "[SW] NSSF",
-        "[SW] SHIF",
-        "[SW] Housing Levy",
-        "[SW] Reliefs",
-        "[SW] Salary Advances",
-        "[SW] Payslips",
-        "[SW] Bank Disbursement Files",
-        "[SW] Payroll Analytics"
-      ],
-      "connectsToHeadline": "[SW] Payroll connects straight to attendance, leave and core HR.",
-      "ctaHeadline": "[SW] Run Kenya-compliant payroll from one platform."
+      "eyebrow": "PROGRAMU YA MALIPO KWA KENYA",
+      "headline": "Programu ya malipo kwa Kenya — PAYE, NSSF, SHIF na Housing Levy, imeshughulikiwa.",
+      "supporting": "Endesha malipo kulingana na mifumo halisi ya kisheria ya Kenya, kutoka mshahara wa msingi hadi ulipaji, bila lahajedwali zinazounganishwa kila mwisho wa mwezi.",
+      "flowSteps": ["Rasimu", "Ukaguzi", "Idhini", "Uchakataji", "Ulipaji"],
+      "capabilities": ["PAYE", "NSSF", "SHIF", "Housing Levy", "Ahueni", "Mikopo ya Mshahara", "Risiti za Mshahara", "Faili za Ulipaji wa Benki", "Uchambuzi wa Malipo"],
+      "connectsToHeadline": "Malipo yanaunganishwa moja kwa moja na mahudhurio, likizo na msingi wa rasilimali watu.",
+      "ctaHeadline": "Endesha malipo yanayozingatia sheria za Kenya kutoka jukwaa moja."
     },
     "hrmisKenya": {
-      "eyebrow": "[SW] HRMIS KENYA",
-      "headline": "[SW] The HRMIS Kenyan organizations are moving to.",
-      "supporting": "[SW] A complete Human Resource Management Information System — core HR, payroll, workforce management, talent and analytics — built as one connected platform rather than separate systems stitched together.",
-      "capabilities": [
-        "[SW] Core HR & Employee Records",
-        "[SW] Payroll & Statutory Compliance",
-        "[SW] Leave & Attendance",
-        "[SW] Recruitment & Performance",
-        "[SW] Dashboards & Analytics"
-      ],
-      "connectsToHeadline": "[SW] Explore what an HRMIS looks like when it's actually connected.",
-      "ctaHeadline": "[SW] Replace disconnected systems with one HRMIS."
+      "eyebrow": "HRMIS KENYA",
+      "headline": "HRMIS ambayo mashirika ya Kenya yanahamia.",
+      "supporting": "Mfumo kamili wa taarifa za usimamizi wa rasilimali watu — msingi wa rasilimali watu, malipo, usimamizi wa nguvu kazi, vipaji na uchambuzi — uliojengwa kama jukwaa moja lililounganishwa badala ya mifumo tofauti iliyounganishwa pamoja.",
+      "capabilities": ["Msingi wa Rasilimali Watu na Kumbukumbu za Wafanyakazi", "Malipo na Uzingatiaji wa Kisheria", "Likizo na Mahudhurio", "Uajiri na Utendaji", "Dashibodi na Uchambuzi"],
+      "connectsToHeadline": "Gundua jinsi HRMIS inavyoonekana ikiwa imeunganishwa kikamilifu.",
+      "ctaHeadline": "Badilisha mifumo isiyounganishwa na HRMIS moja."
     },
     "hrSoftwareAfrica": {
-      "eyebrow": "[SW] HR SOFTWARE FOR AFRICA",
-      "headline": "[SW] HR software built for Africa, starting with Kenya.",
-      "supporting": "[SW] ZiraHR launched in Kenya first, built from day one to support the multi-branch, multi-region reality of growing African organizations — with expansion to further African markets planned as statutory support is added.",
-      "capabilities": [
-        "[SW] Multi-region and multi-branch organization structures",
-        "[SW] Role-based visibility (regional, branch, executive)",
-        "[SW] Employee self-service built for distributed teams",
-        "[SW] One connected record across the employee lifecycle"
-      ],
-      "connectsToHeadline": "[SW] See the platform this is built on.",
-      "ctaHeadline": "[SW] Grow across regions on one connected platform."
+      "eyebrow": "PROGRAMU YA RASILIMALI WATU KWA AFRIKA",
+      "headline": "Programu ya rasilimali watu iliyoundwa kwa Afrika, kuanzia Kenya.",
+      "supporting": "ZiraHR ilizinduliwa Kenya kwanza, ikiundwa tangu siku ya kwanza kusaidia hali halisi ya matawi na mikoa mingi ya mashirika ya Kiafrika yanayokua — huku upanuzi kwenye masoko mengine ya Kiafrika ukipangwa kadri msaada wa kisheria unavyoongezwa.",
+      "capabilities": ["Miundo ya shirika ya mikoa na matawi mengi", "Uonekano kulingana na jukumu (kikanda, tawi, mkurugenzi)", "Huduma binafsi ya mfanyakazi iliyoundwa kwa timu zilizosambaa", "Kumbukumbu moja iliyounganishwa katika mzunguko mzima wa maisha ya mfanyakazi"],
+      "connectsToHeadline": "Ona jukwaa ambalo hili limejengwa juu yake.",
+      "ctaHeadline": "Kua katika mikoa mbalimbali kwenye jukwaa moja lililounganishwa."
     },
     "pricing": {
-      "eyebrow": "[SW] PRICING",
-      "headline": "[SW] Pricing that fits your organization.",
-      "supporting": "[SW] ZiraHR is priced module by module, per employee, and billed automatically — turn on what you need, nothing you don't.",
-      "connectsToHeadline": "[SW] See what's included before you talk pricing.",
-      "ctaHeadline": "[SW] Get pricing built around your organization.",
+      "eyebrow": "BEI",
+      "headline": "Bei inayolingana na shirika lako.",
+      "supporting": "ZiraHR inatozwa moduli kwa moduli, kwa kila mfanyakazi, na kutozwa moja kwa moja — washa unachohitaji, si zaidi.",
+      "connectsToHeadline": "Ona kilichojumuishwa kabla ya kuzungumzia bei.",
+      "ctaHeadline": "Pata bei iliyoundwa kulingana na shirika lako.",
       "calculator": {
-        "illustrativeBadge": "[SW] Illustrative pricing",
-        "illustrativeNote": "[SW] These rates are examples to show how module-based pricing works — talk to us for your organization's actual rate card.",
-        "employeeCountLabel": "[SW] Number of employees",
-        "baseIncluded": "[SW] Included in every plan",
-        "perEmployeePerMonth": "[SW] / employee / month",
-        "totalLabel": "[SW] Estimated monthly total",
-        "totalNote": "[SW] {count} employees × selected modules, billed monthly",
-        "currency": "[SW] KES",
-        "cta": "[SW] Get your real rate card",
+        "illustrativeBadge": "Bei ya Mfano",
+        "illustrativeNote": "Bei hizi ni mifano ya kuonyesha jinsi bei ya kila moduli inavyofanya kazi — wasiliana nasi kupata orodha halisi ya bei ya shirika lako.",
+        "employeeCountLabel": "Idadi ya wafanyakazi",
+        "baseIncluded": "Imejumuishwa katika kila mpango",
+        "perEmployeePerMonth": "/ mfanyakazi / mwezi",
+        "totalLabel": "Jumla ya makadirio ya kila mwezi",
+        "totalNote": "Wafanyakazi {count} × moduli zilizochaguliwa, hutozwa kila mwezi",
+        "currency": "KES",
+        "cta": "Pata orodha yako halisi ya bei",
         "modules": {
-          "coreHr": {
-            "label": "[SW] Core HR",
-            "rate": 0
-          },
-          "payroll": {
-            "label": "[SW] Payroll",
-            "rate": 150
-          },
-          "leaveManagement": {
-            "label": "[SW] Leave Management",
-            "rate": 40
-          },
-          "attendance": {
-            "label": "[SW] Attendance",
-            "rate": 50
-          },
-          "recruitment": {
-            "label": "[SW] Recruitment",
-            "rate": 60
-          },
-          "performanceManagement": {
-            "label": "[SW] Performance Management",
-            "rate": 50
-          },
-          "learningDevelopment": {
-            "label": "[SW] Learning & Development",
-            "rate": 40
-          },
-          "teamsCollaboration": {
-            "label": "[SW] Teams & Collaboration",
-            "rate": 30
-          },
-          "employeeSelfService": {
-            "label": "[SW] Employee Self-Service",
-            "rate": 30
-          },
-          "analytics": {
-            "label": "[SW] Analytics",
-            "rate": 40
-          },
-          "askTija": {
-            "label": "[SW] Ask TiJa",
-            "rate": 50
-          }
+          "coreHr": { "label": "Msingi wa Rasilimali Watu", "rate": 0 },
+          "payroll": { "label": "Malipo", "rate": 150 },
+          "leaveManagement": { "label": "Usimamizi wa Likizo", "rate": 40 },
+          "attendance": { "label": "Mahudhurio", "rate": 50 },
+          "recruitment": { "label": "Uajiri", "rate": 60 },
+          "performanceManagement": { "label": "Usimamizi wa Utendaji", "rate": 50 },
+          "learningDevelopment": { "label": "Mafunzo na Maendeleo", "rate": 40 },
+          "teamsCollaboration": { "label": "Timu na Ushirikiano", "rate": 30 },
+          "employeeSelfService": { "label": "Huduma Binafsi ya Mfanyakazi", "rate": 30 },
+          "analytics": { "label": "Uchambuzi", "rate": 40 },
+          "askTija": { "label": "Uliza TiJa", "rate": 50 }
         }
       }
     },
     "contact": {
-      "eyebrow": "[SW] GET IN TOUCH",
-      "headline": "[SW] We're here to help.",
-      "supporting": "[SW] Questions about ZiraHR, partnerships, or anything else — send us a message and we'll get back to you."
+      "eyebrow": "WASILIANA NASI",
+      "headline": "Tuko hapa kukusaidia.",
+      "supporting": "Maswali kuhusu ZiraHR, ushirikiano, au chochote kingine — tutumie ujumbe na tutakujibu."
     },
     "login": {
-      "eyebrow": "[SW] LOGIN",
-      "headline": "[SW] Log in to ZiraHR.",
-      "supporting": "[SW] Access your organization's ZiraHR workspace.",
-      "continue": "[SW] Continue to Login"
+      "eyebrow": "KUINGIA",
+      "headline": "Ingia kwenye ZiraHR.",
+      "supporting": "Fikia nafasi ya kazi ya ZiraHR ya shirika lako.",
+      "continue": "Endelea Kuingia"
     },
     "resources": {
-      "eyebrow": "[SW] RESOURCES",
-      "headline": "[SW] Resources",
-      "supporting": "[SW] HR guides, templates, and product updates — published as we build them, not stocked with filler.",
-      "newsletterHeadline": "[SW] Get notified when new resources go up.",
+      "eyebrow": "RASILIMALI",
+      "headline": "Rasilimali",
+      "supporting": "Miongozo ya rasilimali watu, violezo, na masasisho ya bidhaa — yanachapishwa tunapoyatengeneza, si kujazwa maudhui yasiyo na maana.",
+      "newsletterHeadline": "Pata arifa rasilimali mpya zinapowekwa.",
       "categories": {
-        "blog": {
-          "label": "[SW] Blog",
-          "description": "[SW] Product thinking and HR perspectives from the ZiraHR team."
-        },
-        "guides": {
-          "label": "[SW] HR Guides",
-          "description": "[SW] Practical guides for running HR in Kenya and beyond."
-        },
-        "templates": {
-          "label": "[SW] Templates",
-          "description": "[SW] Ready-to-use HR templates and checklists."
-        },
-        "helpCentre": {
-          "label": "[SW] Help Centre",
-          "description": "[SW] Documentation for using ZiraHR day to day."
-        },
-        "productUpdates": {
-          "label": "[SW] Product Updates",
-          "description": "[SW] What's new in ZiraHR, as it ships."
-        },
-        "hrGlossary": {
-          "label": "[SW] HR Glossary",
-          "description": "[SW] Plain-language definitions of HR and payroll terms."
-        },
-        "compliance": {
-          "label": "[SW] Compliance",
-          "description": "[SW] Kenyan statutory and compliance reference material."
-        }
+        "blog": { "label": "Blogu", "description": "Mawazo ya bidhaa na mitazamo ya rasilimali watu kutoka timu ya ZiraHR." },
+        "guides": { "label": "Miongozo ya Rasilimali Watu", "description": "Miongozo ya vitendo ya kuendesha rasilimali watu Kenya na kwingineko." },
+        "templates": { "label": "Violezo", "description": "Violezo na orodha za ukaguzi za rasilimali watu tayari kutumika." },
+        "helpCentre": { "label": "Kituo cha Usaidizi", "description": "Nyaraka za kutumia ZiraHR kila siku." },
+        "productUpdates": { "label": "Masasisho ya Bidhaa", "description": "Kilicho kipya kwenye ZiraHR, kadri kinavyotolewa." },
+        "hrGlossary": { "label": "Kamusi ya Rasilimali Watu", "description": "Maelezo rahisi ya maneno ya rasilimali watu na malipo." },
+        "compliance": { "label": "Uzingatiaji", "description": "Nyaraka za marejeleo ya kisheria na uzingatiaji za Kenya." }
       },
-      "comingSoon": "[SW] Coming soon"
+      "comingSoon": "Inakuja hivi karibuni"
     },
     "company": {
-      "eyebrow": "[SW] COMPANY",
-      "headline": "[SW] Built for how African organizations actually run HR.",
-      "mission": "[SW] ZiraHR brings recruitment, onboarding, payroll, leave, attendance, performance and learning into one connected platform — starting in Kenya, built to grow across Africa.",
-      "careersTitle": "[SW] Careers",
-      "careersBody": "[SW] We're not publicly hiring yet — check back soon, or reach out if you'd like to introduce yourself.",
-      "partnersTitle": "[SW] Partners",
-      "partnersBody": "[SW] Interested in partnering with ZiraHR? We'd like to hear from you.",
-      "contactCta": "[SW] Get in Touch"
+      "eyebrow": "KAMPUNI",
+      "headline": "Imeundwa kulingana na jinsi mashirika ya Kiafrika yanavyoendesha rasilimali watu.",
+      "mission": "ZiraHR inaleta uajiri, uanzishaji, malipo, likizo, mahudhurio, utendaji na mafunzo katika jukwaa moja lililounganishwa — kuanzia Kenya, likiundwa kukua kote Afrika.",
+      "careersTitle": "Nafasi za Kazi",
+      "careersBody": "Hatujiajiri hadharani kwa sasa — rudi tena hivi karibuni, au wasiliana nasi kama ungependa kujitambulisha.",
+      "partnersTitle": "Washirika",
+      "partnersBody": "Unavutiwa kushirikiana na ZiraHR? Tungependa kukusikia.",
+      "contactCta": "Wasiliana Nasi"
     },
     "legal": {
-      "comingSoonBody": "[SW] We're finalizing this document. If you have questions in the meantime, get in touch.",
-      "contactCta": "[SW] Contact Us",
-      "privacy": {
-        "title": "[SW] Privacy Policy"
-      },
-      "terms": {
-        "title": "[SW] Terms of Service"
-      },
-      "security": {
-        "title": "[SW] Security"
-      },
-      "cookies": {
-        "title": "[SW] Cookie Policy"
-      }
+      "comingSoonBody": "Tunakamilisha hati hii. Kama una maswali kwa sasa, wasiliana nasi.",
+      "contactCta": "Wasiliana Nasi",
+      "privacy": { "title": "Sera ya Faragha" },
+      "terms": { "title": "Masharti ya Huduma" },
+      "security": { "title": "Usalama" },
+      "cookies": { "title": "Sera ya Vidakuzi" }
     }
   },
   "forms": {
     "common": {
-      "loading": "[SW] Sending…",
-      "genericError": "[SW] Something went wrong. Please try again.",
-      "requiredField": "[SW] This field is required"
+      "loading": "Inatuma…",
+      "genericError": "Hitilafu imetokea. Tafadhali jaribu tena.",
+      "requiredField": "Sehemu hii inahitajika"
     },
     "demoRequest": {
-      "title": "[SW] Request a Demo",
-      "subtitle": "[SW] Tell us a little about your organization and we'll be in touch to show you ZiraHR.",
+      "title": "Omba Onyesho",
+      "subtitle": "Tuambie kidogo kuhusu shirika lako na tutawasiliana nawe kukuonyesha ZiraHR.",
       "fields": {
-        "firstName": "[SW] First Name",
-        "lastName": "[SW] Last Name",
-        "workEmail": "[SW] Work Email",
-        "phone": "[SW] Phone",
-        "companyName": "[SW] Company",
-        "country": "[SW] Country",
-        "employeeCount": "[SW] Employee Count",
-        "interestedModules": "[SW] Modules Interested In",
-        "message": "[SW] Anything else we should know?",
-        "preferredContactMethod": "[SW] Preferred Contact Method"
+        "firstName": "Jina la Kwanza",
+        "lastName": "Jina la Ukoo",
+        "workEmail": "Barua Pepe ya Kazini",
+        "phone": "Simu",
+        "companyName": "Kampuni",
+        "country": "Nchi",
+        "employeeCount": "Idadi ya Wafanyakazi",
+        "interestedModules": "Moduli Unazopenda",
+        "message": "Kuna kingine chochote tunapaswa kujua?",
+        "preferredContactMethod": "Njia Unayopendelea ya Mawasiliano"
       },
       "contactMethods": {
-        "email": "[SW] Email",
-        "phone": "[SW] Phone",
-        "either": "[SW] Either"
+        "email": "Barua Pepe",
+        "phone": "Simu",
+        "either": "Yoyote"
       },
       "moduleOptions": {
-        "coreHr": "[SW] Core HR",
-        "payroll": "[SW] Payroll",
-        "leave": "[SW] Leave",
-        "attendance": "[SW] Attendance",
-        "recruitment": "[SW] Recruitment",
-        "performance": "[SW] Performance",
-        "learningDevelopment": "[SW] Learning & Development",
-        "ess": "[SW] Employee Self-Service",
-        "analytics": "[SW] Analytics"
+        "coreHr": "Msingi wa Rasilimali Watu",
+        "payroll": "Malipo",
+        "leave": "Likizo",
+        "attendance": "Mahudhurio",
+        "recruitment": "Uajiri",
+        "performance": "Utendaji",
+        "learningDevelopment": "Mafunzo na Maendeleo",
+        "ess": "Huduma Binafsi ya Mfanyakazi",
+        "analytics": "Uchambuzi"
       },
-      "submit": "[SW] Book My ZiraHR Demo",
+      "submit": "Weka Nafasi ya Onyesho Langu la ZiraHR",
       "success": {
-        "title": "[SW] Thank you.",
-        "body": "[SW] We've received your request and will be in touch shortly to schedule your demo."
+        "title": "Asante.",
+        "body": "Tumepokea ombi lako na tutawasiliana nawe hivi karibuni kupanga onyesho lako."
       }
     },
     "contact": {
-      "title": "[SW] Contact Us",
-      "subtitle": "[SW] Questions about ZiraHR? Send us a message.",
+      "title": "Wasiliana Nasi",
+      "subtitle": "Una maswali kuhusu ZiraHR? Tutumie ujumbe.",
       "fields": {
-        "name": "[SW] Name",
-        "email": "[SW] Email",
-        "phone": "[SW] Phone",
-        "company": "[SW] Company",
-        "subject": "[SW] Subject",
-        "message": "[SW] Message"
+        "name": "Jina",
+        "email": "Barua Pepe",
+        "phone": "Simu",
+        "company": "Kampuni",
+        "subject": "Mada",
+        "message": "Ujumbe"
       },
-      "submit": "[SW] Send Message",
+      "submit": "Tuma Ujumbe",
       "success": {
-        "title": "[SW] Message sent.",
-        "body": "[SW] Thanks for reaching out — we'll get back to you soon."
+        "title": "Ujumbe umetumwa.",
+        "body": "Asante kwa kuwasiliana nasi — tutakujibu hivi karibuni."
       }
     },
     "newsletter": {
-      "placeholder": "[SW] Enter your email",
-      "submit": "[SW] Subscribe",
-      "success": "[SW] You're subscribed."
+      "placeholder": "Weka barua pepe yako",
+      "submit": "Jiandikishe",
+      "success": "Umejiandikisha."
     },
     "signup": {
+      "metaDescription": "Anza na ZiraHR — sanidi shirika lako kwa hatua chache fupi.",
       "step1": {
-        "title": "[SW] Let's meet you.",
+        "title": "Tukutane.",
         "fields": {
-          "firstName": "[SW] First Name",
-          "lastName": "[SW] Last Name",
-          "workEmail": "[SW] Work Email",
-          "phone": "[SW] Phone"
+          "firstName": "Jina la Kwanza",
+          "lastName": "Jina la Ukoo",
+          "workEmail": "Barua Pepe ya Kazini",
+          "phone": "Simu"
         }
       },
       "step2": {
-        "title": "[SW] Tell us about your organization.",
+        "title": "Tuambie kuhusu shirika lako.",
         "fields": {
-          "companyName": "[SW] Company",
-          "country": "[SW] Country",
-          "industry": "[SW] Industry",
-          "employeeCount": "[SW] Employee Count"
+          "companyName": "Kampuni",
+          "country": "Nchi",
+          "industry": "Sekta",
+          "employeeCount": "Idadi ya Wafanyakazi"
         }
       },
       "step3": {
-        "title": "[SW] How is your team structured?",
+        "title": "Timu yako imepangwaje?",
         "fields": {
-          "branchCount": "[SW] Number of Branches",
-          "departmentCount": "[SW] Number of Departments"
+          "branchCount": "Idadi ya Matawi",
+          "departmentCount": "Idadi ya Idara"
         }
       },
       "step4": {
-        "title": "[SW] Welcome to ZiraHR.",
-        "body": "[SW] Your details are saved. Continue to finish setting up your organization.",
-        "continue": "[SW] Continue to ZiraHR"
+        "title": "Karibu ZiraHR.",
+        "body": "Maelezo yako yamehifadhiwa. Endelea kumaliza kusanidi shirika lako.",
+        "continue": "Endelea kwenda ZiraHR"
       },
-      "back": "[SW] Back",
-      "continue": "[SW] Continue",
-      "metaDescription": "[SW] Start with ZiraHR — set up your organization in a few short steps."
+      "back": "Rudi",
+      "continue": "Endelea"
     }
   },
   "cookieConsent": {
-    "title": "[SW] This website uses cookies",
-    "intro": "[SW] We use cookies to run ZiraHR reliably and, only with your permission, to understand how the site is used and improve it. Necessary cookies can't be switched off — everything else is your choice.",
+    "title": "Tovuti hii inatumia vidakuzi",
+    "intro": "Tunatumia vidakuzi kuendesha ZiraHR kwa uaminifu na, kwa idhini yako pekee, kuelewa jinsi tovuti inavyotumika na kuiboresha. Vidakuzi vya lazima haviwezi kuzimwa — kila kitu kingine ni chaguo lako.",
     "categories": {
       "necessary": {
-        "label": "[SW] Necessary",
-        "description": "[SW] Required for core site functionality — navigation, security, and form submissions. The site cannot work properly without these."
+        "label": "Vya Lazima",
+        "description": "Vinahitajika kwa utendaji wa msingi wa tovuti — uelekezaji, usalama, na uwasilishaji wa fomu. Tovuti haiwezi kufanya kazi vizuri bila hivi."
       },
       "statistics": {
-        "label": "[SW] Statistics",
-        "description": "[SW] Help us understand how visitors use zirahr.com so we can improve it. Off until you allow it."
+        "label": "Takwimu",
+        "description": "Vinatusaidia kuelewa jinsi wageni wanavyotumia zirahr.com ili tuiboreshe. Vimezimwa hadi utakapoviruhusu."
       },
       "marketing": {
-        "label": "[SW] Marketing",
-        "description": "[SW] Used to measure and tailor marketing content. Off until you allow it."
+        "label": "Uuzaji",
+        "description": "Vinatumika kupima na kubinafsisha maudhui ya uuzaji. Vimezimwa hadi utakapoviruhusu."
       },
       "preferences": {
-        "label": "[SW] Preferences",
-        "description": "[SW] Remembers choices like your selected language across visits."
+        "label": "Mapendeleo",
+        "description": "Hukumbuka chaguo kama lugha uliyochagua kati ya ziara mbalimbali."
       }
     },
-    "alwaysOn": "[SW] Always on",
-    "allowSelection": "[SW] Allow selection",
-    "allowAll": "[SW] Allow all",
-    "manageLink": "[SW] Cookie Preferences"
+    "alwaysOn": "Vimewashwa Daima",
+    "allowSelection": "Ruhusu Uliyochagua",
+    "allowAll": "Ruhusu Vyote",
+    "manageLink": "Mapendeleo ya Vidakuzi"
   }
 }

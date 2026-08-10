@@ -1,7 +1,7 @@
 {
   "common": {
-    "brandName": "[FR] ZiraHR",
-    "skipToContent": "[FR] Skip to content"
+    "brandName": "ZiraHR",
+    "skipToContent": "Aller au contenu"
   },
   "languageSelector": {
     "label": "Language",
@@ -17,1077 +17,751 @@
     }
   },
   "cta": {
-    "startWithZiraHR": "[FR] Start with ZiraHR",
-    "requestDemo": "[FR] Request a Demo",
-    "login": "[FR] Login",
-    "alreadyUsing": "[FR] Already using ZiraHR? Log in"
+    "startWithZiraHR": "Commencer avec ZiraHR",
+    "requestDemo": "Demander une démo",
+    "login": "Connexion",
+    "alreadyUsing": "Vous utilisez déjà ZiraHR ? Connectez-vous"
   },
   "nav": {
-    "platform": "[FR] Platform",
-    "solutions": "[FR] Solutions",
-    "payroll": "[FR] Payroll",
-    "resources": "[FR] Resources",
-    "pricing": "[FR] Pricing",
-    "company": "[FR] Company",
+    "platform": "Plateforme",
+    "solutions": "Solutions",
+    "payroll": "Paie",
+    "resources": "Ressources",
+    "pricing": "Tarifs",
+    "company": "Entreprise",
     "megaMenu": {
       "coreHr": {
-        "groupLabel": "[FR] Core HR",
-        "employeeDirectory": "[FR] Employee Directory",
-        "employeeRecords": "[FR] Employee Records",
-        "organizationStructure": "[FR] Organization Structure",
-        "onboarding": "[FR] Onboarding",
-        "employeeLifecycle": "[FR] Employee Lifecycle",
-        "documents": "[FR] Documents",
-        "ess": "[FR] ESS"
+        "groupLabel": "RH de base",
+        "employeeDirectory": "Annuaire des employés",
+        "employeeRecords": "Dossiers des employés",
+        "organizationStructure": "Structure organisationnelle",
+        "onboarding": "Intégration",
+        "employeeLifecycle": "Cycle de vie de l'employé",
+        "documents": "Documents",
+        "ess": "ESS"
       },
       "workforce": {
-        "groupLabel": "[FR] Workforce",
-        "leaveManagement": "[FR] Leave Management",
-        "attendance": "[FR] Attendance",
-        "shiftsRosters": "[FR] Shifts & Rosters",
-        "timesheets": "[FR] Timesheets",
-        "overtime": "[FR] Overtime"
+        "groupLabel": "Effectifs",
+        "leaveManagement": "Gestion des congés",
+        "attendance": "Présence",
+        "shiftsRosters": "Équipes et plannings",
+        "timesheets": "Feuilles de temps",
+        "overtime": "Heures supplémentaires"
       },
       "payroll": {
-        "groupLabel": "[FR] Payroll",
-        "payrollProcessing": "[FR] Payroll Processing",
-        "earningsBenefits": "[FR] Earnings & Benefits",
-        "deductions": "[FR] Deductions",
-        "salaryAdvance": "[FR] Salary Advance",
-        "payslips": "[FR] Payslips",
-        "statutoryCompliance": "[FR] Statutory Compliance",
-        "payrollReports": "[FR] Payroll Reports",
-        "disbursements": "[FR] Disbursements"
+        "groupLabel": "Paie",
+        "payrollProcessing": "Traitement de la paie",
+        "earningsBenefits": "Gains et avantages",
+        "deductions": "Retenues",
+        "salaryAdvance": "Avance sur salaire",
+        "payslips": "Bulletins de paie",
+        "statutoryCompliance": "Conformité réglementaire",
+        "payrollReports": "Rapports de paie",
+        "disbursements": "Décaissements"
       },
       "talent": {
-        "groupLabel": "[FR] Talent",
-        "recruitmentAts": "[FR] Recruitment & ATS",
-        "performanceManagement": "[FR] Performance Management",
-        "learningDevelopment": "[FR] Learning & Development"
+        "groupLabel": "Talents",
+        "recruitmentAts": "Recrutement et ATS",
+        "performanceManagement": "Gestion de la performance",
+        "learningDevelopment": "Formation et développement"
       },
       "workplace": {
-        "groupLabel": "[FR] Workplace",
-        "teamsCollaboration": "[FR] Teams & Collaboration",
-        "approvalsWorkflows": "[FR] Approvals & Workflows",
-        "notifications": "[FR] Notifications"
+        "groupLabel": "Espace de travail",
+        "teamsCollaboration": "Équipes et collaboration",
+        "approvalsWorkflows": "Approbations et flux de travail",
+        "notifications": "Notifications"
       },
       "intelligence": {
-        "groupLabel": "[FR] Intelligence",
-        "dashboards": "[FR] Dashboards",
-        "analytics": "[FR] Analytics",
-        "reports": "[FR] Reports",
-        "askTija": "[FR] Ask TiJa AI"
+        "groupLabel": "Intelligence",
+        "dashboards": "Tableaux de bord",
+        "analytics": "Analytique",
+        "reports": "Rapports",
+        "askTija": "Demander à TiJa (IA)"
       }
     },
     "solutionsMenu": {
-      "hrTeams": "[FR] HR Teams",
-      "financeTeams": "[FR] Finance Teams",
-      "executives": "[FR] Executives",
-      "managers": "[FR] Managers",
-      "employees": "[FR] Employees"
+      "hrTeams": "Équipes RH",
+      "financeTeams": "Équipes finance",
+      "executives": "Dirigeants",
+      "managers": "Managers",
+      "employees": "Employés"
     }
   },
   "hero": {
-    "eyebrow": "[FR] THE HR PLATFORM BUILT AROUND YOUR PEOPLE",
-    "headline": "[FR] One place to run your entire people operation.",
-    "supporting": "[FR] Recruit. Onboard. Manage. Pay. Develop. Perform. ZiraHR connects your entire employee journey.",
+    "eyebrow": "LA PLATEFORME RH CONÇUE AUTOUR DE VOS COLLABORATEURS",
+    "headline": "Un seul endroit pour gérer toutes vos opérations RH.",
+    "supporting": "Recrutez. Intégrez. Gérez. Payez. Développez. Évaluez. ZiraHR connecte tout le parcours de vos employés.",
     "reel": {
       "payroll": {
-        "label": "[FR] Payroll",
-        "steps": [
-          "[FR] Draft",
-          "[FR] Review",
-          "[FR] Approve",
-          "[FR] Process",
-          "[FR] Disburse"
-        ],
-        "result": "[FR] Payroll disbursed"
+        "label": "Paie",
+        "steps": ["Brouillon", "Vérification", "Approbation", "Traitement", "Décaissement"],
+        "result": "Paie décaissée"
       },
       "leave": {
-        "label": "[FR] Leave",
-        "requestTitle": "[FR] Leave request",
-        "requester": "[FR] Employee, Sales",
-        "pending": "[FR] Pending",
-        "approved": "[FR] Approved"
+        "label": "Congés",
+        "requestTitle": "Demande de congé",
+        "requester": "Employé, Ventes",
+        "pending": "En attente",
+        "approved": "Approuvé"
       },
       "dashboard": {
-        "label": "[FR] Live dashboard",
+        "label": "Tableau de bord en direct",
         "stats": {
-          "employees": {
-            "label": "[FR] Employees",
-            "value": 128,
-            "suffix": ""
-          },
-          "leaveApprovals": {
-            "label": "[FR] Leave approvals",
-            "value": 14,
-            "suffix": ""
-          },
-          "payrollReady": {
-            "label": "[FR] Payroll ready",
-            "value": 98,
-            "suffix": "%"
-          }
+          "employees": { "label": "Employés", "value": 128, "suffix": "" },
+          "leaveApprovals": { "label": "Approbations de congés", "value": 14, "suffix": "" },
+          "payrollReady": { "label": "Paie prête", "value": 98, "suffix": "%" }
         }
       },
       "askTija": {
-        "label": "[FR] Ask TiJa",
-        "question": "[FR] Who has contracts expiring this month?",
-        "answer": "[FR] 3 employees — Sales, Ops."
+        "label": "Demander à TiJa",
+        "question": "Quels employés ont des contrats qui expirent ce mois-ci ?",
+        "answer": "3 employés — Ventes, Opérations."
       }
     }
   },
   "footer": {
     "columns": {
       "product": {
-        "title": "[FR] Product",
-        "coreHr": "[FR] Core HR",
-        "payroll": "[FR] Payroll",
-        "leave": "[FR] Leave",
-        "attendance": "[FR] Attendance",
-        "performance": "[FR] Performance",
-        "recruitment": "[FR] Recruitment",
-        "learningDevelopment": "[FR] Learning & Development",
-        "teams": "[FR] Teams",
-        "ess": "[FR] ESS",
-        "analytics": "[FR] Analytics",
-        "askTija": "[FR] Ask TiJa"
+        "title": "Produit",
+        "coreHr": "RH de base",
+        "payroll": "Paie",
+        "leave": "Congés",
+        "attendance": "Présence",
+        "performance": "Performance",
+        "recruitment": "Recrutement",
+        "learningDevelopment": "Formation et développement",
+        "teams": "Équipes",
+        "ess": "ESS",
+        "analytics": "Analytique",
+        "askTija": "Demander à TiJa"
       },
       "solutions": {
-        "title": "[FR] Solutions",
-        "hrTeams": "[FR] HR Teams",
-        "financeTeams": "[FR] Finance Teams",
-        "executives": "[FR] Executives",
-        "managers": "[FR] Managers",
-        "employees": "[FR] Employees"
+        "title": "Solutions",
+        "hrTeams": "Équipes RH",
+        "financeTeams": "Équipes finance",
+        "executives": "Dirigeants",
+        "managers": "Managers",
+        "employees": "Employés"
       },
       "resources": {
-        "title": "[FR] Resources",
-        "blog": "[FR] Blog",
-        "guides": "[FR] Guides",
-        "templates": "[FR] Templates",
-        "helpCentre": "[FR] Help Centre",
-        "productUpdates": "[FR] Product Updates"
+        "title": "Ressources",
+        "blog": "Blog",
+        "guides": "Guides",
+        "templates": "Modèles",
+        "helpCentre": "Centre d'aide",
+        "productUpdates": "Nouveautés produit"
       },
       "company": {
-        "title": "[FR] Company",
-        "about": "[FR] About",
-        "contact": "[FR] Contact",
-        "careers": "[FR] Careers",
-        "partners": "[FR] Partners"
+        "title": "Entreprise",
+        "about": "À propos",
+        "contact": "Contact",
+        "careers": "Carrières",
+        "partners": "Partenaires"
       },
       "legal": {
-        "title": "[FR] Legal",
-        "privacy": "[FR] Privacy",
-        "terms": "[FR] Terms",
-        "security": "[FR] Security",
-        "cookies": "[FR] Cookies"
+        "title": "Mentions légales",
+        "privacy": "Confidentialité",
+        "terms": "Conditions",
+        "security": "Sécurité",
+        "cookies": "Cookies"
       }
     },
-    "tagline": "[FR] ZiraHR — People operations, connected."
+    "tagline": "ZiraHR — La gestion des ressources humaines, connectée."
   },
   "employeeJourney": {
-    "eyebrow": "[FR] ONE EMPLOYEE. ONE JOURNEY.",
-    "intro": "[FR] Meet Amina.",
-    "supporting": "[FR] Every stage of her journey lives in the same employee record.",
+    "eyebrow": "UN EMPLOYÉ. UN PARCOURS.",
+    "intro": "Rencontrez Amina.",
+    "supporting": "Chaque étape de son parcours vit dans le même dossier employé.",
     "stages": {
-      "applicant": "[FR] Applicant",
-      "candidate": "[FR] Candidate",
-      "offer": "[FR] Offer",
-      "employee": "[FR] Employee",
-      "onboarding": "[FR] Onboarding",
-      "attendanceLeave": "[FR] Attendance + Leave",
-      "payroll": "[FR] Payroll",
-      "learning": "[FR] Learning",
-      "performance": "[FR] Performance",
-      "promotion": "[FR] Promotion",
-      "offboarding": "[FR] Offboarding"
+      "applicant": "Postulant",
+      "candidate": "Candidat",
+      "offer": "Offre",
+      "employee": "Employé",
+      "onboarding": "Intégration",
+      "attendanceLeave": "Présence + Congés",
+      "payroll": "Paie",
+      "learning": "Formation",
+      "performance": "Performance",
+      "promotion": "Promotion",
+      "offboarding": "Départ"
     },
     "stageCaptions": {
-      "applicant": "[FR] Amina applies for a role through the careers page.",
-      "candidate": "[FR] Her application moves through shortlisting and interviews.",
-      "offer": "[FR] An offer is extended and accepted.",
-      "employee": "[FR] Amina becomes an employee record — no re-entry, same profile.",
-      "onboarding": "[FR] Her onboarding checklist and documents are assigned automatically.",
-      "attendanceLeave": "[FR] She clocks in, requests leave, and checks her balance.",
-      "payroll": "[FR] Her payroll runs from the same record, every cycle.",
-      "learning": "[FR] She enrolls in training tied to her role and goals.",
-      "performance": "[FR] Her goals and reviews build on the same history.",
-      "promotion": "[FR] A promotion updates her record — nothing re-entered.",
-      "offboarding": "[FR] When she eventually leaves, offboarding closes the record cleanly."
+      "applicant": "Amina postule à un poste via la page carrières.",
+      "candidate": "Sa candidature passe par la présélection et les entretiens.",
+      "offer": "Une offre est faite et acceptée.",
+      "employee": "Amina devient un dossier employé — sans nouvelle saisie, même profil.",
+      "onboarding": "Sa liste d'intégration et ses documents sont assignés automatiquement.",
+      "attendanceLeave": "Elle pointe, demande des congés et consulte son solde.",
+      "payroll": "Sa paie est calculée à partir du même dossier, à chaque cycle.",
+      "learning": "Elle s'inscrit à des formations liées à son poste et ses objectifs.",
+      "performance": "Ses objectifs et évaluations s'appuient sur le même historique.",
+      "promotion": "Une promotion met à jour son dossier — rien n'est ressaisi.",
+      "offboarding": "Lorsqu'elle quitte l'entreprise, le départ clôture proprement le dossier."
     }
   },
   "connectedRecord": {
-    "eyebrow": "[FR] ONE EMPLOYEE RECORD",
-    "headline": "[FR] One employee record. Everything connected.",
-    "supporting": "[FR] Payroll, leave, attendance, performance, learning, documents, assets and recruitment all read from the same record — not nine disconnected modules.",
+    "eyebrow": "UN SEUL DOSSIER EMPLOYÉ",
+    "headline": "Un dossier employé. Tout est connecté.",
+    "supporting": "Paie, congés, présence, performance, formation, documents, équipements et recrutement — tout provient du même dossier, pas de neuf modules déconnectés.",
     "nodes": {
-      "payroll": "[FR] Payroll",
-      "leave": "[FR] Leave",
-      "attendance": "[FR] Attendance",
-      "performance": "[FR] Performance",
-      "learning": "[FR] Learning",
-      "documents": "[FR] Documents",
-      "assets": "[FR] Assets",
-      "recruitment": "[FR] Recruitment",
-      "lifecycle": "[FR] Lifecycle",
-      "disciplinary": "[FR] Disciplinary"
+      "payroll": "Paie",
+      "leave": "Congés",
+      "attendance": "Présence",
+      "performance": "Performance",
+      "learning": "Formation",
+      "documents": "Documents",
+      "assets": "Équipements",
+      "recruitment": "Recrutement",
+      "lifecycle": "Cycle de vie",
+      "disciplinary": "Discipline"
     }
   },
   "moduleShowcase": {
-    "eyebrow": "[FR] EXPLORE THE PLATFORM",
-    "heading": "[FR] One platform. Every stage of your people journey.",
+    "eyebrow": "EXPLOREZ LA PLATEFORME",
+    "heading": "Une seule plateforme. Chaque étape du parcours de vos collaborateurs.",
     "coreHr": {
-      "label": "[FR] Core HR",
-      "headline": "[FR] Your people records. Finally organized.",
-      "items": [
-        "[FR] Employee profile",
-        "[FR] Job details",
-        "[FR] Employee directory",
-        "[FR] Lifecycle",
-        "[FR] Organization structure",
-        "[FR] Documents"
-      ]
+      "label": "RH de base",
+      "headline": "Les dossiers de vos collaborateurs. Enfin organisés.",
+      "items": ["Profil employé", "Détails du poste", "Annuaire des employés", "Cycle de vie", "Structure organisationnelle", "Documents"]
     },
     "payroll": {
-      "label": "[FR] Payroll",
-      "headline": "[FR] From gross to net. Without the chaos.",
-      "items": [
-        "[FR] Payroll run",
-        "[FR] Statutory calculations",
-        "[FR] Payslip",
-        "[FR] Reports",
-        "[FR] Bank file / disbursement"
-      ]
+      "label": "Paie",
+      "headline": "Du brut au net. Sans le chaos.",
+      "items": ["Cycle de paie", "Calculs réglementaires", "Bulletin de paie", "Rapports", "Fichier bancaire / décaissement"]
     },
     "leave": {
-      "label": "[FR] Leave",
-      "headline": "[FR] Leave that practically manages itself.",
-      "items": [
-        "[FR] Request",
-        "[FR] Workflow",
-        "[FR] Approval",
-        "[FR] Balance updated"
-      ]
+      "label": "Congés",
+      "headline": "Des congés qui se gèrent presque tout seuls.",
+      "items": ["Demande", "Circuit de validation", "Approbation", "Solde mis à jour"]
     },
     "attendance": {
-      "label": "[FR] Attendance",
-      "headline": "[FR] Know who's working, without chasing sheets.",
-      "items": [
-        "[FR] Clock in / out",
-        "[FR] Geo-fencing",
-        "[FR] Shifts & rosters",
-        "[FR] Timesheets"
-      ]
+      "label": "Présence",
+      "headline": "Savoir qui travaille, sans courir après les feuilles.",
+      "items": ["Pointage entrée / sortie", "Géorepérage", "Équipes et plannings", "Feuilles de temps"]
     },
     "performance": {
-      "label": "[FR] Performance",
-      "headline": "[FR] Turn goals into conversations.",
-      "items": [
-        "[FR] Goals",
-        "[FR] KPIs",
-        "[FR] Review cycles",
-        "[FR] Continuous feedback"
-      ]
+      "label": "Performance",
+      "headline": "Transformez les objectifs en conversations.",
+      "items": ["Objectifs", "Indicateurs clés", "Cycles d'évaluation", "Retours continus"]
     },
     "recruitment": {
-      "label": "[FR] Recruitment",
-      "headline": "[FR] From requisition to hire, on one record.",
-      "items": [
-        "[FR] Requisition",
-        "[FR] Job board",
-        "[FR] Applications",
-        "[FR] Shortlist",
-        "[FR] Interview",
-        "[FR] Offer"
-      ]
+      "label": "Recrutement",
+      "headline": "De la demande de poste à l'embauche, sur un seul dossier.",
+      "items": ["Demande de poste", "Offre d'emploi", "Candidatures", "Présélection", "Entretien", "Offre"]
     },
     "learningDevelopment": {
-      "label": "[FR] L&D",
-      "headline": "[FR] Skills, tied to growth.",
-      "items": [
-        "[FR] Training programs",
-        "[FR] Courses",
-        "[FR] Assessments",
-        "[FR] Certificates"
-      ]
+      "label": "Formation",
+      "headline": "Des compétences, liées à la croissance.",
+      "items": ["Programmes de formation", "Cours", "Évaluations", "Certificats"]
     },
     "collaboration": {
-      "label": "[FR] Collaboration",
-      "headline": "[FR] HR that people actually want to open.",
-      "items": [
-        "[FR] Workspaces",
-        "[FR] Teams",
-        "[FR] Announcements",
-        "[FR] Notifications"
-      ]
+      "label": "Collaboration",
+      "headline": "Une RH que vos collaborateurs ont envie d'ouvrir.",
+      "items": ["Espaces de travail", "Équipes", "Annonces", "Notifications"]
     }
   },
   "ess": {
-    "eyebrow": "[FR] EMPLOYEE SELF-SERVICE",
-    "headline": "[FR] HR isn't only for HR.",
-    "supporting": "[FR] Give every employee a simpler way to manage their work life.",
+    "eyebrow": "LIBRE-SERVICE EMPLOYÉ",
+    "headline": "La RH n'est pas réservée aux RH.",
+    "supporting": "Donnez à chaque employé un moyen plus simple de gérer sa vie professionnelle.",
     "capabilities": [
-      "[FR] View Profile",
-      "[FR] Update Details",
-      "[FR] Download Payslips",
-      "[FR] Request Leave",
-      "[FR] Check Leave Balance",
-      "[FR] View Attendance",
-      "[FR] View Goals",
-      "[FR] Complete Learning",
-      "[FR] Receive Notifications",
-      "[FR] Access Documents",
-      "[FR] Follow Approvals"
+      "Voir le profil",
+      "Modifier les informations",
+      "Télécharger les bulletins de paie",
+      "Demander un congé",
+      "Consulter le solde de congés",
+      "Voir la présence",
+      "Voir les objectifs",
+      "Terminer une formation",
+      "Recevoir des notifications",
+      "Accéder aux documents",
+      "Suivre les approbations"
     ]
   },
   "flexibility": {
-    "eyebrow": "[FR] CONFIGURED AROUND YOU",
-    "headline": "[FR] Your organization isn't generic. Your HR software shouldn't be either.",
-    "closingLine": "[FR] Configurable without becoming complicated.",
-    "steps": [
-      "[FR] Regions",
-      "[FR] Branches",
-      "[FR] Departments",
-      "[FR] Roles",
-      "[FR] Workflows",
-      "[FR] Leave Policies",
-      "[FR] Payroll Rules",
-      "[FR] Security"
-    ]
+    "eyebrow": "CONFIGURÉ AUTOUR DE VOUS",
+    "headline": "Votre organisation n'est pas générique. Votre logiciel RH ne devrait pas l'être non plus.",
+    "closingLine": "Configurable sans devenir compliqué.",
+    "steps": ["Régions", "Agences", "Départements", "Rôles", "Flux de travail", "Politiques de congés", "Règles de paie", "Sécurité"]
   },
   "approvals": {
-    "eyebrow": "[FR] ONE APPROVAL ENGINE",
-    "headline": "[FR] Route it once. Approve it your way.",
-    "everyAction": "[FR] Every create, edit, and update can require approval — leave, payroll, a new hire, a record change, or anything else your organization decides matters. These six are examples; your workflows aren't limited to them.",
-    "closingLine": "[FR] One approval engine. Your rules.",
-    "chainSteps": [
-      "[FR] Employee",
-      "[FR] Supervisor",
-      "[FR] Department Head",
-      "[FR] HR",
-      "[FR] Finance",
-      "[FR] Approved"
-    ],
+    "eyebrow": "UN SEUL MOTEUR D'APPROBATION",
+    "headline": "Acheminez-le une fois. Approuvez-le à votre façon.",
+    "everyAction": "Chaque création, modification et mise à jour peut nécessiter une approbation — congé, paie, nouvelle embauche, changement de dossier, ou tout ce que votre organisation juge important. Ces six exemples n'épuisent pas vos flux de travail possibles.",
+    "closingLine": "Un seul moteur d'approbation. Vos règles.",
+    "chainSteps": ["Employé", "Superviseur", "Chef de département", "RH", "Finance", "Approuvé"],
     "types": {
-      "leave": "[FR] Leave",
-      "payroll": "[FR] Payroll",
-      "salaryAdvance": "[FR] Salary Advance",
-      "promotion": "[FR] Promotion",
-      "disciplinary": "[FR] Disciplinary",
-      "dataImports": "[FR] Data Imports",
-      "custom": "[FR] + Build your own"
+      "leave": "Congé",
+      "payroll": "Paie",
+      "salaryAdvance": "Avance sur salaire",
+      "promotion": "Promotion",
+      "disciplinary": "Discipline",
+      "dataImports": "Imports de données",
+      "custom": "+ Créez le vôtre"
     },
-    "customChainSteps": [
-      "[FR] Requester",
-      "[FR] Add a step",
-      "[FR] Add a step",
-      "[FR] Approved"
-    ],
-    "customNote": "[FR] Add, remove, or reorder steps — the chain is configured by your organization, not fixed by ZiraHR.",
+    "customChainSteps": ["Demandeur", "Ajouter une étape", "Ajouter une étape", "Approuvé"],
+    "customNote": "Ajoutez, supprimez ou réorganisez les étapes — le circuit est configuré par votre organisation, pas imposé par ZiraHR.",
     "queue": {
-      "title": "[FR] Approval queue",
-      "subtitle": "[FR] Every pending action, in one place — whoever's turn it is to approve sees it here.",
+      "title": "File d'approbation",
+      "subtitle": "Chaque action en attente, au même endroit — celui dont c'est le tour de l'approuver la voit ici.",
       "items": {
-        "leaveRequest": {
-          "action": "[FR] Leave request",
-          "requester": "[FR] Employee, Sales"
-        },
-        "newEmployee": {
-          "action": "[FR] New employee record",
-          "requester": "[FR] HR Officer, Operations"
-        },
-        "payrollRun": {
-          "action": "[FR] Payroll run — July",
-          "requester": "[FR] Payroll Admin"
-        },
-        "salaryAdvance": {
-          "action": "[FR] Salary advance",
-          "requester": "[FR] Employee, Support"
-        },
-        "profileUpdate": {
-          "action": "[FR] Profile update",
-          "requester": "[FR] Employee, Finance"
-        }
+        "leaveRequest": { "action": "Demande de congé", "requester": "Employé, Ventes" },
+        "newEmployee": { "action": "Nouveau dossier employé", "requester": "Chargé RH, Opérations" },
+        "payrollRun": { "action": "Cycle de paie — Juillet", "requester": "Administrateur de paie" },
+        "salaryAdvance": { "action": "Avance sur salaire", "requester": "Employé, Support" },
+        "profileUpdate": { "action": "Mise à jour de profil", "requester": "Employé, Finance" }
       },
       "statusLabels": {
-        "pending": "[FR] Pending",
-        "approved": "[FR] Approved"
+        "pending": "En attente",
+        "approved": "Approuvé"
       }
     }
   },
   "askTija": {
-    "eyebrow": "[FR] WORKFORCE INTELLIGENCE",
-    "headline": "[FR] Meet TiJa. Ask your workforce.",
-    "positioning": "[FR] Workforce intelligence inside ZiraHR.",
+    "eyebrow": "INTELLIGENCE DES EFFECTIFS",
+    "headline": "Rencontrez TiJa. Posez vos questions sur vos effectifs.",
+    "positioning": "L'intelligence des effectifs, intégrée à ZiraHR.",
     "prompts": {
-      "contractsExpiring": "[FR] Who has contracts expiring this month?",
-      "pendingLeave": "[FR] Show pending leave approvals.",
-      "payrollVariance": "[FR] Explain this month's payroll variance.",
-      "missingBankDetails": "[FR] Which employees have missing bank details?"
+      "contractsExpiring": "Quels employés ont des contrats qui expirent ce mois-ci ?",
+      "pendingLeave": "Afficher les demandes de congé en attente.",
+      "payrollVariance": "Expliquer l'écart de paie de ce mois-ci.",
+      "missingBankDetails": "Quels employés n'ont pas renseigné leurs coordonnées bancaires ?"
     }
   },
   "dashboards": {
-    "eyebrow": "[FR] SEE YOUR ORGANIZATION",
-    "headline": "[FR] Different roles. Different questions. The right answers.",
+    "eyebrow": "VOYEZ VOTRE ORGANISATION",
+    "headline": "Rôles différents. Questions différentes. Les bonnes réponses.",
     "types": {
-      "executive": "[FR] Executive",
-      "hr": "[FR] HR",
-      "finance": "[FR] Finance",
-      "my": "[FR] My Dashboard"
+      "executive": "Direction",
+      "hr": "RH",
+      "finance": "Finance",
+      "my": "Mon tableau de bord"
     }
   },
   "multiRegion": {
-    "eyebrow": "[FR] MULTI-REGION, MULTI-BRANCH",
-    "headline": "[FR] One organization. However complex.",
-    "levels": [
-      "[FR] Organization",
-      "[FR] Region",
-      "[FR] Branch",
-      "[FR] Department",
-      "[FR] Employee"
-    ],
+    "eyebrow": "MULTI-RÉGIONS, MULTI-AGENCES",
+    "headline": "Une seule organisation. Quelle que soit sa complexité.",
+    "levels": ["Organisation", "Région", "Agence", "Département", "Employé"],
     "roleViews": {
-      "regionalManager": "[FR] Regional Manager sees My Region",
-      "branchManager": "[FR] Branch Manager sees My Branch",
-      "executive": "[FR] Executive sees the Whole Organization"
+      "regionalManager": "Le responsable régional voit Ma Région",
+      "branchManager": "Le responsable d'agence voit Mon Agence",
+      "executive": "La direction voit l'ensemble de l'organisation"
     }
   },
   "security": {
-    "eyebrow": "[FR] TRUST & GOVERNANCE",
-    "headline": "[FR] Control who sees what. And know what happened.",
+    "eyebrow": "CONFIANCE ET GOUVERNANCE",
+    "headline": "Contrôlez qui voit quoi. Et sachez ce qui s'est passé.",
     "capabilities": [
       {
-        "label": "[FR] Roles & Permissions",
-        "description": "[FR] Access rights trickle down by role, department, and branch — segregated, not shared."
+        "label": "Rôles et permissions",
+        "description": "Les droits d'accès sont hérités par rôle, département et agence — cloisonnés, non partagés."
       },
       {
-        "label": "[FR] Geo-Restricted Login",
-        "description": "[FR] Sign-ins can be limited to approved locations for sensitive roles."
+        "label": "Connexion à accès géographique restreint",
+        "description": "Les connexions peuvent être limitées à des emplacements approuvés pour les rôles sensibles."
       },
       {
-        "label": "[FR] Working-Hour Login Validation",
-        "description": "[FR] Sign-ins can be restricted to each organization's configured working hours."
+        "label": "Validation des horaires de connexion",
+        "description": "Les connexions peuvent être limitées aux horaires de travail configurés par chaque organisation."
       },
       {
-        "label": "[FR] Multi-Factor Authentication",
-        "description": "[FR] A second verification step for accounts that need it."
+        "label": "Authentification multifacteur",
+        "description": "Une deuxième étape de vérification pour les comptes qui en ont besoin."
       },
       {
-        "label": "[FR] Approval-Gated Special Access",
-        "description": "[FR] Exceptional access is requested, reviewed, and granted only to the specific user who asked."
+        "label": "Accès spécial soumis à approbation",
+        "description": "Les accès exceptionnels sont demandés, examinés et accordés uniquement à l'utilisateur qui en a fait la demande."
       },
       {
-        "label": "[FR] Encrypted, Passcode-Protected Reports",
-        "description": "[FR] Sensitive report exports are encrypted and passcode-protected."
+        "label": "Rapports chiffrés et protégés par code",
+        "description": "Les exports de rapports sensibles sont chiffrés et protégés par un code d'accès."
       },
       {
-        "label": "[FR] Direct-to-Email Report Delivery",
-        "description": "[FR] Reports can be delivered straight to a verified email instead of an open download link."
+        "label": "Livraison des rapports directement par e-mail",
+        "description": "Les rapports peuvent être livrés directement à une adresse e-mail vérifiée plutôt que via un lien de téléchargement ouvert."
       },
       {
-        "label": "[FR] Approval Workflows & Export Controls",
-        "description": "[FR] Every sensitive action — and every export — routes through the same configurable approval engine."
+        "label": "Flux d'approbation et contrôle des exports",
+        "description": "Chaque action sensible — et chaque export — passe par le même moteur d'approbation configurable."
       },
       {
-        "label": "[FR] Audit & Activity Logs",
-        "description": "[FR] Every change to employee, leave, payroll, and access data is logged and traceable."
+        "label": "Journaux d'audit et d'activité",
+        "description": "Chaque modification des données d'employé, de congé, de paie et d'accès est enregistrée et traçable."
       }
     ]
   },
   "productTour": {
-    "eyebrow": "[FR] EXPLORE ZiraHR",
-    "headline": "[FR] See it in action, before you sign up.",
-    "supporting": "[FR] A lightweight, simulated look at the interface — no account needed.",
+    "eyebrow": "EXPLOREZ ZiraHR",
+    "headline": "Voyez-le en action, avant de vous inscrire.",
+    "supporting": "Un aperçu simulé et léger de l'interface — aucun compte requis.",
     "buttons": {
-      "runPayroll": "[FR] Run Payroll",
-      "requestLeave": "[FR] Request Leave",
-      "approveRequest": "[FR] Approve Request",
-      "openEmployeeProfile": "[FR] Open Employee Profile",
-      "askTija": "[FR] Ask TiJa",
-      "viewDashboard": "[FR] View Dashboard"
+      "runPayroll": "Lancer la paie",
+      "requestLeave": "Demander un congé",
+      "approveRequest": "Approuver la demande",
+      "openEmployeeProfile": "Ouvrir le profil employé",
+      "askTija": "Demander à TiJa",
+      "viewDashboard": "Voir le tableau de bord"
     }
   },
   "finalCta": {
-    "headline": "[FR] Ready to run HR differently?"
+    "headline": "Prêt à gérer les RH autrement ?"
   },
   "breadcrumbs": {
-    "coreHr": "[FR] Core HR",
-    "payroll": "[FR] Payroll",
-    "leaveManagement": "[FR] Leave Management",
-    "attendanceManagement": "[FR] Attendance",
-    "performanceManagement": "[FR] Performance",
-    "recruitment": "[FR] Recruitment",
-    "learningDevelopment": "[FR] Learning & Development",
-    "employeeSelfService": "[FR] Employee Self-Service",
-    "teamsCollaboration": "[FR] Teams & Collaboration",
-    "analytics": "[FR] Analytics",
-    "askTija": "[FR] Ask TiJa",
-    "hrSoftwareKenya": "[FR] HR Software Kenya",
-    "payrollSoftwareKenya": "[FR] Payroll Software Kenya",
-    "hrmisKenya": "[FR] HRMIS Kenya",
-    "hrSoftwareAfrica": "[FR] HR Software Africa",
-    "pricing": "[FR] Pricing",
-    "contact": "[FR] Contact",
-    "requestDemo": "[FR] Request a Demo",
-    "signup": "[FR] Sign Up",
-    "login": "[FR] Login",
-    "resources": "[FR] Resources",
-    "company": "[FR] Company",
-    "privacy": "[FR] Privacy",
-    "terms": "[FR] Terms",
-    "security": "[FR] Security",
-    "cookies": "[FR] Cookies"
+    "home": "Accueil",
+    "coreHr": "RH de base",
+    "payroll": "Paie",
+    "leaveManagement": "Gestion des congés",
+    "attendanceManagement": "Présence",
+    "performanceManagement": "Performance",
+    "recruitment": "Recrutement",
+    "learningDevelopment": "Formation et développement",
+    "employeeSelfService": "Libre-service employé",
+    "teamsCollaboration": "Équipes et collaboration",
+    "analytics": "Analytique",
+    "askTija": "Demander à TiJa",
+    "hrSoftwareKenya": "Logiciel RH Kenya",
+    "payrollSoftwareKenya": "Logiciel de paie Kenya",
+    "hrmisKenya": "SIRH Kenya",
+    "hrSoftwareAfrica": "Logiciel RH Afrique",
+    "pricing": "Tarifs",
+    "contact": "Contact",
+    "requestDemo": "Demander une démo",
+    "signup": "Inscription",
+    "login": "Connexion",
+    "resources": "Ressources",
+    "company": "Entreprise",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "security": "Sécurité",
+    "cookies": "Cookies"
   },
   "pages": {
     "coreHr": {
-      "eyebrow": "[FR] CORE HR",
-      "headline": "[FR] One reliable record for every employee.",
-      "supporting": "[FR] Employee directory, 360 profiles, organization structure, lifecycle and documents — all reading from the same record.",
-      "capabilities": [
-        "[FR] Employee Directory",
-        "[FR] Employee 360 Profile",
-        "[FR] Organization Structure",
-        "[FR] Branches & Regions",
-        "[FR] Departments",
-        "[FR] Job Grades",
-        "[FR] Job Positions",
-        "[FR] Employee Lifecycle",
-        "[FR] Promotions",
-        "[FR] Transfers",
-        "[FR] Temporary Assignments",
-        "[FR] Onboarding",
-        "[FR] Offboarding",
-        "[FR] Documents"
-      ],
-      "connectsToHeadline": "[FR] Every other module reads from this record.",
-      "ctaHeadline": "[FR] Give every employee one reliable record."
+      "eyebrow": "RH DE BASE",
+      "headline": "Un dossier fiable pour chaque employé.",
+      "supporting": "Annuaire des employés, profils à 360°, structure organisationnelle, cycle de vie et documents — tout provient du même dossier.",
+      "capabilities": ["Annuaire des employés", "Profil employé 360°", "Structure organisationnelle", "Agences et régions", "Départements", "Échelons", "Postes", "Cycle de vie de l'employé", "Promotions", "Mutations", "Affectations temporaires", "Intégration", "Départ", "Documents"],
+      "connectsToHeadline": "Chaque autre module s'appuie sur ce dossier.",
+      "ctaHeadline": "Donnez à chaque employé un dossier fiable unique."
     },
     "payroll": {
-      "eyebrow": "[FR] PAYROLL",
-      "headline": "[FR] Payroll without spreadsheet gymnastics.",
-      "supporting": "[FR] Gross to net, statutory-correct, without a spreadsheet in sight.",
-      "flowSteps": [
-        "[FR] Draft",
-        "[FR] Review",
-        "[FR] Approve",
-        "[FR] Process",
-        "[FR] Disburse"
-      ],
-      "capabilities": [
-        "[FR] Payroll Cycles",
-        "[FR] Basic Pay",
-        "[FR] Allowances",
-        "[FR] Benefits",
-        "[FR] Deductions",
-        "[FR] PAYE",
-        "[FR] NSSF",
-        "[FR] SHIF",
-        "[FR] Housing Levy",
-        "[FR] Reliefs",
-        "[FR] Salary Advances",
-        "[FR] Payslips",
-        "[FR] Payroll Approvals",
-        "[FR] Bank Files",
-        "[FR] Disbursements",
-        "[FR] Payroll Analytics"
-      ],
-      "connectsToHeadline": "[FR] Payroll runs from the same record as everything else.",
-      "ctaHeadline": "[FR] Run payroll from one connected record."
+      "eyebrow": "PAIE",
+      "headline": "La paie sans acrobaties de tableur.",
+      "supporting": "Du brut au net, conforme à la réglementation, sans un seul tableur en vue.",
+      "flowSteps": ["Brouillon", "Vérification", "Approbation", "Traitement", "Décaissement"],
+      "capabilities": ["Cycles de paie", "Salaire de base", "Indemnités", "Avantages", "Retenues", "PAYE", "NSSF", "SHIF", "Housing Levy", "Abattements", "Avances sur salaire", "Bulletins de paie", "Approbations de paie", "Fichiers bancaires", "Décaissements", "Analytique de paie"],
+      "connectsToHeadline": "La paie fonctionne à partir du même dossier que tout le reste.",
+      "ctaHeadline": "Gérez la paie à partir d'un seul dossier connecté."
     },
     "leaveManagement": {
-      "eyebrow": "[FR] LEAVE MANAGEMENT",
-      "headline": "[FR] Leave management that keeps everyone in sync.",
-      "supporting": "[FR] Request, route, approve and update a balance — automatically, every time.",
-      "flowSteps": [
-        "[FR] Employee Requests",
-        "[FR] Manager Approval",
-        "[FR] Workflow Routes",
-        "[FR] HR Sees Calendar",
-        "[FR] Balance Updates"
-      ],
-      "capabilities": [
-        "[FR] Leave Policies",
-        "[FR] Accruals",
-        "[FR] Carry Forwards",
-        "[FR] Multi-level Approvals",
-        "[FR] Leave Calendar",
-        "[FR] Balances",
-        "[FR] Reports",
-        "[FR] ESS"
-      ],
-      "connectsToHeadline": "[FR] Leave balances feed straight into payroll and attendance.",
-      "ctaHeadline": "[FR] Let leave manage itself."
+      "eyebrow": "GESTION DES CONGÉS",
+      "headline": "Une gestion des congés qui garde tout le monde synchronisé.",
+      "supporting": "Demandez, acheminez, approuvez et mettez à jour un solde — automatiquement, à chaque fois.",
+      "flowSteps": ["Demande de l'employé", "Approbation du manager", "Circuit de validation", "Calendrier RH", "Mise à jour du solde"],
+      "capabilities": ["Politiques de congés", "Cumuls", "Reports", "Approbations à plusieurs niveaux", "Calendrier des congés", "Soldes", "Rapports", "ESS"],
+      "connectsToHeadline": "Les soldes de congés alimentent directement la paie et la présence.",
+      "ctaHeadline": "Laissez les congés se gérer tout seuls."
     },
     "attendanceManagement": {
-      "eyebrow": "[FR] ATTENDANCE",
-      "headline": "[FR] Know who's working. Without chasing attendance sheets.",
-      "supporting": "[FR] Clock-in to dashboard, geo-aware, shift-aware.",
-      "capabilities": [
-        "[FR] Clock In / Out",
-        "[FR] Geo-fencing",
-        "[FR] Attendance Rules",
-        "[FR] Branch Locations",
-        "[FR] Late Arrivals",
-        "[FR] Overtime",
-        "[FR] Shifts",
-        "[FR] Rosters",
-        "[FR] Timesheets",
-        "[FR] Attendance Analytics"
-      ],
-      "connectsToHeadline": "[FR] Attendance data flows straight into payroll and leave.",
-      "ctaHeadline": "[FR] See attendance in real time, everywhere you operate."
+      "eyebrow": "PRÉSENCE",
+      "headline": "Savoir qui travaille. Sans courir après les feuilles de présence.",
+      "supporting": "Du pointage au tableau de bord, conscient de la géolocalisation et des équipes.",
+      "capabilities": ["Pointage entrée / sortie", "Géorepérage", "Règles de présence", "Emplacements des agences", "Retards", "Heures supplémentaires", "Équipes", "Plannings", "Feuilles de temps", "Analytique de présence"],
+      "connectsToHeadline": "Les données de présence alimentent directement la paie et les congés.",
+      "ctaHeadline": "Suivez la présence en temps réel, partout où vous opérez."
     },
     "performanceManagement": {
-      "eyebrow": "[FR] PERFORMANCE",
-      "headline": "[FR] Turn goals into conversations. Conversations into growth.",
-      "supporting": "[FR] Goals, feedback and reviews — all tied to the same employee history.",
-      "capabilities": [
-        "[FR] Goals",
-        "[FR] KPIs",
-        "[FR] Review Cycles",
-        "[FR] Appraisals",
-        "[FR] Continuous Feedback",
-        "[FR] 360 Feedback",
-        "[FR] PIP",
-        "[FR] Analytics"
-      ],
-      "connectsToHeadline": "[FR] Performance history builds on the same record as learning and payroll.",
-      "ctaHeadline": "[FR] Make performance a conversation, not a form."
+      "eyebrow": "PERFORMANCE",
+      "headline": "Transformez les objectifs en conversations. Les conversations en croissance.",
+      "supporting": "Objectifs, retours et évaluations — tous rattachés au même historique employé.",
+      "capabilities": ["Objectifs", "Indicateurs clés", "Cycles d'évaluation", "Évaluations annuelles", "Retours continus", "Retour à 360°", "Plan d'amélioration", "Analytique"],
+      "connectsToHeadline": "L'historique de performance s'appuie sur le même dossier que la formation et la paie.",
+      "ctaHeadline": "Faites de la performance une conversation, pas un formulaire."
     },
     "recruitment": {
-      "eyebrow": "[FR] RECRUITMENT",
-      "headline": "[FR] From requisition to hire, on one record.",
-      "supporting": "[FR] The final step doesn't re-enter your new hire — it becomes their employee profile.",
-      "flowSteps": [
-        "[FR] Requisition",
-        "[FR] Job Board",
-        "[FR] Applications",
-        "[FR] Shortlist",
-        "[FR] Interview",
-        "[FR] Offer",
-        "[FR] Hire"
-      ],
-      "connectsToHeadline": "[FR] A hire becomes an employee record — nothing re-entered.",
-      "ctaHeadline": "[FR] Hire into the same record they'll work from."
+      "eyebrow": "RECRUTEMENT",
+      "headline": "De la demande de poste à l'embauche, sur un seul dossier.",
+      "supporting": "La dernière étape ne ressaisit pas votre nouvelle recrue — elle devient son profil employé.",
+      "flowSteps": ["Demande de poste", "Offre d'emploi", "Candidatures", "Présélection", "Entretien", "Offre", "Embauche"],
+      "connectsToHeadline": "Une embauche devient un dossier employé — rien n'est ressaisi.",
+      "ctaHeadline": "Embauchez directement dans le dossier qu'ils utiliseront."
     },
     "learningDevelopment": {
-      "eyebrow": "[FR] LEARNING & DEVELOPMENT",
-      "headline": "[FR] Skills, tied to growth.",
-      "supporting": "[FR] Training that connects to the role, the goals, and the record behind them.",
-      "flowSteps": [
-        "[FR] Skills",
-        "[FR] Learning",
-        "[FR] Assessment",
-        "[FR] Certification",
-        "[FR] Growth"
-      ],
-      "capabilities": [
-        "[FR] Training Programs",
-        "[FR] Courses",
-        "[FR] Enrollments",
-        "[FR] Assessments",
-        "[FR] Certificates",
-        "[FR] Skills",
-        "[FR] Competencies",
-        "[FR] Development Plans"
-      ],
-      "connectsToHeadline": "[FR] Learning ties directly into performance and career growth.",
-      "ctaHeadline": "[FR] Turn training into a growth plan, not a checkbox."
+      "eyebrow": "FORMATION ET DÉVELOPPEMENT",
+      "headline": "Des compétences, liées à la croissance.",
+      "supporting": "Une formation connectée au poste, aux objectifs et au dossier qui les sous-tend.",
+      "flowSteps": ["Compétences", "Formation", "Évaluation", "Certification", "Croissance"],
+      "capabilities": ["Programmes de formation", "Cours", "Inscriptions", "Évaluations", "Certificats", "Compétences", "Aptitudes", "Plans de développement"],
+      "connectsToHeadline": "La formation se rattache directement à la performance et à l'évolution de carrière.",
+      "ctaHeadline": "Transformez la formation en plan de croissance, pas en simple case à cocher."
     },
     "teamsCollaboration": {
-      "eyebrow": "[FR] TEAMS & COLLABORATION",
-      "headline": "[FR] HR that people actually want to open.",
-      "supporting": "[FR] Workspaces, teams, announcements and notifications — ZiraHR as more than an administrative system.",
-      "capabilities": [
-        "[FR] Workspaces",
-        "[FR] Teams",
-        "[FR] Channels",
-        "[FR] Messaging",
-        "[FR] Announcements",
-        "[FR] Notifications",
-        "[FR] Employee Collaboration"
-      ],
-      "connectsToHeadline": "[FR] Collaboration stays connected to the same organization structure.",
-      "ctaHeadline": "[FR] Make HR somewhere people want to be."
+      "eyebrow": "ÉQUIPES ET COLLABORATION",
+      "headline": "Une RH que vos collaborateurs ont envie d'ouvrir.",
+      "supporting": "Espaces de travail, équipes, annonces et notifications — ZiraHR bien plus qu'un système administratif.",
+      "capabilities": ["Espaces de travail", "Équipes", "Canaux", "Messagerie", "Annonces", "Notifications", "Collaboration entre employés"],
+      "connectsToHeadline": "La collaboration reste connectée à la même structure organisationnelle.",
+      "ctaHeadline": "Faites de la RH un endroit où l'on a envie d'être."
     },
     "employeeSelfService": {
-      "eyebrow": "[FR] EMPLOYEE SELF-SERVICE",
-      "headline": "[FR] HR isn't only for HR.",
-      "supporting": "[FR] Give every employee a simpler way to manage their work life.",
-      "capabilities": [
-        "[FR] View Profile",
-        "[FR] Update Details",
-        "[FR] Download Payslips",
-        "[FR] Request Leave",
-        "[FR] Check Leave Balance",
-        "[FR] View Attendance",
-        "[FR] View Goals",
-        "[FR] Complete Learning",
-        "[FR] Receive Notifications",
-        "[FR] Access Documents",
-        "[FR] Follow Approvals"
-      ],
-      "connectsToHeadline": "[FR] Every ESS action updates the same record HR sees.",
-      "ctaHeadline": "[FR] Give your whole team self-service, not spreadsheets."
+      "eyebrow": "LIBRE-SERVICE EMPLOYÉ",
+      "headline": "La RH n'est pas réservée aux RH.",
+      "supporting": "Donnez à chaque employé un moyen plus simple de gérer sa vie professionnelle.",
+      "capabilities": ["Voir le profil", "Modifier les informations", "Télécharger les bulletins de paie", "Demander un congé", "Consulter le solde de congés", "Voir la présence", "Voir les objectifs", "Terminer une formation", "Recevoir des notifications", "Accéder aux documents", "Suivre les approbations"],
+      "connectsToHeadline": "Chaque action ESS met à jour le même dossier que voit la RH.",
+      "ctaHeadline": "Offrez à toute votre équipe le libre-service, pas des tableurs."
     },
     "analytics": {
-      "eyebrow": "[FR] INTELLIGENCE",
-      "headline": "[FR] Different roles. Different questions. The right answers.",
-      "supporting": "[FR] Executive, HR, Finance and personal dashboards, all built on the same data model.",
-      "capabilities": [
-        "[FR] Executive Dashboard",
-        "[FR] HR Dashboard",
-        "[FR] Finance Dashboard",
-        "[FR] My Dashboard",
-        "[FR] Analytics",
-        "[FR] Reports"
-      ],
-      "connectsToHeadline": "[FR] Every dashboard reads from the same connected record.",
-      "ctaHeadline": "[FR] See your organization clearly, from any role."
+      "eyebrow": "INTELLIGENCE",
+      "headline": "Rôles différents. Questions différentes. Les bonnes réponses.",
+      "supporting": "Tableaux de bord direction, RH, finance et personnels, tous bâtis sur le même modèle de données.",
+      "capabilities": ["Tableau de bord direction", "Tableau de bord RH", "Tableau de bord finance", "Mon tableau de bord", "Analytique", "Rapports"],
+      "connectsToHeadline": "Chaque tableau de bord s'appuie sur le même dossier connecté.",
+      "ctaHeadline": "Voyez votre organisation clairement, depuis n'importe quel rôle."
     },
     "askTija": {
-      "eyebrow": "[FR] ASK TiJa",
-      "headline": "[FR] Meet TiJa. Ask your workforce.",
-      "supporting": "[FR] Workforce intelligence inside ZiraHR — not a bolted-on chatbot.",
-      "capabilities": [
-        "[FR] Contract expiry alerts",
-        "[FR] Pending approvals, on request",
-        "[FR] Payroll variance explanations",
-        "[FR] Missing data flags"
-      ],
-      "connectsToHeadline": "[FR] TiJa answers from the same record every module shares.",
-      "ctaHeadline": "[FR] Ask your workforce a question. Get a real answer."
+      "eyebrow": "DEMANDER À TiJa",
+      "headline": "Rencontrez TiJa. Posez vos questions sur vos effectifs.",
+      "supporting": "L'intelligence des effectifs intégrée à ZiraHR — pas un chatbot ajouté après coup.",
+      "capabilities": ["Alertes d'expiration de contrat", "Approbations en attente, sur demande", "Explications des écarts de paie", "Signalements de données manquantes"],
+      "connectsToHeadline": "TiJa répond à partir du même dossier que partage chaque module.",
+      "ctaHeadline": "Posez une question sur vos effectifs. Obtenez une vraie réponse."
     },
     "hrSoftwareKenya": {
-      "eyebrow": "[FR] HR SOFTWARE, BUILT FOR KENYA",
-      "headline": "[FR] HR software built for Kenyan teams.",
-      "supporting": "[FR] ZiraHR brings recruitment, onboarding, payroll, leave, attendance, performance and learning into one platform — built around how Kenyan organizations actually run HR, not a generic global template.",
-      "capabilities": [
-        "[FR] Kenyan statutory payroll (PAYE, NSSF, SHIF, Housing Levy)",
-        "[FR] Multi-branch and multi-region structures",
-        "[FR] Employee self-service for distributed teams",
-        "[FR] One employee record across every HR function"
-      ],
-      "connectsToHeadline": "[FR] Start with the module your team needs most.",
-      "ctaHeadline": "[FR] See ZiraHR built around your organization."
+      "eyebrow": "LOGICIEL RH, CONÇU POUR LE KENYA",
+      "headline": "Logiciel RH conçu pour les équipes kényanes.",
+      "supporting": "ZiraHR réunit recrutement, intégration, paie, congés, présence, performance et formation en une seule plateforme — conçue autour de la façon dont les organisations kényanes gèrent réellement les RH, pas un modèle générique mondial.",
+      "capabilities": ["Paie réglementaire kényane (PAYE, NSSF, SHIF, Housing Levy)", "Structures multi-agences et multi-régions", "Libre-service employé pour équipes réparties", "Un seul dossier employé pour toutes les fonctions RH"],
+      "connectsToHeadline": "Commencez par le module dont votre équipe a le plus besoin.",
+      "ctaHeadline": "Découvrez ZiraHR conçu autour de votre organisation."
     },
     "payrollSoftwareKenya": {
-      "eyebrow": "[FR] PAYROLL SOFTWARE FOR KENYA",
-      "headline": "[FR] Payroll software for Kenya — PAYE, NSSF, SHIF and Housing Levy, handled.",
-      "supporting": "[FR] Run payroll against Kenya's actual statutory schemes, from basic pay through disbursement, without spreadsheets stitched together every month-end.",
-      "flowSteps": [
-        "[FR] Draft",
-        "[FR] Review",
-        "[FR] Approve",
-        "[FR] Process",
-        "[FR] Disburse"
-      ],
-      "capabilities": [
-        "[FR] PAYE",
-        "[FR] NSSF",
-        "[FR] SHIF",
-        "[FR] Housing Levy",
-        "[FR] Reliefs",
-        "[FR] Salary Advances",
-        "[FR] Payslips",
-        "[FR] Bank Disbursement Files",
-        "[FR] Payroll Analytics"
-      ],
-      "connectsToHeadline": "[FR] Payroll connects straight to attendance, leave and core HR.",
-      "ctaHeadline": "[FR] Run Kenya-compliant payroll from one platform."
+      "eyebrow": "LOGICIEL DE PAIE POUR LE KENYA",
+      "headline": "Logiciel de paie pour le Kenya — PAYE, NSSF, SHIF et Housing Levy, pris en charge.",
+      "supporting": "Gérez la paie selon les régimes réglementaires réels du Kenya, du salaire de base jusqu'au décaissement, sans tableurs assemblés chaque fin de mois.",
+      "flowSteps": ["Brouillon", "Vérification", "Approbation", "Traitement", "Décaissement"],
+      "capabilities": ["PAYE", "NSSF", "SHIF", "Housing Levy", "Abattements", "Avances sur salaire", "Bulletins de paie", "Fichiers de décaissement bancaire", "Analytique de paie"],
+      "connectsToHeadline": "La paie se connecte directement à la présence, aux congés et à la RH de base.",
+      "ctaHeadline": "Gérez une paie conforme au Kenya depuis une seule plateforme."
     },
     "hrmisKenya": {
-      "eyebrow": "[FR] HRMIS KENYA",
-      "headline": "[FR] The HRMIS Kenyan organizations are moving to.",
-      "supporting": "[FR] A complete Human Resource Management Information System — core HR, payroll, workforce management, talent and analytics — built as one connected platform rather than separate systems stitched together.",
-      "capabilities": [
-        "[FR] Core HR & Employee Records",
-        "[FR] Payroll & Statutory Compliance",
-        "[FR] Leave & Attendance",
-        "[FR] Recruitment & Performance",
-        "[FR] Dashboards & Analytics"
-      ],
-      "connectsToHeadline": "[FR] Explore what an HRMIS looks like when it's actually connected.",
-      "ctaHeadline": "[FR] Replace disconnected systems with one HRMIS."
+      "eyebrow": "SIRH KENYA",
+      "headline": "Le SIRH vers lequel les organisations kényanes se tournent.",
+      "supporting": "Un système d'information de gestion des ressources humaines complet — RH de base, paie, gestion des effectifs, talents et analytique — bâti comme une seule plateforme connectée plutôt que des systèmes séparés assemblés entre eux.",
+      "capabilities": ["RH de base et dossiers employés", "Paie et conformité réglementaire", "Congés et présence", "Recrutement et performance", "Tableaux de bord et analytique"],
+      "connectsToHeadline": "Découvrez à quoi ressemble un SIRH réellement connecté.",
+      "ctaHeadline": "Remplacez des systèmes déconnectés par un seul SIRH."
     },
     "hrSoftwareAfrica": {
-      "eyebrow": "[FR] HR SOFTWARE FOR AFRICA",
-      "headline": "[FR] HR software built for Africa, starting with Kenya.",
-      "supporting": "[FR] ZiraHR launched in Kenya first, built from day one to support the multi-branch, multi-region reality of growing African organizations — with expansion to further African markets planned as statutory support is added.",
-      "capabilities": [
-        "[FR] Multi-region and multi-branch organization structures",
-        "[FR] Role-based visibility (regional, branch, executive)",
-        "[FR] Employee self-service built for distributed teams",
-        "[FR] One connected record across the employee lifecycle"
-      ],
-      "connectsToHeadline": "[FR] See the platform this is built on.",
-      "ctaHeadline": "[FR] Grow across regions on one connected platform."
+      "eyebrow": "LOGICIEL RH POUR L'AFRIQUE",
+      "headline": "Logiciel RH conçu pour l'Afrique, en commençant par le Kenya.",
+      "supporting": "ZiraHR a été lancé d'abord au Kenya, conçu dès le départ pour soutenir la réalité multi-agences et multi-régions des organisations africaines en croissance — avec une expansion prévue vers d'autres marchés africains à mesure que le support réglementaire est ajouté.",
+      "capabilities": ["Structures organisationnelles multi-régions et multi-agences", "Visibilité basée sur les rôles (régionale, agence, direction)", "Libre-service employé conçu pour des équipes réparties", "Un seul dossier connecté sur tout le cycle de vie de l'employé"],
+      "connectsToHeadline": "Découvrez la plateforme sur laquelle cela est construit.",
+      "ctaHeadline": "Développez-vous à travers les régions sur une seule plateforme connectée."
     },
     "pricing": {
-      "eyebrow": "[FR] PRICING",
-      "headline": "[FR] Pricing that fits your organization.",
-      "supporting": "[FR] ZiraHR is priced module by module, per employee, and billed automatically — turn on what you need, nothing you don't.",
-      "connectsToHeadline": "[FR] See what's included before you talk pricing.",
-      "ctaHeadline": "[FR] Get pricing built around your organization.",
+      "eyebrow": "TARIFS",
+      "headline": "Des tarifs adaptés à votre organisation.",
+      "supporting": "ZiraHR est facturé module par module, par employé, et débité automatiquement — activez ce dont vous avez besoin, rien de plus.",
+      "connectsToHeadline": "Découvrez ce qui est inclus avant de parler tarifs.",
+      "ctaHeadline": "Obtenez une tarification construite autour de votre organisation.",
       "calculator": {
-        "illustrativeBadge": "[FR] Illustrative pricing",
-        "illustrativeNote": "[FR] These rates are examples to show how module-based pricing works — talk to us for your organization's actual rate card.",
-        "employeeCountLabel": "[FR] Number of employees",
-        "baseIncluded": "[FR] Included in every plan",
-        "perEmployeePerMonth": "[FR] / employee / month",
-        "totalLabel": "[FR] Estimated monthly total",
-        "totalNote": "[FR] {count} employees × selected modules, billed monthly",
-        "currency": "[FR] KES",
-        "cta": "[FR] Get your real rate card",
+        "illustrativeBadge": "Tarification illustrative",
+        "illustrativeNote": "Ces tarifs sont des exemples pour montrer comment fonctionne la tarification par module — contactez-nous pour la grille tarifaire réelle de votre organisation.",
+        "employeeCountLabel": "Nombre d'employés",
+        "baseIncluded": "Inclus dans chaque forfait",
+        "perEmployeePerMonth": "/ employé / mois",
+        "totalLabel": "Total mensuel estimé",
+        "totalNote": "{count} employés × modules sélectionnés, facturé mensuellement",
+        "currency": "KES",
+        "cta": "Obtenez votre grille tarifaire réelle",
         "modules": {
-          "coreHr": {
-            "label": "[FR] Core HR",
-            "rate": 0
-          },
-          "payroll": {
-            "label": "[FR] Payroll",
-            "rate": 150
-          },
-          "leaveManagement": {
-            "label": "[FR] Leave Management",
-            "rate": 40
-          },
-          "attendance": {
-            "label": "[FR] Attendance",
-            "rate": 50
-          },
-          "recruitment": {
-            "label": "[FR] Recruitment",
-            "rate": 60
-          },
-          "performanceManagement": {
-            "label": "[FR] Performance Management",
-            "rate": 50
-          },
-          "learningDevelopment": {
-            "label": "[FR] Learning & Development",
-            "rate": 40
-          },
-          "teamsCollaboration": {
-            "label": "[FR] Teams & Collaboration",
-            "rate": 30
-          },
-          "employeeSelfService": {
-            "label": "[FR] Employee Self-Service",
-            "rate": 30
-          },
-          "analytics": {
-            "label": "[FR] Analytics",
-            "rate": 40
-          },
-          "askTija": {
-            "label": "[FR] Ask TiJa",
-            "rate": 50
-          }
+          "coreHr": { "label": "RH de base", "rate": 0 },
+          "payroll": { "label": "Paie", "rate": 150 },
+          "leaveManagement": { "label": "Gestion des congés", "rate": 40 },
+          "attendance": { "label": "Présence", "rate": 50 },
+          "recruitment": { "label": "Recrutement", "rate": 60 },
+          "performanceManagement": { "label": "Gestion de la performance", "rate": 50 },
+          "learningDevelopment": { "label": "Formation et développement", "rate": 40 },
+          "teamsCollaboration": { "label": "Équipes et collaboration", "rate": 30 },
+          "employeeSelfService": { "label": "Libre-service employé", "rate": 30 },
+          "analytics": { "label": "Analytique", "rate": 40 },
+          "askTija": { "label": "Demander à TiJa", "rate": 50 }
         }
       }
     },
     "contact": {
-      "eyebrow": "[FR] GET IN TOUCH",
-      "headline": "[FR] We're here to help.",
-      "supporting": "[FR] Questions about ZiraHR, partnerships, or anything else — send us a message and we'll get back to you."
+      "eyebrow": "CONTACTEZ-NOUS",
+      "headline": "Nous sommes là pour vous aider.",
+      "supporting": "Des questions sur ZiraHR, des partenariats, ou autre chose — envoyez-nous un message et nous vous répondrons."
     },
     "login": {
-      "eyebrow": "[FR] LOGIN",
-      "headline": "[FR] Log in to ZiraHR.",
-      "supporting": "[FR] Access your organization's ZiraHR workspace.",
-      "continue": "[FR] Continue to Login"
+      "eyebrow": "CONNEXION",
+      "headline": "Connectez-vous à ZiraHR.",
+      "supporting": "Accédez à l'espace de travail ZiraHR de votre organisation.",
+      "continue": "Continuer vers la connexion"
     },
     "resources": {
-      "eyebrow": "[FR] RESOURCES",
-      "headline": "[FR] Resources",
-      "supporting": "[FR] HR guides, templates, and product updates — published as we build them, not stocked with filler.",
-      "newsletterHeadline": "[FR] Get notified when new resources go up.",
+      "eyebrow": "RESSOURCES",
+      "headline": "Ressources",
+      "supporting": "Guides RH, modèles et nouveautés produit — publiés au fur et à mesure, sans contenu de remplissage.",
+      "newsletterHeadline": "Soyez averti dès la publication de nouvelles ressources.",
       "categories": {
-        "blog": {
-          "label": "[FR] Blog",
-          "description": "[FR] Product thinking and HR perspectives from the ZiraHR team."
-        },
-        "guides": {
-          "label": "[FR] HR Guides",
-          "description": "[FR] Practical guides for running HR in Kenya and beyond."
-        },
-        "templates": {
-          "label": "[FR] Templates",
-          "description": "[FR] Ready-to-use HR templates and checklists."
-        },
-        "helpCentre": {
-          "label": "[FR] Help Centre",
-          "description": "[FR] Documentation for using ZiraHR day to day."
-        },
-        "productUpdates": {
-          "label": "[FR] Product Updates",
-          "description": "[FR] What's new in ZiraHR, as it ships."
-        },
-        "hrGlossary": {
-          "label": "[FR] HR Glossary",
-          "description": "[FR] Plain-language definitions of HR and payroll terms."
-        },
-        "compliance": {
-          "label": "[FR] Compliance",
-          "description": "[FR] Kenyan statutory and compliance reference material."
-        }
+        "blog": { "label": "Blog", "description": "Réflexions produit et perspectives RH de l'équipe ZiraHR." },
+        "guides": { "label": "Guides RH", "description": "Guides pratiques pour gérer les RH au Kenya et au-delà." },
+        "templates": { "label": "Modèles", "description": "Modèles et listes de contrôle RH prêts à l'emploi." },
+        "helpCentre": { "label": "Centre d'aide", "description": "Documentation pour utiliser ZiraHR au quotidien." },
+        "productUpdates": { "label": "Nouveautés produit", "description": "Ce qui est nouveau chez ZiraHR, au fil des sorties." },
+        "hrGlossary": { "label": "Glossaire RH", "description": "Définitions en langage simple des termes RH et de paie." },
+        "compliance": { "label": "Conformité", "description": "Documentation de référence réglementaire et de conformité kényane." }
       },
-      "comingSoon": "[FR] Coming soon"
+      "comingSoon": "Bientôt disponible"
     },
     "company": {
-      "eyebrow": "[FR] COMPANY",
-      "headline": "[FR] Built for how African organizations actually run HR.",
-      "mission": "[FR] ZiraHR brings recruitment, onboarding, payroll, leave, attendance, performance and learning into one connected platform — starting in Kenya, built to grow across Africa.",
-      "careersTitle": "[FR] Careers",
-      "careersBody": "[FR] We're not publicly hiring yet — check back soon, or reach out if you'd like to introduce yourself.",
-      "partnersTitle": "[FR] Partners",
-      "partnersBody": "[FR] Interested in partnering with ZiraHR? We'd like to hear from you.",
-      "contactCta": "[FR] Get in Touch"
+      "eyebrow": "ENTREPRISE",
+      "headline": "Conçu pour la façon dont les organisations africaines gèrent réellement les RH.",
+      "mission": "ZiraHR réunit recrutement, intégration, paie, congés, présence, performance et formation en une seule plateforme connectée — en commençant par le Kenya, conçue pour se développer à travers l'Afrique.",
+      "careersTitle": "Carrières",
+      "careersBody": "Nous ne recrutons pas publiquement pour le moment — revenez bientôt, ou contactez-nous si vous souhaitez vous présenter.",
+      "partnersTitle": "Partenaires",
+      "partnersBody": "Intéressé par un partenariat avec ZiraHR ? Nous aimerions vous entendre.",
+      "contactCta": "Prendre contact"
     },
     "legal": {
-      "comingSoonBody": "[FR] We're finalizing this document. If you have questions in the meantime, get in touch.",
-      "contactCta": "[FR] Contact Us",
-      "privacy": {
-        "title": "[FR] Privacy Policy"
-      },
-      "terms": {
-        "title": "[FR] Terms of Service"
-      },
-      "security": {
-        "title": "[FR] Security"
-      },
-      "cookies": {
-        "title": "[FR] Cookie Policy"
-      }
+      "comingSoonBody": "Nous finalisons ce document. Si vous avez des questions entre-temps, contactez-nous.",
+      "contactCta": "Nous contacter",
+      "privacy": { "title": "Politique de confidentialité" },
+      "terms": { "title": "Conditions d'utilisation" },
+      "security": { "title": "Sécurité" },
+      "cookies": { "title": "Politique de cookies" }
     }
   },
   "forms": {
     "common": {
-      "loading": "[FR] Sending…",
-      "genericError": "[FR] Something went wrong. Please try again.",
-      "requiredField": "[FR] This field is required"
+      "loading": "Envoi en cours…",
+      "genericError": "Une erreur s'est produite. Veuillez réessayer.",
+      "requiredField": "Ce champ est obligatoire"
     },
     "demoRequest": {
-      "title": "[FR] Request a Demo",
-      "subtitle": "[FR] Tell us a little about your organization and we'll be in touch to show you ZiraHR.",
+      "title": "Demander une démo",
+      "subtitle": "Parlez-nous un peu de votre organisation et nous vous contacterons pour vous présenter ZiraHR.",
       "fields": {
-        "firstName": "[FR] First Name",
-        "lastName": "[FR] Last Name",
-        "workEmail": "[FR] Work Email",
-        "phone": "[FR] Phone",
-        "companyName": "[FR] Company",
-        "country": "[FR] Country",
-        "employeeCount": "[FR] Employee Count",
-        "interestedModules": "[FR] Modules Interested In",
-        "message": "[FR] Anything else we should know?",
-        "preferredContactMethod": "[FR] Preferred Contact Method"
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "workEmail": "E-mail professionnel",
+        "phone": "Téléphone",
+        "companyName": "Entreprise",
+        "country": "Pays",
+        "employeeCount": "Nombre d'employés",
+        "interestedModules": "Modules qui vous intéressent",
+        "message": "Autre chose que nous devrions savoir ?",
+        "preferredContactMethod": "Moyen de contact préféré"
       },
       "contactMethods": {
-        "email": "[FR] Email",
-        "phone": "[FR] Phone",
-        "either": "[FR] Either"
+        "email": "E-mail",
+        "phone": "Téléphone",
+        "either": "Peu importe"
       },
       "moduleOptions": {
-        "coreHr": "[FR] Core HR",
-        "payroll": "[FR] Payroll",
-        "leave": "[FR] Leave",
-        "attendance": "[FR] Attendance",
-        "recruitment": "[FR] Recruitment",
-        "performance": "[FR] Performance",
-        "learningDevelopment": "[FR] Learning & Development",
-        "ess": "[FR] Employee Self-Service",
-        "analytics": "[FR] Analytics"
+        "coreHr": "RH de base",
+        "payroll": "Paie",
+        "leave": "Congés",
+        "attendance": "Présence",
+        "recruitment": "Recrutement",
+        "performance": "Performance",
+        "learningDevelopment": "Formation et développement",
+        "ess": "Libre-service employé",
+        "analytics": "Analytique"
       },
-      "submit": "[FR] Book My ZiraHR Demo",
+      "submit": "Réserver ma démo ZiraHR",
       "success": {
-        "title": "[FR] Thank you.",
-        "body": "[FR] We've received your request and will be in touch shortly to schedule your demo."
+        "title": "Merci.",
+        "body": "Nous avons bien reçu votre demande et vous contacterons prochainement pour planifier votre démo."
       }
     },
     "contact": {
-      "title": "[FR] Contact Us",
-      "subtitle": "[FR] Questions about ZiraHR? Send us a message.",
+      "title": "Contactez-nous",
+      "subtitle": "Des questions sur ZiraHR ? Envoyez-nous un message.",
       "fields": {
-        "name": "[FR] Name",
-        "email": "[FR] Email",
-        "phone": "[FR] Phone",
-        "company": "[FR] Company",
-        "subject": "[FR] Subject",
-        "message": "[FR] Message"
+        "name": "Nom",
+        "email": "E-mail",
+        "phone": "Téléphone",
+        "company": "Entreprise",
+        "subject": "Sujet",
+        "message": "Message"
       },
-      "submit": "[FR] Send Message",
+      "submit": "Envoyer le message",
       "success": {
-        "title": "[FR] Message sent.",
-        "body": "[FR] Thanks for reaching out — we'll get back to you soon."
+        "title": "Message envoyé.",
+        "body": "Merci de nous avoir contactés — nous vous répondrons bientôt."
       }
     },
     "newsletter": {
-      "placeholder": "[FR] Enter your email",
-      "submit": "[FR] Subscribe",
-      "success": "[FR] You're subscribed."
+      "placeholder": "Entrez votre e-mail",
+      "submit": "S'abonner",
+      "success": "Vous êtes abonné."
     },
     "signup": {
+      "metaDescription": "Commencez avec ZiraHR — configurez votre organisation en quelques étapes rapides.",
       "step1": {
-        "title": "[FR] Let's meet you.",
+        "title": "Faisons connaissance.",
         "fields": {
-          "firstName": "[FR] First Name",
-          "lastName": "[FR] Last Name",
-          "workEmail": "[FR] Work Email",
-          "phone": "[FR] Phone"
+          "firstName": "Prénom",
+          "lastName": "Nom",
+          "workEmail": "E-mail professionnel",
+          "phone": "Téléphone"
         }
       },
       "step2": {
-        "title": "[FR] Tell us about your organization.",
+        "title": "Parlez-nous de votre organisation.",
         "fields": {
-          "companyName": "[FR] Company",
-          "country": "[FR] Country",
-          "industry": "[FR] Industry",
-          "employeeCount": "[FR] Employee Count"
+          "companyName": "Entreprise",
+          "country": "Pays",
+          "industry": "Secteur d'activité",
+          "employeeCount": "Nombre d'employés"
         }
       },
       "step3": {
-        "title": "[FR] How is your team structured?",
+        "title": "Comment votre équipe est-elle structurée ?",
         "fields": {
-          "branchCount": "[FR] Number of Branches",
-          "departmentCount": "[FR] Number of Departments"
+          "branchCount": "Nombre d'agences",
+          "departmentCount": "Nombre de départements"
         }
       },
       "step4": {
-        "title": "[FR] Welcome to ZiraHR.",
-        "body": "[FR] Your details are saved. Continue to finish setting up your organization.",
-        "continue": "[FR] Continue to ZiraHR"
+        "title": "Bienvenue chez ZiraHR.",
+        "body": "Vos informations sont enregistrées. Continuez pour terminer la configuration de votre organisation.",
+        "continue": "Continuer vers ZiraHR"
       },
-      "back": "[FR] Back",
-      "continue": "[FR] Continue",
-      "metaDescription": "[FR] Start with ZiraHR — set up your organization in a few short steps."
+      "back": "Retour",
+      "continue": "Continuer"
     }
   },
   "cookieConsent": {
-    "title": "[FR] This website uses cookies",
-    "intro": "[FR] We use cookies to run ZiraHR reliably and, only with your permission, to understand how the site is used and improve it. Necessary cookies can't be switched off — everything else is your choice.",
+    "title": "Ce site utilise des cookies",
+    "intro": "Nous utilisons des cookies pour faire fonctionner ZiraHR de manière fiable et, uniquement avec votre autorisation, pour comprendre comment le site est utilisé et l'améliorer. Les cookies nécessaires ne peuvent pas être désactivés — tout le reste est votre choix.",
     "categories": {
       "necessary": {
-        "label": "[FR] Necessary",
-        "description": "[FR] Required for core site functionality — navigation, security, and form submissions. The site cannot work properly without these."
+        "label": "Nécessaires",
+        "description": "Requis pour les fonctionnalités essentielles du site — navigation, sécurité et soumission de formulaires. Le site ne peut pas fonctionner correctement sans eux."
       },
       "statistics": {
-        "label": "[FR] Statistics",
-        "description": "[FR] Help us understand how visitors use zirahr.com so we can improve it. Off until you allow it."
+        "label": "Statistiques",
+        "description": "Nous aident à comprendre comment les visiteurs utilisent zirahr.com afin de l'améliorer. Désactivés jusqu'à ce que vous les autorisiez."
       },
       "marketing": {
-        "label": "[FR] Marketing",
-        "description": "[FR] Used to measure and tailor marketing content. Off until you allow it."
+        "label": "Marketing",
+        "description": "Utilisés pour mesurer et personnaliser le contenu marketing. Désactivés jusqu'à ce que vous les autorisiez."
       },
       "preferences": {
-        "label": "[FR] Preferences",
-        "description": "[FR] Remembers choices like your selected language across visits."
+        "label": "Préférences",
+        "description": "Se souvient de vos choix, comme la langue sélectionnée, d'une visite à l'autre."
       }
     },
-    "alwaysOn": "[FR] Always on",
-    "allowSelection": "[FR] Allow selection",
-    "allowAll": "[FR] Allow all",
-    "manageLink": "[FR] Cookie Preferences"
+    "alwaysOn": "Toujours actif",
+    "allowSelection": "Autoriser la sélection",
+    "allowAll": "Tout autoriser",
+    "manageLink": "Préférences des cookies"
   }
 }
