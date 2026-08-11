@@ -19,7 +19,7 @@ Scroll reveals · product screen stacking · mask reveals · subtle parallax · 
 | Morphing card (candidate → employee) | Recruitment page |
 | Horizontal gallery with hover-forward | Dashboards section |
 | Cursor-reactive product cards | Module Showcase (desktop only) |
-| Magnetic CTA (subtle) | Primary "Start with ZiraHR" buttons |
+| Magnetic CTA (subtle) | Primary "Start with SoftHR" buttons |
 | Counter animation | Any stat callouts once real, verified numbers exist |
 | Sticky storytelling | Employee Journey, Flexibility (settings breadcrumb) |
 

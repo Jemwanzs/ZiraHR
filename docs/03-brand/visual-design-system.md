@@ -20,7 +20,7 @@ See `motion-language.md`. Motion communicates hierarchy and relationships, never
 
 ## Imagery
 
-Real ZiraHR product UI wherever possible (placeholder mockups until real assets are supplied — see `/docs/08-assets`). Where people imagery is used at all, it must read modern, diverse, African, and business-relevant — not generic global stock photography.
+Real SoftHR product UI wherever possible (placeholder mockups until real assets are supplied — see `/docs/08-assets`). Where people imagery is used at all, it must read modern, diverse, African, and business-relevant — not generic global stock photography.
 
 ## Elevation & surfaces
 

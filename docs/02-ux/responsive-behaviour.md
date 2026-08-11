@@ -10,7 +10,7 @@ Tailwind defaults extended minimally: `sm` (mobile), `md` (tablet), `lg` (laptop
 
 - Desktop: full sticky nav with hover mega menu, glass/blur after scroll.
 - Tablet/Mobile: hamburger opens a full-height categorized drawer (accordion groups matching the mega menu columns). Language selector (flags) sits in the drawer header, not hidden behind another menu.
-- Sticky bottom CTA bar (`Start with ZiraHR`) appears on mobile once the visitor scrolls past the hero — desktop uses a sticky CTA in the nav bar instead, not a bottom bar.
+- Sticky bottom CTA bar (`Start with SoftHR`) appears on mobile once the visitor scrolls past the hero — desktop uses a sticky CTA in the nav bar instead, not a bottom bar.
 - **Bug fix**: the fixed bar has no innate awareness of page length, so the very last content on the page (the footer's bottom tagline/Cookie-Preferences row) could end up permanently trapped underneath it with no further scroll room to reveal it — confirmed via a real narrow-viewport screenshot, not just a Puppeteer `fullPage` capture artifact (those *also* show fixed elements at the wrong offset, which is a separate, harmless capture-only quirk — always verify with scroll-and-capture, not `fullPage`, before treating a fixed-position render as a real bug). Fixed with `pb-24 lg:pb-6` on the footer's bottom row (`src/components/layout/Footer.tsx`), reserving enough space that the last row is always scrollable clear of the bar.
 
 ## Hero

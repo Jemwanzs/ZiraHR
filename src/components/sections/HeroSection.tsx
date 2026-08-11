@@ -43,7 +43,7 @@ export function HeroSection() {
         <p className="max-w-xl text-lg text-gray-600">{t("supporting")}</p>
         <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
           <Button href="/signup" showArrow>
-            {tCta("startWithZiraHR")}
+            {tCta("startWithSoftHR")}
           </Button>
           <Button href="/request-demo" variant="secondary">
             {tCta("requestDemo")}

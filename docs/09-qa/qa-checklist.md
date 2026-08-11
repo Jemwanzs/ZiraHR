@@ -14,7 +14,7 @@ Run at the end of every phase, not only before launch.
 ## Functional
 - [x] Every nav link, mega-menu item, and footer link resolves (no 404s) — all 27 routes curl-tested at 200 across en/fr/sw.
 - [x] Language selector switches locale, persists across navigation and refresh, on every page type — verified via next-intl's `NEXT_LOCALE` cookie mechanism and locale-prefixed route testing.
-- [x] All three CTAs (Start with ZiraHR, Request a Demo, Login) route correctly from every page they appear on.
+- [x] All three CTAs (Start with SoftHR, Request a Demo, Login) route correctly from every page they appear on.
 - [x] Demo request / contact / newsletter / signup forms: client validation, server validation, loading state, success state, Supabase row created, Slack notification fires — live-tested end-to-end against the real Supabase project and Slack webhooks; found and fixed a honeypot validation bug in the process (see `06-technical/architecture.md` Phase 6 notes).
 - [x] Signup wizard: all four steps navigable, back/forward preserves entered data, final step redirects correctly — code-reviewed and build-tested; step transitions verified via server-rendered HTML at each stage.
 - [x] 404 page renders correctly for an unknown route, in every locale — verified for default and `/fr` locales, real `404` HTTP status confirmed (not a `200` with an error message).

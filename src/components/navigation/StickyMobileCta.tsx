@@ -29,7 +29,7 @@ export function StickyMobileCta() {
       }`}
     >
       <Button href="/signup" showArrow className="w-full justify-center">
-        {tCta("startWithZiraHR")}
+        {tCta("startWithSoftHR")}
       </Button>
     </div>
   );

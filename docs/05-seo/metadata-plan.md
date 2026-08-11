@@ -6,9 +6,9 @@ Next.js Metadata API (`generateMetadata` per route segment), locale-aware — ev
 
 ## Per-page requirements
 
-- **Title**: unique, includes primary keyword target from `keyword-map.md` where applicable, brand suffix (` | ZiraHR`), kept under ~60 characters.
+- **Title**: unique, includes primary keyword target from `keyword-map.md` where applicable, brand suffix (` | SoftHR`), kept under ~60 characters.
 - **Description**: unique, ~150–160 characters, written as genuine copy (not keyword-stuffed), matches the page's actual content.
-- **Canonical URL**: self-referencing canonical on every page, locale-aware (`https://zirahr.com/fr/payroll` canonicalizes to itself, not to the English version).
+- **Canonical URL**: self-referencing canonical on every page, locale-aware (`https://zira-hr-jms.vercel.app/fr/payroll` canonicalizes to itself, not to the English version).
 - **`hreflang` alternates**: every localized page declares `en`/`fr`/`sw` alternates + `x-default` pointing at the English version, via Next.js `alternates.languages`.
 - **OpenGraph**: `og:title`, `og:description`, `og:image` (dedicated per page-type OG image, see `08-assets/asset-requirements.md`), `og:locale`.
 - **Twitter/X card**: `summary_large_image`, mirrors OG title/description.

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zirahr.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zira-hr-jms.vercel.app";
 
 /**
  * Only pages that actually exist and are ready to be indexed belong here —

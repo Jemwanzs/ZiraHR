@@ -6,10 +6,10 @@ All copy below is the approved English source text (namespace shown for the tran
 
 - Eyebrow: **THE HR PLATFORM BUILT AROUND YOUR PEOPLE**
 - Headline: **One place to run your entire people operation.**
-- Supporting: **Recruit. Onboard. Manage. Pay. Develop. Perform. ZiraHR connects your entire employee journey.**
-- Primary CTA: **Start with ZiraHR →**
+- Supporting: **Recruit. Onboard. Manage. Pay. Develop. Perform. SoftHR connects your entire employee journey.**
+- Primary CTA: **Start with SoftHR →**
 - Secondary CTA: **Request a Demo**
-- Tertiary: **Already using ZiraHR? Log in**
+- Tertiary: **Already using SoftHR? Log in**
 
 Alternates reserved for future A/B testing (not shipped simultaneously): "Everything your people team needs. Finally, in one place." / "Your people. Your processes. One intelligent HR platform."
 
@@ -45,7 +45,7 @@ Alternates reserved for future A/B testing (not shipped simultaneously): "Everyt
 ## Ask TiJa (`askTija.*`)
 
 - Headline: **Meet TiJa. Ask your workforce.**
-- Positioning line: **Workforce intelligence inside ZiraHR.**
+- Positioning line: **Workforce intelligence inside SoftHR.**
 - Example prompts: "Who has contracts expiring this month?", "Show pending leave approvals.", "Explain this month's payroll variance.", "Which employees have missing bank details?"
 
 ## Dashboards (`dashboards.*`)
@@ -67,7 +67,7 @@ Alternates reserved for future A/B testing (not shipped simultaneously): "Everyt
 ## Final CTA (`finalCta.*`)
 
 - Headline: **Ready to run HR differently?**
-- Primary CTA: **Start with ZiraHR →**
+- Primary CTA: **Start with SoftHR →**
 - Secondary CTA: **Request a Demo**
 
 ## Copy rules enforced across this file

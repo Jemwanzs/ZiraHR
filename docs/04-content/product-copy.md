@@ -14,7 +14,7 @@ Headline + key messages per module page. Full showcase feature lists live in `02
 | `/teams-collaboration` | (no fixed headline specified) | HR that people actually want to open. |
 | `/employee-self-service` | HR isn't only for HR. | A simpler way for every employee to manage their work life. |
 | `/analytics` | Different roles. Different questions. The right answers. | Executive, HR, Finance and personal dashboards, from one data model. |
-| `/ask-tija` | Meet TiJa. Ask your workforce. | Workforce intelligence inside ZiraHR — not a bolted-on chatbot. |
+| `/ask-tija` | Meet TiJa. Ask your workforce. | Workforce intelligence inside SoftHR — not a bolted-on chatbot. |
 
 Pages marked "no fixed headline specified" need a headline drafted during Phase 5 implementation, following the same voice rules as the rest of the site (calm, confident, never exaggerated) and reviewed before shipping — not invented and shipped silently.
 

@@ -164,7 +164,7 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
 
       <div className="flex flex-col gap-3 border-t border-gray-200 p-4">
         <Button href="/signup" showArrow onClick={onClose} className="w-full">
-          {tCta("startWithZiraHR")}
+          {tCta("startWithSoftHR")}
         </Button>
         <Button
           href="/request-demo"

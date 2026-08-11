@@ -4,7 +4,7 @@ Page-to-keyword mapping. One primary target per page — pages are not built to 
 
 | Page | Primary target | Notes |
 |---|---|---|
-| `/` | ZiraHR / HR software Kenya (brand + category) | Homepage carries brand intent, not a keyword-stuffed category page |
+| `/` | SoftHR / HR software Kenya (brand + category) | Homepage carries brand intent, not a keyword-stuffed category page |
 | `/payroll` | payroll software Kenya | Also: Kenya payroll software, cloud payroll system Kenya |
 | `/hr-software-kenya` | HR software Kenya | Category page, distinct from `/payroll` and `/hrmis-kenya` |
 | `/payroll-software-kenya` | payroll software Kenya (long-form) | Deeper statutory/compliance content than `/payroll` |

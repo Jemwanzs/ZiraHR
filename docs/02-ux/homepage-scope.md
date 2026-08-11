@@ -4,7 +4,7 @@ The homepage tells one continuous story (scope §40), not a feature list. Twelve
 
 | # | Beat | Component (proposed) | Content source |
 |---|---|---|---|
-| 01 | This is ZiraHR (Hero) | `HeroSection` | scope §4 (hero copy + cinematic product composition) |
+| 01 | This is SoftHR (Hero) | `HeroSection` | scope §4 (hero copy + cinematic product composition) |
 | 02 | See it (cinematic product reveal) | part of `HeroSection` scroll continuation | scope §4 hero visual |
 | 03 | Follow an employee (Amina's journey) | `EmployeeJourneySection` | scope §5 |
 | 04 | Everything connects (one employee record) | `ConnectedRecordSection` | scope §6 |
@@ -37,7 +37,7 @@ Note: the final build order collapses scope's §40 twelve-step outline and its �
 - **Security**: capability checklist (Roles & Permissions, Data Visibility, MFA, Audit Logs, Approval Workflows, Export Controls, Working-Hour Controls, Geo-fencing, Activity Logs) — no unverified security claims.
 - **Customer Proof**: component built and ready, but rendered empty/omitted from the live page until real logos/testimonials exist — never filled with placeholder names.
 - **Product Tour**: lightweight simulated interface, six buttons (Run Payroll, Request Leave, Approve Request, Open Employee Profile, Ask TiJa, View Dashboard) — each opens a small scripted, non-authenticated demo interaction, not a live app connection.
-- **Final CTA**: "Ready to run HR differently?" + Start with ZiraHR / Request a Demo.
+- **Final CTA**: "Ready to run HR differently?" + Start with SoftHR / Request a Demo.
 
 ## What the homepage explicitly does not do
 

@@ -2,7 +2,7 @@
 
 ## Family
 
-**Outfit** — self-hosted via `next/font/google`, preloaded, variable weight axis where available. No fallback font decision needed at kickoff since no existing ZiraHR-approved font was found in this environment; if one surfaces later, this is a single-file change (`src/app/[locale]/layout.tsx` font import + Tailwind theme).
+**Outfit** — self-hosted via `next/font/google`, preloaded, variable weight axis where available. No fallback font decision needed at kickoff since no existing SoftHR-approved font was found in this environment; if one surfaces later, this is a single-file change (`src/app/[locale]/layout.tsx` font import + Tailwind theme).
 
 ## Scale
 

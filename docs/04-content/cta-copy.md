@@ -4,9 +4,9 @@
 
 | Role | Label | Destination |
 |---|---|---|
-| Primary | Start with ZiraHR → | `/signup` |
+| Primary | Start with SoftHR → | `/signup` |
 | Sales | Request a Demo | `/request-demo` |
-| Existing customer | Login | external → main ZiraHR app login |
+| Existing customer | Login | external → main SoftHR app login |
 
 ## Hover behaviour (applies to primary CTA everywhere it appears)
 
@@ -23,8 +23,8 @@
 
 ## Form CTAs
 
-- Request Demo form submit: **Book My ZiraHR Demo**
-- Signup steps: step-specific "Continue" (not "Next" — keep it human), final step: **Welcome to ZiraHR** confirmation, no button (auto-redirect into the app setup journey).
+- Request Demo form submit: **Book My SoftHR Demo**
+- Signup steps: step-specific "Continue" (not "Next" — keep it human), final step: **Welcome to SoftHR** confirmation, no button (auto-redirect into the app setup journey).
 
 ## Analytics
 

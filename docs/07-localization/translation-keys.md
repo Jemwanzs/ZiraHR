@@ -9,7 +9,7 @@ common.*            — shared strings (buttons, generic labels)
 nav.*                — nav bar labels (nav.platform, nav.solutions, nav.payroll, nav.resources, nav.pricing, nav.company)
 nav.megaMenu.*       — mega menu column/item labels, namespaced by group (nav.megaMenu.coreHr.employeeDirectory, ...)
 languageSelector.*   — languageSelector.switchTo.en / .fr / .sw (the accessible labels)
-cta.*                — cta.startWithZiraHR, cta.requestDemo, cta.login
+cta.*                — cta.startWithSoftHR, cta.requestDemo, cta.login
 hero.*               — hero.eyebrow, hero.headline, hero.supporting
 employeeJourney.*     — employeeJourney.intro, employeeJourney.stages.applicant ... .offboarding
 connectedRecord.*

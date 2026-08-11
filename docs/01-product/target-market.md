@@ -15,7 +15,7 @@ Designed from day one to support expansion across Africa. This shapes technical 
 ## What this means for content
 
 - Every country-specific SEO page must have genuinely unique copy — never a template with the country name swapped in (explicit requirement, scope §33/§19).
-- Kenya statutory terms (PAYE, NSSF, SHIF, Housing Levy) are used precisely and only where ZiraHR actually supports them — no generic "compliance" hand-waving.
+- Kenya statutory terms (PAYE, NSSF, SHIF, Housing Levy) are used precisely and only where SoftHR actually supports them — no generic "compliance" hand-waving.
 - Currency, date, and number formatting should be locale-aware from the start (`Intl` APIs), even while only Kenya (KES) ships.
 
 ## Buyer segments (from footer "Solutions" + nav structure)

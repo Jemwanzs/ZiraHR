@@ -61,7 +61,7 @@ export function ProductPageLayout({
             <p className="mt-4 text-lg text-gray-600">{supporting}</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button href="/signup" showArrow>
-                {tCta("startWithZiraHR")}
+                {tCta("startWithSoftHR")}
               </Button>
               <Button href="/request-demo" variant="secondary">
                 {tCta("requestDemo")}
@@ -136,7 +136,7 @@ export function ProductPageLayout({
           </h2>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
             <Button href="/signup" showArrow>
-              {tCta("startWithZiraHR")}
+              {tCta("startWithSoftHR")}
             </Button>
             <Button href="/request-demo" variant="secondary">
               {tCta("requestDemo")}

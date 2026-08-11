@@ -5,7 +5,7 @@ JSON-LD, injected via a shared `<StructuredData>` component (server-rendered `<s
 ## Types used
 
 - **Organization** — sitewide, in the root layout. Name, logo, URL, sameAs (real social profiles only, once they exist).
-- **SoftwareApplication** — homepage and module pages. `applicationCategory: BusinessApplication`, name "ZiraHR", real feature list drawn from `01-product/product-modules.md` (never invented capabilities).
+- **SoftwareApplication** — homepage and module pages. `applicationCategory: BusinessApplication`, name "SoftHR", real feature list drawn from `01-product/product-modules.md` (never invented capabilities).
 - **BreadcrumbList** — every non-homepage page, matching the visible breadcrumb trail exactly (see `internal-linking.md`).
 - **FAQPage** — only on pages that have a genuine, visible FAQ block with real questions users actually ask; never added purely to try to earn a rich-result. Scope explicitly restricts this ("only where genuinely applicable").
 - **Product** — considered for `/payroll` and other module pages only if it adds genuine value beyond SoftwareApplication; default to *not* adding it unless there's a concrete rich-result reason, to avoid redundant/conflicting schema on one page.

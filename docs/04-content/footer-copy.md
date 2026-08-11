@@ -17,7 +17,7 @@ Privacy · Terms · Security · Cookies
 
 ## Bottom tagline
 
-> ZiraHR — People operations, connected.
+> SoftHR — People operations, connected.
 
 ## Notes
 

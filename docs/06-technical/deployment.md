@@ -2,7 +2,7 @@
 
 ## Target
 
-Vercel, zero-config Next.js deployment. You connect the GitHub repo (`Jemwanzs/ZiraHR`) to a Vercel project and supply the project details/env vars — nothing on the code side blocks this; the app builds and runs standalone with `npm run build && npm start` and has no infrastructure dependency beyond the env vars listed in `supabase.md` and `notifications.md`.
+Vercel, zero-config Next.js deployment. You connect the GitHub repo (`Jemwanzs/ZiraHR` — repo name predates the SoftHR rebrand, kept as-is) to a Vercel project and supply the project details/env vars — nothing on the code side blocks this; the app builds and runs standalone with `npm run build && npm start` and has no infrastructure dependency beyond the env vars listed in `supabase.md` and `notifications.md`.
 
 ## Environments
 
@@ -31,4 +31,4 @@ Until a Vercel project exists, "deployment-ready" is verified locally: `npm run 
 
 ## Domain
 
-Not yet specified by you — `NEXT_PUBLIC_SITE_URL` and canonical/OG URLs use a placeholder (`https://zirahr.com`, adjust when the real domain is confirmed) until you provide the production domain.
+Not yet specified by you — `NEXT_PUBLIC_SITE_URL` and canonical/OG URLs use a placeholder (`https://zira-hr-jms.vercel.app`, adjust when the real domain is confirmed) until you provide the production domain.

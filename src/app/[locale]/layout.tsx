@@ -18,7 +18,7 @@ const outfit = Outfit({
   subsets: ["latin"],
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zirahr.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zira-hr-jms.vercel.app";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -41,8 +41,8 @@ export async function generateMetadata({
   return {
     metadataBase: new URL(SITE_URL),
     title: {
-      default: "ZiraHR — One place to run your entire people operation.",
-      template: "%s | ZiraHR",
+      default: "SoftHR — One place to run your entire people operation.",
+      template: "%s | SoftHR",
     },
     description: t("supporting"),
     alternates: {
@@ -58,16 +58,16 @@ export async function generateMetadata({
       },
     },
     openGraph: {
-      title: "ZiraHR — One place to run your entire people operation.",
+      title: "SoftHR — One place to run your entire people operation.",
       description: t("supporting"),
       url: path,
-      siteName: "ZiraHR",
+      siteName: "SoftHR",
       locale,
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: "ZiraHR — One place to run your entire people operation.",
+      title: "SoftHR — One place to run your entire people operation.",
       description: t("supporting"),
     },
   };

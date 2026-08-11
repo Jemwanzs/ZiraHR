@@ -14,7 +14,7 @@ export default function NotFound() {
         href="/"
         className="mt-2 rounded-full bg-teal px-6 py-3 text-sm font-semibold text-white"
       >
-        Back to ZiraHR
+        Back to SoftHR
       </Link>
     </main>
   );

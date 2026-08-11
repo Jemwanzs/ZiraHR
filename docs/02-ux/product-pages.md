@@ -33,7 +33,7 @@ Flow demo: Skills → Learning → Assessment → Certification → Growth.
 Showcase: Training Programs, Courses, Enrollments, Assessments, Certificates, Skills, Competencies, Development Plans.
 
 ## `/teams-collaboration`
-Tone: energetic, visually interactive — positions ZiraHR as more than an administrative system.
+Tone: energetic, visually interactive — positions SoftHR as more than an administrative system.
 Showcase: Workspaces, Teams, Channels, Messaging, Announcements, Notifications, Employee collaboration.
 
 ## `/employee-self-service`
@@ -46,7 +46,7 @@ Four dashboard experiences: Executive, HR, Finance, My Dashboard. Headline: "Dif
 ## `/ask-tija`
 Headline: "Meet TiJa. Ask your workforce."
 Example queries (shown as animated prompts, not live-executed): "Who has contracts expiring this month?", "Show pending leave approvals.", "Explain this month's payroll variance.", "Which employees have missing bank details?"
-Position: workforce intelligence inside ZiraHR — never framed as a generic chatbot.
+Position: workforce intelligence inside SoftHR — never framed as a generic chatbot.
 
 ## Shared page template
 

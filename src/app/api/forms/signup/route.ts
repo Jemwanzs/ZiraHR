@@ -48,7 +48,7 @@ export async function POST(request: Request) {
     }
 
     await notifySlack(process.env.SLACK_WEBHOOK_SIGNUP, [
-      slackHeader("New ZiraHR signup"),
+      slackHeader("New SoftHR signup"),
       slackSection([
         slackField("Name", `${data.firstName} ${data.lastName}`),
         slackField("Company", data.companyName),

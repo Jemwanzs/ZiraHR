@@ -45,7 +45,7 @@ export function FlexibilitySection() {
         <Reveal delay={0.1}>
           <ScreenshotSlot
             slot="flexibility.settings"
-            alt="ZiraHR settings and configuration"
+            alt="SoftHR settings and configuration"
             label="Settings & Configuration"
             aspect="video"
           />

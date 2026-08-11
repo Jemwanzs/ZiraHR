@@ -1,6 +1,6 @@
 {
   "common": {
-    "brandName": "ZiraHR",
+    "brandName": "SoftHR",
     "skipToContent": "Aller au contenu"
   },
   "languageSelector": {
@@ -17,10 +17,10 @@
     }
   },
   "cta": {
-    "startWithZiraHR": "Commencer avec ZiraHR",
+    "startWithSoftHR": "Commencer avec SoftHR",
     "requestDemo": "Demander une démo",
     "login": "Connexion",
-    "alreadyUsing": "Vous utilisez déjà ZiraHR ? Connectez-vous"
+    "alreadyUsing": "Vous utilisez déjà SoftHR ? Connectez-vous"
   },
   "nav": {
     "platform": "Plateforme",
@@ -90,7 +90,7 @@
   "hero": {
     "eyebrow": "LA PLATEFORME RH CONÇUE AUTOUR DE VOS COLLABORATEURS",
     "headline": "Un seul endroit pour gérer toutes vos opérations RH.",
-    "supporting": "Recrutez. Intégrez. Gérez. Payez. Développez. Évaluez. ZiraHR connecte tout le parcours de vos employés.",
+    "supporting": "Recrutez. Intégrez. Gérez. Payez. Développez. Évaluez. SoftHR connecte tout le parcours de vos employés.",
     "reel": {
       "payroll": {
         "label": "Paie",
@@ -166,7 +166,7 @@
         "cookies": "Cookies"
       }
     },
-    "tagline": "ZiraHR — La gestion des ressources humaines, connectée."
+    "tagline": "SoftHR — La gestion des ressources humaines, connectée."
   },
   "employeeJourney": {
     "eyebrow": "UN EMPLOYÉ. UN PARCOURS.",
@@ -300,7 +300,7 @@
       "custom": "+ Créez le vôtre"
     },
     "customChainSteps": ["Demandeur", "Ajouter une étape", "Ajouter une étape", "Approuvé"],
-    "customNote": "Ajoutez, supprimez ou réorganisez les étapes — le circuit est configuré par votre organisation, pas imposé par ZiraHR.",
+    "customNote": "Ajoutez, supprimez ou réorganisez les étapes — le circuit est configuré par votre organisation, pas imposé par SoftHR.",
     "queue": {
       "title": "File d'approbation",
       "subtitle": "Chaque action en attente, au même endroit — celui dont c'est le tour de l'approuver la voit ici.",
@@ -320,7 +320,7 @@
   "askTija": {
     "eyebrow": "INTELLIGENCE DES EFFECTIFS",
     "headline": "Rencontrez TiJa. Posez vos questions sur vos effectifs.",
-    "positioning": "L'intelligence des effectifs, intégrée à ZiraHR.",
+    "positioning": "L'intelligence des effectifs, intégrée à SoftHR.",
     "prompts": {
       "contractsExpiring": "Quels employés ont des contrats qui expirent ce mois-ci ?",
       "pendingLeave": "Afficher les demandes de congé en attente.",
@@ -391,7 +391,7 @@
     ]
   },
   "productTour": {
-    "eyebrow": "EXPLOREZ ZiraHR",
+    "eyebrow": "EXPLOREZ SoftHR",
     "headline": "Voyez-le en action, avant de vous inscrire.",
     "supporting": "Un aperçu simulé et léger de l'interface — aucun compte requis.",
     "buttons": {
@@ -498,7 +498,7 @@
     "teamsCollaboration": {
       "eyebrow": "ÉQUIPES ET COLLABORATION",
       "headline": "Une RH que vos collaborateurs ont envie d'ouvrir.",
-      "supporting": "Espaces de travail, équipes, annonces et notifications — ZiraHR bien plus qu'un système administratif.",
+      "supporting": "Espaces de travail, équipes, annonces et notifications — SoftHR bien plus qu'un système administratif.",
       "capabilities": ["Espaces de travail", "Équipes", "Canaux", "Messagerie", "Annonces", "Notifications", "Collaboration entre employés"],
       "connectsToHeadline": "La collaboration reste connectée à la même structure organisationnelle.",
       "ctaHeadline": "Faites de la RH un endroit où l'on a envie d'être."
@@ -522,7 +522,7 @@
     "askTija": {
       "eyebrow": "DEMANDER À TiJa",
       "headline": "Rencontrez TiJa. Posez vos questions sur vos effectifs.",
-      "supporting": "L'intelligence des effectifs intégrée à ZiraHR — pas un chatbot ajouté après coup.",
+      "supporting": "L'intelligence des effectifs intégrée à SoftHR — pas un chatbot ajouté après coup.",
       "capabilities": ["Alertes d'expiration de contrat", "Approbations en attente, sur demande", "Explications des écarts de paie", "Signalements de données manquantes"],
       "connectsToHeadline": "TiJa répond à partir du même dossier que partage chaque module.",
       "ctaHeadline": "Posez une question sur vos effectifs. Obtenez une vraie réponse."
@@ -530,10 +530,10 @@
     "hrSoftwareKenya": {
       "eyebrow": "LOGICIEL RH, CONÇU POUR LE KENYA",
       "headline": "Logiciel RH conçu pour les équipes kényanes.",
-      "supporting": "ZiraHR réunit recrutement, intégration, paie, congés, présence, performance et formation en une seule plateforme — conçue autour de la façon dont les organisations kényanes gèrent réellement les RH, pas un modèle générique mondial.",
+      "supporting": "SoftHR réunit recrutement, intégration, paie, congés, présence, performance et formation en une seule plateforme — conçue autour de la façon dont les organisations kényanes gèrent réellement les RH, pas un modèle générique mondial.",
       "capabilities": ["Paie réglementaire kényane (PAYE, NSSF, SHIF, Housing Levy)", "Structures multi-agences et multi-régions", "Libre-service employé pour équipes réparties", "Un seul dossier employé pour toutes les fonctions RH"],
       "connectsToHeadline": "Commencez par le module dont votre équipe a le plus besoin.",
-      "ctaHeadline": "Découvrez ZiraHR conçu autour de votre organisation."
+      "ctaHeadline": "Découvrez SoftHR conçu autour de votre organisation."
     },
     "payrollSoftwareKenya": {
       "eyebrow": "LOGICIEL DE PAIE POUR LE KENYA",
@@ -555,7 +555,7 @@
     "hrSoftwareAfrica": {
       "eyebrow": "LOGICIEL RH POUR L'AFRIQUE",
       "headline": "Logiciel RH conçu pour l'Afrique, en commençant par le Kenya.",
-      "supporting": "ZiraHR a été lancé d'abord au Kenya, conçu dès le départ pour soutenir la réalité multi-agences et multi-régions des organisations africaines en croissance — avec une expansion prévue vers d'autres marchés africains à mesure que le support réglementaire est ajouté.",
+      "supporting": "SoftHR a été lancé d'abord au Kenya, conçu dès le départ pour soutenir la réalité multi-agences et multi-régions des organisations africaines en croissance — avec une expansion prévue vers d'autres marchés africains à mesure que le support réglementaire est ajouté.",
       "capabilities": ["Structures organisationnelles multi-régions et multi-agences", "Visibilité basée sur les rôles (régionale, agence, direction)", "Libre-service employé conçu pour des équipes réparties", "Un seul dossier connecté sur tout le cycle de vie de l'employé"],
       "connectsToHeadline": "Découvrez la plateforme sur laquelle cela est construit.",
       "ctaHeadline": "Développez-vous à travers les régions sur une seule plateforme connectée."
@@ -563,7 +563,7 @@
     "pricing": {
       "eyebrow": "TARIFS",
       "headline": "Des tarifs adaptés à votre organisation.",
-      "supporting": "ZiraHR est facturé module par module, par employé, et débité automatiquement — activez ce dont vous avez besoin, rien de plus.",
+      "supporting": "SoftHR est facturé module par module, par employé, et débité automatiquement — activez ce dont vous avez besoin, rien de plus.",
       "connectsToHeadline": "Découvrez ce qui est inclus avant de parler tarifs.",
       "ctaHeadline": "Obtenez une tarification construite autour de votre organisation.",
       "calculator": {
@@ -594,12 +594,12 @@
     "contact": {
       "eyebrow": "CONTACTEZ-NOUS",
       "headline": "Nous sommes là pour vous aider.",
-      "supporting": "Des questions sur ZiraHR, des partenariats, ou autre chose — envoyez-nous un message et nous vous répondrons."
+      "supporting": "Des questions sur SoftHR, des partenariats, ou autre chose — envoyez-nous un message et nous vous répondrons."
     },
     "login": {
       "eyebrow": "CONNEXION",
-      "headline": "Connectez-vous à ZiraHR.",
-      "supporting": "Accédez à l'espace de travail ZiraHR de votre organisation.",
+      "headline": "Connectez-vous à SoftHR.",
+      "supporting": "Accédez à l'espace de travail SoftHR de votre organisation.",
       "continue": "Continuer vers la connexion"
     },
     "resources": {
@@ -608,11 +608,11 @@
       "supporting": "Guides RH, modèles et nouveautés produit — publiés au fur et à mesure, sans contenu de remplissage.",
       "newsletterHeadline": "Soyez averti dès la publication de nouvelles ressources.",
       "categories": {
-        "blog": { "label": "Blog", "description": "Réflexions produit et perspectives RH de l'équipe ZiraHR." },
+        "blog": { "label": "Blog", "description": "Réflexions produit et perspectives RH de l'équipe SoftHR." },
         "guides": { "label": "Guides RH", "description": "Guides pratiques pour gérer les RH au Kenya et au-delà." },
         "templates": { "label": "Modèles", "description": "Modèles et listes de contrôle RH prêts à l'emploi." },
-        "helpCentre": { "label": "Centre d'aide", "description": "Documentation pour utiliser ZiraHR au quotidien." },
-        "productUpdates": { "label": "Nouveautés produit", "description": "Ce qui est nouveau chez ZiraHR, au fil des sorties." },
+        "helpCentre": { "label": "Centre d'aide", "description": "Documentation pour utiliser SoftHR au quotidien." },
+        "productUpdates": { "label": "Nouveautés produit", "description": "Ce qui est nouveau chez SoftHR, au fil des sorties." },
         "hrGlossary": { "label": "Glossaire RH", "description": "Définitions en langage simple des termes RH et de paie." },
         "compliance": { "label": "Conformité", "description": "Documentation de référence réglementaire et de conformité kényane." }
       },
@@ -621,11 +621,11 @@
     "company": {
       "eyebrow": "ENTREPRISE",
       "headline": "Conçu pour la façon dont les organisations africaines gèrent réellement les RH.",
-      "mission": "ZiraHR réunit recrutement, intégration, paie, congés, présence, performance et formation en une seule plateforme connectée — en commençant par le Kenya, conçue pour se développer à travers l'Afrique.",
+      "mission": "SoftHR réunit recrutement, intégration, paie, congés, présence, performance et formation en une seule plateforme connectée — en commençant par le Kenya, conçue pour se développer à travers l'Afrique.",
       "careersTitle": "Carrières",
       "careersBody": "Nous ne recrutons pas publiquement pour le moment — revenez bientôt, ou contactez-nous si vous souhaitez vous présenter.",
       "partnersTitle": "Partenaires",
-      "partnersBody": "Intéressé par un partenariat avec ZiraHR ? Nous aimerions vous entendre.",
+      "partnersBody": "Intéressé par un partenariat avec SoftHR ? Nous aimerions vous entendre.",
       "contactCta": "Prendre contact"
     },
     "legal": {
@@ -645,7 +645,7 @@
     },
     "demoRequest": {
       "title": "Demander une démo",
-      "subtitle": "Parlez-nous un peu de votre organisation et nous vous contacterons pour vous présenter ZiraHR.",
+      "subtitle": "Parlez-nous un peu de votre organisation et nous vous contacterons pour vous présenter SoftHR.",
       "fields": {
         "firstName": "Prénom",
         "lastName": "Nom",
@@ -674,7 +674,7 @@
         "ess": "Libre-service employé",
         "analytics": "Analytique"
       },
-      "submit": "Réserver ma démo ZiraHR",
+      "submit": "Réserver ma démo SoftHR",
       "success": {
         "title": "Merci.",
         "body": "Nous avons bien reçu votre demande et vous contacterons prochainement pour planifier votre démo."
@@ -682,7 +682,7 @@
     },
     "contact": {
       "title": "Contactez-nous",
-      "subtitle": "Des questions sur ZiraHR ? Envoyez-nous un message.",
+      "subtitle": "Des questions sur SoftHR ? Envoyez-nous un message.",
       "fields": {
         "name": "Nom",
         "email": "E-mail",
@@ -703,7 +703,7 @@
       "success": "Vous êtes abonné."
     },
     "signup": {
-      "metaDescription": "Commencez avec ZiraHR — configurez votre organisation en quelques étapes rapides.",
+      "metaDescription": "Commencez avec SoftHR — configurez votre organisation en quelques étapes rapides.",
       "step1": {
         "title": "Faisons connaissance.",
         "fields": {
@@ -730,9 +730,9 @@
         }
       },
       "step4": {
-        "title": "Bienvenue chez ZiraHR.",
+        "title": "Bienvenue chez SoftHR.",
         "body": "Vos informations sont enregistrées. Continuez pour terminer la configuration de votre organisation.",
-        "continue": "Continuer vers ZiraHR"
+        "continue": "Continuer vers SoftHR"
       },
       "back": "Retour",
       "continue": "Continuer"
@@ -740,7 +740,7 @@
   },
   "cookieConsent": {
     "title": "Ce site utilise des cookies",
-    "intro": "Nous utilisons des cookies pour faire fonctionner ZiraHR de manière fiable et, uniquement avec votre autorisation, pour comprendre comment le site est utilisé et l'améliorer. Les cookies nécessaires ne peuvent pas être désactivés — tout le reste est votre choix.",
+    "intro": "Nous utilisons des cookies pour faire fonctionner SoftHR de manière fiable et, uniquement avec votre autorisation, pour comprendre comment le site est utilisé et l'améliorer. Les cookies nécessaires ne peuvent pas être désactivés — tout le reste est votre choix.",
     "categories": {
       "necessary": {
         "label": "Nécessaires",
@@ -748,7 +748,7 @@
       },
       "statistics": {
         "label": "Statistiques",
-        "description": "Nous aident à comprendre comment les visiteurs utilisent zirahr.com afin de l'améliorer. Désactivés jusqu'à ce que vous les autorisiez."
+        "description": "Nous aident à comprendre comment les visiteurs utilisent le site afin de l'améliorer. Désactivés jusqu'à ce que vous les autorisiez."
       },
       "marketing": {
         "label": "Marketing",

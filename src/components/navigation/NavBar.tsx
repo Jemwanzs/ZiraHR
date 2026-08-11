@@ -79,7 +79,7 @@ export function NavBar() {
             {tCta("requestDemo")}
           </Button>
           <Button href="/signup" showArrow>
-            {tCta("startWithZiraHR")}
+            {tCta("startWithSoftHR")}
           </Button>
         </div>
 

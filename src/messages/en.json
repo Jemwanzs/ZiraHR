@@ -1,6 +1,6 @@
 {
   "common": {
-    "brandName": "ZiraHR",
+    "brandName": "SoftHR",
     "skipToContent": "Skip to content"
   },
   "languageSelector": {
@@ -17,10 +17,10 @@
     }
   },
   "cta": {
-    "startWithZiraHR": "Start with ZiraHR",
+    "startWithSoftHR": "Start with SoftHR",
     "requestDemo": "Request a Demo",
     "login": "Login",
-    "alreadyUsing": "Already using ZiraHR? Log in"
+    "alreadyUsing": "Already using SoftHR? Log in"
   },
   "nav": {
     "platform": "Platform",
@@ -90,7 +90,7 @@
   "hero": {
     "eyebrow": "THE HR PLATFORM BUILT AROUND YOUR PEOPLE",
     "headline": "One place to run your entire people operation.",
-    "supporting": "Recruit. Onboard. Manage. Pay. Develop. Perform. ZiraHR connects your entire employee journey.",
+    "supporting": "Recruit. Onboard. Manage. Pay. Develop. Perform. SoftHR connects your entire employee journey.",
     "reel": {
       "payroll": {
         "label": "Payroll",
@@ -166,7 +166,7 @@
         "cookies": "Cookies"
       }
     },
-    "tagline": "ZiraHR — People operations, connected."
+    "tagline": "SoftHR — People operations, connected."
   },
   "employeeJourney": {
     "eyebrow": "ONE EMPLOYEE. ONE JOURNEY.",
@@ -300,7 +300,7 @@
       "custom": "+ Build your own"
     },
     "customChainSteps": ["Requester", "Add a step", "Add a step", "Approved"],
-    "customNote": "Add, remove, or reorder steps — the chain is configured by your organization, not fixed by ZiraHR.",
+    "customNote": "Add, remove, or reorder steps — the chain is configured by your organization, not fixed by SoftHR.",
     "queue": {
       "title": "Approval queue",
       "subtitle": "Every pending action, in one place — whoever's turn it is to approve sees it here.",
@@ -320,7 +320,7 @@
   "askTija": {
     "eyebrow": "WORKFORCE INTELLIGENCE",
     "headline": "Meet TiJa. Ask your workforce.",
-    "positioning": "Workforce intelligence inside ZiraHR.",
+    "positioning": "Workforce intelligence inside SoftHR.",
     "prompts": {
       "contractsExpiring": "Who has contracts expiring this month?",
       "pendingLeave": "Show pending leave approvals.",
@@ -391,7 +391,7 @@
     ]
   },
   "productTour": {
-    "eyebrow": "EXPLORE ZiraHR",
+    "eyebrow": "EXPLORE SoftHR",
     "headline": "See it in action, before you sign up.",
     "supporting": "A lightweight, simulated look at the interface — no account needed.",
     "buttons": {
@@ -498,7 +498,7 @@
     "teamsCollaboration": {
       "eyebrow": "TEAMS & COLLABORATION",
       "headline": "HR that people actually want to open.",
-      "supporting": "Workspaces, teams, announcements and notifications — ZiraHR as more than an administrative system.",
+      "supporting": "Workspaces, teams, announcements and notifications — SoftHR as more than an administrative system.",
       "capabilities": ["Workspaces", "Teams", "Channels", "Messaging", "Announcements", "Notifications", "Employee Collaboration"],
       "connectsToHeadline": "Collaboration stays connected to the same organization structure.",
       "ctaHeadline": "Make HR somewhere people want to be."
@@ -522,7 +522,7 @@
     "askTija": {
       "eyebrow": "ASK TiJa",
       "headline": "Meet TiJa. Ask your workforce.",
-      "supporting": "Workforce intelligence inside ZiraHR — not a bolted-on chatbot.",
+      "supporting": "Workforce intelligence inside SoftHR — not a bolted-on chatbot.",
       "capabilities": ["Contract expiry alerts", "Pending approvals, on request", "Payroll variance explanations", "Missing data flags"],
       "connectsToHeadline": "TiJa answers from the same record every module shares.",
       "ctaHeadline": "Ask your workforce a question. Get a real answer."
@@ -530,10 +530,10 @@
     "hrSoftwareKenya": {
       "eyebrow": "HR SOFTWARE, BUILT FOR KENYA",
       "headline": "HR software built for Kenyan teams.",
-      "supporting": "ZiraHR brings recruitment, onboarding, payroll, leave, attendance, performance and learning into one platform — built around how Kenyan organizations actually run HR, not a generic global template.",
+      "supporting": "SoftHR brings recruitment, onboarding, payroll, leave, attendance, performance and learning into one platform — built around how Kenyan organizations actually run HR, not a generic global template.",
       "capabilities": ["Kenyan statutory payroll (PAYE, NSSF, SHIF, Housing Levy)", "Multi-branch and multi-region structures", "Employee self-service for distributed teams", "One employee record across every HR function"],
       "connectsToHeadline": "Start with the module your team needs most.",
-      "ctaHeadline": "See ZiraHR built around your organization."
+      "ctaHeadline": "See SoftHR built around your organization."
     },
     "payrollSoftwareKenya": {
       "eyebrow": "PAYROLL SOFTWARE FOR KENYA",
@@ -555,7 +555,7 @@
     "hrSoftwareAfrica": {
       "eyebrow": "HR SOFTWARE FOR AFRICA",
       "headline": "HR software built for Africa, starting with Kenya.",
-      "supporting": "ZiraHR launched in Kenya first, built from day one to support the multi-branch, multi-region reality of growing African organizations — with expansion to further African markets planned as statutory support is added.",
+      "supporting": "SoftHR launched in Kenya first, built from day one to support the multi-branch, multi-region reality of growing African organizations — with expansion to further African markets planned as statutory support is added.",
       "capabilities": ["Multi-region and multi-branch organization structures", "Role-based visibility (regional, branch, executive)", "Employee self-service built for distributed teams", "One connected record across the employee lifecycle"],
       "connectsToHeadline": "See the platform this is built on.",
       "ctaHeadline": "Grow across regions on one connected platform."
@@ -563,7 +563,7 @@
     "pricing": {
       "eyebrow": "PRICING",
       "headline": "Pricing that fits your organization.",
-      "supporting": "ZiraHR is priced module by module, per employee, and billed automatically — turn on what you need, nothing you don't.",
+      "supporting": "SoftHR is priced module by module, per employee, and billed automatically — turn on what you need, nothing you don't.",
       "connectsToHeadline": "See what's included before you talk pricing.",
       "ctaHeadline": "Get pricing built around your organization.",
       "calculator": {
@@ -594,12 +594,12 @@
     "contact": {
       "eyebrow": "GET IN TOUCH",
       "headline": "We're here to help.",
-      "supporting": "Questions about ZiraHR, partnerships, or anything else — send us a message and we'll get back to you."
+      "supporting": "Questions about SoftHR, partnerships, or anything else — send us a message and we'll get back to you."
     },
     "login": {
       "eyebrow": "LOGIN",
-      "headline": "Log in to ZiraHR.",
-      "supporting": "Access your organization's ZiraHR workspace.",
+      "headline": "Log in to SoftHR.",
+      "supporting": "Access your organization's SoftHR workspace.",
       "continue": "Continue to Login"
     },
     "resources": {
@@ -608,11 +608,11 @@
       "supporting": "HR guides, templates, and product updates — published as we build them, not stocked with filler.",
       "newsletterHeadline": "Get notified when new resources go up.",
       "categories": {
-        "blog": { "label": "Blog", "description": "Product thinking and HR perspectives from the ZiraHR team." },
+        "blog": { "label": "Blog", "description": "Product thinking and HR perspectives from the SoftHR team." },
         "guides": { "label": "HR Guides", "description": "Practical guides for running HR in Kenya and beyond." },
         "templates": { "label": "Templates", "description": "Ready-to-use HR templates and checklists." },
-        "helpCentre": { "label": "Help Centre", "description": "Documentation for using ZiraHR day to day." },
-        "productUpdates": { "label": "Product Updates", "description": "What's new in ZiraHR, as it ships." },
+        "helpCentre": { "label": "Help Centre", "description": "Documentation for using SoftHR day to day." },
+        "productUpdates": { "label": "Product Updates", "description": "What's new in SoftHR, as it ships." },
         "hrGlossary": { "label": "HR Glossary", "description": "Plain-language definitions of HR and payroll terms." },
         "compliance": { "label": "Compliance", "description": "Kenyan statutory and compliance reference material." }
       },
@@ -621,11 +621,11 @@
     "company": {
       "eyebrow": "COMPANY",
       "headline": "Built for how African organizations actually run HR.",
-      "mission": "ZiraHR brings recruitment, onboarding, payroll, leave, attendance, performance and learning into one connected platform — starting in Kenya, built to grow across Africa.",
+      "mission": "SoftHR brings recruitment, onboarding, payroll, leave, attendance, performance and learning into one connected platform — starting in Kenya, built to grow across Africa.",
       "careersTitle": "Careers",
       "careersBody": "We're not publicly hiring yet — check back soon, or reach out if you'd like to introduce yourself.",
       "partnersTitle": "Partners",
-      "partnersBody": "Interested in partnering with ZiraHR? We'd like to hear from you.",
+      "partnersBody": "Interested in partnering with SoftHR? We'd like to hear from you.",
       "contactCta": "Get in Touch"
     },
     "legal": {
@@ -645,7 +645,7 @@
     },
     "demoRequest": {
       "title": "Request a Demo",
-      "subtitle": "Tell us a little about your organization and we'll be in touch to show you ZiraHR.",
+      "subtitle": "Tell us a little about your organization and we'll be in touch to show you SoftHR.",
       "fields": {
         "firstName": "First Name",
         "lastName": "Last Name",
@@ -674,7 +674,7 @@
         "ess": "Employee Self-Service",
         "analytics": "Analytics"
       },
-      "submit": "Book My ZiraHR Demo",
+      "submit": "Book My SoftHR Demo",
       "success": {
         "title": "Thank you.",
         "body": "We've received your request and will be in touch shortly to schedule your demo."
@@ -682,7 +682,7 @@
     },
     "contact": {
       "title": "Contact Us",
-      "subtitle": "Questions about ZiraHR? Send us a message.",
+      "subtitle": "Questions about SoftHR? Send us a message.",
       "fields": {
         "name": "Name",
         "email": "Email",
@@ -703,7 +703,7 @@
       "success": "You're subscribed."
     },
     "signup": {
-      "metaDescription": "Start with ZiraHR — set up your organization in a few short steps.",
+      "metaDescription": "Start with SoftHR — set up your organization in a few short steps.",
       "step1": {
         "title": "Let's meet you.",
         "fields": {
@@ -730,9 +730,9 @@
         }
       },
       "step4": {
-        "title": "Welcome to ZiraHR.",
+        "title": "Welcome to SoftHR.",
         "body": "Your details are saved. Continue to finish setting up your organization.",
-        "continue": "Continue to ZiraHR"
+        "continue": "Continue to SoftHR"
       },
       "back": "Back",
       "continue": "Continue"
@@ -740,7 +740,7 @@
   },
   "cookieConsent": {
     "title": "This website uses cookies",
-    "intro": "We use cookies to run ZiraHR reliably and, only with your permission, to understand how the site is used and improve it. Necessary cookies can't be switched off — everything else is your choice.",
+    "intro": "We use cookies to run SoftHR reliably and, only with your permission, to understand how the site is used and improve it. Necessary cookies can't be switched off — everything else is your choice.",
     "categories": {
       "necessary": {
         "label": "Necessary",
@@ -748,7 +748,7 @@
       },
       "statistics": {
         "label": "Statistics",
-        "description": "Help us understand how visitors use zirahr.com so we can improve it. Off until you allow it."
+        "description": "Help us understand how visitors use the site so we can improve it. Off until you allow it."
       },
       "marketing": {
         "label": "Marketing",

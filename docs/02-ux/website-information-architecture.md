@@ -4,7 +4,7 @@
 
 `Platform | Solutions | Payroll | Resources | Pricing | Company`
 
-Right-aligned: `Language Selector (flags) | Login | Request Demo | Start with ZiraHR`
+Right-aligned: `Language Selector (flags) | Login | Request Demo | Start with SoftHR`
 
 Sticky nav bar; transitions to a subtle glass/blur background once the user scrolls past the hero.
 
@@ -51,7 +51,7 @@ See `/docs/04-content/footer-copy.md` for the full column-by-column link list an
 
 ## Mobile navigation
 
-Mega menu collapses into a categorized drawer (accordion by group: Core HR / Workforce / Payroll / Talent / Workplace / Intelligence), not a flat link dump. Language selector remains flag-only, moves into the drawer header. Sticky bottom CTA (`Start with ZiraHR`) appears once the visitor scrolls past the hero, mirroring desktop's sticky CTA behaviour. See `responsive-behaviour.md`.
+Mega menu collapses into a categorized drawer (accordion by group: Core HR / Workforce / Payroll / Talent / Workplace / Intelligence), not a flat link dump. Language selector remains flag-only, moves into the drawer header. Sticky bottom CTA (`Start with SoftHR`) appears once the visitor scrolls past the hero, mirroring desktop's sticky CTA behaviour. See `responsive-behaviour.md`.
 
 ## URL conventions
 

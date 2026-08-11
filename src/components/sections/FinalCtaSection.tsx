@@ -15,7 +15,7 @@ export function FinalCtaSection() {
         </h2>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <Button href="/signup" showArrow>
-            {tCta("startWithZiraHR")}
+            {tCta("startWithSoftHR")}
           </Button>
           <Button href="/request-demo" variant="secondary">
             {tCta("requestDemo")}

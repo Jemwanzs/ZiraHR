@@ -1,6 +1,6 @@
 # Colors
 
-Both source documents specify the same palette directionally with slightly different cream hex values (PDF: `#FFF9F2`, brief: `#FFF8EF`). We use the PDF's value as primary since it's the more detailed of the two specs; treat these as **provisional tokens** until a final ZiraHR brand guideline supplies exact values — swapping them later is a one-file change (`tailwind.config.ts` theme tokens), never hardcoded per-component.
+Both source documents specify the same palette directionally with slightly different cream hex values (PDF: `#FFF9F2`, brief: `#FFF8EF`). We use the PDF's value as primary since it's the more detailed of the two specs; treat these as **provisional tokens** until a final SoftHR brand guideline supplies exact values — swapping them later is a one-file change (`tailwind.config.ts` theme tokens), never hardcoded per-component.
 
 ## Tokens
 
@@ -17,7 +17,7 @@ Both source documents specify the same palette directionally with slightly diffe
 
 - **Never** let blue (sky or teal) dominate a full section background — it's an accent/interactive signal, not a canvas color. The explicit instruction is "avoid filling the website with blue."
 - Orange is an energy accent only — badges, hover states, small highlight marks, motion trails. Not for large fills or body text.
-- Teal is reserved for the primary CTA (`Start with ZiraHR`) and a small number of strong anchor moments (e.g. the Ask TiJa section background may use a dark derivative of teal, per its explicit permission to break the cream/white canvas).
+- Teal is reserved for the primary CTA (`Start with SoftHR`) and a small number of strong anchor moments (e.g. the Ask TiJa section background may use a dark derivative of teal, per its explicit permission to break the cream/white canvas).
 - Product screenshots/mockups are the main source of color variety on the page — the chrome around them stays restrained.
 - All color tokens are defined once as CSS variables + Tailwind theme extension, referenced by name everywhere (`bg-cream`, `text-teal`, etc.) — no raw hex codes in component files.
 

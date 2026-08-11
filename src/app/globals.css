@@ -2,7 +2,7 @@
 
 /*
  * Provisional brand tokens — see docs/03-brand/colors.md. Swap these values
- * (only) when a final ZiraHR brand guideline supplies exact hex values;
+ * (only) when a final SoftHR brand guideline supplies exact hex values;
  * nothing else in the codebase should reference a raw hex code.
  */
 :root {

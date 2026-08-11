@@ -1,5 +1,5 @@
 /**
- * Slot id -> real asset path. Empty until you drop real ZiraHR screenshots
+ * Slot id -> real asset path. Empty until you drop real SoftHR screenshots
  * into /public/screenshots (see docs/08-assets/screenshot-plan.md). Every
  * slot without an entry here renders through ScreenshotSlot's labeled
  * placeholder instead of a broken image or a fabricated screenshot.

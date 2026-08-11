@@ -4,7 +4,7 @@ import { safeJsonLd } from "@/lib/seo";
 
 export type Crumb = { label: string; href: string };
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zirahr.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zira-hr-jms.vercel.app";
 
 /**
  * Visible breadcrumb trail + matching BreadcrumbList structured data — see

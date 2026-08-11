@@ -19,7 +19,7 @@ Build dedicated pages around actual search intent rather than trying to rank the
 
 ## Expansion path
 
-Kenya ships first. `/hr-software-africa` exists at launch as a pan-African entry point; country-specific product/payroll pages beyond Kenya are added only once ZiraHR actually supports that country's payroll/statutory rules — see `01-product/target-market.md`.
+Kenya ships first. `/hr-software-africa` exists at launch as a pan-African entry point; country-specific product/payroll pages beyond Kenya are added only once SoftHR actually supports that country's payroll/statutory rules — see `01-product/target-market.md`.
 
 ## Ownership of keyword targets
 
