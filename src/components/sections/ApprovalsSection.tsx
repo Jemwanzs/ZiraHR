@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Section } from "@/components/layout/Section";
 import { Reveal } from "@/components/motion/Reveal";
+import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const TYPES = [
   "leave",
@@ -41,9 +42,7 @@ export function ApprovalsSection() {
   return (
     <Section tone="cream">
       <Reveal className="mx-auto max-w-2xl text-center">
-        <p className="text-sm font-semibold tracking-wide text-teal">
-          {t("eyebrow")}
-        </p>
+        <SectionLabel index={6}>{t("eyebrow")}</SectionLabel>
         <h2 className="mt-3 text-3xl font-semibold text-gray-900 sm:text-4xl">
           {t("headline")}
         </h2>

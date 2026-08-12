@@ -13,6 +13,7 @@ import {
   LeaveScene,
   PayrollScene,
 } from "@/components/sections/ProductScenes";
+import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const ACTIONS = [
   "runPayroll",
@@ -40,9 +41,7 @@ export function ProductTourSection() {
   return (
     <Section tone="cream">
       <Reveal className="mx-auto max-w-2xl text-center">
-        <p className="text-sm font-semibold tracking-wide text-teal">
-          {tTour("eyebrow")}
-        </p>
+        <SectionLabel index={11}>{tTour("eyebrow")}</SectionLabel>
         <h2 className="mt-3 text-3xl font-semibold text-gray-900 sm:text-4xl">
           {tTour("headline")}
         </h2>

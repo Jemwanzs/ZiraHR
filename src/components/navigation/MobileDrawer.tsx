@@ -174,6 +174,13 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
         >
           {tCta("requestDemo")}
         </Button>
+        <Link
+          href="/login"
+          onClick={onClose}
+          className="rounded-full border border-gray-200 py-2 text-center text-sm font-medium text-gray-700 transition-colors hover:border-gray-300 hover:bg-gray-50"
+        >
+          {tCta("login")}
+        </Link>
       </div>
     </div>
   );

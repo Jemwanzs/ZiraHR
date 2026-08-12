@@ -53,8 +53,10 @@ export function HeroSection() {
         <p className="text-sm font-semibold tracking-wide text-teal">
           {t("eyebrow")}
         </p>
-        <h1 className="max-w-3xl text-4xl font-semibold text-gray-900 sm:text-5xl lg:text-6xl">
-          {t("headline")}
+        <h1 className="max-w-4xl text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
+          {t.rich("headline", {
+            hl: (chunks) => <span className="text-orange-deep">{chunks}</span>,
+          })}
         </h1>
         <p className="max-w-xl text-lg text-gray-600">{t("supporting")}</p>
         <div className="mt-2 flex flex-wrap items-center justify-center gap-4">

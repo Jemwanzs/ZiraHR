@@ -89,7 +89,7 @@
   },
   "hero": {
     "eyebrow": "THE HR PLATFORM BUILT AROUND YOUR PEOPLE",
-    "headline": "One place to run your entire people operation.",
+    "headline": "One place to run your <hl>entire people operation</hl>.",
     "supporting": "Recruit. Onboard. Manage. Pay. Develop. Perform. SoftHR connects your entire employee journey.",
     "reel": {
       "payroll": {

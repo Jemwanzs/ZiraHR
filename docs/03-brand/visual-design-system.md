@@ -29,3 +29,10 @@ Cards use soft shadows, not hard borders, to separate from the cream canvas — 
 ## Density
 
 Short copy, strong hierarchy, generous whitespace. No giant paragraphs anywhere on the site, including product pages — if a claim needs three sentences to explain, it likely belongs in `/resources`, not on a landing page.
+
+## Later addition: competitor-reference redesign pass
+
+Client explicitly asked to review two competitor sites (Meridian HR, SeamlessHR) and "borrow a lot" for a UI/animation depth pass. What was adopted vs. deliberately left out, and why:
+
+- **Adopted**: bold/oversized hero display type with one color-highlighted phrase (Meridian's technique, re-implemented in our own palette — see `colors.md`'s `--color-orange-deep`); numbered section eyebrow labels (`SectionLabel`, "01 · YOUR PEOPLE") giving the homepage's section sequence an explicit editorial rhythm; a subtle dotted-grid decorative background texture (`DotGrid`) behind "poster" moments; a denser stat-forward opening for the Dashboards section.
+- **Deliberately not adopted**: SeamlessHR's hero is built around real human/office photography — we have none, and fabricating stock-style "people" imagery would misrepresent the product the same way an invented testimonial would (scope §39's core rule). Meridian's multi-country flag list (`KE·UG·NG·CI·GH·ZA`) implies operations in six countries; SoftHR is Kenya-first with Africa expansion *planned*, so copying that nav treatment would overstate current reach. Meridian's scattered third-party-app integration cards imply OAuth connections to named external tools we don't actually offer — not built. Meridian's dense ~12-tile KPI wall was not replicated with invented numbers to match its density; the Dashboards section instead reuses the three real stats already established elsewhere (hero reel, product tour) rather than fabricating nine more.

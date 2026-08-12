@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Section } from "@/components/layout/Section";
 import { Reveal } from "@/components/motion/Reveal";
+import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const ROLE_KEYS = ["regionalManager", "branchManager", "executive"] as const;
 
@@ -15,9 +16,7 @@ export function MultiRegionSection() {
   return (
     <Section tone="cream">
       <Reveal className="mx-auto max-w-2xl text-center">
-        <p className="text-sm font-semibold tracking-wide text-teal">
-          {t("eyebrow")}
-        </p>
+        <SectionLabel index={9}>{t("eyebrow")}</SectionLabel>
         <h2 className="mt-3 text-3xl font-semibold text-gray-900 sm:text-4xl">
           {t("headline")}
         </h2>

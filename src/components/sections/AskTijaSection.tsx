@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { Section } from "@/components/layout/Section";
 import { Reveal } from "@/components/motion/Reveal";
 import { TypingIndicator } from "@/components/ui/TypingIndicator";
+import { SectionLabel } from "@/components/ui/SectionLabel";
 import { AskTijaInterfaceMockup } from "@/components/sections/AskTijaInterfaceMockup";
 
 const PROMPT_KEYS = [
@@ -25,10 +26,11 @@ export function AskTijaSection() {
         <Reveal>
           {/* Brand orange is ~3.9:1 against the teal background here — just
               under WCAG AA's 4.5:1 for text this size. A lighter tint keeps
-              the "energy accent" intent while passing contrast (~5:1). */}
-          <p className="text-sm font-semibold tracking-wide text-[#FBB768]">
+              the "energy accent" intent while passing contrast (~5:1) —
+              SectionLabel's dark-tone variant uses the same lighter shade. */}
+          <SectionLabel index={7} tone="dark">
             {t("eyebrow")}
-          </p>
+          </SectionLabel>
           <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">
             {t("headline")}
           </h2>

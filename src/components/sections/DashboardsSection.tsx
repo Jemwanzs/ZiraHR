@@ -6,6 +6,9 @@ import { Section } from "@/components/layout/Section";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
 import type { PlaceholderIconName } from "@/components/media/PlaceholderIcon";
 import { Reveal } from "@/components/motion/Reveal";
+import { SectionLabel } from "@/components/ui/SectionLabel";
+import { DashboardScene } from "@/components/sections/ProductScenes";
+import { DotGrid } from "@/components/ui/DotGrid";
 
 const DASHBOARDS = ["executive", "hr", "finance", "my"] as const;
 
@@ -22,22 +25,33 @@ const DASHBOARD_ICONS: Record<(typeof DASHBOARDS)[number], PlaceholderIconName> 
  */
 export function DashboardsSection() {
   const t = useTranslations("dashboards");
+  const tRoot = useTranslations();
   const [focused, setFocused] = useState<(typeof DASHBOARDS)[number] | null>(
     null,
   );
 
   return (
-    <Section tone="white">
-      <Reveal className="mx-auto max-w-2xl text-center">
-        <p className="text-sm font-semibold tracking-wide text-teal">
-          {t("eyebrow")}
-        </p>
+    <Section tone="white" className="relative overflow-hidden">
+      <DotGrid className="opacity-70" />
+
+      <Reveal className="relative mx-auto max-w-2xl text-center">
+        <SectionLabel index={8}>{t("eyebrow")}</SectionLabel>
         <h2 className="mt-3 text-3xl font-semibold text-gray-900 sm:text-4xl">
           {t("headline")}
         </h2>
       </Reveal>
 
-      <div className="mt-12 flex flex-wrap justify-center gap-6">
+      {/* One connected dashboard, stated plainly: the same three live
+          numbers used in the hero reel and product tour, reused here
+          rather than inventing a denser KPI wall we don't have real data
+          to back — see performance.md for why. */}
+      <Reveal delay={0.05} className="relative mx-auto mt-10 max-w-xl">
+        <div className="rounded-2xl border border-gray-200 bg-cream/60 px-6 py-5 shadow-sm">
+          <DashboardScene t={tRoot} />
+        </div>
+      </Reveal>
+
+      <div className="relative mt-10 flex flex-wrap justify-center gap-6">
         {DASHBOARDS.map((dashboard) => {
           const isFocused = focused === dashboard;
           const isDimmed = focused !== null && !isFocused;

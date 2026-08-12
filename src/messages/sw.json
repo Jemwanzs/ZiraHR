@@ -89,7 +89,7 @@
   },
   "hero": {
     "eyebrow": "JUKWAA LA RASILIMALI WATU LILILOUNDWA KWA AJILI YA WATU WAKO",
-    "headline": "Mahali pamoja pa kuendesha shughuli zako zote za rasilimali watu.",
+    "headline": "Mahali pamoja pa kuendesha <hl>shughuli zako zote za rasilimali watu</hl>.",
     "supporting": "Ajiri. Anzisha. Simamia. Lipa. Endeleza. Tathmini. SoftHR inaunganisha safari nzima ya mfanyakazi wako.",
     "reel": {
       "payroll": {

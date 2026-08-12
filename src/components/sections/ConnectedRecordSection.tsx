@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "motion/react";
 import { Section } from "@/components/layout/Section";
+import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const NODES = [
   "payroll",
@@ -40,9 +41,7 @@ export function ConnectedRecordSection() {
   return (
     <Section tone="cream">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="text-sm font-semibold tracking-wide text-teal">
-          {t("eyebrow")}
-        </p>
+        <SectionLabel index={2}>{t("eyebrow")}</SectionLabel>
         <h2 className="mt-3 text-3xl font-semibold text-gray-900 sm:text-4xl">
           {t("headline")}
         </h2>

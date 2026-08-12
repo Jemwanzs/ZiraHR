@@ -3,6 +3,7 @@ import { Section } from "@/components/layout/Section";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
 import type { PlaceholderIconName } from "@/components/media/PlaceholderIcon";
 import { Reveal } from "@/components/motion/Reveal";
+import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const STAGES = [
   "applicant",
@@ -44,9 +45,7 @@ export function EmployeeJourneySection() {
   return (
     <Section tone="white">
       <Reveal className="mx-auto max-w-2xl text-center">
-        <p className="text-sm font-semibold tracking-wide text-teal">
-          {t("eyebrow")}
-        </p>
+        <SectionLabel index={1}>{t("eyebrow")}</SectionLabel>
         <h2 className="mt-3 text-3xl font-semibold text-gray-900 sm:text-4xl">
           {t("intro")}
         </h2>

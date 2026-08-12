@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { Section } from "@/components/layout/Section";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
 import { Reveal } from "@/components/motion/Reveal";
+import { SectionLabel } from "@/components/ui/SectionLabel";
 
 /**
  * scope §17 — "configurable without becoming complicated." Animated
@@ -15,9 +16,7 @@ export function FlexibilitySection() {
     <Section tone="white">
       <div className="grid items-center gap-12 lg:grid-cols-2">
         <Reveal>
-          <p className="text-sm font-semibold tracking-wide text-teal">
-            {t("eyebrow")}
-          </p>
+          <SectionLabel index={5}>{t("eyebrow")}</SectionLabel>
           <h2 className="mt-3 text-3xl font-semibold text-gray-900 sm:text-4xl">
             {t("headline")}
           </h2>

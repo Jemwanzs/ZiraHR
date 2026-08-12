@@ -89,7 +89,7 @@
   },
   "hero": {
     "eyebrow": "LA PLATEFORME RH CONÇUE AUTOUR DE VOS COLLABORATEURS",
-    "headline": "Un seul endroit pour gérer toutes vos opérations RH.",
+    "headline": "Un seul endroit pour gérer <hl>toutes vos opérations RH</hl>.",
     "supporting": "Recrutez. Intégrez. Gérez. Payez. Développez. Évaluez. SoftHR connecte tout le parcours de vos employés.",
     "reel": {
       "payroll": {
