@@ -15,7 +15,9 @@ export type PlaceholderIconName =
   | "onboarding"
   | "promotion"
   | "offboarding"
-  | "dashboard";
+  | "dashboard"
+  | "settings"
+  | "approve";
 
 type PlaceholderIconProps = {
   name: PlaceholderIconName;
@@ -60,6 +62,11 @@ const PATHS: Record<PlaceholderIconName, string> = {
   offboarding: "M6 3h9v18H6zM9 3v18M15 11h5m0 0-2-2m2 2-2 2",
   // Generic dashboard — a layout grid.
   dashboard: "M4 4h7v7H4V4Zm9 0h7v4h-7V4Zm0 7h7v9h-7v-9ZM4 14h7v6H4v-6Z",
+  // Settings — three sliders with knobs at different positions.
+  settings:
+    "M4 6h16M4 12h16M4 18h16M12.2 6a1.8 1.8 0 1 0 3.6 0 1.8 1.8 0 1 0-3.6 0M6.2 12a1.8 1.8 0 1 0 3.6 0 1.8 1.8 0 1 0-3.6 0M14.2 18a1.8 1.8 0 1 0 3.6 0 1.8 1.8 0 1 0-3.6 0",
+  // Approve — a circle with a checkmark.
+  approve: "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm-4-9 3 3 5-6",
 };
 
 /** Small, consistent line-icon set used only inside placeholder previews

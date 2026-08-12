@@ -48,6 +48,7 @@ export function FlexibilitySection() {
             alt="SoftHR settings and configuration"
             label="Settings & Configuration"
             aspect="video"
+            icon="settings"
           />
         </Reveal>
       </div>

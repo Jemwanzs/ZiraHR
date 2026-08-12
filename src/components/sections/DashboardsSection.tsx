@@ -41,6 +41,7 @@ export function DashboardsSection() {
         {DASHBOARDS.map((dashboard) => {
           const isFocused = focused === dashboard;
           const isDimmed = focused !== null && !isFocused;
+          const typeLabel = t(`types.${dashboard}`);
 
           return (
             <button
@@ -56,13 +57,13 @@ export function DashboardsSection() {
             >
               <ScreenshotSlot
                 slot={`dashboards.${dashboard}`}
-                alt={`${t(`types.${dashboard}`)} dashboard`}
-                label={`${t(`types.${dashboard}`)} Dashboard`}
+                alt={typeLabel}
+                label={typeLabel}
                 aspect="portrait"
                 icon={DASHBOARD_ICONS[dashboard]}
               />
               <p className="mt-3 text-center text-sm font-medium text-gray-900">
-                {t(`types.${dashboard}`)}
+                {typeLabel}
               </p>
             </button>
           );

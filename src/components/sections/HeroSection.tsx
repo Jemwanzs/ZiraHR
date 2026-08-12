@@ -3,17 +3,18 @@ import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/layout/Section";
 import { Button } from "@/components/ui/Button";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
+import type { PlaceholderIconName } from "@/components/media/PlaceholderIcon";
 import { HeroProductReel } from "@/components/sections/HeroProductReel";
 
-const SATELLITES = [
-  { slot: "hero.satellite.profile", label: "Employee Profile" },
-  { slot: "hero.satellite.leave", label: "Leave Approval" },
-  { slot: "hero.satellite.payroll", label: "Payroll" },
-  { slot: "hero.satellite.attendance", label: "Attendance" },
-  { slot: "hero.satellite.performance", label: "Performance" },
-  { slot: "hero.satellite.recruitment", label: "Recruitment" },
-  { slot: "hero.satellite.askTija", label: "Ask TiJa" },
-] as const;
+const SATELLITES: Array<{ slot: string; label: string; icon: PlaceholderIconName }> = [
+  { slot: "hero.satellite.profile", label: "Employee Profile", icon: "directory" },
+  { slot: "hero.satellite.leave", label: "Leave Approval", icon: "leave" },
+  { slot: "hero.satellite.payroll", label: "Payroll", icon: "payslip" },
+  { slot: "hero.satellite.attendance", label: "Attendance", icon: "attendance" },
+  { slot: "hero.satellite.performance", label: "Performance", icon: "performance" },
+  { slot: "hero.satellite.recruitment", label: "Recruitment", icon: "recruitment" },
+  { slot: "hero.satellite.askTija", label: "Ask TiJa", icon: "askTija" },
+];
 
 /**
  * scope §4 / docs/02-ux/homepage-scope.md beat 01–02: not a static dashboard
@@ -32,8 +33,23 @@ export function HeroSection() {
   const tCta = useTranslations("cta");
 
   return (
-    <Section tone="cream" className="pt-12 pb-8 sm:pt-20">
-      <div className="flex flex-col items-center gap-6 text-center">
+    <Section tone="cream" className="relative overflow-hidden pt-12 pb-8 sm:pt-20">
+      {/* Ambient background glow — decorative only, plain CSS (no Motion),
+          so it can sit in this Server Component without gating the hero
+          text behind client JS the way an animated Reveal wrapper would
+          (see docs/06-technical/performance.md, Phase 9). */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-[-10%] left-1/2 h-[36rem] w-[36rem] -translate-x-1/2 rounded-full opacity-[0.15] blur-3xl animate-[hero-glow-drift_16s_ease-in-out_infinite]"
+        style={{ background: "var(--color-sky)" }}
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-1/3 right-[-8%] h-72 w-72 rounded-full opacity-[0.12] blur-3xl animate-[hero-glow-drift_20s_ease-in-out_infinite_reverse]"
+        style={{ background: "var(--color-orange)" }}
+      />
+
+      <div className="relative flex flex-col items-center gap-6 text-center">
         <p className="text-sm font-semibold tracking-wide text-teal">
           {t("eyebrow")}
         </p>
@@ -64,14 +80,20 @@ export function HeroSection() {
               gates LCP the way the old Reveal-wrapped version did. */}
           <HeroProductReel />
           <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-7">
-            {SATELLITES.map((item) => (
-              <ScreenshotSlot
+            {SATELLITES.map((item, index) => (
+              <div
                 key={item.slot}
-                slot={item.slot}
-                alt={item.label}
-                label={item.label}
-                aspect="square"
-              />
+                className="animate-[hero-satellite-in_0.5s_ease-out_both] transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                style={{ animationDelay: `${0.5 + index * 0.07}s` }}
+              >
+                <ScreenshotSlot
+                  slot={item.slot}
+                  alt={item.label}
+                  label={item.label}
+                  aspect="square"
+                  icon={item.icon}
+                />
+              </div>
             ))}
           </div>
         </div>

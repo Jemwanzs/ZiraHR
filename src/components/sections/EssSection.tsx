@@ -32,12 +32,14 @@ export function EssSection() {
             alt="ESS desktop layout"
             label="ESS — Desktop"
             aspect="portrait"
+            icon="directory"
           />
           <ScreenshotSlot
             slot="ess.mobile"
             alt="ESS mobile layout"
             label="ESS — Mobile"
             aspect="portrait"
+            icon="leave"
           />
         </Reveal>
       </div>

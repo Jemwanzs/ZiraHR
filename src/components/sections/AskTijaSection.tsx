@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import { Section } from "@/components/layout/Section";
-import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
 import { Reveal } from "@/components/motion/Reveal";
 import { TypingIndicator } from "@/components/ui/TypingIndicator";
+import { AskTijaInterfaceMockup } from "@/components/sections/AskTijaInterfaceMockup";
 
 const PROMPT_KEYS = [
   "contractsExpiring",
@@ -51,13 +51,7 @@ export function AskTijaSection() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <ScreenshotSlot
-            slot="askTija.interface"
-            alt="Ask TiJa interface"
-            label="Ask TiJa"
-            aspect="video"
-            tone="dark"
-          />
+          <AskTijaInterfaceMockup />
         </Reveal>
       </div>
     </Section>

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
 import { Reveal } from "@/components/motion/Reveal";
 import { Breadcrumbs, type Crumb } from "@/components/seo/Breadcrumbs";
+import { SoftwareApplicationStructuredData } from "@/components/seo/StructuredData";
 import { CapabilityCloud } from "@/components/ui/CapabilityCloud";
 
 type ConnectsTo = { label: string; href: string };
@@ -48,6 +49,7 @@ export function ProductPageLayout({
 
   return (
     <main className="flex flex-1 flex-col">
+      <SoftwareApplicationStructuredData />
       <Section tone="cream" className="pt-8 pb-8 sm:pt-12">
         <Breadcrumbs items={breadcrumbs} />
         <div className="mt-6 grid items-center gap-12 lg:grid-cols-2">

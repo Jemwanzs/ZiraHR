@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Outfit } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -23,6 +23,13 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zira-hr-jms.vercel
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+
+// Tints the mobile browser chrome (address bar / task-switcher card) with
+// the brand teal instead of the browser's default — small polish, easy to
+// miss but noticeable when absent on a real phone.
+export const viewport: Viewport = {
+  themeColor: "#0B4F6C",
+};
 
 type Props = {
   children: React.ReactNode;

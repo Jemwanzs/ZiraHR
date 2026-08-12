@@ -69,7 +69,11 @@ export function ModuleShowcaseSection() {
           ))}
         </div>
 
-        <div className="min-h-[420px]">
+        {/* min-height tuned to the tallest module's content (Core HR, 6
+            items) so switching modules doesn't jump the page height, while
+            staying close enough to the shortest (Leave, 4 items) that it
+            doesn't read as a block of dead space either. */}
+        <div className="min-h-[300px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
