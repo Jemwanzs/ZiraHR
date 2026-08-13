@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/layout/Container";
-import { Button } from "@/components/ui/Button";
 import { Logo } from "@/components/ui/Logo";
 import { LanguageSelector } from "@/components/navigation/LanguageSelector";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
@@ -77,12 +76,6 @@ export function NavBar() {
           >
             {tCta("login")}
           </Link>
-          <Button href="/request-demo" variant="secondary">
-            {tCta("requestDemo")}
-          </Button>
-          <Button href="/signup" showArrow>
-            {tCta("startWithSoftHR")}
-          </Button>
         </div>
 
         <button
