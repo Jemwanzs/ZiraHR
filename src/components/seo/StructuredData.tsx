@@ -1,7 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { safeJsonLd } from "@/lib/seo";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zira-hr-jms.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://softhr.vercel.app";
 
 /**
  * Sitewide Organization JSON-LD, rendered once from the root layout — see

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zira-hr-jms.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://softhr.vercel.app";
 
 function pathForLocale(route: string, locale: string) {
   const prefix = locale === routing.defaultLocale ? "" : `/${locale}`;

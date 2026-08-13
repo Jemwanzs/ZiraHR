@@ -19,7 +19,7 @@ const outfit = Outfit({
   subsets: ["latin"],
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zira-hr-jms.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://softhr.vercel.app";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -78,6 +78,12 @@ export async function generateMetadata({
       title: "SoftHR — One place to run your entire people operation.",
       description: t("supporting"),
     },
+    // Renders <meta name="google-site-verification" ...> only once you've
+    // created a Search Console property and set the env var — see
+    // docs/09-qa/launch-checklist.md.
+    ...(process.env.GOOGLE_SITE_VERIFICATION && {
+      verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
+    }),
   };
 }
 
