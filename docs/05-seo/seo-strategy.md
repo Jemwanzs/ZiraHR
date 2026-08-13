@@ -23,4 +23,4 @@ Kenya ships first. `/hr-software-africa` exists at launch as a pan-African entry
 
 ## Ownership of keyword targets
 
-See `keyword-map.md` for the page-to-keyword table. See `metadata-plan.md` for how each page type generates its `<title>`/`<meta description>`/OG/canonical. See `structured-data.md` for JSON-LD types per page. See `internal-linking.md` for the linking rules between module pages, SEO pages, and resources.
+See `keyword-map.md` for the page-to-keyword table. See `metadata-plan.md` for how each page type generates its `<title>`/`<meta description>`/OG/canonical. See `structured-data.md` for JSON-LD types per page. See `internal-linking.md` for the linking rules between module pages, SEO pages, and resources. See `search-console-and-indexing.md` for getting Google to actually discover/index a technically-correct site — a separate problem from anything above, only relevant once the site is live at a real, public URL.
