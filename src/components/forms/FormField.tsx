@@ -67,4 +67,4 @@ export function FormField({
 
 export const inputClasses =
   "w-full rounded-xl border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 " +
-  "placeholder:text-gray-400 focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20";
+  "placeholder:text-gray-400 focus:border-teal-deep focus:outline-none focus:ring-2 focus:ring-teal/20";

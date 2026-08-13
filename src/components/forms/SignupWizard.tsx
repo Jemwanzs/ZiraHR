@@ -136,7 +136,7 @@ export function SignupWizard() {
         {[1, 2, 3, 4].map((n) => (
           <div
             key={n}
-            className={`h-1 flex-1 rounded-full ${n <= step ? "bg-teal" : "bg-gray-200"}`}
+            className={`h-1 flex-1 rounded-full ${n <= step ? "bg-teal-deep" : "bg-gray-200"}`}
           />
         ))}
       </div>

@@ -7,6 +7,7 @@ import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";
 import { Logo } from "@/components/ui/Logo";
 import { LanguageSelector } from "@/components/navigation/LanguageSelector";
+import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { NavDropdown } from "@/components/navigation/NavDropdown";
 import { PlatformMegaMenuPanel } from "@/components/navigation/PlatformMegaMenuPanel";
 import { SolutionsMenuPanel } from "@/components/navigation/SolutionsMenuPanel";
@@ -68,6 +69,7 @@ export function NavBar() {
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
+          <ThemeToggle />
           <LanguageSelector />
           <Link
             href="/login"

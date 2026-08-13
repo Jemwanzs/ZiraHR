@@ -58,7 +58,7 @@ export function ApprovalsSection() {
             aria-pressed={active === type}
             className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
               active === type
-                ? "bg-teal text-white"
+                ? "bg-teal text-overlay"
                 : type === "custom"
                   ? "border border-dashed border-gray-300 bg-transparent text-gray-600 hover:bg-white"
                   : "bg-white text-gray-700 hover:bg-gray-100"
@@ -128,7 +128,7 @@ export function ApprovalsSection() {
                 <span
                   aria-hidden="true"
                   className={`h-2 w-2 rounded-full ${
-                    item.status === "approved" ? "bg-teal" : "bg-orange"
+                    item.status === "approved" ? "bg-teal-deep" : "bg-orange"
                   }`}
                 />
                 {t(`queue.statusLabels.${item.status}`)}

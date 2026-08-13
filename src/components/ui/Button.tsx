@@ -25,7 +25,7 @@ type ButtonAsButton = BaseProps &
 type ButtonProps = ButtonAsLink | ButtonAsButton;
 
 const variantClasses: Record<ButtonVariant, string> = {
-  primary: "bg-teal text-white hover:bg-teal/90",
+  primary: "bg-teal text-overlay hover:bg-teal/90",
   secondary: "border border-gray-300 text-gray-900 hover:border-gray-400 hover:bg-white",
   ghost: "text-gray-700 hover:text-gray-900",
 };
@@ -33,7 +33,7 @@ const variantClasses: Record<ButtonVariant, string> = {
 const baseClasses =
   "inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold " +
   "transition-all duration-200 ease-out hover:-translate-y-[1px] focus-visible:outline focus-visible:outline-2 " +
-  "focus-visible:outline-offset-2 focus-visible:outline-teal disabled:cursor-not-allowed disabled:opacity-50";
+  "focus-visible:outline-offset-2 focus-visible:outline-teal-deep disabled:cursor-not-allowed disabled:opacity-50";
 
 function Arrow() {
   return (

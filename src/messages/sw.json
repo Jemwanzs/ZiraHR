@@ -1,7 +1,9 @@
 {
   "common": {
     "brandName": "SoftHR",
-    "skipToContent": "Nenda kwenye maudhui"
+    "skipToContent": "Nenda kwenye maudhui",
+    "switchToLight": "Badilisha kwenda hali angavu",
+    "switchToDark": "Badilisha kwenda hali ya giza"
   },
   "languageSelector": {
     "label": "Language",
@@ -88,8 +90,13 @@
     }
   },
   "hero": {
+    "announcementBanner": {
+      "badge": "Mpya",
+      "text": "Ask TiJa, msaidizi wako wa AI wa rasilimali watu",
+      "linkLabel": "Jifunze zaidi"
+    },
     "eyebrow": "JUKWAA LA RASILIMALI WATU LILILOUNDWA KWA AJILI YA WATU WAKO",
-    "headline": "Mahali pamoja pa kuendesha <hl>shughuli zako zote za rasilimali watu</hl>.",
+    "headline": "Mahali pamoja pa kuendesha <icon></icon> <hl>shughuli zako zote za rasilimali watu</hl>.",
     "supporting": "Ajiri. Anzisha. Simamia. Lipa. Endeleza. Tathmini. SoftHR inaunganisha safari nzima ya mfanyakazi wako.",
     "reel": {
       "payroll": {
@@ -502,6 +509,16 @@
       "capabilities": ["Nafasi za Kazi", "Timu", "Njia", "Ujumbe", "Matangazo", "Arifa", "Ushirikiano wa Wafanyakazi"],
       "connectsToHeadline": "Ushirikiano unabaki umeunganishwa na muundo ule ule wa shirika.",
       "ctaHeadline": "Fanya rasilimali watu kuwa mahali watu wanapotaka kuwa."
+    },
+    "teamsCollaborationMockup": {
+      "channelsLabel": "Njia",
+      "channels": ["Jumla", "Matangazo ya HR", "Timu ya Mauzo"],
+      "activeChannel": "Matangazo ya HR",
+      "membersLabel": "wanachama 3",
+      "messages": {
+        "amina": "Sera mpya ya HR imechapishwa — angalia kichupo cha Nyaraka.",
+        "you": "Asante kwa taarifa! Je, hii inawahusu pia wakandarasi?"
+      }
     },
     "employeeSelfService": {
       "eyebrow": "HUDUMA BINAFSI YA MFANYAKAZI",

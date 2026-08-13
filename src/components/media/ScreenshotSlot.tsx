@@ -68,27 +68,27 @@ export function ScreenshotSlot({
       aria-label={`${label} — product preview coming soon`}
       className={`relative flex flex-col items-center justify-center gap-3 overflow-hidden rounded-2xl border border-dashed ${
         isDark
-          ? "border-white/20 bg-white/5"
+          ? "border-overlay/20 bg-overlay/5"
           : "border-gray-300 bg-white/60"
       } ${aspectClasses[aspect]} ${className}`}
     >
       <span
         className={`absolute top-3 right-3 rounded-full px-2.5 py-1 text-[10px] font-semibold tracking-wide uppercase ${
-          isDark ? "bg-white/10 text-white/70" : "bg-gray-100 text-gray-500"
+          isDark ? "bg-overlay/10 text-overlay/70" : "bg-gray-100 text-gray-500"
         }`}
       >
         Preview
       </span>
       <div
         className={`flex h-12 w-12 items-center justify-center rounded-xl ${
-          isDark ? "bg-white/10 text-orange" : "bg-cream text-teal"
+          isDark ? "bg-overlay/10 text-orange" : "bg-cream text-teal-deep"
         }`}
       >
         <PlaceholderIcon name={icon} className="h-6 w-6" />
       </div>
       <p
         className={`px-6 text-center text-sm font-medium ${
-          isDark ? "text-white/70" : "text-gray-500"
+          isDark ? "text-overlay/70" : "text-gray-500"
         }`}
       >
         {label}

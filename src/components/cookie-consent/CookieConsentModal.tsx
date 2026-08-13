@@ -130,7 +130,7 @@ export function CookieConsentModal({ dismissible, onClose }: CookieConsentModalP
           <button
             type="button"
             onClick={handleAllowAll}
-            className="flex-1 rounded-full bg-teal px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-teal/90"
+            className="flex-1 rounded-full bg-teal px-6 py-3 text-sm font-semibold text-overlay transition-colors hover:bg-teal/90"
           >
             {t("allowAll")}
           </button>

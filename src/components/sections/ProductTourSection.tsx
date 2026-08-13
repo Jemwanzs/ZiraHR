@@ -57,7 +57,7 @@ export function ProductTourSection() {
             aria-pressed={active === action}
             className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
               active === action
-                ? "bg-teal text-white"
+                ? "bg-teal text-overlay"
                 : "bg-white text-gray-700 hover:bg-gray-100"
             }`}
           >

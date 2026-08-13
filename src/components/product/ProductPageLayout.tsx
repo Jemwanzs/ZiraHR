@@ -17,6 +17,10 @@ type ProductPageLayoutProps = {
   headline: string;
   supporting: string;
   heroSlot: string;
+  /** Overrides the default ScreenshotSlot placeholder with a real, custom
+   * illustrated visual (e.g. TeamsCollaborationMockup) — see
+   * AskTijaInterfaceMockup for the homepage precedent this follows. */
+  heroVisual?: ReactNode;
   /** Either a flat capability checklist (e.g. Core HR)... */
   capabilities?: string[];
   /** ...or a workflow chain (e.g. Payroll: Draft -> Review -> ... -> Disburse). */
@@ -38,6 +42,7 @@ export function ProductPageLayout({
   headline,
   supporting,
   heroSlot,
+  heroVisual,
   capabilities,
   flowSteps,
   connectsToHeadline,
@@ -54,7 +59,7 @@ export function ProductPageLayout({
         <Breadcrumbs items={breadcrumbs} />
         <div className="mt-6 grid items-center gap-12 lg:grid-cols-2">
           <Reveal>
-            <p className="text-sm font-semibold tracking-wide text-teal">
+            <p className="text-sm font-semibold tracking-wide text-teal-deep">
               {eyebrow}
             </p>
             <h1 className="mt-3 text-3xl font-semibold text-gray-900 sm:text-4xl lg:text-5xl">
@@ -71,13 +76,15 @@ export function ProductPageLayout({
             </div>
           </Reveal>
           <Reveal delay={0.1}>
-            <ScreenshotSlot
-              slot={heroSlot}
-              alt={headline}
-              label={headline}
-              aspect="wide"
-              priority
-            />
+            {heroVisual ?? (
+              <ScreenshotSlot
+                slot={heroSlot}
+                alt={headline}
+                label={headline}
+                aspect="wide"
+                priority
+              />
+            )}
           </Reveal>
         </div>
       </Section>
@@ -122,7 +129,7 @@ export function ProductPageLayout({
               <Link
                 key={link.href}
                 href={link.href}
-                className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-teal hover:text-teal"
+                className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-teal-deep hover:text-teal-deep"
               >
                 {link.label}
               </Link>

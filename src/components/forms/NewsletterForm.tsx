@@ -77,7 +77,7 @@ export function NewsletterForm() {
         placeholder={t("placeholder")}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="w-full rounded-full border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20 sm:w-64"
+        className="w-full rounded-full border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 focus:border-teal-deep focus:outline-none focus:ring-2 focus:ring-teal/20 sm:w-64"
       />
       <Button type="submit" disabled={status === "submitting"}>
         {status === "submitting" ? tCommon("loading") : t("submit")}

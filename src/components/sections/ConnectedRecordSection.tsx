@@ -75,7 +75,7 @@ export function ConnectedRecordSection() {
         </svg>
 
         <div
-          className="absolute flex h-28 w-28 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full bg-teal text-center text-white shadow-lg"
+          className="absolute flex h-28 w-28 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full bg-teal text-center text-overlay shadow-lg"
           style={{ left: `${CENTER}%`, top: `${CENTER}%` }}
         >
           <span className="text-xs font-semibold">Employee</span>
@@ -91,7 +91,11 @@ export function ConnectedRecordSection() {
               style={{ left: `${x}%`, top: `${y}%` }}
               initial={shouldReduceMotion ? undefined : { opacity: 0, scale: 0.8 }}
               whileInView={shouldReduceMotion ? undefined : { opacity: 1, scale: 1 }}
-              whileHover={shouldReduceMotion ? undefined : { scale: 1.1, borderColor: "#0B4F6C" }}
+              whileHover={
+                shouldReduceMotion
+                  ? undefined
+                  : { scale: 1.1, borderColor: "var(--color-teal-deep)" }
+              }
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.3 + index * 0.05 }}
             >
@@ -106,7 +110,7 @@ export function ConnectedRecordSection() {
         {NODES.map((node) => (
           <div
             key={node}
-            className="rounded-full border border-gray-200 bg-white px-3 py-2 text-center text-sm font-medium text-gray-700 transition-colors hover:border-teal hover:text-teal"
+            className="rounded-full border border-gray-200 bg-white px-3 py-2 text-center text-sm font-medium text-gray-700 transition-colors hover:border-teal-deep hover:text-teal-deep"
           >
             {t(`nodes.${node}`)}
           </div>

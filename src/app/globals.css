@@ -1,9 +1,18 @@
 @import "tailwindcss";
 
+/* Class-based dark mode (manual toggle, not OS prefers-color-scheme) — see
+   ThemeProvider (src/components/theme/ThemeProvider.tsx). Tailwind v4's
+   default `dark:` variant follows the OS media query; this repoints it at
+   the `.dark` class the provider adds to <html>. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /*
  * Provisional brand tokens — see docs/03-brand/colors.md. Swap these values
  * (only) when a final SoftHR brand guideline supplies exact hex values;
  * nothing else in the codebase should reference a raw hex code.
+ *
+ * This is the LIGHT palette (unchanged from the site's original single
+ * theme). The dark palette lives in the `.dark` block below it.
  */
 :root {
   --color-cream: #fff9f2;
@@ -17,6 +26,16 @@
      reserved for small accents/backgrounds where it's paired with a dark
      surface instead. */
   --color-orange-deep: #b8621f;
+  /* Same problem, opposite color: --color-teal is deliberately fixed
+     across themes for backgrounds (Button primary, Ask TiJa's panel,
+     active-pill states — all paired with light/--color-overlay text, see
+     the .dark block below). But teal is *also* used as foreground text on
+     the page's own cream/white surfaces (eyebrows, hover links, focus
+     rings) — dark navy text reads fine on light cream but disappears on
+     dark cream. --color-teal-deep is that foreground-only variant: equal
+     to --color-teal in light mode (zero visual change there), brighter in
+     dark mode. */
+  --color-teal-deep: #0b4f6c;
 
   --color-gray-50: #fafaf9;
   --color-gray-100: #f2f1ee;
@@ -31,6 +50,48 @@
 
   --background: var(--color-cream);
   --foreground: var(--color-gray-900);
+
+  /* Fixed, theme-independent literal white — NEVER redefined under .dark.
+     A handful of surfaces (Ask TiJa's dark-teal panel, its chat mockup, the
+     Teams & Collaboration mockup, dark-tone ScreenshotSlot/SectionLabel) are
+     deliberately dark regardless of site theme and rely on translucent
+     white overlays ("frosted glass") for their internal contrast. Those
+     must keep meaning literal white even when --color-white itself becomes
+     a dark card color in dark mode, so they get their own token instead of
+     reusing --color-white. Supports Tailwind's native /NN opacity modifier
+     (bg-overlay/5, text-overlay/70, etc.) like any other color token. */
+  --color-overlay: #ffffff;
+  /* Paired with --color-overlay: fixed dark text for content sitting on a
+     literal-white chip inside an always-dark panel (e.g. a chat bubble
+     inside Ask TiJa's fixed-teal section) — needs to stay legible on white
+     regardless of --color-gray-900's per-theme value. */
+  --color-overlay-ink: #1a1815;
+}
+
+.dark {
+  --color-cream: #0d0f10;
+  --color-white: #1a1b1d;
+  --color-sky: #3fa9f5;
+  --color-teal: #0b4f6c;
+  --color-orange: #f2994a;
+  /* Mirror-image of the light-theme problem: a *deeper* orange reads fine
+     on pale cream but fails contrast on a near-black background. Reuses the
+     lighter amber already proven accessible for orange-on-dark-teal text
+     (see SectionLabel's tone="dark" variant) instead of inventing a new
+     dark-mode-only accent. */
+  --color-orange-deep: #fbb768;
+  --color-teal-deep: #4fc3d4;
+
+  --color-gray-50: #17181a;
+  --color-gray-100: #1e1f22;
+  --color-gray-200: #2a2b2e;
+  --color-gray-300: #38393d;
+  --color-gray-400: #6b6d72;
+  --color-gray-500: #8b8d92;
+  --color-gray-600: #a8aaae;
+  --color-gray-700: #c3c5c8;
+  --color-gray-800: #dcdddf;
+  --color-gray-900: #f5f5f4;
 }
 
 @theme inline {
@@ -40,6 +101,9 @@
   --color-teal: var(--color-teal);
   --color-orange: var(--color-orange);
   --color-orange-deep: var(--color-orange-deep);
+  --color-teal-deep: var(--color-teal-deep);
+  --color-overlay: var(--color-overlay);
+  --color-overlay-ink: var(--color-overlay-ink);
 
   --color-gray-50: var(--color-gray-50);
   --color-gray-100: var(--color-gray-100);
@@ -85,6 +149,20 @@ body {
   }
   50% {
     transform: translate(2%, -3%) scale(1.05);
+  }
+}
+
+/* Very slow, subtle drift for the hero's angled decorative card stack —
+ * same "plain CSS, no Motion" rule as the two keyframes above, since these
+ * cards render in the initial viewport (see docs/06-technical/performance.md,
+ * Phase 9). */
+@keyframes angled-card-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--card-rotate, 0deg));
+  }
+  50% {
+    transform: translateY(-6px) rotate(var(--card-rotate, 0deg));
   }
 }
 

@@ -1,7 +1,9 @@
 {
   "common": {
     "brandName": "SoftHR",
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to content",
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
   },
   "languageSelector": {
     "label": "Language",
@@ -88,8 +90,13 @@
     }
   },
   "hero": {
+    "announcementBanner": {
+      "badge": "New",
+      "text": "Ask TiJa, your AI HR assistant",
+      "linkLabel": "Learn more"
+    },
     "eyebrow": "THE HR PLATFORM BUILT AROUND YOUR PEOPLE",
-    "headline": "One place to run your <hl>entire people operation</hl>.",
+    "headline": "One place to run your <icon></icon> <hl>entire people operation</hl>.",
     "supporting": "Recruit. Onboard. Manage. Pay. Develop. Perform. SoftHR connects your entire employee journey.",
     "reel": {
       "payroll": {
@@ -502,6 +509,16 @@
       "capabilities": ["Workspaces", "Teams", "Channels", "Messaging", "Announcements", "Notifications", "Employee Collaboration"],
       "connectsToHeadline": "Collaboration stays connected to the same organization structure.",
       "ctaHeadline": "Make HR somewhere people want to be."
+    },
+    "teamsCollaborationMockup": {
+      "channelsLabel": "Channels",
+      "channels": ["General", "HR Announcements", "Sales Team"],
+      "activeChannel": "HR Announcements",
+      "membersLabel": "3 members",
+      "messages": {
+        "amina": "New HR policy update just went live — check the Documents tab.",
+        "you": "Thanks for the heads up! Does this affect contractors too?"
+      }
     },
     "employeeSelfService": {
       "eyebrow": "EMPLOYEE SELF-SERVICE",

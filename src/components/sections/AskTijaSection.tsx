@@ -31,21 +31,21 @@ export function AskTijaSection() {
           <SectionLabel index={7} tone="dark">
             {t("eyebrow")}
           </SectionLabel>
-          <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-semibold text-overlay sm:text-4xl">
             {t("headline")}
           </h2>
-          <p className="mt-3 text-white/70">{t("positioning")}</p>
+          <p className="mt-3 text-overlay/70">{t("positioning")}</p>
 
           <ul className="mt-8 flex flex-col gap-3">
             {PROMPT_KEYS.map((key, index) => (
               <Reveal key={key} delay={0.15 + index * 0.08}>
-                <li className="rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white/90 transition-colors hover:border-white/25 hover:bg-white/10">
+                <li className="rounded-xl border border-overlay/15 bg-overlay/5 px-4 py-3 text-sm text-overlay/90 transition-colors hover:border-overlay/25 hover:bg-overlay/10">
                   &ldquo;{t(`prompts.${key}`)}&rdquo;
                 </li>
               </Reveal>
             ))}
             <Reveal delay={0.15 + PROMPT_KEYS.length * 0.08}>
-              <li className="flex items-center gap-2 px-4 py-1 text-white/50">
+              <li className="flex items-center gap-2 px-4 py-1 text-overlay/50">
                 <TypingIndicator />
               </li>
             </Reveal>

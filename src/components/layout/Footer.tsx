@@ -69,7 +69,7 @@ function FooterColumn({
           <li key={link.key}>
             <Link
               href={link.href}
-              className="text-sm text-gray-600 hover:text-teal"
+              className="text-sm text-gray-600 hover:text-teal-deep"
             >
               {translateLabel(link.key)}
             </Link>

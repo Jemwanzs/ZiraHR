@@ -5,6 +5,29 @@ import { Button } from "@/components/ui/Button";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
 import type { PlaceholderIconName } from "@/components/media/PlaceholderIcon";
 import { HeroProductReel } from "@/components/sections/HeroProductReel";
+import { AngledCardStack } from "@/components/sections/AngledCardStack";
+
+/** Small inline "spark" glyph for the headline's icon-mid-sentence treatment
+ * — borrows Firebase's technique (an icon between two headline clauses),
+ * not their flame mark; own shape, sized to sit inline with bold text. */
+function HeroSparkIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      className="mx-1 inline-block h-[0.75em] w-[0.75em] -translate-y-[0.05em] align-middle text-orange-deep"
+    >
+      <path
+        d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 const SATELLITES: Array<{ slot: string; label: string; icon: PlaceholderIconName }> = [
   { slot: "hero.satellite.profile", label: "Employee Profile", icon: "directory" },
@@ -49,13 +72,32 @@ export function HeroSection() {
         style={{ background: "var(--color-orange)" }}
       />
 
+      {/* Decorative only — see AngledCardStack's own doc comment for why
+          this is plain CSS and safe to sit in the initial viewport. */}
+      <AngledCardStack />
+
       <div className="relative flex flex-col items-center gap-6 text-center">
-        <p className="text-sm font-semibold tracking-wide text-teal">
+        <Link
+          href="/ask-tija"
+          className="group inline-flex items-center gap-3 rounded-full border border-gray-200 bg-white py-1.5 pr-2 pl-4 text-sm shadow-sm transition-colors hover:border-gray-300"
+        >
+          <span className="font-semibold text-teal-deep">
+            {t("announcementBanner.badge")}
+          </span>
+          <span className="text-gray-600">{t("announcementBanner.text")}</span>
+          <span className="inline-flex items-center gap-1 rounded-full bg-cream px-3 py-1 text-xs font-semibold text-gray-900 transition-transform group-hover:translate-x-0.5">
+            {t("announcementBanner.linkLabel")}
+            <span aria-hidden="true">→</span>
+          </span>
+        </Link>
+
+        <p className="text-sm font-semibold tracking-wide text-teal-deep">
           {t("eyebrow")}
         </p>
         <h1 className="max-w-4xl text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
           {t.rich("headline", {
             hl: (chunks) => <span className="text-orange-deep">{chunks}</span>,
+            icon: () => <HeroSparkIcon />,
           })}
         </h1>
         <p className="max-w-xl text-lg text-gray-600">{t("supporting")}</p>
@@ -68,7 +110,7 @@ export function HeroSection() {
           </Button>
         </div>
         <p className="mt-3 text-sm text-gray-500">
-          <Link href="/login" className="hover:text-teal">
+          <Link href="/login" className="hover:text-teal-deep">
             {tCta("alreadyUsing")}
           </Link>
         </p>

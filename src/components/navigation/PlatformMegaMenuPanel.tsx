@@ -19,7 +19,7 @@ export function PlatformMegaMenuPanel() {
               <li key={item.key}>
                 <Link
                   href={item.href}
-                  className="text-sm text-gray-700 hover:text-teal"
+                  className="text-sm text-gray-700 hover:text-teal-deep"
                 >
                   {t(`${group.key}.${item.key}`)}
                 </Link>

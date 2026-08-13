@@ -1,7 +1,9 @@
 {
   "common": {
     "brandName": "SoftHR",
-    "skipToContent": "Aller au contenu"
+    "skipToContent": "Aller au contenu",
+    "switchToLight": "Passer au mode clair",
+    "switchToDark": "Passer au mode sombre"
   },
   "languageSelector": {
     "label": "Language",
@@ -88,8 +90,13 @@
     }
   },
   "hero": {
+    "announcementBanner": {
+      "badge": "Nouveau",
+      "text": "Ask TiJa, votre assistant RH intelligent",
+      "linkLabel": "En savoir plus"
+    },
     "eyebrow": "LA PLATEFORME RH CONÇUE AUTOUR DE VOS COLLABORATEURS",
-    "headline": "Un seul endroit pour gérer <hl>toutes vos opérations RH</hl>.",
+    "headline": "Un seul endroit pour gérer <icon></icon> <hl>toutes vos opérations RH</hl>.",
     "supporting": "Recrutez. Intégrez. Gérez. Payez. Développez. Évaluez. SoftHR connecte tout le parcours de vos employés.",
     "reel": {
       "payroll": {
@@ -502,6 +509,16 @@
       "capabilities": ["Espaces de travail", "Équipes", "Canaux", "Messagerie", "Annonces", "Notifications", "Collaboration entre employés"],
       "connectsToHeadline": "La collaboration reste connectée à la même structure organisationnelle.",
       "ctaHeadline": "Faites de la RH un endroit où l'on a envie d'être."
+    },
+    "teamsCollaborationMockup": {
+      "channelsLabel": "Canaux",
+      "channels": ["Général", "Annonces RH", "Équipe Ventes"],
+      "activeChannel": "Annonces RH",
+      "membersLabel": "3 membres",
+      "messages": {
+        "amina": "La nouvelle politique RH vient d'être publiée — voir l'onglet Documents.",
+        "you": "Merci pour l'info ! Est-ce que ça concerne aussi les prestataires ?"
+      }
     },
     "employeeSelfService": {
       "eyebrow": "LIBRE-SERVICE EMPLOYÉ",

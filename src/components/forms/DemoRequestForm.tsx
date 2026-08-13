@@ -205,7 +205,7 @@ export function DemoRequestForm() {
                 onClick={() => toggleModule(module)}
                 className={`rounded-full px-3.5 py-2 text-sm font-medium transition-colors ${
                   selected
-                    ? "bg-teal text-white"
+                    ? "bg-teal text-overlay"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
@@ -226,7 +226,7 @@ export function DemoRequestForm() {
               onClick={() => setValues({ ...values, preferredContactMethod: method })}
               className={`rounded-full px-3.5 py-2 text-sm font-medium transition-colors ${
                 values.preferredContactMethod === method
-                  ? "bg-teal text-white"
+                  ? "bg-teal text-overlay"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >

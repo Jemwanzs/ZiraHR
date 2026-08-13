@@ -41,7 +41,7 @@ export function PayrollScene({ t }: SceneProps) {
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: steps.length * 0.5, duration: 0.4 }}
-        className="flex items-center gap-1.5 text-sm font-semibold text-teal"
+        className="flex items-center gap-1.5 text-sm font-semibold text-teal-deep"
       >
         <span aria-hidden="true">✓</span>
         {t("hero.reel.payroll.result")}
@@ -155,8 +155,8 @@ export function AskTijaScene({ t }: SceneProps) {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <div className="w-full max-w-md rounded-xl bg-teal p-5 text-white shadow-sm">
-      <p className="text-xs font-semibold tracking-wide text-white/60 uppercase">
+    <div className="w-full max-w-md rounded-xl bg-teal p-5 text-overlay shadow-sm">
+      <p className="text-xs font-semibold tracking-wide text-overlay/60 uppercase">
         {t("hero.reel.askTija.label")}
       </p>
       <p className="mt-2 text-sm">
@@ -166,7 +166,7 @@ export function AskTijaScene({ t }: SceneProps) {
         initial={{ opacity: 0, y: 6 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.8, duration: 0.4 }}
-        className="mt-3 border-t border-white/15 pt-3 text-sm text-white/85"
+        className="mt-3 border-t border-overlay/15 pt-3 text-sm text-overlay/85"
       >
         {t("hero.reel.askTija.answer")}
       </motion.p>
@@ -219,7 +219,7 @@ export function ApproveRequestScene({ t }: SceneProps) {
         initial={shouldReduceMotion ? undefined : { opacity: 0, scale: 0.85 }}
         animate={shouldReduceMotion ? undefined : { opacity: 1, scale: 1 }}
         transition={{ delay: 1.4, duration: 0.35, ease: "backOut" }}
-        className="absolute top-4 right-4 flex h-9 w-9 items-center justify-center rounded-full bg-teal text-white shadow-md"
+        className="absolute top-4 right-4 flex h-9 w-9 items-center justify-center rounded-full bg-teal text-overlay shadow-md"
         aria-hidden="true"
       >
         ✓
@@ -228,7 +228,7 @@ export function ApproveRequestScene({ t }: SceneProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.3 }}
-        className="mt-3 text-sm font-semibold text-teal"
+        className="mt-3 text-sm font-semibold text-teal-deep"
       >
         {t("approvals.queue.statusLabels.approved")}
       </motion.p>
@@ -252,7 +252,7 @@ export function EmployeeProfileScene({ t }: SceneProps) {
     <div className="flex w-full max-w-sm items-center gap-4 rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
       <span
         aria-hidden="true"
-        className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-teal text-lg font-semibold text-white"
+        className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-teal text-lg font-semibold text-overlay"
       >
         A
       </span>

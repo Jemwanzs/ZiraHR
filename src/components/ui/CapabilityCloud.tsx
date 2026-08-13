@@ -30,9 +30,9 @@ export function CapabilityCloud({ items, className }: CapabilityCloudProps) {
             ease: [0.22, 1, 0.36, 1],
           }}
           whileHover={{ y: -2 }}
-          className="flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3.5 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-teal hover:text-teal"
+          className="flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3.5 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-teal-deep hover:text-teal-deep"
         >
-          <span aria-hidden="true" className="text-teal">
+          <span aria-hidden="true" className="text-teal-deep">
             ✓
           </span>
           {item}

@@ -10,6 +10,7 @@ import { Footer } from "@/components/layout/Footer";
 import { StickyMobileCta } from "@/components/navigation/StickyMobileCta";
 import { OrganizationStructuredData } from "@/components/seo/StructuredData";
 import { MotionProvider } from "@/components/motion/MotionProvider";
+import { ThemeProvider, NO_FLASH_THEME_SCRIPT } from "@/components/theme/ThemeProvider";
 import { CookieConsentBanner } from "@/components/cookie-consent/CookieConsentBanner";
 import "../globals.css";
 
@@ -24,11 +25,11 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-// Tints the mobile browser chrome (address bar / task-switcher card) with
-// the brand teal instead of the browser's default — small polish, easy to
-// miss but noticeable when absent on a real phone.
+// Tints the mobile browser chrome (address bar / task-switcher card) —
+// dark by default since dark is now the site's default theme; ThemeToggle
+// updates this meta tag directly when a visitor switches to light.
 export const viewport: Viewport = {
-  themeColor: "#0B4F6C",
+  themeColor: "#0d0f10",
 };
 
 type Props = {
@@ -94,26 +95,37 @@ export default async function LocaleLayout({ children, params }: Props) {
   const t = await getTranslations({ locale, namespace: "common" });
 
   return (
-    <html lang={locale} className={`${outfit.variable} h-full`}>
+    <html
+      lang={locale}
+      className={`${outfit.variable} dark h-full`}
+      suppressHydrationWarning
+    >
+      <head>
+        {/* Runs before hydration so a visitor who previously chose light
+            mode never sees a flash of the dark default. See ThemeProvider. */}
+        <script dangerouslySetInnerHTML={{ __html: NO_FLASH_THEME_SCRIPT }} />
+      </head>
       <body className="min-h-full flex flex-col bg-cream text-gray-900 antialiased">
         <OrganizationStructuredData />
         <NextIntlClientProvider>
-          <MotionProvider>
-            <RouteProgressBar />
-            <a
-              href="#main-content"
-              className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded-full focus:bg-teal focus:px-4 focus:py-2 focus:text-white"
-            >
-              {t("skipToContent")}
-            </a>
-            <NavBar />
-            <div id="main-content" className="flex flex-1 flex-col">
-              {children}
-            </div>
-            <Footer />
-            <StickyMobileCta />
-            <CookieConsentBanner />
-          </MotionProvider>
+          <ThemeProvider>
+            <MotionProvider>
+              <RouteProgressBar />
+              <a
+                href="#main-content"
+                className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded-full focus:bg-teal focus:px-4 focus:py-2 focus:text-overlay"
+              >
+                {t("skipToContent")}
+              </a>
+              <NavBar />
+              <div id="main-content" className="flex flex-1 flex-col">
+                {children}
+              </div>
+              <Footer />
+              <StickyMobileCta />
+              <CookieConsentBanner />
+            </MotionProvider>
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

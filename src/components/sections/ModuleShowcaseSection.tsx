@@ -59,7 +59,7 @@ export function ModuleShowcaseSection() {
               aria-pressed={active === mod}
               className={`shrink-0 rounded-full px-4 py-2.5 text-left text-sm font-medium whitespace-nowrap transition-colors lg:rounded-xl ${
                 active === mod
-                  ? "bg-teal text-white"
+                  ? "bg-teal text-overlay"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >
@@ -92,7 +92,7 @@ export function ModuleShowcaseSection() {
                       key={item}
                       className="flex items-center gap-2 text-sm text-gray-700"
                     >
-                      <span aria-hidden="true" className="text-teal">
+                      <span aria-hidden="true" className="text-teal-deep">
                         ✓
                       </span>
                       {item}

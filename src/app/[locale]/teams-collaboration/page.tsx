@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ProductPageLayout } from "@/components/product/ProductPageLayout";
+import { TeamsCollaborationMockup } from "@/components/sections/TeamsCollaborationMockup";
 import { buildPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -34,6 +35,7 @@ export default async function TeamsCollaborationPage({ params }: Props) {
       headline={t("headline")}
       supporting={t("supporting")}
       heroSlot="pages.teamsCollaboration.hero"
+      heroVisual={<TeamsCollaborationMockup />}
       capabilities={t.raw("capabilities")}
       connectsToHeadline={t("connectsToHeadline")}
       connectsTo={[

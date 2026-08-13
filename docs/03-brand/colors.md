@@ -1,6 +1,6 @@
 # Colors
 
-Both source documents specify the same palette directionally with slightly different cream hex values (PDF: `#FFF9F2`, brief: `#FFF8EF`). We use the PDF's value as primary since it's the more detailed of the two specs; treat these as **provisional tokens** until a final SoftHR brand guideline supplies exact values — swapping them later is a one-file change (`tailwind.config.ts` theme tokens), never hardcoded per-component.
+Both source documents specify the same palette directionally with slightly different cream hex values (PDF: `#FFF9F2`, brief: `#FFF8EF`). We use the PDF's value as primary since it's the more detailed of the two specs; treat these as **provisional tokens** until a final SoftHR brand guideline supplies exact values — swapping them later is a one-file change (`src/app/globals.css`'s `@theme inline` block — the site is on Tailwind v4, which has no `tailwind.config.ts`), never hardcoded per-component.
 
 ## Tokens
 
@@ -30,3 +30,21 @@ Every text/background pairing must meet WCAG AA contrast (4.5:1 body text, 3:1 l
 - `text-orange` on the dark teal Ask TiJa section is ~3.9:1 — passes for large text but fails the 4.5:1 threshold this small semibold eyebrow text needs. Fixed with a one-off lighter tint (`text-[#FBB768]`, ~5:1) rather than a new token, since it's the only dark-background use of orange text on the site.
 
 **`--color-orange-deep` (`#B8621F`)** — added for the hero headline's highlighted phrase (a UI-depth pass borrowing the "bold headline with one color-highlighted phrase" technique from reviewing competitor sites). Confirmed 2.13:1 for the base `--color-orange` against cream (fails even large-text 3:1), 4.18:1 for `--color-orange-deep` (passes large-text AA with margin). Reserve `--color-orange` for backgrounds/accents/small badges as before; use `--color-orange-deep` specifically when orange needs to be *text* on a light background at any size.
+
+## Dark theme
+
+The site ships a manual light/dark toggle (`ThemeProvider`/`ThemeToggle`, `src/components/theme/`) — **dark is the default** first-paint theme, light is opt-in. Implementation is CSS-variable-driven: the light palette above stays declared on `:root` unchanged (zero regression risk for anyone who switches to light), and a `.dark` class on `<html>` (toggled by `ThemeProvider`, applied server-side by default) overrides the same variable names in `globals.css`. Because every component already referenced tokens rather than raw hex (the "no raw hex codes" rule above), the vast majority of the site — `Section`'s tone classes, `Button`, every product page, forms, footer — inverts correctly with zero component changes.
+
+| Token | Dark value | Notes |
+|---|---|---|
+| `--color-cream` | `#0D0F10` | Page background |
+| `--color-white` | `#1A1B1D` | Card/surface background |
+| `--color-gray-50`…`--color-gray-900` | redesigned 10-step ramp | Same "50 ≈ near background, 900 ≈ near foreground" direction as light, values chosen for contrast against the new dark background |
+| `--color-orange-deep` | `#FBB768` | Mirror-image of the light-theme fix above — a *deeper* orange fails contrast on near-black the same way the base orange fails on cream. Reuses the amber already proven accessible for orange-on-teal text (`SectionLabel`'s `tone="dark"`) instead of a third one-off shade. |
+| `--color-teal-deep` | `#4FC3D4` | New token, not a dark-mode override of `--color-teal` — see below. |
+| `--color-sky`, `--color-orange`, `--color-teal` | unchanged | These stay fixed across both themes — see below. |
+
+**Two structural fixed-vs-adaptive splits, both discovered by auditing every existing use of white/teal before shipping this:**
+
+- **`--color-overlay` (fixed, always `#FFFFFF`, never redefined under `.dark`)** — a handful of surfaces are deliberately dark regardless of site theme (Ask TiJa's `tone="teal"` panel — "the one section permitted to break the cream/white canvas," its chat mockup, the Teams & Collaboration mockup, and `ScreenshotSlot`/`SectionLabel`'s `tone="dark"` branches) and rely on translucent white "frosted glass" overlays for internal contrast. Those needed a literal-white token independent of `--color-white`, which does change per theme. Paired with `--color-overlay-ink` (fixed `#1A1815`) for the rare case of dark text sitting on a literal-white chip inside one of those panels (e.g. Ask TiJa's mockup answer bubble).
+- **`--color-teal-deep` (adaptive: `#0B4F6C` in light — identical to `--color-teal` — brighter `#4FC3D4` in dark)** — the mirror-image problem. `--color-teal` itself stays fixed across themes because it's used as a *background* (`Button` primary, Ask TiJa's panel, active-pill/badge states), always paired with `--color-overlay` text — lightening it would break that pairing's contrast. But teal is *also* used as *foreground* text/borders/focus-rings on the page's own cream/white surfaces (eyebrows, hover links, focus outlines) — those needed to get brighter in dark mode the same way `--color-orange-deep` does, or they'd read as dark-navy-on-near-black. Every such foreground use across the codebase was swapped from `text-teal`/`border-teal`/`outline-teal` to the `-deep` variant; `bg-teal` usages were left alone.

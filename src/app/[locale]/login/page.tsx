@@ -37,7 +37,7 @@ export default async function LoginPage({ params }: Props) {
       <Section tone="cream" className="text-center">
         <Breadcrumbs items={[{ label: b("login"), href: "/login" }]} />
         <div className="mx-auto mt-8 flex max-w-md flex-col items-center gap-4">
-          <p className="text-sm font-semibold tracking-wide text-teal">
+          <p className="text-sm font-semibold tracking-wide text-teal-deep">
             {t("eyebrow")}
           </p>
           <h1 className="text-3xl font-semibold text-gray-900">

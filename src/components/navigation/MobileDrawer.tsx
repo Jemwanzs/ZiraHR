@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { Logo } from "@/components/ui/Logo";
 import { LanguageSelector } from "@/components/navigation/LanguageSelector";
+import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import {
   PLATFORM_GROUPS,
   SIMPLE_NAV_LINKS,
@@ -79,7 +80,10 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
     >
       <div className="flex items-center justify-between border-b border-gray-200 p-4">
         <Logo variant="mark" />
-        <LanguageSelector />
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <LanguageSelector />
+        </div>
         <button
           ref={closeButtonRef}
           type="button"

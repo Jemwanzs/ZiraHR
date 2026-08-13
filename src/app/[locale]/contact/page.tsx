@@ -29,7 +29,7 @@ export default async function ContactPage({ params }: Props) {
       <Section tone="cream" className="pb-16">
         <Breadcrumbs items={[{ label: b("contact"), href: "/contact" }]} />
         <div className="mx-auto mt-8 max-w-lg text-center">
-          <p className="text-sm font-semibold tracking-wide text-teal">
+          <p className="text-sm font-semibold tracking-wide text-teal-deep">
             {t("eyebrow")}
           </p>
           <h1 className="mt-3 text-3xl font-semibold text-gray-900 sm:text-4xl">

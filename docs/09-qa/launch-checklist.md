@@ -20,6 +20,7 @@ Pre-production-launch gate — run once, after all phases are otherwise complete
 - [ ] `robots.txt`/sitemap point at the real production domain. **Not done** — currently driven by the `NEXT_PUBLIC_SITE_URL` placeholder; this resolves automatically once that env var is set to the real domain in Vercel.
 
 ## Accessibility & SEO
+- [ ] Contrast verified in **both** light and dark theme (dark is the site default as of the theme-toggle addition — see `03-brand/colors.md`'s "Dark theme" section and `06-technical/performance.md`'s "light/dark theme toggle" entry). Every foreground/background pairing was audited by hand while building the toggle (two real bugs found and fixed: teal and orange text both needed brighter dark-mode-only variants), but this hasn't had an automated contrast-checker or screen-reader pass in dark mode specifically.
 - [x] `accessibility-checklist.md` — all items checked except a live screen-reader pass (needs a human).
 - [x] `seo-checklist.md` — all items checked except OG image rendering and a live Rich Results Test (both need a real public URL and real OG image assets, neither of which exist yet).
 - [ ] Structured data spot-checked live in Rich Results Test. **Not done** — needs a deployed public URL.

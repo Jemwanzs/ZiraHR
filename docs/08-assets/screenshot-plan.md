@@ -19,6 +19,7 @@ This means: swapping a placeholder for the real screenshot later is a **one-line
 | `flexibility.settings` | Flexibility | Settings-panel mockup with breadcrumb |
 | `approvals.chain` | Approvals | Horizontal chain diagram (built as SVG/HTML, not a screenshot at all — this one may never need a real screenshot) |
 | `askTija.interface` | Ask TiJa | Chat-style interface mockup, dark surface |
+| `pages.teamsCollaboration.hero` | Teams & Collaboration product page | **Superseded** — served by a real illustrated mockup (`TeamsCollaborationMockup`, channel list + chat thread) via `ProductPageLayout`'s `heroVisual` prop instead of a `ScreenshotSlot` placeholder, same precedent as `askTija.interface` above. The slot id/manifest entry still exists for reference but is no longer rendered on that page. |
 | `dashboards.*` (executive, hr, finance, my) | Dashboards gallery | Four dashboard card mockups |
 | `multiRegion.tree` | Multi-Region | Org-tree diagram (SVG, likely stays diagram not screenshot) |
 | module page hero/showcase slots | each `/*` product page | Per-page mockup matching that module |

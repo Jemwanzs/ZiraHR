@@ -72,7 +72,7 @@ export function HeroProductReel() {
             className="h-1 flex-1 overflow-hidden rounded-full bg-gray-200"
           >
             <span
-              className="block h-full origin-left rounded-full bg-teal"
+              className="block h-full origin-left rounded-full bg-teal-deep"
               style={
                 index < active || (index === active && shouldReduceMotion)
                   ? { transform: "scaleX(1)" }

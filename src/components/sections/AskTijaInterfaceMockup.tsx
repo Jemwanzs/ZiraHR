@@ -14,13 +14,13 @@ export async function AskTijaInterfaceMockup() {
   const t = await getTranslations("hero.reel.askTija");
 
   return (
-    <div className="relative flex aspect-video flex-col justify-end gap-3 overflow-hidden rounded-2xl border border-white/15 bg-white/5 p-5">
-      <span className="absolute top-3 right-3 rounded-full bg-white/10 px-2.5 py-1 text-[10px] font-semibold tracking-wide text-white/70 uppercase">
+    <div className="relative flex aspect-video flex-col justify-end gap-3 overflow-hidden rounded-2xl border border-overlay/15 bg-overlay/5 p-5">
+      <span className="absolute top-3 right-3 rounded-full bg-overlay/10 px-2.5 py-1 text-[10px] font-semibold tracking-wide text-overlay/70 uppercase">
         Preview
       </span>
 
       <div className="flex justify-end">
-        <p className="max-w-[75%] rounded-2xl rounded-br-sm bg-white/15 px-4 py-2.5 text-sm text-white">
+        <p className="max-w-[75%] rounded-2xl rounded-br-sm bg-overlay/15 px-4 py-2.5 text-sm text-overlay">
           {t("question")}
         </p>
       </div>
@@ -28,16 +28,16 @@ export async function AskTijaInterfaceMockup() {
       <div className="flex items-end gap-2">
         <span
           aria-hidden="true"
-          className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-orange text-xs font-bold text-white"
+          className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-orange text-xs font-bold text-overlay"
         >
           T
         </span>
-        <div className="max-w-[75%] rounded-2xl rounded-bl-sm bg-white px-4 py-2.5 text-sm text-gray-800 shadow-sm">
+        <div className="max-w-[75%] rounded-2xl rounded-bl-sm bg-overlay px-4 py-2.5 text-sm text-overlay-ink shadow-sm">
           {t("answer")}
         </div>
       </div>
 
-      <div className="flex items-center gap-2 pl-9 text-white/40">
+      <div className="flex items-center gap-2 pl-9 text-overlay/40">
         <TypingIndicator />
       </div>
     </div>

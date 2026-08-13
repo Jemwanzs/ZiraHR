@@ -40,7 +40,7 @@ export async function Breadcrumbs({ items }: { items: Crumb[] }) {
             {index === trail.length - 1 ? (
               <span className="font-medium text-gray-700">{crumb.label}</span>
             ) : (
-              <Link href={crumb.href} className="hover:text-teal">
+              <Link href={crumb.href} className="hover:text-teal-deep">
                 {crumb.label}
               </Link>
             )}

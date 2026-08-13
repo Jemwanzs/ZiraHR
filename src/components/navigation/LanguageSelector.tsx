@@ -74,7 +74,7 @@ export function LanguageSelector() {
         aria-expanded={open}
         aria-label={t("label")}
         onClick={() => setOpen((value) => !value)}
-        className="flex h-9 items-center gap-1.5 rounded-full border border-gray-200 px-2.5 text-xs font-semibold text-gray-700 transition-colors hover:border-gray-300 hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+        className="flex h-9 items-center gap-1.5 rounded-full border border-gray-200 px-2.5 text-xs font-semibold text-gray-700 transition-colors hover:border-gray-300 hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-deep"
       >
         <FlagIcon locale={locale} />
         <span>{locale.toUpperCase()}</span>
@@ -110,9 +110,9 @@ export function LanguageSelector() {
                   role="menuitemradio"
                   aria-checked={selected}
                   onClick={() => selectLocale(item)}
-                  className={`flex w-full items-center gap-2.5 rounded-xl px-2.5 py-2 text-left text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal ${
+                  className={`flex w-full items-center gap-2.5 rounded-xl px-2.5 py-2 text-left text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-deep ${
                     selected
-                      ? "bg-teal/10 text-teal"
+                      ? "bg-teal/10 text-teal-deep"
                       : "text-gray-700 hover:bg-gray-50"
                   }`}
                 >
@@ -120,7 +120,7 @@ export function LanguageSelector() {
                   <span className="flex-1 font-medium">{t(`names.${item}`)}</span>
                   <span className="text-xs text-gray-400">{item.toUpperCase()}</span>
                   {selected && (
-                    <svg viewBox="0 0 16 16" aria-hidden="true" className="h-3.5 w-3.5 shrink-0 text-teal">
+                    <svg viewBox="0 0 16 16" aria-hidden="true" className="h-3.5 w-3.5 shrink-0 text-teal-deep">
                       <path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   )}

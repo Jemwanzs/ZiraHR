@@ -69,7 +69,7 @@ export function RouteProgressBar() {
     <div
       aria-hidden="true"
       data-route-progress={active ? "active" : "idle"}
-      className={`pointer-events-none fixed inset-x-0 top-0 z-[70] h-0.5 bg-teal transition-[transform,opacity] duration-300 ease-out ${
+      className={`pointer-events-none fixed inset-x-0 top-0 z-[70] h-0.5 bg-teal-deep transition-[transform,opacity] duration-300 ease-out ${
         active ? "origin-left scale-x-100 opacity-100" : "origin-left scale-x-0 opacity-0"
       }`}
       style={{ transitionDuration: active ? "600ms" : "200ms" }}

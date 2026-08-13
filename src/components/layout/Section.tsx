@@ -13,7 +13,11 @@ type SectionProps = {
 const toneClasses: Record<NonNullable<SectionProps["tone"]>, string> = {
   cream: "bg-cream text-gray-900",
   white: "bg-white text-gray-900",
-  teal: "bg-teal text-white",
+  // teal is a fixed dark accent (unchanged across the light/dark site
+  // theme — see globals.css), so its text uses the theme-independent
+  // --color-overlay token rather than --color-white, which does change
+  // per theme.
+  teal: "bg-teal text-overlay",
 };
 
 /**

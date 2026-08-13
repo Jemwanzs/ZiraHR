@@ -17,9 +17,9 @@ type SectionLabelProps = {
 export function SectionLabel({ index, children, tone = "light" }: SectionLabelProps) {
   return (
     <p
-      className={`text-sm font-semibold tracking-wide ${tone === "dark" ? "text-[#FBB768]" : "text-teal"}`}
+      className={`text-sm font-semibold tracking-wide ${tone === "dark" ? "text-[#FBB768]" : "text-teal-deep"}`}
     >
-      <span className={tone === "dark" ? "text-white/40" : "text-gray-400"}>
+      <span className={tone === "dark" ? "text-overlay/40" : "text-gray-400"}>
         {String(index).padStart(2, "0")} ·{" "}
       </span>
       {children}
