@@ -617,10 +617,7 @@
     "login": {
       "eyebrow": "LOGIN",
       "headline": "Log in to SoftHR.",
-      "supporting": "Access your organization's SoftHR workspace.",
-      "continue": "Continue to Login",
-      "noAccount": "Don't have an account yet?",
-      "noAccountAction": "Request a demo instead"
+      "supporting": "Direct login isn't open yet — organizations get access during onboarding. Request a demo and our team will set up your workspace."
     },
     "resources": {
       "eyebrow": "RESOURCES",
@@ -750,9 +747,9 @@
         }
       },
       "step4": {
-        "title": "Welcome to SoftHR.",
-        "body": "Your details are saved. Continue to finish setting up your organization.",
-        "continue": "Continue to SoftHR"
+        "title": "Thanks for signing up!",
+        "body": "We've received your details — our team will reach out to help set up your organization. Want to see SoftHR in action first?",
+        "continue": "Request a Demo"
       },
       "back": "Back",
       "continue": "Continue"

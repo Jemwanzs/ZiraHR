@@ -27,7 +27,7 @@
 | `/pricing` | en, fr, sw | Server page |
 | `/request-demo` | en, fr, sw | Server page + client form |
 | `/signup` | en, fr, sw | Server page + client wizard |
-| `/login` | en, fr, sw | Thin redirect to the existing HR app (PayeKenya, `NEXT_PUBLIC_APP_URL`) |
+| `/login` | en, fr, sw | No real HRMIS app to redirect to yet — explains that, CTAs to Request a Demo (was a redirect to PayeKenya, an incorrect placeholder app; removed 2026-08-15) |
 | `/resources` | en, fr, sw | Server page (index only at launch; `/resources/[category]/[slug]` added when content exists) |
 | `/company` | en, fr, sw | Server page |
 | `/contact` | en, fr, sw | Server page + client form |

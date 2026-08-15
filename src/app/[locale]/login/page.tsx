@@ -4,8 +4,6 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { Button } from "@/components/ui/Button";
 import { buildPageMetadata } from "@/lib/seo";
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://www.payekenya.xyz/";
-
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props) {
@@ -20,16 +18,20 @@ export async function generateMetadata({ params }: Props) {
 }
 
 /**
- * Thin page linking out to the existing HR app used for login (currently
- * PayeKenya, https://www.payekenya.xyz/ — see NEXT_PUBLIC_APP_URL) — auth
- * lives there, not on this marketing site
- * (docs/06-technical/component-structure.md).
+ * No real customer-facing HRMIS app exists to link out to yet (the
+ * previous version linked to PayeKenya, an unrelated placeholder that
+ * shouldn't be presented as SoftHR's login) — see
+ * docs/06-technical/component-structure.md. Until a real app URL exists,
+ * this page is honest about that instead of linking somewhere wrong:
+ * organizations get access during onboarding, so the only real next step
+ * from here is requesting a demo.
  */
 export default async function LoginPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
   const t = await getTranslations("pages.login");
+  const tCta = await getTranslations("cta");
   const b = await getTranslations("breadcrumbs");
 
   return (
@@ -44,16 +46,9 @@ export default async function LoginPage({ params }: Props) {
             {t("headline")}
           </h1>
           <p className="text-gray-600">{t("supporting")}</p>
-          <Button href={APP_URL} external showArrow className="mt-2">
-            {t("continue")}
+          <Button href="/request-demo" showArrow className="mt-2">
+            {tCta("requestDemo")}
           </Button>
-
-          <div className="mt-6 flex flex-col items-center gap-2 border-t border-gray-200 pt-6">
-            <p className="text-sm text-gray-500">{t("noAccount")}</p>
-            <Button href="/request-demo" variant="secondary">
-              {t("noAccountAction")}
-            </Button>
-          </div>
         </div>
       </Section>
     </main>

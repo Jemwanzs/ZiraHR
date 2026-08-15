@@ -20,7 +20,6 @@ SLACK_WEBHOOK_DEMO_REQUESTS
 SLACK_WEBHOOK_SIGNUP
 SLACK_WEBHOOK_CONTACT
 NEXT_PUBLIC_SITE_URL        (canonical production URL, used for metadataBase/sitemap — non-secret)
-NEXT_PUBLIC_APP_URL         (the existing HR app used for Login/Signup redirects — currently PayeKenya, https://www.payekenya.xyz/ — non-secret)
 GOOGLE_SITE_VERIFICATION    (Search Console ownership-verification meta tag content — non-secret, optional, only rendered if set)
 ```
 
@@ -35,3 +34,5 @@ Before a Vercel project existed, "deployment-ready" was verified locally: `npm r
 A Vercel project is live in production at `https://softhr.vercel.app` (`NEXT_PUBLIC_SITE_URL` set accordingly there — confirmed live 2026-08-13, and correctly serving `robots.txt`/`sitemap.xml`/canonical/OG tags against that URL). No custom domain has been connected yet, though — this is still the Vercel-assigned subdomain, not a domain you own. If/when you connect a real domain, update `NEXT_PUBLIC_SITE_URL` in Vercel and re-verify Google Search Console against the new domain (see `09-qa/launch-checklist.md`'s Search Console entry for the tradeoffs of registering the `.vercel.app` URL now vs. waiting).
 
 Note: an earlier, now-dead Vercel deployment alias (`zira-hr-jms.vercel.app`, 404s as of 2026-08-13) was hardcoded as the fallback default throughout the codebase and has been corrected to `softhr.vercel.app` everywhere it appeared (`src/lib/seo.ts`, `layout.tsx`, `robots.ts`, `sitemap.ts`, `StructuredData.tsx`, `Breadcrumbs.tsx`, `.env.example`, and this doc). That fallback is only used if `NEXT_PUBLIC_SITE_URL` isn't set — production already has it set correctly, so this was a docs/local-dev-default correction, not a production fix.
+
+`NEXT_PUBLIC_APP_URL` (2026-08-15, removed): previously pointed `/login` and post-signup redirects at PayeKenya, an unrelated placeholder app that was never actually SoftHR's login — client flagged it as wrong. No real HRMIS app exists to link to yet, so rather than guess at another placeholder, the env var and every reference to it were removed; `/login` and the post-signup success state now both explain that and route to Request a Demo instead. Re-introduce this env var (and wire it back into `login/page.tsx` / `SignupWizard.tsx`) once a real app URL exists.

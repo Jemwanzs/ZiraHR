@@ -617,10 +617,7 @@
     "login": {
       "eyebrow": "KUINGIA",
       "headline": "Ingia kwenye SoftHR.",
-      "supporting": "Fikia nafasi ya kazi ya SoftHR ya shirika lako.",
-      "continue": "Endelea Kuingia",
-      "noAccount": "Huna akaunti bado?",
-      "noAccountAction": "Omba onyesho badala yake"
+      "supporting": "Kuingia moja kwa moja bado hakujafunguliwa — mashirika hupata ufikiaji wakati wa uanzishaji. Omba onyesho na timu yetu itasanidi nafasi yako ya kazi."
     },
     "resources": {
       "eyebrow": "RASILIMALI",
@@ -750,9 +747,9 @@
         }
       },
       "step4": {
-        "title": "Karibu SoftHR.",
-        "body": "Maelezo yako yamehifadhiwa. Endelea kumaliza kusanidi shirika lako.",
-        "continue": "Endelea kwenda SoftHR"
+        "title": "Asante kwa kujisajili!",
+        "body": "Tumepokea maelezo yako — timu yetu itawasiliana nawe kusaidia kusanidi shirika lako. Unataka kuona SoftHR ikifanya kazi kwanza?",
+        "continue": "Omba Onyesho"
       },
       "back": "Rudi",
       "continue": "Endelea"

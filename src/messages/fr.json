@@ -617,10 +617,7 @@
     "login": {
       "eyebrow": "CONNEXION",
       "headline": "Connectez-vous à SoftHR.",
-      "supporting": "Accédez à l'espace de travail SoftHR de votre organisation.",
-      "continue": "Continuer vers la connexion",
-      "noAccount": "Vous n'avez pas encore de compte ?",
-      "noAccountAction": "Demandez plutôt une démo"
+      "supporting": "La connexion directe n'est pas encore ouverte — les organisations obtiennent un accès lors de leur intégration. Demandez une démo et notre équipe configurera votre espace de travail."
     },
     "resources": {
       "eyebrow": "RESSOURCES",
@@ -750,9 +747,9 @@
         }
       },
       "step4": {
-        "title": "Bienvenue chez SoftHR.",
-        "body": "Vos informations sont enregistrées. Continuez pour terminer la configuration de votre organisation.",
-        "continue": "Continuer vers SoftHR"
+        "title": "Merci pour votre inscription !",
+        "body": "Nous avons bien reçu vos informations — notre équipe vous contactera pour configurer votre organisation. Vous voulez voir SoftHR en action d'abord ?",
+        "continue": "Demander une démo"
       },
       "back": "Retour",
       "continue": "Continuer"

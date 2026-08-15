@@ -11,7 +11,7 @@ A code-level audit pass (Phase 11, client-requested) of the actual codebase — 
 
 ## Verified as already correct
 
-- **Secrets never reach the client**: only two `NEXT_PUBLIC_*` variables exist (`NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_APP_URL`), both non-secret URLs. The Supabase service-role key is read only in `src/lib/supabase/server.ts`, which imports `server-only` — any accidental import from a Client Component fails the build rather than shipping the key.
+- **Secrets never reach the client**: only one `NEXT_PUBLIC_*` variable exists (`NEXT_PUBLIC_SITE_URL`), a non-secret URL. The Supabase service-role key is read only in `src/lib/supabase/server.ts`, which imports `server-only` — any accidental import from a Client Component fails the build rather than shipping the key.
 - **No injection surface in Supabase calls**: every write is `.insert()`/`.upsert()` with object literals through the Supabase JS client (parameterized under the hood) — no raw SQL string-building anywhere in the codebase.
 - **RLS is fully locked**: all four Supabase tables have RLS enabled with zero policies (verified by re-reading the actual migration SQL you ran, not just the intent) — nothing is readable or writable from the browser regardless of key exposure.
 - **Slack payloads are JSON-safe by construction**: notification bodies are built as JS objects passed to `JSON.stringify()` in the fetch call, not string concatenation, so there's no message-injection vector from user-supplied names/text.

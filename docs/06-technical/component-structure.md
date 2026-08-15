@@ -25,7 +25,7 @@
       /pricing/page.tsx
       /request-demo/page.tsx
       /signup/page.tsx
-      /login/page.tsx        — thin redirect to the existing HR app login (PayeKenya)
+      /login/page.tsx        — no real HRMIS app to redirect to yet; explains that and CTAs to Request a Demo instead (was a thin redirect to an incorrect placeholder app, PayeKenya — removed 2026-08-15)
       /resources/page.tsx
       /company/page.tsx
       /contact/page.tsx

@@ -36,8 +36,6 @@ const initialState: FormState = {
   departmentCount: "",
 };
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://www.payekenya.xyz/";
-
 function fieldErrorsFrom(error: { issues: { path: PropertyKey[]; message: string }[] }) {
   const fieldErrors: Record<string, string> = {};
   for (const issue of error.issues) {
@@ -287,7 +285,7 @@ export function SignupWizard() {
             {t("step4.title")}
           </h1>
           <p className="text-gray-600">{t("step4.body")}</p>
-          <Button href={APP_URL} external showArrow>
+          <Button href="/request-demo" showArrow>
             {t("step4.continue")}
           </Button>
         </div>
