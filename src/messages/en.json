@@ -78,7 +78,7 @@
         "dashboards": "Dashboards",
         "analytics": "Analytics",
         "reports": "Reports",
-        "askTija": "Ask TiJa AI"
+        "askTija": "Ask JM AI"
       }
     },
     "solutionsMenu": {
@@ -92,12 +92,13 @@
   "hero": {
     "announcementBanner": {
       "badge": "New",
-      "text": "Ask TiJa, your AI HR assistant",
+      "text": "Ask JM, your AI HR assistant",
       "linkLabel": "Learn more"
     },
     "eyebrow": "THE HR PLATFORM BUILT AROUND YOUR PEOPLE",
     "headline": "One place to run your <icon></icon> <hl>entire people operation</hl>.",
     "supporting": "Recruit. Onboard. Manage. Pay. Develop. Perform. SoftHR connects your entire employee journey.",
+    "satellitePreview": "Preview — illustrated placeholders until real product screenshots are ready.",
     "reel": {
       "payroll": {
         "label": "Payroll",
@@ -120,7 +121,7 @@
         }
       },
       "askTija": {
-        "label": "Ask TiJa",
+        "label": "Ask JM",
         "question": "Who has contracts expiring this month?",
         "answer": "3 employees — Sales, Ops."
       }
@@ -140,7 +141,7 @@
         "teams": "Teams",
         "ess": "ESS",
         "analytics": "Analytics",
-        "askTija": "Ask TiJa"
+        "askTija": "Ask JM"
       },
       "solutions": {
         "title": "Solutions",
@@ -326,7 +327,7 @@
   },
   "askTija": {
     "eyebrow": "WORKFORCE INTELLIGENCE",
-    "headline": "Meet TiJa. Ask your workforce.",
+    "headline": "Meet JM. Ask your workforce.",
     "positioning": "Workforce intelligence inside SoftHR.",
     "prompts": {
       "contractsExpiring": "Who has contracts expiring this month?",
@@ -406,7 +407,7 @@
       "requestLeave": "Request Leave",
       "approveRequest": "Approve Request",
       "openEmployeeProfile": "Open Employee Profile",
-      "askTija": "Ask TiJa",
+      "askTija": "Ask JM",
       "viewDashboard": "View Dashboard"
     }
   },
@@ -425,7 +426,7 @@
     "employeeSelfService": "Employee Self-Service",
     "teamsCollaboration": "Teams & Collaboration",
     "analytics": "Analytics",
-    "askTija": "Ask TiJa",
+    "askTija": "Ask JM",
     "hrSoftwareKenya": "HR Software Kenya",
     "payrollSoftwareKenya": "Payroll Software Kenya",
     "hrmisKenya": "HRMIS Kenya",
@@ -537,11 +538,11 @@
       "ctaHeadline": "See your organization clearly, from any role."
     },
     "askTija": {
-      "eyebrow": "ASK TiJa",
-      "headline": "Meet TiJa. Ask your workforce.",
+      "eyebrow": "ASK JM",
+      "headline": "Meet JM. Ask your workforce.",
       "supporting": "Workforce intelligence inside SoftHR — not a bolted-on chatbot.",
       "capabilities": ["Contract expiry alerts", "Pending approvals, on request", "Payroll variance explanations", "Missing data flags"],
-      "connectsToHeadline": "TiJa answers from the same record every module shares.",
+      "connectsToHeadline": "JM answers from the same record every module shares.",
       "ctaHeadline": "Ask your workforce a question. Get a real answer."
     },
     "hrSoftwareKenya": {
@@ -604,7 +605,7 @@
           "teamsCollaboration": { "label": "Teams & Collaboration", "rate": 30 },
           "employeeSelfService": { "label": "Employee Self-Service", "rate": 30 },
           "analytics": { "label": "Analytics", "rate": 40 },
-          "askTija": { "label": "Ask TiJa", "rate": 50 }
+          "askTija": { "label": "Ask JM", "rate": 50 }
         }
       }
     },
@@ -617,7 +618,9 @@
       "eyebrow": "LOGIN",
       "headline": "Log in to SoftHR.",
       "supporting": "Access your organization's SoftHR workspace.",
-      "continue": "Continue to Login"
+      "continue": "Continue to Login",
+      "noAccount": "Don't have an account yet?",
+      "noAccountAction": "Request a demo instead"
     },
     "resources": {
       "eyebrow": "RESOURCES",

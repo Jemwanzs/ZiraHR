@@ -78,7 +78,7 @@
         "dashboards": "Dashibodi",
         "analytics": "Uchambuzi wa Takwimu",
         "reports": "Ripoti",
-        "askTija": "Uliza TiJa AI"
+        "askTija": "Uliza JM AI"
       }
     },
     "solutionsMenu": {
@@ -92,12 +92,13 @@
   "hero": {
     "announcementBanner": {
       "badge": "Mpya",
-      "text": "Ask TiJa, msaidizi wako wa AI wa rasilimali watu",
+      "text": "Uliza JM, msaidizi wako wa AI wa rasilimali watu",
       "linkLabel": "Jifunze zaidi"
     },
     "eyebrow": "JUKWAA LA RASILIMALI WATU LILILOUNDWA KWA AJILI YA WATU WAKO",
     "headline": "Mahali pamoja pa kuendesha <icon></icon> <hl>shughuli zako zote za rasilimali watu</hl>.",
     "supporting": "Ajiri. Anzisha. Simamia. Lipa. Endeleza. Tathmini. SoftHR inaunganisha safari nzima ya mfanyakazi wako.",
+    "satellitePreview": "Muhtasari — michoro ya muda hadi picha halisi za bidhaa ziwe tayari.",
     "reel": {
       "payroll": {
         "label": "Malipo",
@@ -120,7 +121,7 @@
         }
       },
       "askTija": {
-        "label": "Uliza TiJa",
+        "label": "Uliza JM",
         "question": "Ni wafanyakazi gani wenye mikataba inayomalizika mwezi huu?",
         "answer": "Wafanyakazi 3 — Mauzo, Uendeshaji."
       }
@@ -140,7 +141,7 @@
         "teams": "Timu",
         "ess": "ESS",
         "analytics": "Uchambuzi",
-        "askTija": "Uliza TiJa"
+        "askTija": "Uliza JM"
       },
       "solutions": {
         "title": "Suluhu",
@@ -326,7 +327,7 @@
   },
   "askTija": {
     "eyebrow": "UCHAMBUZI WA NGUVU KAZI",
-    "headline": "Mtambue TiJa. Uliza kuhusu nguvu kazi yako.",
+    "headline": "Mtambue JM. Uliza kuhusu nguvu kazi yako.",
     "positioning": "Uchambuzi wa nguvu kazi ndani ya SoftHR.",
     "prompts": {
       "contractsExpiring": "Ni wafanyakazi gani wenye mikataba inayomalizika mwezi huu?",
@@ -406,7 +407,7 @@
       "requestLeave": "Omba Likizo",
       "approveRequest": "Idhinisha Ombi",
       "openEmployeeProfile": "Fungua Wasifu wa Mfanyakazi",
-      "askTija": "Uliza TiJa",
+      "askTija": "Uliza JM",
       "viewDashboard": "Angalia Dashibodi"
     }
   },
@@ -425,7 +426,7 @@
     "employeeSelfService": "Huduma Binafsi ya Mfanyakazi",
     "teamsCollaboration": "Timu na Ushirikiano",
     "analytics": "Uchambuzi",
-    "askTija": "Uliza TiJa",
+    "askTija": "Uliza JM",
     "hrSoftwareKenya": "Programu ya Rasilimali Watu Kenya",
     "payrollSoftwareKenya": "Programu ya Malipo Kenya",
     "hrmisKenya": "HRMIS Kenya",
@@ -537,11 +538,11 @@
       "ctaHeadline": "Ona shirika lako kwa uwazi, kutoka jukumu lolote."
     },
     "askTija": {
-      "eyebrow": "ULIZA TiJa",
-      "headline": "Mtambue TiJa. Uliza kuhusu nguvu kazi yako.",
+      "eyebrow": "ULIZA JM",
+      "headline": "Mtambue JM. Uliza kuhusu nguvu kazi yako.",
       "supporting": "Uchambuzi wa nguvu kazi ndani ya SoftHR — si roboti ya mazungumzo iliyoongezwa baadaye.",
       "capabilities": ["Arifa za kumalizika kwa mikataba", "Idhini zinazosubiri, kwa ombi", "Maelezo ya tofauti za malipo", "Alama za data zinazokosekana"],
-      "connectsToHeadline": "TiJa anajibu kutoka kumbukumbu ile ile inayoshirikiwa na kila moduli.",
+      "connectsToHeadline": "JM anajibu kutoka kumbukumbu ile ile inayoshirikiwa na kila moduli.",
       "ctaHeadline": "Uliza swali kuhusu nguvu kazi yako. Pata jibu la kweli."
     },
     "hrSoftwareKenya": {
@@ -604,7 +605,7 @@
           "teamsCollaboration": { "label": "Timu na Ushirikiano", "rate": 30 },
           "employeeSelfService": { "label": "Huduma Binafsi ya Mfanyakazi", "rate": 30 },
           "analytics": { "label": "Uchambuzi", "rate": 40 },
-          "askTija": { "label": "Uliza TiJa", "rate": 50 }
+          "askTija": { "label": "Uliza JM", "rate": 50 }
         }
       }
     },
@@ -617,7 +618,9 @@
       "eyebrow": "KUINGIA",
       "headline": "Ingia kwenye SoftHR.",
       "supporting": "Fikia nafasi ya kazi ya SoftHR ya shirika lako.",
-      "continue": "Endelea Kuingia"
+      "continue": "Endelea Kuingia",
+      "noAccount": "Huna akaunti bado?",
+      "noAccountAction": "Omba onyesho badala yake"
     },
     "resources": {
       "eyebrow": "RASILIMALI",

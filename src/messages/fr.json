@@ -78,7 +78,7 @@
         "dashboards": "Tableaux de bord",
         "analytics": "Analytique",
         "reports": "Rapports",
-        "askTija": "Demander à TiJa (IA)"
+        "askTija": "Demander à JM (IA)"
       }
     },
     "solutionsMenu": {
@@ -92,12 +92,13 @@
   "hero": {
     "announcementBanner": {
       "badge": "Nouveau",
-      "text": "Ask TiJa, votre assistant RH intelligent",
+      "text": "Demander à JM, votre assistant RH intelligent",
       "linkLabel": "En savoir plus"
     },
     "eyebrow": "LA PLATEFORME RH CONÇUE AUTOUR DE VOS COLLABORATEURS",
     "headline": "Un seul endroit pour gérer <icon></icon> <hl>toutes vos opérations RH</hl>.",
     "supporting": "Recrutez. Intégrez. Gérez. Payez. Développez. Évaluez. SoftHR connecte tout le parcours de vos employés.",
+    "satellitePreview": "Aperçu — illustrations provisoires en attendant les vraies captures d'écran du produit.",
     "reel": {
       "payroll": {
         "label": "Paie",
@@ -120,7 +121,7 @@
         }
       },
       "askTija": {
-        "label": "Demander à TiJa",
+        "label": "Demander à JM",
         "question": "Quels employés ont des contrats qui expirent ce mois-ci ?",
         "answer": "3 employés — Ventes, Opérations."
       }
@@ -140,7 +141,7 @@
         "teams": "Équipes",
         "ess": "ESS",
         "analytics": "Analytique",
-        "askTija": "Demander à TiJa"
+        "askTija": "Demander à JM"
       },
       "solutions": {
         "title": "Solutions",
@@ -326,7 +327,7 @@
   },
   "askTija": {
     "eyebrow": "INTELLIGENCE DES EFFECTIFS",
-    "headline": "Rencontrez TiJa. Posez vos questions sur vos effectifs.",
+    "headline": "Rencontrez JM. Posez vos questions sur vos effectifs.",
     "positioning": "L'intelligence des effectifs, intégrée à SoftHR.",
     "prompts": {
       "contractsExpiring": "Quels employés ont des contrats qui expirent ce mois-ci ?",
@@ -406,7 +407,7 @@
       "requestLeave": "Demander un congé",
       "approveRequest": "Approuver la demande",
       "openEmployeeProfile": "Ouvrir le profil employé",
-      "askTija": "Demander à TiJa",
+      "askTija": "Demander à JM",
       "viewDashboard": "Voir le tableau de bord"
     }
   },
@@ -425,7 +426,7 @@
     "employeeSelfService": "Libre-service employé",
     "teamsCollaboration": "Équipes et collaboration",
     "analytics": "Analytique",
-    "askTija": "Demander à TiJa",
+    "askTija": "Demander à JM",
     "hrSoftwareKenya": "Logiciel RH Kenya",
     "payrollSoftwareKenya": "Logiciel de paie Kenya",
     "hrmisKenya": "SIRH Kenya",
@@ -537,11 +538,11 @@
       "ctaHeadline": "Voyez votre organisation clairement, depuis n'importe quel rôle."
     },
     "askTija": {
-      "eyebrow": "DEMANDER À TiJa",
-      "headline": "Rencontrez TiJa. Posez vos questions sur vos effectifs.",
+      "eyebrow": "DEMANDER À JM",
+      "headline": "Rencontrez JM. Posez vos questions sur vos effectifs.",
       "supporting": "L'intelligence des effectifs intégrée à SoftHR — pas un chatbot ajouté après coup.",
       "capabilities": ["Alertes d'expiration de contrat", "Approbations en attente, sur demande", "Explications des écarts de paie", "Signalements de données manquantes"],
-      "connectsToHeadline": "TiJa répond à partir du même dossier que partage chaque module.",
+      "connectsToHeadline": "JM répond à partir du même dossier que partage chaque module.",
       "ctaHeadline": "Posez une question sur vos effectifs. Obtenez une vraie réponse."
     },
     "hrSoftwareKenya": {
@@ -604,7 +605,7 @@
           "teamsCollaboration": { "label": "Équipes et collaboration", "rate": 30 },
           "employeeSelfService": { "label": "Libre-service employé", "rate": 30 },
           "analytics": { "label": "Analytique", "rate": 40 },
-          "askTija": { "label": "Demander à TiJa", "rate": 50 }
+          "askTija": { "label": "Demander à JM", "rate": 50 }
         }
       }
     },
@@ -617,7 +618,9 @@
       "eyebrow": "CONNEXION",
       "headline": "Connectez-vous à SoftHR.",
       "supporting": "Accédez à l'espace de travail SoftHR de votre organisation.",
-      "continue": "Continuer vers la connexion"
+      "continue": "Continuer vers la connexion",
+      "noAccount": "Vous n'avez pas encore de compte ?",
+      "noAccountAction": "Demandez plutôt une démo"
     },
     "resources": {
       "eyebrow": "RESSOURCES",

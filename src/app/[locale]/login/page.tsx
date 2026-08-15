@@ -47,6 +47,13 @@ export default async function LoginPage({ params }: Props) {
           <Button href={APP_URL} external showArrow className="mt-2">
             {t("continue")}
           </Button>
+
+          <div className="mt-6 flex flex-col items-center gap-2 border-t border-gray-200 pt-6">
+            <p className="text-sm text-gray-500">{t("noAccount")}</p>
+            <Button href="/request-demo" variant="secondary">
+              {t("noAccountAction")}
+            </Button>
+          </div>
         </div>
       </Section>
     </main>

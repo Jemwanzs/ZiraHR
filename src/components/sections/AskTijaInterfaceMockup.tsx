@@ -30,7 +30,7 @@ export async function AskTijaInterfaceMockup() {
           aria-hidden="true"
           className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-orange text-xs font-bold text-overlay"
         >
-          T
+          J
         </span>
         <div className="max-w-[75%] rounded-2xl rounded-bl-sm bg-overlay px-4 py-2.5 text-sm text-overlay-ink shadow-sm">
           {t("answer")}

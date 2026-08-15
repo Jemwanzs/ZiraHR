@@ -1,9 +1,10 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/layout/Section";
 import { Button } from "@/components/ui/Button";
-import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
-import type { PlaceholderIconName } from "@/components/media/PlaceholderIcon";
+import { PlaceholderIcon, type PlaceholderIconName } from "@/components/media/PlaceholderIcon";
+import { resolveMediaSlot } from "@/lib/media-manifest";
 import { HeroProductReel } from "@/components/sections/HeroProductReel";
 import { AngledCardStack } from "@/components/sections/AngledCardStack";
 
@@ -29,15 +30,72 @@ function HeroSparkIcon() {
   );
 }
 
-const SATELLITES: Array<{ slot: string; label: string; icon: PlaceholderIconName }> = [
-  { slot: "hero.satellite.profile", label: "Employee Profile", icon: "directory" },
-  { slot: "hero.satellite.leave", label: "Leave Approval", icon: "leave" },
-  { slot: "hero.satellite.payroll", label: "Payroll", icon: "payslip" },
-  { slot: "hero.satellite.attendance", label: "Attendance", icon: "attendance" },
-  { slot: "hero.satellite.performance", label: "Performance", icon: "performance" },
-  { slot: "hero.satellite.recruitment", label: "Recruitment", icon: "recruitment" },
-  { slot: "hero.satellite.askTija", label: "Ask TiJa", icon: "askTija" },
+type SatelliteTone = "teal" | "orange" | "sky" | "surface";
+
+const SATELLITES: Array<{
+  slot: string;
+  label: string;
+  icon: PlaceholderIconName;
+  tone: SatelliteTone;
+}> = [
+  { slot: "hero.satellite.profile", label: "Employee Profile", icon: "directory", tone: "teal" },
+  { slot: "hero.satellite.leave", label: "Leave Approval", icon: "leave", tone: "orange" },
+  { slot: "hero.satellite.payroll", label: "Payroll", icon: "payslip", tone: "sky" },
+  { slot: "hero.satellite.attendance", label: "Attendance", icon: "attendance", tone: "surface" },
+  { slot: "hero.satellite.performance", label: "Performance", icon: "performance", tone: "teal" },
+  { slot: "hero.satellite.recruitment", label: "Recruitment", icon: "recruitment", tone: "orange" },
+  { slot: "hero.satellite.askTija", label: "Ask JM", icon: "askTija", tone: "sky" },
 ];
+
+const satelliteToneClasses: Record<SatelliteTone, string> = {
+  teal: "bg-teal text-overlay",
+  orange: "bg-orange text-overlay",
+  sky: "bg-sky text-overlay",
+  surface: "border border-gray-200 bg-white text-teal-deep",
+};
+
+/**
+ * Richer per-card treatment for the hero's module grid — was a wall of
+ * identical dashed-border ScreenshotSlot placeholders (one repeated
+ * "Preview" badge each), which read as flat/monotonous rather than a
+ * showcase. Rotates the same accent tones as AngledCardStack, bigger icons,
+ * no fabricated screenshot — one shared "Preview" caption below the whole
+ * grid replaces the seven repeated per-card badges. Still checks the real
+ * media manifest first (see docs/08-assets/screenshot-plan.md's promotion
+ * path) so a real screenshot still overrides this the moment one exists.
+ */
+function SatelliteCard({
+  slot,
+  label,
+  icon,
+  tone,
+}: {
+  slot: string;
+  label: string;
+  icon: PlaceholderIconName;
+  tone: SatelliteTone;
+}) {
+  const src = resolveMediaSlot(slot);
+
+  if (src) {
+    return (
+      <div className="relative aspect-square overflow-hidden rounded-2xl bg-white shadow-sm">
+        <Image src={src} alt={label} fill className="object-cover" />
+      </div>
+    );
+  }
+
+  return (
+    <div
+      role="img"
+      aria-label={`${label} — product preview coming soon`}
+      className={`flex aspect-square flex-col items-center justify-center gap-2 rounded-2xl p-2 shadow-sm ${satelliteToneClasses[tone]}`}
+    >
+      <PlaceholderIcon name={icon} className="h-9 w-9" />
+      <p className="px-1 text-center text-xs font-semibold">{label}</p>
+    </div>
+  );
+}
 
 /**
  * scope §4 / docs/02-ux/homepage-scope.md beat 01–02: not a static dashboard
@@ -130,16 +188,18 @@ export function HeroSection() {
                 className="animate-[hero-satellite-in_0.5s_ease-out_both] transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                 style={{ animationDelay: `${0.5 + index * 0.07}s` }}
               >
-                <ScreenshotSlot
+                <SatelliteCard
                   slot={item.slot}
-                  alt={item.label}
                   label={item.label}
-                  aspect="square"
                   icon={item.icon}
+                  tone={item.tone}
                 />
               </div>
             ))}
           </div>
+          <p className="mt-4 text-center text-xs font-medium text-gray-400">
+            {t("satellitePreview")}
+          </p>
         </div>
       </div>
     </Section>
