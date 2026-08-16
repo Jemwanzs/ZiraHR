@@ -12,6 +12,7 @@ import { OrganizationStructuredData } from "@/components/seo/StructuredData";
 import { MotionProvider } from "@/components/motion/MotionProvider";
 import { ThemeProvider, NO_FLASH_THEME_SCRIPT } from "@/components/theme/ThemeProvider";
 import { CookieConsentBanner } from "@/components/cookie-consent/CookieConsentBanner";
+import { InspectGuard } from "@/components/misc/InspectGuard";
 import "../globals.css";
 
 const outfit = Outfit({
@@ -113,6 +114,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       </head>
       <body className="min-h-full flex flex-col bg-cream text-gray-900 antialiased">
         <OrganizationStructuredData />
+        <InspectGuard />
         <NextIntlClientProvider>
           <ThemeProvider>
             <MotionProvider>
