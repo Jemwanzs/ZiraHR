@@ -20,6 +20,9 @@ Lead-generation only, per the brief: demo requests, contact/enquiries, newslette
 
 `id`, `first_name text`, `last_name text`, `work_email text`, `phone text`, `company_name text`, `country text`, `industry text`, `employee_count text`, `branch_count text`, `department_count text`, `status text default 'new'`, `created_at timestamptz default now()`
 
+### `rate_limits`
+Backs server-side rate limiting on `/api/forms/*` — see `docs/06-technical/security.md`. `key text` (`${route}:${clientIp}`), `window_start timestamptz`, `count integer`, primary key `(key, window_start)`. Written/read only via the `check_rate_limit()` Postgres function (`security definer`), called through `supabase.rpc()` from `src/lib/security/rateLimit.ts` — never queried directly by app code.
+
 ## Security model
 
 **Row Level Security is enabled on all three tables with zero policies granted to `anon`/`authenticated` roles** — nothing is readable or writable directly from the browser. All inserts happen server-side, inside Next.js Route Handlers, using the Supabase **service role key** (server-only environment variable, never `NEXT_PUBLIC_*`). This is simpler and safer than writing an "insert-only" RLS policy for anonymous users, which would still be directly abusable (spam, scraping) without a CAPTCHA layer we've deliberately deferred.

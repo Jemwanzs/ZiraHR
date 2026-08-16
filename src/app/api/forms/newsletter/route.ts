@@ -2,8 +2,20 @@ import { NextResponse } from "next/server";
 import { newsletterSchema } from "@/lib/validation/newsletter";
 import { looksLikeSpam } from "@/lib/validation/spamCheck";
 import { getSupabaseServerClient } from "@/lib/supabase/server";
+import { checkRateLimit, getClientIp } from "@/lib/security/rateLimit";
 
 export async function POST(request: Request) {
+  const allowed = await checkRateLimit(`newsletter:${getClientIp(request)}`, {
+    maxRequests: 10,
+    windowSeconds: 600,
+  });
+  if (!allowed) {
+    return NextResponse.json(
+      { error: "Too many requests. Please try again later." },
+      { status: 429 },
+    );
+  }
+
   const body = await request.json().catch(() => null);
   if (!body) {
     return NextResponse.json({ error: "Invalid request body" }, { status: 400 });
