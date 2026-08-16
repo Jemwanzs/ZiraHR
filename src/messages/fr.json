@@ -174,7 +174,7 @@
         "cookies": "Cookies"
       }
     },
-    "tagline": "SoftHR — La gestion des ressources humaines, connectée."
+    "tagline": "SoftHR — Votre effectif, connecté."
   },
   "employeeJourney": {
     "eyebrow": "UN EMPLOYÉ. UN PARCOURS.",
@@ -344,6 +344,18 @@
       "hr": "RH",
       "finance": "Finance",
       "my": "Mon tableau de bord"
+    },
+    "descriptions": {
+      "executive": "Effectifs, coûts et santé de l'organisation à l'échelle de l'entreprise — sans fouiller dans des tableurs.",
+      "hr": "Tout ce dont les RH ont besoin pour faire avancer l'organisation — approbations, intégration et exceptions.",
+      "finance": "Coût de la paie et statut des décaissements, réconciliés avec le même dossier connecté.",
+      "my": "Uniquement votre propre dossier — solde de congés, bulletins de paie et objectifs. Rien que vous ne possédez pas."
+    },
+    "sees": {
+      "executive": ["Tendances des effectifs", "Coût de la paie", "Signaux d'attrition"],
+      "hr": ["Approbations en attente", "Progression de l'intégration", "Exceptions de politique"],
+      "finance": ["Coût de la paie", "Statut des décaissements", "Écart budgétaire"],
+      "my": ["Solde de congés", "Bulletins de paie", "Mes objectifs"]
     }
   },
   "multiRegion": {

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import type { useTranslations } from "next-intl";
 import { animate, motion, useMotionValue, useReducedMotion, useTransform } from "motion/react";
+import { PlaceholderIcon, type PlaceholderIconName } from "@/components/media/PlaceholderIcon";
 
 /**
  * Illustrated "sample screen" scenes reused by both HeroProductReel (the
@@ -89,24 +90,41 @@ export function LeaveScene({ t }: SceneProps) {
   );
 }
 
+const DASHBOARD_STAT_ICONS: Record<"employees" | "leaveApprovals" | "payrollReady", PlaceholderIconName> = {
+  employees: "directory",
+  leaveApprovals: "leave",
+  payrollReady: "payslip",
+};
+
 export function DashboardScene({ t }: SceneProps) {
   const stats = ["employees", "leaveApprovals", "payrollReady"] as const;
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <div className="grid w-full max-w-md grid-cols-3 gap-3">
       {stats.map((stat, index) => (
-        <div
+        <motion.div
           key={stat}
-          className="rounded-xl border border-gray-200 bg-cream px-3 py-4 text-center"
+          initial={shouldReduceMotion ? undefined : { opacity: 0, scale: 0.9, y: 8 }}
+          animate={shouldReduceMotion ? undefined : { opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.35, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
+          className="flex flex-col items-center gap-2 rounded-xl border border-gray-200 bg-cream px-3 py-4 text-center"
         >
+          <span
+            aria-hidden="true"
+            className="flex h-7 w-7 items-center justify-center rounded-full bg-white text-teal-deep shadow-sm"
+          >
+            <PlaceholderIcon name={DASHBOARD_STAT_ICONS[stat]} className="h-3.5 w-3.5" />
+          </span>
           <AnimatedCounter
             value={t.raw(`hero.reel.dashboard.stats.${stat}.value`) as number}
             suffix={(t.raw(`hero.reel.dashboard.stats.${stat}.suffix`) as string | undefined) ?? ""}
-            delay={index * 0.15}
+            delay={0.25 + index * 0.15}
           />
-          <p className="mt-1 text-[11px] text-gray-500">
+          <p className="text-[11px] text-gray-500">
             {t(`hero.reel.dashboard.stats.${stat}.label`)}
           </p>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

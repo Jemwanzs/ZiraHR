@@ -57,7 +57,7 @@ export function HeroProductReel() {
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-16 -right-16 h-56 w-56 rounded-full opacity-40 blur-3xl"
+        className="pointer-events-none absolute -top-16 -right-16 h-56 w-56 rounded-full opacity-40 blur-3xl animate-[hero-glow-drift_18s_ease-in-out_infinite]"
         style={{ background: "var(--color-orange)" }}
       />
 
@@ -90,10 +90,10 @@ export function HeroProductReel() {
       <AnimatePresence mode="wait">
         <motion.div
           key={`${scene}-${cycle}`}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.35 }}
+          initial={{ opacity: 0, y: 14, scale: 0.97 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: -14, scale: 0.97 }}
+          transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
           className="flex h-full w-full items-center justify-center p-8 pt-14"
         >
           {scene === "payroll" && <PayrollScene t={t} />}

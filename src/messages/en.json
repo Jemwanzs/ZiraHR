@@ -174,7 +174,7 @@
         "cookies": "Cookies"
       }
     },
-    "tagline": "SoftHR — People operations, connected."
+    "tagline": "SoftHR — Your Workforce, Connected."
   },
   "employeeJourney": {
     "eyebrow": "ONE EMPLOYEE. ONE JOURNEY.",
@@ -344,6 +344,18 @@
       "hr": "HR",
       "finance": "Finance",
       "my": "My Dashboard"
+    },
+    "descriptions": {
+      "executive": "Company-wide headcount, cost, and org health — without digging through spreadsheets.",
+      "hr": "Everything HR needs to keep the organization moving — approvals, onboarding, and exceptions.",
+      "finance": "Payroll cost and disbursement status, reconciled against the same connected record.",
+      "my": "Just your own record — leave balance, payslips, and goals. Nothing you don't own."
+    },
+    "sees": {
+      "executive": ["Headcount trends", "Payroll cost", "Attrition signals"],
+      "hr": ["Pending approvals", "Onboarding progress", "Policy exceptions"],
+      "finance": ["Payroll cost", "Disbursement status", "Budget variance"],
+      "my": ["Leave balance", "Payslips", "My goals"]
     }
   },
   "multiRegion": {

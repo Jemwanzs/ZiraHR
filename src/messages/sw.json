@@ -174,7 +174,7 @@
         "cookies": "Vidakuzi"
       }
     },
-    "tagline": "SoftHR — Usimamizi wa rasilimali watu, umeunganishwa."
+    "tagline": "SoftHR — Nguvu Kazi Yako, Imeunganishwa."
   },
   "employeeJourney": {
     "eyebrow": "MFANYAKAZI MMOJA. SAFARI MOJA.",
@@ -344,6 +344,18 @@
       "hr": "Rasilimali Watu",
       "finance": "Fedha",
       "my": "Dashibodi Yangu"
+    },
+    "descriptions": {
+      "executive": "Idadi ya wafanyakazi, gharama, na afya ya shirika kote — bila kuchimba kwenye lahajedwali.",
+      "hr": "Kila kitu ambacho Rasilimali Watu inahitaji kuendesha shirika — idhini, uanzishaji, na tofauti.",
+      "finance": "Gharama ya malipo na hali ya ulipaji, ikilinganishwa na kumbukumbu ile ile iliyounganishwa.",
+      "my": "Kumbukumbu yako tu — salio la likizo, risiti za mshahara, na malengo. Hakuna usichomiliki."
+    },
+    "sees": {
+      "executive": ["Mwelekeo wa idadi ya wafanyakazi", "Gharama ya malipo", "Ishara za watu kuacha kazi"],
+      "hr": ["Idhini zinazosubiri", "Maendeleo ya uanzishaji", "Tofauti za sera"],
+      "finance": ["Gharama ya malipo", "Hali ya ulipaji", "Tofauti ya bajeti"],
+      "my": ["Salio la likizo", "Risiti za mshahara", "Malengo yangu"]
     }
   },
   "multiRegion": {

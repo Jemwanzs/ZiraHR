@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { AnimatePresence, motion } from "motion/react";
 import { Section } from "@/components/layout/Section";
 import { ScreenshotSlot } from "@/components/media/ScreenshotSlot";
 import type { PlaceholderIconName } from "@/components/media/PlaceholderIcon";
@@ -20,15 +21,19 @@ const DASHBOARD_ICONS: Record<(typeof DASHBOARDS)[number], PlaceholderIconName> 
 };
 
 /**
- * scope §20 — animated horizontal gallery, hover/tap brings a dashboard
- * forward while the others recede.
+ * scope §20. Was four ScreenshotSlot cards shown simultaneously, each with
+ * its own "Preview" badge, plus a caption repeated a second time below the
+ * card border — a real duplicate-label bug on top of the same card-wall
+ * repetition problem this pass has been fixing across the homepage.
+ * Rebuilt as a tab switcher (same proven pattern as ModuleShowcaseSection):
+ * one role active at a time, with a short honest "what this role sees"
+ * description instead of four boxes implying four different screenshots
+ * that don't actually differ yet.
  */
 export function DashboardsSection() {
   const t = useTranslations("dashboards");
   const tRoot = useTranslations();
-  const [focused, setFocused] = useState<(typeof DASHBOARDS)[number] | null>(
-    null,
-  );
+  const [active, setActive] = useState<(typeof DASHBOARDS)[number]>("executive");
 
   return (
     <Section tone="white" className="relative overflow-hidden">
@@ -51,37 +56,61 @@ export function DashboardsSection() {
         </div>
       </Reveal>
 
-      <div className="relative mt-10 flex flex-wrap justify-center gap-6">
-        {DASHBOARDS.map((dashboard) => {
-          const isFocused = focused === dashboard;
-          const isDimmed = focused !== null && !isFocused;
-          const typeLabel = t(`types.${dashboard}`);
-
-          return (
+      <div className="relative mx-auto mt-12 max-w-3xl">
+        <div className="flex flex-wrap justify-center gap-2">
+          {DASHBOARDS.map((dashboard) => (
             <button
               key={dashboard}
               type="button"
-              onMouseEnter={() => setFocused(dashboard)}
-              onMouseLeave={() => setFocused(null)}
-              onFocus={() => setFocused(dashboard)}
-              onBlur={() => setFocused(null)}
-              className={`w-full max-w-xs shrink-0 rounded-2xl text-left transition-all duration-300 ${
-                isFocused ? "scale-105 shadow-xl" : "shadow-sm"
-              } ${isDimmed ? "opacity-60" : "opacity-100"}`}
+              onClick={() => setActive(dashboard)}
+              aria-pressed={active === dashboard}
+              className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                active === dashboard
+                  ? "bg-teal text-overlay"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+              }`}
             >
-              <ScreenshotSlot
-                slot={`dashboards.${dashboard}`}
-                alt={typeLabel}
-                label={typeLabel}
-                aspect="portrait"
-                icon={DASHBOARD_ICONS[dashboard]}
-              />
-              <p className="mt-3 text-center text-sm font-medium text-gray-900">
-                {typeLabel}
-              </p>
+              {t(`types.${dashboard}`)}
             </button>
-          );
-        })}
+          ))}
+        </div>
+
+        <div className="mt-8 min-h-[280px]">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={active}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.3 }}
+              className="grid items-center gap-8 sm:grid-cols-2"
+            >
+              <div>
+                <p className="text-sm font-semibold text-teal-deep">
+                  {t(`types.${active}`)}
+                </p>
+                <p className="mt-2 text-gray-600">{t(`descriptions.${active}`)}</p>
+                <ul className="mt-5 flex flex-wrap gap-2">
+                  {(t.raw(`sees.${active}`) as string[]).map((item) => (
+                    <li
+                      key={item}
+                      className="rounded-full border border-gray-200 bg-cream px-3 py-1.5 text-xs font-medium text-gray-700"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <ScreenshotSlot
+                slot={`dashboards.${active}`}
+                alt={t(`types.${active}`)}
+                label={t(`types.${active}`)}
+                aspect="portrait"
+                icon={DASHBOARD_ICONS[active]}
+              />
+            </motion.div>
+          </AnimatePresence>
+        </div>
       </div>
     </Section>
   );
