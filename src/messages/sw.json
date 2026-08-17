@@ -22,7 +22,11 @@
     "startWithSoftHR": "Anza na SoftHR",
     "requestDemo": "Omba Onyesho",
     "login": "Ingia",
-    "alreadyUsing": "Tayari unatumia SoftHR? Ingia"
+    "alreadyUsing": "Tayari unatumia SoftHR? Ingia",
+    "callUs": "Piga simu",
+    "callUsAria": "Piga simu SoftHR kwa {number}",
+    "floatingCallAria": "Weka miadi ya onyesho",
+    "backToTopAria": "Rudi juu"
   },
   "nav": {
     "platform": "Jukwaa",

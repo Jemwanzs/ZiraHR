@@ -8,6 +8,7 @@ import { NavBar } from "@/components/navigation/NavBar";
 import { RouteProgressBar } from "@/components/navigation/RouteProgressBar";
 import { Footer } from "@/components/layout/Footer";
 import { StickyMobileCta } from "@/components/navigation/StickyMobileCta";
+import { FloatingCallButton } from "@/components/navigation/FloatingCallButton";
 import { OrganizationStructuredData } from "@/components/seo/StructuredData";
 import { MotionProvider } from "@/components/motion/MotionProvider";
 import { ThemeProvider, NO_FLASH_THEME_SCRIPT } from "@/components/theme/ThemeProvider";
@@ -131,6 +132,7 @@ export default async function LocaleLayout({ children, params }: Props) {
               </div>
               <Footer />
               <StickyMobileCta />
+              <FloatingCallButton />
               <CookieConsentBanner />
             </MotionProvider>
           </ThemeProvider>

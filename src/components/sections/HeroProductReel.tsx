@@ -43,7 +43,9 @@ export function HeroProductReel() {
   const scene = SCENES[active];
 
   return (
-    <div className="relative mx-auto aspect-[16/10] w-full max-w-4xl overflow-hidden rounded-2xl bg-white shadow-xl sm:aspect-video">
+    <div
+      className="relative mx-auto aspect-[16/10] w-full max-w-4xl overflow-hidden rounded-2xl bg-white shadow-xl sm:aspect-video motion-safe:animate-[hero-reel-breathe_9s_ease-in-out_infinite]"
+    >
       {/* Soft decorative depth behind the scene content — fills the frame
           with intentional design instead of blank white, without pulling
           focus from the scene itself. Pure CSS, no extra JS/paint cost. */}
@@ -87,14 +89,20 @@ export function HeroProductReel() {
         ))}
       </div>
 
-      <AnimatePresence mode="wait">
+      {/* mode="sync" (rather than "wait") lets the incoming scene start
+          fading in before the outgoing one has fully faded out — a
+          cross-dissolve instead of a fade-to-blank-then-fade-in cut, so the
+          reel reads as one continuously playing clip rather than a slideshow.
+          Both scenes need absolute positioning during that overlap window so
+          they don't fight over layout. */}
+      <AnimatePresence mode="sync">
         <motion.div
           key={`${scene}-${cycle}`}
-          initial={{ opacity: 0, y: 14, scale: 0.97 }}
+          initial={{ opacity: 0, y: 10, scale: 0.985 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: -14, scale: 0.97 }}
-          transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-          className="flex h-full w-full items-center justify-center p-8 pt-14"
+          exit={{ opacity: 0, scale: 1.01 }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="absolute inset-0 flex h-full w-full items-center justify-center p-8 pt-14"
         >
           {scene === "payroll" && <PayrollScene t={t} />}
           {scene === "leave" && <LeaveScene t={t} />}

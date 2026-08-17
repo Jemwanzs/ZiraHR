@@ -22,7 +22,11 @@
     "startWithSoftHR": "Start with SoftHR",
     "requestDemo": "Request a Demo",
     "login": "Login",
-    "alreadyUsing": "Already using SoftHR? Log in"
+    "alreadyUsing": "Already using SoftHR? Log in",
+    "callUs": "Call us",
+    "callUsAria": "Call SoftHR at {number}",
+    "floatingCallAria": "Book a demo call",
+    "backToTopAria": "Back to top"
   },
   "nav": {
     "platform": "Platform",

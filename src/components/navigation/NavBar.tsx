@@ -11,7 +11,12 @@ import { NavDropdown } from "@/components/navigation/NavDropdown";
 import { PlatformMegaMenuPanel } from "@/components/navigation/PlatformMegaMenuPanel";
 import { SolutionsMenuPanel } from "@/components/navigation/SolutionsMenuPanel";
 import { MobileDrawer } from "@/components/navigation/MobileDrawer";
-import { SIMPLE_NAV_LINKS } from "@/components/navigation/navData";
+import {
+  PHONE_NUMBER_DISPLAY,
+  PHONE_NUMBER_TEL,
+  SIMPLE_NAV_LINKS,
+} from "@/components/navigation/navData";
+import { PhoneIcon } from "@/components/navigation/PhoneIcon";
 
 /**
  * Sticky nav with a subtle glass/blur transition after scrolling — see
@@ -69,6 +74,14 @@ export function NavBar() {
           </nav>
 
           <div className="hidden items-center gap-2 lg:flex">
+            <a
+              href={`tel:${PHONE_NUMBER_TEL}`}
+              aria-label={tCta("callUsAria", { number: PHONE_NUMBER_DISPLAY })}
+              className="flex items-center gap-2 rounded-full bg-orange px-4 py-2 text-sm font-semibold text-overlay transition-colors hover:bg-orange-deep"
+            >
+              <PhoneIcon className="h-4 w-4" />
+              {PHONE_NUMBER_DISPLAY}
+            </a>
             <ThemeToggle />
             <LanguageSelector />
             <Link
@@ -79,16 +92,25 @@ export function NavBar() {
             </Link>
           </div>
 
-          <button
-            type="button"
-            onClick={() => setDrawerOpen(true)}
-            aria-label="Open menu"
-            className="flex h-10 w-10 items-center justify-center rounded-full text-gray-900 lg:hidden"
-          >
-            <span aria-hidden="true" className="text-xl">
-              ☰
-            </span>
-          </button>
+          <div className="flex items-center gap-1 lg:hidden">
+            <a
+              href={`tel:${PHONE_NUMBER_TEL}`}
+              aria-label={tCta("callUsAria", { number: PHONE_NUMBER_DISPLAY })}
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-orange text-overlay"
+            >
+              <PhoneIcon className="h-4.5 w-4.5" />
+            </a>
+            <button
+              type="button"
+              onClick={() => setDrawerOpen(true)}
+              aria-label="Open menu"
+              className="flex h-10 w-10 items-center justify-center rounded-full text-gray-900"
+            >
+              <span aria-hidden="true" className="text-xl">
+                ☰
+              </span>
+            </button>
+          </div>
         </Container>
       </header>
 

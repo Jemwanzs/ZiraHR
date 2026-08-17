@@ -8,10 +8,13 @@ import { Logo } from "@/components/ui/Logo";
 import { LanguageSelector } from "@/components/navigation/LanguageSelector";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import {
+  PHONE_NUMBER_DISPLAY,
+  PHONE_NUMBER_TEL,
   PLATFORM_GROUPS,
   SIMPLE_NAV_LINKS,
   SOLUTIONS_ITEMS,
 } from "@/components/navigation/navData";
+import { PhoneIcon } from "@/components/navigation/PhoneIcon";
 
 type MobileDrawerProps = {
   open: boolean;
@@ -167,6 +170,14 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
       </nav>
 
       <div className="flex flex-col gap-3 border-t border-gray-200 p-4">
+        <a
+          href={`tel:${PHONE_NUMBER_TEL}`}
+          aria-label={tCta("callUsAria", { number: PHONE_NUMBER_DISPLAY })}
+          className="flex w-full items-center justify-center gap-2 rounded-full bg-orange py-2.5 text-sm font-semibold text-overlay"
+        >
+          <PhoneIcon className="h-4 w-4" />
+          {tCta("callUs")}: {PHONE_NUMBER_DISPLAY}
+        </a>
         <Button href="/signup" showArrow onClick={onClose} className="w-full">
           {tCta("startWithSoftHR")}
         </Button>

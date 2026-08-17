@@ -142,6 +142,20 @@ body {
   }
 }
 
+/* Very subtle, slow "Ken Burns" breathing scale on the hero product reel's
+ * frame — plain CSS since the frame itself renders in the initial viewport.
+ * Keeps the reel feeling like a continuously-playing video rather than a
+ * static card, even during the brief overlap while scenes crossfade. */
+@keyframes hero-reel-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.012);
+  }
+}
+
 @keyframes hero-glow-drift {
   0%,
   100% {

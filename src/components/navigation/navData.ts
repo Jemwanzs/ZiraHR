@@ -82,3 +82,9 @@ export const SIMPLE_NAV_LINKS = [
   { key: "pricing", href: "/pricing" },
   { key: "company", href: "/company" },
 ] as const;
+
+/** Single source of truth for the sales line shown in the nav, the mobile
+ * drawer footer, and the floating call CTA — see AGENTS request to surface
+ * a phone number sitewide the way M-Gas does in its nav. */
+export const PHONE_NUMBER_DISPLAY = "0798 993 404";
+export const PHONE_NUMBER_TEL = "+254798993404";
