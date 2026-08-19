@@ -196,9 +196,12 @@ export function PromoBanner() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, x: 140, scale: 0.96 }}
             transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-x-3 top-20 z-30 sm:inset-x-6 lg:top-24 lg:left-1/2 lg:right-auto lg:w-[min(1180px,94vw)] lg:-translate-x-1/2"
+            className="fixed inset-x-4 top-1/2 z-30 -translate-y-1/2 sm:inset-x-6 lg:top-24 lg:left-1/2 lg:right-auto lg:w-[min(1180px,94vw)] lg:translate-y-0 lg:-translate-x-1/2"
           >
-            <div className="relative max-h-[calc(100vh-6rem)] overflow-y-auto rounded-3xl border border-gray-200 bg-white shadow-2xl">
+            {/* Small and centered on narrow screens (a dialog-like card,
+                not the full-height top-anchored panel it is from lg up) —
+                max-h keeps it clear of the viewport edges either way. */}
+            <div className="relative max-h-[80vh] overflow-y-auto rounded-3xl border border-gray-200 bg-white shadow-2xl lg:max-h-[calc(100vh-6rem)]">
               <div
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 overflow-hidden rounded-3xl"
@@ -222,12 +225,12 @@ export function PromoBanner() {
                 <CloseIcon className="h-4 w-4" />
               </button>
 
-              <div className="relative grid gap-8 p-6 sm:p-8 lg:grid-cols-[42%_58%] lg:p-10">
-                <div className="flex flex-col justify-center gap-4">
+              <div className="relative grid gap-5 p-4 sm:gap-8 sm:p-8 lg:grid-cols-[42%_58%] lg:p-10">
+                <div className="flex flex-col justify-center gap-3 sm:gap-4">
                   <p className="text-xs font-semibold tracking-wide text-teal-deep">
                     {t("eyebrow")}
                   </p>
-                  <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  <h2 className="text-xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-4xl">
                     {headline}
                   </h2>
                   <p className="max-w-md text-sm text-gray-600 sm:text-base">
@@ -259,8 +262,8 @@ export function PromoBanner() {
                   <p className="mt-1 text-xs font-medium text-gray-400">{t("trust")}</p>
                 </div>
 
-                <div className="flex flex-col gap-4">
-                  <div className="relative overflow-hidden rounded-2xl bg-teal p-6 text-overlay shadow-lg">
+                <div className="flex flex-col gap-3 sm:gap-4">
+                  <div className="relative overflow-hidden rounded-2xl bg-teal p-4 text-overlay shadow-lg sm:p-6">
                     <div
                       aria-hidden="true"
                       className="pointer-events-none absolute top-3 right-3 hidden gap-2 xl:flex"
@@ -291,14 +294,14 @@ export function PromoBanner() {
                     {caption && (
                       <p className="mt-1 max-w-[85%] text-xs text-overlay/80">{caption}</p>
                     )}
-                    <div className="mt-3 flex items-end gap-3 sm:gap-4">
+                    <div className="mt-3 flex items-end gap-2 sm:gap-3 lg:gap-4">
                       <div className="flex flex-col items-center">
                         <motion.span
                           key={started ? "live" : "static"}
                           initial={{ opacity: 0, y: 8 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ delay: 0.15, duration: 0.4 }}
-                          className="text-4xl font-bold tabular-nums sm:text-5xl"
+                          className="text-2xl font-bold tabular-nums sm:text-4xl lg:text-5xl"
                         >
                           {countdown.days}
                         </motion.span>
@@ -306,33 +309,33 @@ export function PromoBanner() {
                           {t("countdownUnitDays")}
                         </span>
                       </div>
-                      <span className="pb-4 text-2xl font-bold text-overlay/30 sm:text-3xl">
+                      <span className="pb-1.5 text-base font-bold text-overlay/30 sm:pb-3 sm:text-2xl lg:pb-4 lg:text-3xl">
                         :
                       </span>
                       <div className="flex flex-col items-center">
-                        <span className="text-4xl font-bold tabular-nums sm:text-5xl">
+                        <span className="text-2xl font-bold tabular-nums sm:text-4xl lg:text-5xl">
                           {String(countdown.hours).padStart(2, "0")}
                         </span>
                         <span className="mt-1 text-[10px] font-semibold tracking-wide text-overlay/70">
                           {t("countdownUnitHours")}
                         </span>
                       </div>
-                      <span className="pb-4 text-2xl font-bold text-overlay/30 sm:text-3xl">
+                      <span className="pb-1.5 text-base font-bold text-overlay/30 sm:pb-3 sm:text-2xl lg:pb-4 lg:text-3xl">
                         :
                       </span>
                       <div className="flex flex-col items-center">
-                        <span className="text-4xl font-bold tabular-nums sm:text-5xl">
+                        <span className="text-2xl font-bold tabular-nums sm:text-4xl lg:text-5xl">
                           {String(countdown.minutes).padStart(2, "0")}
                         </span>
                         <span className="mt-1 text-[10px] font-semibold tracking-wide text-overlay/70">
                           {t("countdownUnitMinutes")}
                         </span>
                       </div>
-                      <span className="pb-4 text-2xl font-bold text-overlay/30 sm:text-3xl">
+                      <span className="pb-1.5 text-base font-bold text-overlay/30 sm:pb-3 sm:text-2xl lg:pb-4 lg:text-3xl">
                         :
                       </span>
                       <div className="flex flex-col items-center">
-                        <span className="text-4xl font-bold tabular-nums sm:text-5xl">
+                        <span className="text-2xl font-bold tabular-nums sm:text-4xl lg:text-5xl">
                           {String(countdown.seconds).padStart(2, "0")}
                         </span>
                         <span className="mt-1 text-[10px] font-semibold tracking-wide text-overlay/70">
@@ -341,7 +344,7 @@ export function PromoBanner() {
                       </div>
                     </div>
 
-                    <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1.5 text-xs font-medium text-overlay/80">
+                    <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1.5 text-xs font-medium text-overlay/80 sm:mt-5">
                       {stages.map((stage, index) => (
                         <span key={stage} className="flex items-center gap-2">
                           {index === stages.length - 1 ? (
@@ -393,7 +396,9 @@ export function PromoBanner() {
                 </div>
               </div>
 
-              <div className="relative border-t border-gray-100 px-6 py-3 sm:px-8 lg:px-10">
+              {/* Skipped on phones — secondary content, and keeping the
+                  card compact matters more there than showing it. */}
+              <div className="relative hidden border-t border-gray-100 px-6 py-3 sm:block sm:px-8 lg:px-10">
                 <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] font-medium text-gray-400">
                   {moduleStrip.map((mod, index) => (
                     <span key={mod}>
