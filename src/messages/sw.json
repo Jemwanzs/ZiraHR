@@ -78,7 +78,6 @@
     "submittedHeadline": "Onyesho Limeombwa ✓ — Safari Yako ya SoftHR Inaendelea.",
     "submittedCaption": "Tutawasiliana nawe hivi karibuni kuthibitisha tarehe yako ya uzinduzi.",
     "ctaBookNow": "Omba Sasa",
-    "ctaBookNowHover": "Salia nafasi yako ya safari hapa",
     "submittedBadge": "Onyesho Limeombwa"
   },
   "nav": {
@@ -231,7 +230,11 @@
         "cookies": "Vidakuzi"
       }
     },
-    "tagline": "SoftHR — Nguvu Kazi Yako, Imeunganishwa."
+    "tagline": "SoftHR — Nguvu Kazi Yako, Imeunganishwa.",
+    "contactTitle": "Wasiliana Nasi",
+    "contactCta": "Wasiliana nasi",
+    "followTitle": "Tufuate",
+    "copyright": "© {year} SoftHR. Haki zote zimehifadhiwa."
   },
   "employeeJourney": {
     "eyebrow": "MFANYAKAZI MMOJA. SAFARI MOJA.",

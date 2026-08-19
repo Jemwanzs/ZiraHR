@@ -1,6 +1,11 @@
 type LogoProps = {
   /** Icon-only (e.g. collapsed mobile states) vs icon + "SoftHR" wordmark. */
   variant?: "full" | "mark";
+  /** "light" for placement on a dark background (e.g. the footer) — the
+   * mark itself is unaffected (its navy backdrop already matches
+   * --color-teal, so it reads as a plain white glyph either way); this
+   * only changes the wordmark's text color. */
+  tone?: "dark" | "light";
   className?: string;
 };
 
@@ -45,7 +50,7 @@ function Mark({ className }: { className?: string }) {
   );
 }
 
-export function Logo({ variant = "full", className = "" }: LogoProps) {
+export function Logo({ variant = "full", tone = "dark", className = "" }: LogoProps) {
   if (variant === "mark") {
     return <Mark className={`h-8 w-8 ${className}`} />;
   }
@@ -53,7 +58,11 @@ export function Logo({ variant = "full", className = "" }: LogoProps) {
   return (
     <span className={`inline-flex items-center gap-2 ${className}`}>
       <Mark className="h-8 w-8 shrink-0" />
-      <span className="text-lg font-semibold tracking-tight text-gray-900">
+      <span
+        className={`text-lg font-semibold tracking-tight ${
+          tone === "light" ? "text-overlay" : "text-gray-900"
+        }`}
+      >
         SoftHR
       </span>
     </span>

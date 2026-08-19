@@ -78,7 +78,6 @@
     "submittedHeadline": "Demo Booked ✓ — Your SoftHR Journey Is Underway.",
     "submittedCaption": "We'll be in touch shortly to confirm your go-live date.",
     "ctaBookNow": "Book Now",
-    "ctaBookNowHover": "Secure your journey here",
     "submittedBadge": "Demo Booked"
   },
   "nav": {
@@ -231,7 +230,11 @@
         "cookies": "Cookies"
       }
     },
-    "tagline": "SoftHR — Your Workforce, Connected."
+    "tagline": "SoftHR — Your Workforce, Connected.",
+    "contactTitle": "Contact Us",
+    "contactCta": "Get in touch",
+    "followTitle": "Follow Us",
+    "copyright": "© {year} SoftHR. All rights reserved."
   },
   "employeeJourney": {
     "eyebrow": "ONE EMPLOYEE. ONE JOURNEY.",

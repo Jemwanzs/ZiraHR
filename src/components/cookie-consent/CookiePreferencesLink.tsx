@@ -10,7 +10,7 @@ export function CookiePreferencesLink() {
     <button
       type="button"
       onClick={openCookiePreferences}
-      className="text-sm text-gray-500 hover:text-teal-deep"
+      className="text-sm text-overlay/70 hover:text-overlay"
     >
       {t("manageLink")}
     </button>

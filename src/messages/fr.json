@@ -78,7 +78,6 @@
     "submittedHeadline": "Démo réservée ✓ — Votre parcours SoftHR est en cours.",
     "submittedCaption": "Nous vous recontacterons prochainement pour confirmer votre date de mise en service.",
     "ctaBookNow": "Réserver maintenant",
-    "ctaBookNowHover": "Sécurisez votre parcours ici",
     "submittedBadge": "Démo réservée"
   },
   "nav": {
@@ -231,7 +230,11 @@
         "cookies": "Cookies"
       }
     },
-    "tagline": "SoftHR — Votre effectif, connecté."
+    "tagline": "SoftHR — Votre effectif, connecté.",
+    "contactTitle": "Contactez-nous",
+    "contactCta": "Nous contacter",
+    "followTitle": "Suivez-nous",
+    "copyright": "© {year} SoftHR. Tous droits réservés."
   },
   "employeeJourney": {
     "eyebrow": "UN EMPLOYÉ. UN PARCOURS.",

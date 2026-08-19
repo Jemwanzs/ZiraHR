@@ -243,11 +243,7 @@ export function PromoBanner() {
                         {t("submittedBadge")}
                       </span>
                     ) : started ? (
-                      <Button
-                        href="/request-demo"
-                        showArrow
-                        title={t("ctaBookNowHover")}
-                      >
+                      <Button href="/request-demo" showArrow>
                         {t("ctaBookNow")}
                       </Button>
                     ) : (
