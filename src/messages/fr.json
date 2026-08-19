@@ -42,7 +42,7 @@
     "journeySupporting": "De la configuration et de l'intégration des données à la formation et à la mise en service.",
     "countdownLabel": "VOTRE PARCOURS DE MISE EN SERVICE",
     "countdownDays": "14",
-    "countdownUnitDays": "JOURS OUVRÉS",
+    "countdownUnitDays": "JOURS",
     "countdownUnitHours": "HEURES",
     "countdownUnitMinutes": "MINUTES",
     "countdownUnitSeconds": "SECONDES",
