@@ -1,5 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { SoftwareApplicationStructuredData } from "@/components/seo/StructuredData";
+import { PromoBanner } from "@/components/promo-banner/PromoBanner";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { EmployeeJourneySection } from "@/components/sections/EmployeeJourneySection";
 import { ConnectedRecordSection } from "@/components/sections/ConnectedRecordSection";
@@ -31,6 +32,7 @@ export default async function HomePage({ params }: Props) {
   return (
     <main className="flex flex-1 flex-col">
       <SoftwareApplicationStructuredData />
+      <PromoBanner />
       <HeroSection />
       <EmployeeJourneySection />
       <ConnectedRecordSection />

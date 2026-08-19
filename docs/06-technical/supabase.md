@@ -7,7 +7,7 @@ Lead-generation only, per the brief: demo requests, contact/enquiries, newslette
 ## Tables
 
 ### `demo_requests`
-`id uuid pk default gen_random_uuid()`, `first_name text`, `last_name text`, `work_email text`, `phone text`, `company_name text`, `country text`, `employee_count text`, `interested_modules text[]`, `message text`, `preferred_contact_method text`, `source text` (page/campaign the form was submitted from), `status text default 'new'`, `created_at timestamptz default now()`
+`id uuid pk default gen_random_uuid()`, `first_name text`, `last_name text`, `work_email text`, `phone text`, `company_name text`, `country text`, `employee_count text`, `interested_modules text[]`, `message text`, `preferred_contact_method text`, `source text` (page/campaign the form was submitted from), `journey_started_at timestamptz` (when this visitor's 14-working-day go-live journey began — set client-side the moment they click Book a Demo on the homepage promo banner, see `src/lib/journeyTracking.ts`; null if they reached the form without ever seeing that banner), `status text default 'new'`, `created_at timestamptz default now()`
 
 ### `contact_requests`
 `id`, `name text`, `email text`, `phone text`, `company text`, `subject text`, `message text`, `status text default 'new'`, `created_at timestamptz default now()`

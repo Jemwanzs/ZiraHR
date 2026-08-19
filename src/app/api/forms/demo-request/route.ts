@@ -52,6 +52,7 @@ export async function POST(request: Request) {
       message: data.message || null,
       preferred_contact_method: data.preferredContactMethod,
       source: data.source || null,
+      journey_started_at: data.journeyStartedAt || null,
     });
 
     if (error) {

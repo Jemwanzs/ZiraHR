@@ -9,6 +9,7 @@ import {
 } from "@/lib/validation/demoRequest";
 import { FormField, inputClasses } from "@/components/forms/FormField";
 import { Button } from "@/components/ui/Button";
+import { markJourneySubmitted, startJourney } from "@/lib/journeyTracking";
 
 type FormState = {
   firstName: string;
@@ -50,6 +51,10 @@ export function DemoRequestForm() {
 
   useEffect(() => {
     renderedAt.current = Date.now();
+    // Reaching this form is itself the start of the visitor's journey, even
+    // if they got here without seeing the homepage banner's "Book a Demo"
+    // click — idempotent, so it's a no-op if the banner already started it.
+    startJourney();
   }, []);
 
   function toggleModule(module: string) {
@@ -70,6 +75,7 @@ export function DemoRequestForm() {
       website: honeypotRef.current?.value ?? "",
       renderedAt: renderedAt.current,
       source: typeof window !== "undefined" ? window.location.pathname : "",
+      journeyStartedAt: startJourney() || undefined,
     });
 
     if (!parsed.success) {
@@ -92,6 +98,7 @@ export function DemoRequestForm() {
         body: JSON.stringify(parsed.data),
       });
       if (!response.ok) throw new Error("Request failed");
+      markJourneySubmitted();
       setStatus("success");
     } catch {
       setStatus("error");

@@ -31,6 +31,10 @@ export const demoRequestSchema = z.object({
   message: z.string().trim().max(2000).optional().default(""),
   preferredContactMethod: z.enum(CONTACT_METHOD_OPTIONS).default("email"),
   source: z.string().trim().max(200).optional().default(""),
+  /** ISO timestamp of when this visitor's 14-working-day journey began
+   * (PromoBanner's "Book a Demo" click) — optional since the form is also
+   * reachable without ever seeing that banner. See src/lib/journeyTracking.ts. */
+  journeyStartedAt: z.string().datetime().optional(),
   ...spamCheckFields,
 });
 
