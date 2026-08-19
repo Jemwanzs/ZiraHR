@@ -33,7 +33,7 @@
     "headlineHighlight": "Siku 14 za Kazi.",
     "headlineRest": "Uendeshaji Mmoja wa Rasilimali Watu Uliounganishwa.",
     "supporting": "Malipo. Likizo. Mahudhurio. Utendaji. Watu. Ufuasi wa sheria. Vyote vikiunganishwa kupitia SoftHR — vilivyowekwa kwa ajili ya shirika lako na tayari kwa timu yako.",
-    "primaryCta": "Omba Onyesho",
+    "primaryCta": "Anzisha Kipima Muda",
     "secondaryCta": "Gundua SoftHR",
     "trust": "Uwekaji • Uhamishaji • Mafunzo • Uzinduzi",
     "journeyEyebrow": "SAFARI YAANZA",
@@ -45,6 +45,7 @@
     "countdownUnitDays": "SIKU ZA KAZI",
     "countdownUnitHours": "SAA",
     "countdownUnitMinutes": "DAKIKA",
+    "countdownUnitSeconds": "SEKUNDE",
     "stages": ["Kuanzisha", "Kusanidi", "Kuhamisha", "Kuthibitisha", "Kufundisha", "Kuzindua"],
     "journeyToggleOpen": "Angalia Safari ya Uwekaji",
     "journeyToggleClose": "Ficha Safari ya Uwekaji",
@@ -76,7 +77,8 @@
     "startedCaption": "Ilianza {date} — lengo la uzinduzi ni {target}.",
     "submittedHeadline": "Onyesho Limeombwa ✓ — Safari Yako ya SoftHR Inaendelea.",
     "submittedCaption": "Tutawasiliana nawe hivi karibuni kuthibitisha tarehe yako ya uzinduzi.",
-    "ctaContinue": "Endelea na Safari Yako",
+    "ctaBookNow": "Omba Sasa",
+    "ctaBookNowHover": "Salia nafasi yako ya safari hapa",
     "submittedBadge": "Onyesho Limeombwa"
   },
   "nav": {

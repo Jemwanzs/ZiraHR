@@ -9,6 +9,9 @@ type BaseProps = {
   /** Shows the "arrow travels right on hover" treatment from docs/04-content/cta-copy.md */
   showArrow?: boolean;
   className?: string;
+  /** Native hover tooltip — sparingly, only where the label alone doesn't
+   * carry enough context (see PromoBanner's "Book Now" CTA). */
+  title?: string;
 };
 
 type ButtonAsLink = BaseProps & {
@@ -52,7 +55,7 @@ function Arrow() {
  * elevation, smooth background transition, arrow travel, never a bounce).
  */
 export function Button(props: ButtonProps) {
-  const { children, variant = "primary", showArrow, className = "" } = props;
+  const { children, variant = "primary", showArrow, className = "", title } = props;
   const classes = `group ${baseClasses} ${variantClasses[variant]} ${className}`;
 
   if ("href" in props && props.href) {
@@ -61,6 +64,7 @@ export function Button(props: ButtonProps) {
         <a
           href={props.href}
           className={classes}
+          title={title}
           target="_blank"
           rel="noopener noreferrer"
           onClick={props.onClick}
@@ -72,7 +76,7 @@ export function Button(props: ButtonProps) {
     }
 
     return (
-      <Link href={props.href} className={classes} onClick={props.onClick}>
+      <Link href={props.href} className={classes} title={title} onClick={props.onClick}>
         {children}
         {showArrow && <Arrow />}
       </Link>
@@ -82,7 +86,7 @@ export function Button(props: ButtonProps) {
   const { type = "button", onClick, disabled } = props as ButtonAsButton;
 
   return (
-    <button type={type} onClick={onClick} disabled={disabled} className={classes}>
+    <button type={type} onClick={onClick} disabled={disabled} title={title} className={classes}>
       {children}
       {showArrow && <Arrow />}
     </button>

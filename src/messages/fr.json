@@ -33,7 +33,7 @@
     "headlineHighlight": "14 jours ouvrés.",
     "headlineRest": "Une gestion RH entièrement connectée.",
     "supporting": "Paie. Congés. Présence. Performance. Personnel. Conformité. Le tout réuni dans SoftHR — configuré pour votre organisation et prêt pour vos équipes.",
-    "primaryCta": "Réserver une démo",
+    "primaryCta": "Démarrer le compte à rebours",
     "secondaryCta": "Découvrir SoftHR",
     "trust": "Implémentation • Migration • Formation • Mise en service",
     "journeyEyebrow": "LE PARCOURS COMMENCE",
@@ -45,6 +45,7 @@
     "countdownUnitDays": "JOURS OUVRÉS",
     "countdownUnitHours": "HEURES",
     "countdownUnitMinutes": "MINUTES",
+    "countdownUnitSeconds": "SECONDES",
     "stages": ["Cadrage", "Configuration", "Migration", "Validation", "Formation", "Mise en service"],
     "journeyToggleOpen": "Voir le parcours de mise en œuvre",
     "journeyToggleClose": "Masquer le parcours de mise en œuvre",
@@ -76,7 +77,8 @@
     "startedCaption": "Commencé le {date} — mise en service visée pour le {target}.",
     "submittedHeadline": "Démo réservée ✓ — Votre parcours SoftHR est en cours.",
     "submittedCaption": "Nous vous recontacterons prochainement pour confirmer votre date de mise en service.",
-    "ctaContinue": "Poursuivre votre parcours",
+    "ctaBookNow": "Réserver maintenant",
+    "ctaBookNowHover": "Sécurisez votre parcours ici",
     "submittedBadge": "Démo réservée"
   },
   "nav": {

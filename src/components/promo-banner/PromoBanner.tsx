@@ -81,16 +81,19 @@ function CheckIcon({ className }: { className?: string }) {
  * reference banner pattern the client sent over.
  *
  * The countdown is intent-triggered, not automatic: it stays static at
- * 14:00:00 until the visitor clicks Book a Demo, at which point that click
- * *is* the start of their personal journey (see src/lib/journeyTracking.ts)
- * — recorded in localStorage immediately, independent of whether they go on
- * to actually submit the form, and re-sent with the form if they do (so the
- * lead record isn't dependent only on their browser). From then on the
- * countdown ticks down for real toward a working-day-adjusted go-live date
- * (src/lib/workingDays.ts, which skips weekends and known Kenyan public
- * holidays) — a real per-visitor clock is appropriate here specifically
- * because it now represents a commitment they made, not manufactured
- * urgency for an anonymous visitor.
+ * 14:00:00:00 until the visitor clicks "Start Count-Down", at which point
+ * that click *is* the start of their personal journey (see
+ * src/lib/journeyTracking.ts) — recorded in localStorage immediately, and
+ * the countdown starts ticking down live in place. This click deliberately
+ * does *not* open the demo form; it's a lighter-weight commitment than
+ * booking. The CTA that follows it, "Book Now", is the actual conversion
+ * action to /request-demo. Submitting that form marks the journey
+ * submitted and re-sends the start timestamp with it (so the lead record
+ * isn't dependent only on their browser). The target itself is
+ * working-day-adjusted (src/lib/workingDays.ts, which skips weekends and
+ * known Kenyan public holidays) — a real per-visitor clock is appropriate
+ * here specifically because it now represents a commitment they made, not
+ * manufactured urgency for an anonymous visitor.
  *
  * sessionStorage (separate from the journey's own localStorage) governs
  * only whether the banner card itself is open or collapsed-to-a-tab — a
@@ -121,15 +124,16 @@ export function PromoBanner() {
   const targetDate = startedAt ? addWorkingDays(new Date(startedAt), GO_LIVE_WORKING_DAYS) : null;
   const targetTime = targetDate?.getTime();
 
-  // Re-render once a minute while a personal countdown is running, so the
-  // displayed hours/minutes stay live — computeCountdown itself is a pure
-  // function of "now", this timer just forces the next render to call it
-  // again. Not started at all -> no timer, nothing to tick.
+  // Re-render every second while a personal countdown is running (and the
+  // card is actually visible), so the displayed seconds genuinely read —
+  // computeCountdown itself is a pure function of "now", this timer just
+  // forces the next render to call it again. Not started, or collapsed to
+  // the side tab where none of this is visible -> no timer running.
   useEffect(() => {
-    if (!targetTime) return;
-    const id = setInterval(() => setTick((value) => value + 1), 60_000);
+    if (!targetTime || collapsed) return;
+    const id = setInterval(() => setTick((value) => value + 1), 1000);
     return () => clearInterval(id);
-  }, [targetTime]);
+  }, [targetTime, collapsed]);
 
   function handleClose() {
     setCollapsedStored(true);
@@ -139,12 +143,11 @@ export function PromoBanner() {
     setCollapsedStored(false);
   }
 
-  function handleBookDemo() {
-    // Deliberately doesn't also collapse the banner — this navigates away
-    // to /request-demo (a different route, where PromoBanner isn't
-    // mounted at all), so it unmounts on its own. Triggering the collapse
-    // state update in the same click handler raced the Link's own
-    // navigation and intermittently swallowed it.
+  // "Start Count-Down" — deliberately doesn't open the demo form. This is
+  // the lightweight commitment: it starts the visitor's personal countdown
+  // in place. Booking the actual demo is a separate, later action (the
+  // "Book Now" CTA below, once started).
+  function handleStartCountdown() {
     startJourney();
   }
 
@@ -156,7 +159,7 @@ export function PromoBanner() {
   const submitted = Boolean(submittedAt);
   const countdown = targetDate
     ? computeCountdown(targetDate)
-    : { days: Number(t("countdownDays")), hours: 0, minutes: 0, overdue: false };
+    : { days: Number(t("countdownDays")), hours: 0, minutes: 0, seconds: 0, overdue: false };
 
   const dateFormatter = new Intl.DateTimeFormat(locale, { month: "short", day: "numeric" });
   const startedCaption =
@@ -236,9 +239,17 @@ export function PromoBanner() {
                         <CheckIcon className="h-4 w-4" />
                         {t("submittedBadge")}
                       </span>
+                    ) : started ? (
+                      <Button
+                        href="/request-demo"
+                        showArrow
+                        title={t("ctaBookNowHover")}
+                      >
+                        {t("ctaBookNow")}
+                      </Button>
                     ) : (
-                      <Button href="/request-demo" showArrow onClick={handleBookDemo}>
-                        {started ? t("ctaContinue") : t("primaryCta")}
+                      <Button type="button" onClick={handleStartCountdown}>
+                        {t("primaryCta")}
                       </Button>
                     )}
                     <Button variant="ghost" onClick={handleClose}>
@@ -315,6 +326,17 @@ export function PromoBanner() {
                         </span>
                         <span className="mt-1 text-[10px] font-semibold tracking-wide text-overlay/70">
                           {t("countdownUnitMinutes")}
+                        </span>
+                      </div>
+                      <span className="pb-4 text-2xl font-bold text-overlay/30 sm:text-3xl">
+                        :
+                      </span>
+                      <div className="flex flex-col items-center">
+                        <span className="text-4xl font-bold tabular-nums sm:text-5xl">
+                          {String(countdown.seconds).padStart(2, "0")}
+                        </span>
+                        <span className="mt-1 text-[10px] font-semibold tracking-wide text-overlay/70">
+                          {t("countdownUnitSeconds")}
                         </span>
                       </div>
                     </div>

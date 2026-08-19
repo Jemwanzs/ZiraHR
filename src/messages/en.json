@@ -33,7 +33,7 @@
     "headlineHighlight": "14 Working Days.",
     "headlineRest": "One Fully Connected HR Operation.",
     "supporting": "Payroll. Leave. Attendance. Performance. People. Compliance. All brought together through SoftHR — configured for your organization and ready for your team.",
-    "primaryCta": "Book a Demo",
+    "primaryCta": "Start Count-Down",
     "secondaryCta": "Explore SoftHR",
     "trust": "Implementation • Migration • Training • Go-Live",
     "journeyEyebrow": "THE JOURNEY BEGINS",
@@ -45,6 +45,7 @@
     "countdownUnitDays": "WORKING DAYS",
     "countdownUnitHours": "HOURS",
     "countdownUnitMinutes": "MINUTES",
+    "countdownUnitSeconds": "SECONDS",
     "stages": ["Setup", "Configure", "Migrate", "Validate", "Train", "Go Live"],
     "journeyToggleOpen": "See Implementation Journey",
     "journeyToggleClose": "Hide Implementation Journey",
@@ -76,7 +77,8 @@
     "startedCaption": "Started {date} — targeting go-live by {target}.",
     "submittedHeadline": "Demo Booked ✓ — Your SoftHR Journey Is Underway.",
     "submittedCaption": "We'll be in touch shortly to confirm your go-live date.",
-    "ctaContinue": "Continue Your Journey",
+    "ctaBookNow": "Book Now",
+    "ctaBookNowHover": "Secure your journey here",
     "submittedBadge": "Demo Booked"
   },
   "nav": {
